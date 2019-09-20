@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>数据实验平台</title>
+</head>
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+html, body {
+            width:100%;
+            height:100%;
+            margin:0px;
+            padding:0px;
+}
+
+
+li a:hover {
+    background-color: #111;
+}
+div{
+  border: 0;
+}
+
+</style>
+<body>
+  <div style="height: 8%;  " >
+  <ul>
+    <li><a href="{:U('Index/showExperiment')}" target="iframe" >首页     </a></li>
+    <!-- <li><a class="active"  href="{:U('showCourse')}" target="iframe">课程 </a></li> -->
+    <!-- <li><a href="{:U('Index/showExperiment')}" target="iframe" >主机</a></li> -->
+    <li><a href="{:U('Index/showCourse')}" target="iframe" >课程</a></li>
+    <li><a href="{:U('Index/showMyCourse')}" target="iframe">我的主机</a></li>
+   <li><a href="{:U('Index/showStudentInfoById')} " target="iframe">个人中心</a></li>
+    <li><a href="">用户:{$user_name} </a>  </li>
+  </ul>
+  </div>
+   <div id="myIframe"  style="height: 89% "  >
+        <iframe src="{:U('Index/showExperiment')} " name="iframe" scrolling="" width="100%" height="100%;" frameborder="0"></iframe>
+    </div>
+  
+  
+
+</body>
+</html>

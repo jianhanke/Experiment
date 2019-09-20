@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	
+    <meta charset="utf-8">
+	<style type="text/css">
+	.myDiv{
+		border:1px solid #000;
+		margin-bottom:10px;
+		width: 100%;
+		font-size:25px;
+		text-align: center;
+		margin:1% auto;
+	}
+	.joinExperiment{
+		font-size:18px;
+		border:1px solid #000;
+		height: 30px;
+		width: 100px;
+		float: right;
+	}
+	  html, body {
+            width:100%;
+            height:100%;
+            margin:0px;
+            padding:0px;
+        }
+	ul,li{ padding:0;margin:0;list-style:none}
+	a{ text-decoration:none} 
+	</style>	
+</head>
+<body>
+
+<volist name="datas" id="data">
+	<div class="myDiv" style="width: 80%;height: 30%; " >
+
+		<div style="width: 25%;float: left;height: 100%;" >
+			<img src="__PUBLIC__/Experiment/{$data['outcome_model']} " alt="" style="width:100%;height: 100%; ">
+		</div>
+		<div style="width: 75%;float:right;height: 100%;  ">
+				<br />
+				<br />
+			<p>  {$data['ename']} </p>  
+			<div class="joinExperiment">
+
+				<a href="{:U('Docker/joinExperiment')}/id/{$data['eid']}" target="block"   > 
+				进入     </a> 
+			</div>
+		</div>
+    </div>
+</volist>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+<meta http-equiv="Pragma" content="no-cache"> 
+<meta http-equiv="Cache-Control" content="no-cache"> 
+<meta http-equiv="Expires" content="0"> 
+<title>用户注册</title>
+<link href="__PUBLIC__/Home/css/Home_login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div class="login_box">
+      <div class="login_l_img"><img src="__PUBLIC__/Home/images/login-img.png" /></div>
+      <div class="login">
+          <div class="login_logo"><a href="#"><img src="__PUBLIC__/Home/images/login_logo.png" /></a></div>
+          <div class="login_name">
+               <p>用户注册界面</p>
+          </div>
+          <form action="__CONTROLLER__/register" method="post">
+              <input name="user_id" type="text"  value="账户"  onfocus="if (value =='账户'){value =''}">
+              <input id="password_text" name="user_pwd"  type="text" value="密码" onfocus="if (value =='密码'){value =''}">
+              <input  id="password_text" type="text" name="user_pwd2" value="重复密码" onfocus="if (value =='重复密码'){value =''}">
+   
+              <input type="submit" value="注册" style="width:100%;float:right;color:green " >
+          </form>
+      </div>
+      
+</div>
+<div style="text-align:center;">
+
+
+</div>
+</body>
+</html>
