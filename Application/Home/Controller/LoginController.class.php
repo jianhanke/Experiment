@@ -9,7 +9,7 @@ class LoginController extends Controller{
     	$this->display();
     }
 
-  	 public function checkLogin(){
+  	public function checkLogin(){
         $model=D('Student');
         $info=$model->check_Login();        
        if(isset($info)){
@@ -20,6 +20,15 @@ class LoginController extends Controller{
             $this->error('密码错误',U('Home/Login/login'));
         }
     }
+
+    public function logout(){
+        session('user_id',null);
+        session('user_name',null);
+        $this->success('退出成功',U('Login/login'));
+
+    }
+
+
 
    
 

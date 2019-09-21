@@ -15,5 +15,11 @@ class ChapterModel extends Model{
 		 			 ->find($id)['to_image'];
 	}
 
+	public function find_ChapterInfo_ById($chapterId){
+
+		return $this->field('doc,video')
+					->find($chapterId);
+	}
+
 
 }

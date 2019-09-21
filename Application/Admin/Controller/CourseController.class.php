@@ -25,13 +25,11 @@ class CourseController extends MyController{
 
 	public function uploadVideo(){
 		$chapter_id=I('post.chapter_id');
-
 		$model=new \Home\Model\View_coursetochapterModel();
 		$info=$model->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
-
 		$upload = new \Think\Upload();
 		$upload->rootPath = './Course/';  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
@@ -40,21 +38,19 @@ class CourseController extends MyController{
 		$upload->saveName = $new_name;
 		$upload->replace=true;
 		$upload->autoSub  = false;    //禁止上传时候的时间目录
-
-		$info   =   $upload->uploadOne($_FILES['file']);
-
+		$info   =   $upload->uploadOne($_FILES['video']);
 		if(!$info) {// 上传错误提示错误信息
 		        $this->error($upload->getError());
 		}else{// 上传成功 获取上传文件信息
 		         echo $info['savepath'].$info['savename'];
 		         $model=D('Chapter');
 		         $model->add_Video_By_Id($info['savename'],$chapter_id);
-
-		}    
+		}   
 	}
 
 	public function uploadWord(){
 		$chapter_id=I('post.chapter_id');
+		dump($chapter_id);
 
 		$model=new \Home\Model\View_coursetochapterModel();
 		$info=$model->find_Chapter_Course($chapter_id);
@@ -73,7 +69,7 @@ class CourseController extends MyController{
 
 		$host=new \Admin\Controller\Entity\Host();
 		  $courseRealPath=$host-> getCourseRealPath();
-		$info   =   $upload->uploadOne($_FILES['file']);
+		$info   =   $upload->uploadOne($_FILES['word']);
 		
 
 		if(!$info) {// 上传错误提示错误信息

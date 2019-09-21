@@ -10,4 +10,5 @@ class View_coursetochapterModel extends Model{
 		return $this->find($chapter_id);
 	}
 
+
 }

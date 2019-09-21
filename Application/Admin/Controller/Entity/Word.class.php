@@ -13,7 +13,7 @@ class Word{
 		$controller_path=str_replace('\\',"/",$controller_path);
 		dump($controller_path);
 
-		exec("G:/python-3.7.2/python.exe  $controller_path  2>&1",$result,$info  );
+		exec("/usr/bin/python  $controller_path  2>&1",$result,$info  );
 		for($i=0;$i<count($result);$i++){
 			dump($result[$i]);
 		}

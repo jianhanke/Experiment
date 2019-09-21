@@ -57,7 +57,7 @@
 			  	<br />
 			 <b>上传实验指导书  </b>
 				<form action="{:U('Course/uploadWord')} " method="post" enctype="multipart/form-data" >
-						<input type="file"  name="file" >
+						<input type="file"  name="word" >
 						<input type="hidden" name="chapter_id" value="{$data['id']} "  >
 						<!-- <input type="texhiddetn"  name="chapter_name"  value="{$data['name']} -->
 						<input type="submit" value="上传" >
@@ -66,7 +66,7 @@
                  <p>  <b >上传视频(限50M,后缀限:'avi','wmv','mpeg','mp4')  </b>  </p>  
                     
                     <form action="{:U('Course/uploadVideo')} " method="post" enctype="multipart/form-data" >
-                        <input type="file"  name="file" >
+                        <input type="file"  name="video" >
                         <input type="hidden" name="chapter_id" value="{$data['id']} "  >
                         <!-- <input type="texhiddetn"  name="chapter_name"  value="{$data['name']} -->
                         <input type="submit" value="上传" >
