@@ -56,4 +56,15 @@ class ExperimentController extends MyController{
 		$this->display('showExperiment');
 	}
 
+	public function addExperiment(){
+		if(IS_POST){
+			$model=D('Experiment');	
+		}else{
+			$this->display();
+		}
+		
+
+
+	}
+
 }

@@ -53,7 +53,8 @@
                 <li>
 					<a href="#"><i class="iconfont">&#xe603;</i>主机管理</a>
                     <ul class="sub-menu">
-                        <li><a href="<?php echo U('Experiment/showExperiment');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>实验信息</a></li>
+                        <li><a href="<?php echo U('Experiment/showExperiment');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>主机信息</a></li>
+                        <li><a href="<?php echo U('Experiment/addExperiment');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>添加主机</a></li>
                     </ul>
                 </li>
 

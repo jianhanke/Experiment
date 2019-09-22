@@ -1,1983 +1,533 @@
-[ 2019-09-22T09:56:46+08:00 ] 127.0.0.1 /Experiment/index.php/Admin
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000073s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000099s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000138s ]
-
-[ 2019-09-22T09:56:46+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Login/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004434s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004478s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000069s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000120s ]
-
-[ 2019-09-22T09:56:50+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Login/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.1917s ]
-SQL: SELECT * FROM `admin` WHERE `Aid` = 1 AND `Apwd` = '1' LIMIT 1   [ RunTime:0.0006s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002256s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002272s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
-
-[ 2019-09-22T09:56:52+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.279310s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.279338s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000136s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000148s ]
-
-[ 2019-09-22T09:56:53+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.479596s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.479610s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
-
-[ 2019-09-22T09:57:14+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Docker/handleContainer
+[ 2019-09-22T22:11:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
-SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0990s ]
-SQL: SELECT * FROM `docker_container` ORDER BY id desc  [ RunTime:0.0003s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `docker_container` LIMIT 1   [ RunTime:0.0005s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048006s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.048029s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
 
-[ 2019-09-22T09:59:00+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:11:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Login/login
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000091s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0896s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0029s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000165s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061737s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.061785s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000064s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
-
-[ 2019-09-22T09:59:01+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000021s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0459s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0002s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001717s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001731s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002275s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
 
-[ 2019-09-22T09:59:10+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0644s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000116s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000141s ]
-
-[ 2019-09-22T10:10:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004968s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004988s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000037s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
-
-[ 2019-09-22T10:10:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000011s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000023s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000464s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000476s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000018s ]
-
-[ 2019-09-22T10:10:39+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:11:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Login/login
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.2610s ]
+SQL: SELECT * FROM `admin` WHERE `Aid` = 1 AND `Apwd` = '1' LIMIT 1   [ RunTime:0.0002s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001161s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001175s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000038s ]
-
-[ 2019-09-22T10:10:40+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000060s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001628s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001641s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000760s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
 
-[ 2019-09-22T10:10:57+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
+[ 2019-09-22T22:11:52+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.003501s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000063s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0221s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000102s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000134s ]
-
-[ 2019-09-22T10:14:05+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006616s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.006633s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
-
-[ 2019-09-22T10:14:06+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002373s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002387s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
-
-[ 2019-09-22T10:14:11+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0007s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:14:39+08:00 ] 127.0.0.1 /Experiment/index.php/Admin
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000037s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002330s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002354s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000935s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
-
-[ 2019-09-22T10:14:39+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000893s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000929s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088174s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088188s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
 
-[ 2019-09-22T10:14:40+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:11:52+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001277s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001291s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040947s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040959s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000087s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
 
-[ 2019-09-22T10:14:42+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001775s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001794s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000054s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
-
-[ 2019-09-22T10:14:45+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0007s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
-
-[ 2019-09-22T10:18:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-ERR: syntax error, unexpected '使用python脚本，将word�' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
-
-[ 2019-09-22T10:18:56+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
+[ 2019-09-22T22:12:05+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
-ERR: syntax error, unexpected '使用python脚本，将word�' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
-
-[ 2019-09-22T10:18:59+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
-ERR: syntax error, unexpected '使用python脚本，将word�' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)
-
-[ 2019-09-22T10:19:10+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-
-[ 2019-09-22T10:19:37+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000053s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:20:07+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
-ERR: Class 'Admin\Controller\PhpOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:20:07+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-ERR: Class 'Admin\Controller\PhpOffice\PhpOffice\PhpWord\IOFactory' not found
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0373s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009979s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
 
-[ 2019-09-22T10:20:08+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-ERR: Class 'Admin\Controller\PhpOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:20:08+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
-ERR: Class 'Admin\Controller\PhpOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:20:08+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-ERR: Class 'Admin\Controller\PhpOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:20:45+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-ERR: syntax error, unexpected 'load' (T_STRING), expecting variable (T_VARIABLE) or '$'
-
-[ 2019-09-22T10:20:46+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-ERR: syntax error, unexpected 'load' (T_STRING), expecting variable (T_VARIABLE) or '$'
-
-[ 2019-09-22T10:20:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
-ERR: syntax error, unexpected 'load' (T_STRING), expecting variable (T_VARIABLE) or '$'
-
-[ 2019-09-22T10:20:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-ERR: syntax error, unexpected 'load' (T_STRING), expecting variable (T_VARIABLE) or '$'
-
-[ 2019-09-22T10:24:24+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:26+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:46+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-ERR: Class 'Admin\Controller\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-ERR: Class 'Admin\Controller\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
-ERR: Class 'Admin\Controller\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-ERR: Class 'Admin\Controller\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
-ERR: Class 'Admin\Controller\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:48+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-ERR: Class 'Admin\Controller\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:58+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:59+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:59+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:59+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:24:59+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:00+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:00+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:00+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:00+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:00+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:01+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
-ERR: Class 'Vendor\PHPOffice\PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:17+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
+[ 2019-09-22T22:12:10+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:25:17+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000060s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:27:57+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-NOTIC: [2] require(vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:27:58+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
-NOTIC: [2] require(vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:27:58+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-NOTIC: [2] require(vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:27:59+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-NOTIC: [2] require(vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:28:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-NOTIC: [2] require(/vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:28:17+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-NOTIC: [2] require(/vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:28:17+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-NOTIC: [2] require(/vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:28:22+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
-NOTIC: [2] require(vendor/PHPOffice/autoload.php): failed to open stream: No such file or directory /var/www/html/Experiment/Application/Admin/Controller/CourseController.class.php 第 123 行.
-
-[ 2019-09-22T10:28:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:28:48+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:28:48+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:28:54+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:28:54+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:29:00+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:29:42+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
-ERR: Cannot find archive file.
-
-[ 2019-09-22T10:31:14+08:00 ] 127.0.0.1 /Experiment/index.php/Admin
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001433s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001445s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005779s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
 
-[ 2019-09-22T10:31:14+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+[ 2019-09-22T22:12:29+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0013s ]
+SQL: SELECT t1.*,t2.name FROM experiment as t1,docker_image as t2 WHERE ( t1.image_id=t2.Image_id ) ORDER BY eid asc  [ RunTime:0.0433s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment` LIMIT 1   [ RunTime:0.0499s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018124s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000084s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000170s ]
+
+[ 2019-09-22T22:13:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000032s ]
+
+[ 2019-09-22T22:13:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000010s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000017s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000538s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000549s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+
+[ 2019-09-22T22:13:52+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+ERR: 非法操作:addExperiment
+
+[ 2019-09-22T22:18:33+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2019-09-22T22:18:33+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000012s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000023s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000642s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000655s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000022s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000627s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
 
-[ 2019-09-22T10:31:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042637s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.042651s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
-
-[ 2019-09-22T10:31:19+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001272s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001286s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
-
-[ 2019-09-22T10:31:20+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001504s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001522s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
-
-[ 2019-09-22T10:31:20+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001304s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001318s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
-
-[ 2019-09-22T10:31:21+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100582s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.100597s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000018s ]
-
-[ 2019-09-22T10:31:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0010s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0023s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T10:31:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
+[ 2019-09-22T22:18:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000106s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000129s ]
-
-[ 2019-09-22T10:32:07+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
-
-[ 2019-09-22T10:33:56+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000210s ]
-
-[ 2019-09-22T10:34:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000104s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000145s ]
-
-[ 2019-09-22T10:37:37+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
-
-[ 2019-09-22T10:38:01+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
-
-[ 2019-09-22T10:42:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095281s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.095298s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000042s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
-
-[ 2019-09-22T10:42:26+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.114780s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.114792s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
-
-[ 2019-09-22T10:42:27+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089856s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.089869s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
-
-[ 2019-09-22T10:42:33+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
-
-[ 2019-09-22T10:42:37+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
-
-[ 2019-09-22T10:43:53+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
-
-[ 2019-09-22T10:44:40+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
-
-[ 2019-09-22T10:45:53+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
-
-[ 2019-09-22T10:47:45+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/ceshi2
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000076s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
-
-[ 2019-09-22T13:08:43+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Login/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002452s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002471s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
-
-[ 2019-09-22T13:08:48+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Login/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
-SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.5680s ]
-SQL: SELECT * FROM `admin` WHERE `Aid` = 1 AND `Apwd` = '1' LIMIT 1   [ RunTime:0.0718s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019748s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.019764s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
-
-[ 2019-09-22T13:08:49+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002820s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002841s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
-
-[ 2019-09-22T13:08:49+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2019-09-22T22:18:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/css/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000017s ]
+ERR: 非法操作:css
+
+[ 2019-09-22T22:18:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/css/main.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
+ERR: 非法操作:css
+
+[ 2019-09-22T22:19:12+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001503s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2019-09-22T22:19:12+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009648s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009664s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001256s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000106s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
-
-[ 2019-09-22T13:08:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0973s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016600s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016631s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
-
-[ 2019-09-22T13:08:53+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0744s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0008s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036603s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.036621s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
-
-[ 2019-09-22T13:09:03+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000064s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.3394s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0013s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T13:09:35+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010469s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.010494s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000034s ]
-
-[ 2019-09-22T13:09:36+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000712s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000728s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
-
-[ 2019-09-22T13:09:37+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0492s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001099s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001110s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000024s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
-
-[ 2019-09-22T13:09:39+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0153s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0167s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007613s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.007636s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
 
-[ 2019-09-22T13:09:44+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
+[ 2019-09-22T22:19:14+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0117s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0189s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-ERR: Class 'PhpOffice\PhpWord\IOFactory' not found
-
-[ 2019-09-22T13:10:07+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001136s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001149s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000897s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000032s ]
-
-[ 2019-09-22T13:10:07+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000014s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000026s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000797s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000817s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000025s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
 
-[ 2019-09-22T13:10:08+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0167s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001035s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001048s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
-
-[ 2019-09-22T13:10:09+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
+[ 2019-09-22T22:19:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0076s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0008s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003506s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.003522s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001464s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000031s ]
 
-[ 2019-09-22T13:10:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0388s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
-
-[ 2019-09-22T13:11:28+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001718s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001737s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001284s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.001302s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000034s ]
-
-[ 2019-09-22T13:11:28+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+[ 2019-09-22T22:19:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000012s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000021s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000974s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001001s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
-
-[ 2019-09-22T13:11:29+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0488s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0005s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002229s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002257s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000043s ]
-
-[ 2019-09-22T13:11:31+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0550s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001882s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001897s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
-
-[ 2019-09-22T13:11:35+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000017s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0189s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0009s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001510s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001560s ]
-
-[ 2019-09-22T13:15:35+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020284s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.021209s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000040s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000032s ]
-
-[ 2019-09-22T13:15:35+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000020s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000017s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000011s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000020s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000589s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000624s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000019s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000712s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000095s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000106s ]
 
-[ 2019-09-22T13:15:36+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:19:18+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0500s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001136s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001149s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
-
-[ 2019-09-22T13:15:37+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0235s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0002s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001627s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001642s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001277s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
 
-[ 2019-09-22T13:15:41+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
+[ 2019-09-22T22:19:22+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001189s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-09-22T22:19:23+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001322s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-09-22T22:20:08+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0498s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-ERR: Think\Model:add_WordPath_ById方法不存在！
-
-[ 2019-09-22T13:16:13+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001123s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001136s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001312s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001326s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000158s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
 
-[ 2019-09-22T13:16:13+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+[ 2019-09-22T22:20:08+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000012s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000024s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000622s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000635s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000629s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000022s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000018s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
 
-[ 2019-09-22T13:16:14+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:20:09+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.1126s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001069s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001082s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001009s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000025s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
 
-[ 2019-09-22T13:16:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0055s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001499s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001513s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
-
-[ 2019-09-22T13:16:19+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
+[ 2019-09-22T22:20:27+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.1182s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0011s ]
-ERR: Think\Model:find_Chapter_Course方法不存在！
-
-[ 2019-09-22T13:16:44+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001149s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001162s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004695s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000041s ]
 
-[ 2019-09-22T13:16:45+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+[ 2019-09-22T22:20:27+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
@@ -1986,107 +536,270 @@ INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000011s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000019s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000555s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000566s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000010s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000556s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
 
-[ 2019-09-22T13:16:46+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:20:27+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000021s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0063s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009521s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009558s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001012s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000139s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
 
-[ 2019-09-22T13:16:47+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
+[ 2019-09-22T22:20:27+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0279s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0022s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004415s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004500s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
-
-[ 2019-09-22T13:16:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0128s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0010s ]
-ERR: Think\Model:find_Chapter_Course方法不存在！
-
-[ 2019-09-22T13:17:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002752s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002770s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001098s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.002613s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000245s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000288s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000083s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
 
-[ 2019-09-22T13:17:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+[ 2019-09-22T22:20:28+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000013s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000025s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000714s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+
+[ 2019-09-22T22:21:01+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001257s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2019-09-22T22:21:01+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000012s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000024s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000811s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
+
+[ 2019-09-22T22:21:02+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000624s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000013s ]
+
+[ 2019-09-22T22:21:15+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000130s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2019-09-22T22:21:15+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000010s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000018s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000566s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
+
+[ 2019-09-22T22:21:16+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000666s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
+
+[ 2019-09-22T22:21:18+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000068s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
+
+[ 2019-09-22T22:21:18+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000999s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
+
+[ 2019-09-22T22:21:18+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-09-22T22:21:18+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001102s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001119s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
@@ -2094,396 +807,143 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
 
-[ 2019-09-22T13:17:35+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:21:18+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000046s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0038s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0004s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001785s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001807s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.002027s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
-
-[ 2019-09-22T13:17:44+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.1064s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004067s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004096s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001198s ]
 INFO: [ view_filter ] --START--
 INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
 
-[ 2019-09-22T13:17:48+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000037s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0094s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0012s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0032s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-SQL: UPDATE `chapter` SET `doc`='MySql/MySql第一章节/1.htm' WHERE ( id=1  ) [ RunTime:0.3526s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000195s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000251s ]
-
-[ 2019-09-22T13:23:06+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadVideo
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0287s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0081s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
-SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.2665s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000089s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
-
-[ 2019-09-22T13:24:25+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0332s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0004s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001350s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001366s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
-
-[ 2019-09-22T13:24:27+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0152s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0004s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003056s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.003070s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
-
-[ 2019-09-22T13:24:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0187s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0006s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-NOTIC: [2] ZipArchive::getFromName(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 56 行.
-NOTIC: [2] ZipArchive::close(): Invalid or uninitialized Zip object /var/www/html/Experiment/ThinkPHP/Library/Vendor/PHPOffice/phpoffice/common/src/Common/XMLReader.php 第 57 行.
-SQL: UPDATE `chapter` SET `doc`='MySql/MySql的第二章节/2.htm' WHERE ( id=2  ) [ RunTime:0.0026s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
-
-[ 2019-09-22T13:24:45+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadVideo
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0215s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0002s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
-SQL: UPDATE `chapter` SET `video`='MySql/MySql的第二章节/2.mp4' WHERE ( id=2  ) [ RunTime:0.2360s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
-
-[ 2019-09-22T13:25:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001480s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001499s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000037s ]
-
-[ 2019-09-22T13:25:34+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000020s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000010s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000017s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000374s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000383s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000015s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000008s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000012s ]
-
-[ 2019-09-22T13:25:45+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Docker/showContainer
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
-SQL: SHOW COLUMNS FROM `view_containerwithstuandexper` [ RunTime:0.0232s ]
-SQL: SELECT * FROM `view_containerwithstuandexper`  [ RunTime:0.0013s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `view_containerwithstuandexper` LIMIT 1   [ RunTime:0.0029s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000184s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011831s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.011875s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000088s ]
-
-[ 2019-09-22T13:25:56+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Docker/handleContainer
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000017s ]
-SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0023s ]
-SQL: SELECT * FROM `docker_container` ORDER BY id desc  [ RunTime:0.0002s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `docker_container` LIMIT 1   [ RunTime:0.0003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010320s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.010336s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
-
-[ 2019-09-22T13:26:05+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Docker/handleContainer
+[ 2019-09-22T22:21:30+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
-SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0330s ]
-SQL: SELECT * FROM `docker_container` ORDER BY id desc  [ RunTime:0.0007s ]
-SQL: SELECT COUNT(*) AS tp_count FROM `docker_container` LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002827s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.002843s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001207s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
 INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
 
-[ 2019-09-22T13:26:05+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:21:30+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0307s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001338s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.001353s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003217s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000048s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
 
-[ 2019-09-22T13:36:29+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
+[ 2019-09-22T22:21:32+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0228s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0004s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016931s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016946s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001044s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
 INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
 
-[ 2019-09-22T13:36:49+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0235s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-SQL: UPDATE `chapter` SET `doc`='MySql/MySql第一章节/1.htm' WHERE ( id=1  ) [ RunTime:0.2810s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000159s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000186s ]
-
-[ 2019-09-22T13:39:53+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/showCourse
+[ 2019-09-22T22:21:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0155s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029592s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.029606s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001597s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001615s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000088s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
 
-[ 2019-09-22T13:39:55+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/editCourseById/id/1
+[ 2019-09-22T22:21:51+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Index/home
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0320s ]
-SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0002s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050430s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.050445s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000013s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000024s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001055s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000026s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000285s ]
 
-[ 2019-09-22T13:40:05+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Course/uploadWord
+[ 2019-09-22T22:21:52+08:00 ] 127.0.0.1 /Experiment/index.php/Admin/Experiment/addExperiment
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
-SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0288s ]
-SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0012s ]
-SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0260s ]
-NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /var/www/html/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
-SQL: UPDATE `chapter` SET `doc`='MySql/MySql第一章节/1.htm' WHERE ( id=1  ) [ RunTime:0.0222s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000071s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
 
