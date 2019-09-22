@@ -44,7 +44,7 @@ class CourseController extends MyController{
 		}else{// 上传成功 获取上传文件信息
 		         echo $info['savepath'].$info['savename'];
 		         $model=D('Chapter');
-		         $model->add_Video_By_Id($info['savename'],$chapter_id);
+		         $model->add_Video_By_Id($info['savepath'].$info['savename'],$chapter_id);
 		}   
 	}
 
@@ -53,6 +53,7 @@ class CourseController extends MyController{
 		dump($chapter_id);
 
 		$model=new \Home\Model\View_coursetochapterModel();
+		$model2=D('Chapter');
 		$info=$model->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
 		$chapter_name=$info['name'];
@@ -81,15 +82,27 @@ class CourseController extends MyController{
 		         // $wordPath=str_replace('\\',"/",$wordPath);
 		         // $htmPath=str_replace('\\',"/",$htmPath);	
 		         $this->saveWordToHtm($wordPath,$htmPath);
+		         $model2->add_WordPath_ById($info['savepath'].$new_name.'.htm',$chapter_id);
 		} 
 	}
-
 	public function saveWordToHtm($wordPath,$htmPath){
+		vendor('PHPOffice.autoload');
 		dump($wordPath);
 		dump($htmPath);
-		$word=new \Admin\Controller\Entity\Word();
-		$word->saveWordToHtm($wordPath,$htmPath);
+		$phpWord = \PhpOffice\PhpWord\IOFactory::load($wordPath);
+		$xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
+		$xmlWriter->save($htmPath);
+
 	}
+
+
+	  // 使用python脚本，将word转化为htm
+	// public function saveWordToHtm($wordPath,$htmPath){
+	// 	dump($wordPath);
+	// 	dump($htmPath);
+	// 	$word=new \Admin\Controller\Entity\Word();
+	// 	$word->saveWordToHtm($wordPath,$htmPath);
+	// }
 
 	public function ceshi(){
 		$wordPath='E:\wamp\apache\library\Experiment/Course/MySql/MySql第一章节/1.doc';
@@ -99,8 +112,21 @@ class CourseController extends MyController{
 		$word->saveWordToHtm($wordPath,$htmPath);	
 	}
 	public function ceshi2(){
-		 $word = new COM("word.application") or die("Unable to instanciate Word"); 
+		vendor('PHPOffice.autoload');
+
+		$wordPath='/var/www/html/Experiment/Course/MySql/MySql第一章节/1.docx';
+		$htmPath='/var/www/html/Experiment/Course/MySql/MySql第一章节/1.htm';
+		$phpWord =   \PhpOffice\PhpWord\IOFactory::load($wordPath);
+		dump($phpWord);
+		$xmlWriter =   \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
+		dump($xmlWriter);
+		// touch($htmPath);
+		// chmod($htmPath, 0777);
+		$xmlWriter->save($htmPath);
+		echo "成功";
 	}
+	
+
 
 	
 

@@ -27,11 +27,12 @@ class NoVNCController extends MyController{
 		// if($chapterInfochapterInfo['doc']==Null){
 		// 	$chapterInfo['doc']='2.htm';
 		// }
-		$chapterPath=$model3->find_Chapter_Course($chapterId);
+		// $chapterPath=$model3->find_Chapter_Course($chapterId);
 		$basePath=$chapterPath['cname'].'/'.$chapterPath['name'];
-		$videoPath=$basePath.'/'.$chapterInfo['video'];
-		$docPath=$basePath.'/'.$chapterInfo['doc'];
+		$videoPath=$chapterInfo['video'];
+		$docPath=$chapterInfo['doc'];
 		dump($docPath);
+		dump($videoPath);
 
 		$this->assign('video',$videoPath);
 		$this->assign('doc',$docPath);
