@@ -112,3 +112,126 @@ SQL: SELECT * FROM `experiment` WHERE `Eid` = 1 LIMIT 1   [ RunTime:0.0006s ]
 SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='d0ae770d2ba7' ) LIMIT 1   [ RunTime:0.0004s ]
 SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='d0ae770d2ba7' ) LIMIT 1   [ RunTime:0.0003s ]
 
+[ 2019-09-22T22:29:16+08:00 ] ::1 /Experiment/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000816s ]
+
+[ 2019-09-22T22:29:16+08:00 ] ::1 /Experiment/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000762s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000786s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009378s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009403s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000746s ]
+
+[ 2019-09-22T22:29:21+08:00 ] ::1 /Experiment/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0102s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 1 AND `Spwd` = '1' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2019-09-22T22:29:22+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004720s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000385s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000596s ]
+
+[ 2019-09-22T22:29:24+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0003s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.1334s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0085s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.170998s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.171017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000309s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2019-09-22T22:29:25+08:00 ] ::1 /Experiment/index.php/Home/Index/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000628s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0103s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+NOTIC: [8] Undefined index: name E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Home\9b653ca157623fe95df0e6306293c727.php 第 42 行.
+NOTIC: [8] Undefined index: name E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Home\9b653ca157623fe95df0e6306293c727.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000804s ]
+

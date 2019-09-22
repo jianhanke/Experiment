@@ -38,5 +38,9 @@ class ExperimentModel extends Model{
 		return $this->where("$search like '%$keywords%'")->count();
 	}
 
+	public function addExperiment($experimentInfo){
+		return $this->add($experimentInfo);
+	}
+
 
 }

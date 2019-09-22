@@ -57,14 +57,38 @@ class ExperimentController extends MyController{
 	}
 
 	public function addExperiment(){
+
 		if(IS_POST){
-			$model=D('Experiment');	
+			$post=I('post.');
+			dump($post);
+			if( empty($post['Ename']) or empty($post['image_id']) or empty($post['name'])){
+				$this->error('填写不完整',U('Experiment/addExperiment'),2);
+			}
+
+			$upload = new \Think\Upload();
+			$upload->rootPath = './Public/Experiment/';  // ./ 代表 项目的根目录
+			$upload->exts      =     array('png','jpeg','jpg');
+			$upload->maxSize= 10*1024*1024;
+			$upload->replace=true;
+			$upload->autoSub  = false;    //禁止上传时候的时间目录
+			$pictureInfo   =   $upload->uploadOne($_FILES['outcome_model']);
+			if(!$pictureInfo) {// 上传错误提示错误信息
+		        $this->error($upload->getError());
+			}
+			dump($pictureInfo);
+			echo $pictureInfo['savename'];
+			$model=D('Experiment');
+			$model2=new \Admin\Model\Docker_imageModel();
+			$experimentInfo=array('Ename'=>$post['Ename'],'image_id'=>$post['image_id'],'outcome_model'=>$pictureInfo['savename']);
+			$imageInfo=array('Image_id'=>$post['image_id'],'name'=>$post['name']);
+			dump($imageInfo);
+			dump($experimentInfo);
+			$model->addExperiment($experimentInfo);
+			$model2->addImage($imageInfo);
 		}else{
 			$this->display();
 		}
-		
-
-
 	}
+
 
 }
