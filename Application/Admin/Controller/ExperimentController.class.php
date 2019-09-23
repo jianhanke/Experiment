@@ -83,20 +83,24 @@ class ExperimentController extends MyController{
 
 			$experimentInfo=array('Ename'=>$post['Ename'],'image_id'=>$post['image_id'],'outcome_model'=>$pictureInfo['savename']);
 			$imageInfo=array('Image_id'=>$post['image_id'],'name'=>$post['name']);
-		
-			$experimentRes=$model->addExperiment($experimentInfo);
-			$imageRes=$model2->addImage($imageInfo);
-			dump($experimentRes);
-			if($experimentRes && $imageRes){       //事务处理
-				$Model->commit();
-			}else{
-				$Model->rollback();
+			try{
+				$experimentRes=$model->addExperiment($experimentInfo);
+				$imageRes=$model2->add_Image($imageInfo);
+				if($experimentRes && $imageRes){       //事务处理
+					$Model->commit();
+				}else{
+					$Model->rollback();
+				}	
+			}catch(\Exception $e){
+				$this->error('数据库添加失败');
 			}
+			
+			
 		}else{
 			$this->display();
 		}
 	}
-	
+
 
 
 }

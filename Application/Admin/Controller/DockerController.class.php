@@ -89,6 +89,27 @@ class DockerController extends MyController{
 		$this->assign('count',$count);
 		$this->display();
 	}
+
+	public function addImage(){
+		if(IS_POST){
+			$post=I('post.');
+			$model=new \Admin\Model\Docker_imageModel();
+		try{
+			$status=$model->add_Image($post);
+			if($status)
+				$this->success('添加成功');
+			else
+				$this->error('添加失败');
+				
+		}catch(\Exception $e){
+		 	$this->error('数据库添加失败');
+		}
+		}else{
+			$this->display();
+		}
+		
+	}
+
 	public function getContainerStatus($container_id){
 		$docker_path=dirname(__FILE__).'/ControllerDocker/getContainerStatus.py'; 
 		return exec("/usr/bin/python $docker_path $container_id"); 

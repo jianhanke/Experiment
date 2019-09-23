@@ -37,7 +37,7 @@
                         <li><a href="<?php echo U('Docker/showContainer');?>" target="iframe" ><i class="iconfont">&#xe660;</i>容器清单</a></li>
                         <li><a href="<?php echo U("Docker/handleContainer");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>主机管理</a></li>
                         <li><a href="<?php echo U("Docker/showImage");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>镜像管理</a></li>
-
+                        <li><a href="<?php echo U("Docker/addImage");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>添加镜像</a></li>
 
                     </ul>
                 </li>
