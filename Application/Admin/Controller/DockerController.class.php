@@ -119,9 +119,7 @@ class DockerController extends MyController{
 
 		$docker_path=dirname(__FILE__).'/ControllerDocker/showAllContainerStatus.py'; 
 		return exec("/usr/bin/python $docker_path"); 
-
 	}
-
 
 	public function restartContainerById(){   //后台重启容器
 

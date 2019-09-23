@@ -72,7 +72,7 @@ a{
 
 </style>
 <body>  
-    <input type="hidden"  id='hiddenUrl' value="<?php echo ($url); ?>"  >
+    <input type="hidden"  id='hiddenUrl' value="<?php echo ($url); ?>">
     <div class="leftDiv"  style="height: 100%;width: 34%; float: left; "  >
         <!-- <div style="height: 10%; background-color: blue;" >
             <ul>
@@ -116,7 +116,9 @@ a{
                 <iframe name="hidden_iframe" style="display:none;"></iframe>
             </div>
             <div class="con3" style="height: 100%;width: 100%;" >
-            <iframe src="/Experiment/Course/<?php echo ($doc); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe>
+
+            <?php if(($doc == '')): ?><font  color="red" size="20" >暂时为空 </font>
+              <?php else: ?> <iframe src="/Experiment/Course/<?php echo ($doc); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
                 
             </div>
             
@@ -136,14 +138,12 @@ a{
 </html>
 
 <script type="module" crossorigin="anonymous" >
-
-
   
   import RFB from '/Experiment/Public/noVNC/core/rfb.js';
   console.log("jianhanke!");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
-   var rfb = new RFB(document.getElementById('screen'),url,{ credentials: { password: '123456' } });
+   var rfb = new RFB(document.getElementById('screen'),url,{ credentials: { password: '123456' } }  );
   rfb.connect();
   
   // console.log(rfb);
@@ -177,7 +177,6 @@ a{
                         ue.ready(function(){
                             ue.setContent('<?php echo ($myNote); ?>');                
                         });
-
 </script>
 
 <script>
@@ -192,6 +191,7 @@ a{
 </script>
 <script>
 function shareDesk(){
-  alert("<?php echo ($url); ?>");
+  alert(" 只读共享操作链接: \n  <?php echo ($viewOnly); ?> \n  协同操作链接: \n <?php echo ($shareOperate); ?>   ");
+
 }
 </script>

@@ -16,7 +16,6 @@ class NoVNCController extends MyController{
 		$model2=D('Chapter');
 		$model3=new \Home\Model\View_coursetochapterModel();
 
-
 		$info=$model->find_Container_By_Ip($ip_num);
 		$id=$info['id'];
 		$myNote=$info['note'];
@@ -31,10 +30,15 @@ class NoVNCController extends MyController{
 		$basePath=$chapterPath['cname'].'/'.$chapterPath['name'];
 		$videoPath=$chapterInfo['video'];
 		$docPath=$chapterInfo['doc'];
-		$noVNC=new \Home\Controller\Entity\NoVNC();
-		$url=$noVNC->getUrlById($ip_num);
+		
+		$viewOnly=U("Home/NoVNC/showViewOnly/ip_num/$ip_num");
+		$viewOnly=$hostName.$viewOnly;
+		$showShareOperate=U("Home/NoVNC/showShareOperate/ip_num/$ip_num");
+		$showShareOperate=$hostName.$showShareOperate;
 
-		$this->assign('url',$url);
+		$this->assign('viewOnly',$viewOnly);
+		$this->assign('shareOperate',$showShareOperate);
+		$this->assign('ip_num',$ip_num);
 		$this->assign('video',$videoPath);
 		$this->assign('doc',$docPath);
 		$this->assign('datas',$info);
@@ -52,6 +56,24 @@ class NoVNCController extends MyController{
 
 		$model=new \Home\Model\Docker_containerModel();
 		$model->save_Note($id,$myNote);
+	}
+
+	public function showViewOnly($ip_num){
+		$noVNC=new \Home\Controller\Entity\Host();
+		$hostName=$noVNC->getHostName();
+
+		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
+		$this->assign('url',$url);
+		$this->display();
+	}
+
+	public function showShareOperate($ip_num){
+		$noVNC=new \Home\Controller\Entity\Host();
+		$hostName=$noVNC->getHostName();
+
+		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
+		$this->assign('url',$url);
+		$this->display();
 	}
 
 
