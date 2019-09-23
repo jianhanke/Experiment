@@ -60,11 +60,9 @@ class ExperimentController extends MyController{
 
 		if(IS_POST){
 			$post=I('post.');
-			dump($post);
-			if( empty($post['Ename']) or empty($post['image_id']) or empty($post['name'])){
+			if( empty($post['Ename']) or empty($post['image_id']) or empty($post['name']) or empty($_FILES['outcome_model']['tmp_name']) ){
 				$this->error('填写不完整',U('Experiment/addExperiment'),2);
 			}
-
 			$upload = new \Think\Upload();
 			$upload->rootPath = './Public/Experiment/';  // ./ 代表 项目的根目录
 			$upload->exts      =     array('png','jpeg','jpg');
@@ -77,18 +75,28 @@ class ExperimentController extends MyController{
 			}
 			dump($pictureInfo);
 			echo $pictureInfo['savename'];
+
 			$model=D('Experiment');
 			$model2=new \Admin\Model\Docker_imageModel();
+			$Model = M();
+			$Model->startTrans();
+
 			$experimentInfo=array('Ename'=>$post['Ename'],'image_id'=>$post['image_id'],'outcome_model'=>$pictureInfo['savename']);
 			$imageInfo=array('Image_id'=>$post['image_id'],'name'=>$post['name']);
-			dump($imageInfo);
-			dump($experimentInfo);
-			$model->addExperiment($experimentInfo);
-			$model2->addImage($imageInfo);
+		
+			$experimentRes=$model->addExperiment($experimentInfo);
+			$imageRes=$model2->addImage($imageInfo);
+			dump($experimentRes);
+			if($experimentRes && $imageRes){       //事务处理
+				$Model->commit();
+			}else{
+				$Model->rollback();
+			}
 		}else{
 			$this->display();
 		}
 	}
+	
 
 
 }
