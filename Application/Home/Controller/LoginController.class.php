@@ -6,7 +6,7 @@ use Think\Controller;
 class LoginController extends Controller{
 
 	public function login(){
-    	$this->display();
+    	$this->display('Login/lognew');
     }
 
   	public function checkLogin(){
