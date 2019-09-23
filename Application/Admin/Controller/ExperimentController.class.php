@@ -45,7 +45,7 @@ class ExperimentController extends MyController{
 		}
 	}
 
-	public function findExperimentByLike(){   
+	public function findExperimentByLike(){
 		$model=D('Experiment');
 		$search=I('post.search-sort');
 		$keywords=I('post.keywords');  // %表示任意长度的， _表示任意一个
@@ -100,7 +100,7 @@ class ExperimentController extends MyController{
 			$this->display();
 		}
 	}
-
+	
 
 
 }

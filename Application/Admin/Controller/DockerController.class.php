@@ -90,12 +90,13 @@ class DockerController extends MyController{
 		$this->display();
 	}
 
-	public function addImage(){
-		if(IS_POST){
+	public function addImageAndId(){
+		
 			$post=I('post.');
-			$model=new \Admin\Model\Docker_imageModel();
+			
 		try{
-			$status=$model->add_Image($post);
+			$model=new \Admin\Model\Docker_imageModel();
+			$status=$model->add_Image_AndId($post);
 			if($status)
 				$this->success('添加成功');
 			else
@@ -104,10 +105,36 @@ class DockerController extends MyController{
 		}catch(\Exception $e){
 		 	$this->error('数据库添加失败');
 		}
+		
+	}
+	public function addImage(){
+		if(IS_POST){
+			$imageName=I('post.name');
+			
+		try{
+				$imageId=$this->pullImageByName($imageName);
+				$model=new \Admin\Model\Docker_imageModel();
+				$ImageInfo=array('Image_id'=>$imageId,'name'=>$imageId);
+				$status=$model->add_Image_AndId($ImageInfo);
+			if($status)
+				$this->success('添加成功');
+			else
+				$this->error('添加失败');
+				
+		
+				
+		}catch(\Exception $e){
+		 	$this->error('失败');
+		}
 		}else{
 			$this->display();
 		}
 		
+	}
+
+	public function pullImageByName($imageName){
+		$docker_path=dirname(__FILE__).'/ControllerDocker/pullImageByName.py'; 
+		return exec("/usr/bin/python $docker_path $imageName"); 
 	}
 
 	public function getContainerStatus($container_id){

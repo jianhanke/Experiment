@@ -26,11 +26,9 @@ class Docker_imageModel extends Model{
 		return $this->where("$search like '%$keywords%'")->count();
 	}
 
-	public function add_Image($imageInfo){
+	public function add_Image_AndId($imageInfo){
 		
 		return  $this->add($imageInfo);	
-		
-		
 	}
 	
 
