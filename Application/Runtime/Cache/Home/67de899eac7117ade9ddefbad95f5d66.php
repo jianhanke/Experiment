@@ -150,8 +150,6 @@ a{
   // rfb.connect();
 
 </script>
-
-
 <script type="text/javascript">
   var url=document.getElementById("hiddenUrl").innerHTML;
   console.log(url);

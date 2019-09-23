@@ -47,16 +47,24 @@
                         <td> {$data['container_id']}  </td>
                         <td>  {$data['ip']}  </td>
                         <td>  {$data['ip_num']}  </td>
-                        <td>   {$data['status']=='exited'? '<font color="green" > 运行中 </font> ' : ' <font color="red" >  关机 </font>  ' }   </td>
-                        <td>
-                            <a class="link-del" href="__CONTROLLER__/startContainerById/container_id/{$data['container_id']}">开机</a>&nbsp;&nbsp;
+                        <td> <if condition="($data['status'] eq 'running')"> <font color="green" > 运行中 </font> 
+                                <td>
                            
                             <a class="link-del" href="__CONTROLLER__/shutdownContainerById/container_id/{$data['container_id']}">关机</a>&nbsp;&nbsp;
 
                              <a class="link-del" href="__CONTROLLER__/restartContainerById/container_id/{$data['container_id']}">重启</a>
-
-
                         </td>
+                            <elseif condition="($data['status'] eq '')"/>不存在
+                            <else /> <font color="red" >  关机 </font>
+                            <td>
+                            <a class="link-del" href="__CONTROLLER__/startContainerById/container_id/{$data['container_id']}">开机</a>&nbsp;&nbsp;
+                           
+                            
+                        </td>
+                            </if> </td>
+
+                        
+                        
                     </tr>
                  </volist>  
 
