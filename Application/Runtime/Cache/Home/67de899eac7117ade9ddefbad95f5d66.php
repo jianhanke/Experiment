@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -72,7 +72,7 @@ a{
 
 </style>
 <body>  
-    <input type="hidden"  id='hiddenUrl' value="{$url}"  >
+    <input type="hidden"  id='hiddenUrl' value="<?php echo ($url); ?>"  >
     <div class="leftDiv"  style="height: 100%;width: 34%; float: left; "  >
         <!-- <div style="height: 10%; background-color: blue;" >
             <ul>
@@ -100,23 +100,23 @@ a{
         </div>
         <div class="box" style="height: 90%; width: 100%; " >
             <div class="con0" id="con0"  >                
-                 <img src="__PUBLIC__/Home/images/1.jpg" style="height: 60%;width: 60%;" > 
+                 <img src="/Experiment/Public/Home/images/1.jpg" style="height: 60%;width: 60%;" > 
                  <input type="button"  value="共享桌面" onclick="shareDesk()" />
               </div>
             <div class="con1">
-                <video src="__ROOT__/Course/{$video}" style="width: 100%;"  controls="" ></video>
+                <video src="/Experiment/Course/<?php echo ($video); ?>" style="width: 100%;"  controls="" ></video>
             </div>
 
             <div class="con2" style="height: 90%;" >
-                <form action="{:U('NoVNC/saveNote')} " id="myForm" method="post"  style="height: 80%;"  target="hidden_iframe"  >
+                <form action="<?php echo U('NoVNC/saveNote');?> " id="myForm" method="post"  style="height: 80%;"  target="hidden_iframe"  >
                   <script id="container"   name="myNote"  style="height: 100%;" scrolling="yes"> </script>
-                  <input type="hidden"  name="id" value="{$id}" >
+                  <input type="hidden"  name="id" value="<?php echo ($id); ?>" >
                   <button type="button" style="background-color:#1E90FF;height: 8%;width: 10%;" onclick="submitNote()"   >保存</button>
                 </form>
                 <iframe name="hidden_iframe" style="display:none;"></iframe>
             </div>
             <div class="con3" style="height: 100%;width: 100%;" >
-            <iframe src="__ROOT__/Course/{$doc} " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe>
+            <iframe src="/Experiment/Course/<?php echo ($doc); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe>
                 
             </div>
             
@@ -139,7 +139,7 @@ a{
 
 
   
-  import RFB from '__PUBLIC__/noVNC/core/rfb.js';
+  import RFB from '/Experiment/Public/noVNC/core/rfb.js';
   console.log("jianhanke!");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
@@ -157,7 +157,7 @@ a{
   console.log(url);
 </script>
 
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="/Experiment/Public/Home/js/jquery-1.12.0.min.js"></script>
 
 <script type="text/javascript">
         $(document).ready(function(){
@@ -167,9 +167,9 @@ a{
             });
         })
 </script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/Ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/Experiment/Public/Home/js/Ueditor/ueditor.config.js"></script>
                         <!-- 编辑器源码文件 -->
-            <script type="text/javascript" src="__PUBLIC__/Home/js/Ueditor/ueditor.all.js"></script>
+            <script type="text/javascript" src="/Experiment/Public/Home/js/Ueditor/ueditor.all.js"></script>
                         <!-- 实例化编辑器 -->
             <script type="text/javascript">
                  var ue = UE.getEditor('container',{toolbars: [
@@ -177,7 +177,7 @@ a{
                     ['bold', 'italic', 'underline',   'removeformat', 'formatmatch', 'autotypeset',   'forecolor','snapscreen','insertcode' ]
                           ] ,autoHeightEnabled:false } );
                         ue.ready(function(){
-                            ue.setContent('{$myNote}');                
+                            ue.setContent('<?php echo ($myNote); ?>');                
                         });
 
 </script>
@@ -194,6 +194,6 @@ a{
 </script>
 <script>
 function shareDesk(){
-  alert("{$url}");
+  alert("<?php echo ($url); ?>");
 }
 </script>

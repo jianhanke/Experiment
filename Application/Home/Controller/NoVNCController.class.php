@@ -31,9 +31,10 @@ class NoVNCController extends MyController{
 		$basePath=$chapterPath['cname'].'/'.$chapterPath['name'];
 		$videoPath=$chapterInfo['video'];
 		$docPath=$chapterInfo['doc'];
-		dump($docPath);
-		dump($videoPath);
+		$noVNC=new \Home\Controller\Entity\NoVNC();
+		$url=$noVNC->getUrlById($ip_num);
 
+		$this->assign('url',$url);
 		$this->assign('video',$videoPath);
 		$this->assign('doc',$docPath);
 		$this->assign('datas',$info);

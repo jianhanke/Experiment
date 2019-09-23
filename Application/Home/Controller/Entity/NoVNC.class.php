@@ -8,5 +8,9 @@ class NoVNC{
 		$hostName =  \Home\Controller\Entity\Host::getHostName();
 		echo "<script> top.location.href='http://$hostName:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
 	}
+	public function getUrlById($ip_num){
+		$hostName =  \Home\Controller\Entity\Host::getHostName();
+		return "http://$hostName:6080/vnc.html?path=/websockify?token=host$ip_num";	
+	}
 
 }
