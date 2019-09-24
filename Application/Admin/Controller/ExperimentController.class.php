@@ -75,7 +75,6 @@ class ExperimentController extends MyController{
 			}
 			dump($pictureInfo);
 			echo $pictureInfo['savename'];
-
 			$model=D('Experiment');
 			$model2=new \Admin\Model\Docker_imageModel();
 			$Model = M();
@@ -85,6 +84,7 @@ class ExperimentController extends MyController{
 			$imageInfo=array('Image_id'=>$post['image_id'],'name'=>$post['name']);
 			try{
 				$experimentRes=$model->addExperiment($experimentInfo);
+				dump($experimentRes);
 				$imageRes=$model2->add_Image_AndId($imageInfo);
 				if($experimentRes && $imageRes){       //事务处理
 					$Model->commit();
