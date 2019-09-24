@@ -31,7 +31,6 @@ class DockerController extends MyController{
 			
 			$docker->startContainerById($container_id);
 
-			
 			$ip_num=$model3->find_Ip_id($user_id,$image_id);
 			dump($ip_num);
 			// dump('ipnum:'.$ip_num);

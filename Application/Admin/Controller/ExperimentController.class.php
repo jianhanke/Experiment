@@ -85,7 +85,7 @@ class ExperimentController extends MyController{
 			$imageInfo=array('Image_id'=>$post['image_id'],'name'=>$post['name']);
 			try{
 				$experimentRes=$model->addExperiment($experimentInfo);
-				$imageRes=$model2->add_Image($imageInfo);
+				$imageRes=$model2->add_Image_AndId($imageInfo);
 				if($experimentRes && $imageRes){       //事务处理
 					$Model->commit();
 				}else{

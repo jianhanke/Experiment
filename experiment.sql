@@ -114,20 +114,7 @@ CREATE TABLE `docker_container` (
 
 INSERT INTO `docker_container` (`id`, `Container_id`, `student_id`, `ip`, `Image_id`, `ip_num`, `to_chapter`, `doc`, `video`, `note`) VALUES
 (7, 'd1a5f5e4be', 174804050, '172.19.0.4', 'd0ae770d2ba7', 4, NULL, NULL, NULL, NULL),
-(9, '8f13800b36', 1, '172.19.0.6', 'c84426304f6b', 6, NULL, NULL, NULL, NULL),
-(10, 'ba217f5501', 1, '172.19.0.7', '92f7bf669a99', 7, NULL, NULL, NULL, NULL),
-(11, '464229cf7f', 1, '172.19.0.8', '57b6a90d6f8b', 8, '1', NULL, NULL, '&lt;p&gt;&lt;strong&gt;dfsa fdsa dsffdasfsa&lt;/strong&gt;&lt;strong&gt;&amp;nbsp; fdsfa&lt;br/&gt;&lt;/strong&gt;&lt;/p&gt;'),
-(12, '5e19a5fb9f', 1, '172.19.0.9', '57b6a90d6f8b', 9, '2', NULL, NULL, NULL),
-(13, '05e432e59b', 1, '172.19.0.10', '57b6a90d6f8b', 10, '3', NULL, NULL, NULL),
-(14, 'ea2ee0d057', 2, '172.19.0.11', 'd0ae770d2ba7', 11, NULL, NULL, NULL, NULL),
-(15, 'd779422bb8', 2, '172.19.0.12', 'c84426304f6b', 12, NULL, NULL, NULL, NULL),
-(16, 'd78908f9a8', 2, '172.19.0.13', '92f7bf669a99', 13, NULL, NULL, NULL, NULL),
-(17, '51b1e70dfb', 2, '172.19.0.14', '57b6a90d6f8b', 14, '1', NULL, NULL, NULL),
-(18, 'bd15c2d64b', 2, '172.19.0.15', '57b6a90d6f8b', 15, '2', NULL, NULL, NULL),
-(19, '90d2187d2c', 2, '172.19.0.16', '57b6a90d6f8b', 16, '3', NULL, NULL, NULL),
-(20, '0d6385b1cc', 1, '172.19.0.17', '57b6a90d6f8b', 17, '4', NULL, NULL, NULL),
-(21, 'f23d41dab6', 1, '172.19.0.18', '57b6a90d6f8b', 18, '5', NULL, NULL, NULL),
-(22, '627fa77714', 1, '172.19.0.19', 'd0ae770d2ba7', 19, NULL, NULL, NULL, NULL);
+
 
 -- --------------------------------------------------------
 
@@ -151,8 +138,7 @@ INSERT INTO `docker_image` (`Image_id`, `name`, `time`, `status`) VALUES
 ('57b6a90d6f8b', 'registry.cn-hangzhou.aliyuncs.com/jianhanke/my_mysql', NULL, 1),
 ('92f7bf669a99', 'registry.cn-hangzhou.aliyuncs.com/jianhanke/desktop_auto_docker', '2019-08-15 21:21:16', 1),
 ('c84426304f6b', 'registry.cn-hangzhou.aliyuncs.com/jianhanke/base_desktop_auto', '2019-08-20 21:22:28', 1),
-('d0ae770d2ba7', 'registry.cn-hangzhou.aliyuncs.com/jianhanke/desktop_false_hadoop', '2019-08-07 21:21:11', 1),
-('f2dd673ab5db', 'f2dd673ab5db', NULL, 1);
+('d0ae770d2ba7', 'registry.cn-hangzhou.aliyuncs.com/jianhanke/desktop_false_hadoop', '2019-08-07 21:21:11', 1);
 
 -- --------------------------------------------------------
 
@@ -201,6 +187,8 @@ CREATE TABLE `student` (
 INSERT INTO `student` (`Sid`, `Sname`, `Sage`, `Ssex`, `Stele`, `Spwd`) VALUES
 (1, 'root', 32, '男', 1, '1'),
 (2, '测试', 66, '男', 322432432, '2'),
+(3, '测试', 66, '男', 33213213, '2'),
+(4, '测试', 66, '男', 4321312, '2'),
 (174804050, '小王', 20, '女', 18337299830, '1'),
 (174804055, '张三', 33, '男', 13952468542, '1');
 
@@ -233,13 +221,7 @@ CREATE TABLE `student_experiment` (
 -- 转存表中的数据 `student_experiment`
 --
 
-INSERT INTO `student_experiment` (`Sid`, `Eid`, `status`, `IS_avtive`) VALUES
-(1, 1, 1, 1),
-(1, 2, 1, 1),
-(1, 3, 1, 1),
-(2, 1, 1, 1),
-(2, 2, 1, 1),
-(2, 3, 1, 1);
+
 
 -- --------------------------------------------------------
 
