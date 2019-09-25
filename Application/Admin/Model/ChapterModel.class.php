@@ -28,6 +28,17 @@ class ChapterModel extends Model{
 		$this->where("id=$id")
 				 ->save();
 	}
+	public function add_Info($data){
+		return $this->add($data);
+	}
+
+	public function show_ALL_Field(){
+		$sql="select column_name from information_schema.columns where table_name='chapter' and table_schema = 'experiment' ";
+		return $this->query($sql);
+	}
+	public function show_All_Data(){
+		return $this->select();
+	}
 
 
 }

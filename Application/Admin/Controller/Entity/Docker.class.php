@@ -1,7 +1,7 @@
 <?php 
 
 
-namespace Home\Controller\Entity;
+namespace Admin\Controller\Entity;
 
 class Docker{
 

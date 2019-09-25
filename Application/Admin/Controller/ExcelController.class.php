@@ -11,27 +11,50 @@ class ExcelController extends MyController{
 		$this->display();
 	}
 
-	public function uploadExcel(){
-		$upload= new \Think\Upload();
+    public function ceshi(){
+        $model=D('Docker_image');
+        dump($model);
+        // $data=$model->show_All_Data();
+        // dump($data);
+    }
 
-		$upload->rootPath = './Excel/';  // ./ 代表 项目的根目录
-		$upload->exts=array('xlsx','xls');
+	public function uploadExcelAndInput($modelName){
 
-		$info   =   $upload->uploadOne($_FILES['excelData']);
-		if(!$info) {// 上传错误提示错误信息
-		      $this->error($upload->getError());
-		}else{      // 上传成功 获取上传文件信息
+        
+        
+            $upload= new \Think\Upload();
+            $upload->rootPath = './Excel/';  // ./ 代表 从.index开始算起
+            $upload->exts=array('xlsx','xls');
+            $info   =   $upload->uploadOne($_FILES['excelData']);
+            if(!$info) {// 上传错误提示错误信息
+                  $this->error($upload->getError());
+            }else{      // 上传成功 获取上传文件信息
+              $filePath=$upload->rootPath.$info['savepath'].$info['savename'];
+              $ext=$info['ext'];
+              try{
+                $excel=new \Admin\Controller\Entity\Excel();
+                $excel->inputExcel($modelName,$filePath,$ext);
+                $this->success('导入成功');
+              }catch(\Exception $e){
+                $this->error('导入数据库出现错误');
+              }
+         }
+   
 
-		      echo $info['savepath'].$info['savename'];
-		      $filePath=$upload->rootPath.$info['savepath'].$info['savename'];
-		      $ext=$info['ext'];
-		      $this->importDatabase($filePath,$ext);
-
-		 }
 	}
-	public function importDatabase($filename,$exts){
-		vendor('PHPExcel.PHPExcel');
-		
+    
+
+	
+
+
+    public function outputExcel($modelName){
+        $excel=new \Admin\Controller\Entity\Excel();
+        $excel->outputExcel($modelName);
+    }
+
+        public function importDatabase($filename,$exts){
+        vendor('PHPExcel.PHPExcel');
+
         $PHPExcel=new \PHPExcel();
         $PHPReader=null;
         if($exts=='xls'){
@@ -58,17 +81,17 @@ class ExcelController extends MyController{
         for($i=2;$i<=$allRow;$i++){
             for($j=0;$j<$cellNum;$j++){
         $data[$cellName[$j][1]]=$PHPExcel->getActiveSheet(0)->getCell($cellName[$j][0].$i )->getValue();
-        	
-         	}
+            
+            }
             $this->addStudent($data);
         }
 
-	}
-	public function addStudent($data){
-		dump($data);
-		$model=D('Student');
-		$model->add_Student($data);
-	}
+    }
+    public function addStudent($data){
+        dump($data);
+        $model=D('Student');
+        $model->add_Student($data);
+    }
 
 
 
