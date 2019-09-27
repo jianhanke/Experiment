@@ -7,17 +7,15 @@
 <style>
     /**{margin:0; padding:0}；*/
     *{padding:0; margin:0;}
-    /*.point{
-            float: left;
-            list-style: none;
+  
+     
+        .box .new0{
+            display: block;
         }
-        .point li{
-            margin-bottom: 10px;
-        }*/
-        .box{
-            float: right;
-            /*margin-right: 500px;*/
-        }
+        
+        
+
+        
         .box div{
             /*width: 500px;
             height: 200px;*/
@@ -101,7 +99,15 @@ a{
         <div class="box" style="height: 90%; width: 100%; " >
             <div class="con0" id="con0"  >                
                  <img src="__PUBLIC__/Home/images/1.jpg" style="height: 60%;width: 60%;" > 
-                 <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"  />
+                 <br>
+                 
+                 <ul class="point2">
+                <!-- <li> <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"  /> </li>   -->
+                <br>
+                  
+                  <li> <a id="picture" ><input type="button" value="图形界面"></a></li> <br>
+                  <li >  <a><input type="button" value="命令行"></a> </li>
+                 </ul>
               </div>
             <div class="con1">
                 <video src="__ROOT__/Course/{$video}" style="width: 100%;"  controls="" ></video>
@@ -125,13 +131,24 @@ a{
             </div>
             
         </div>
+    </div>
+
+    <div class="box" style="height: 100%;width: 68%;float: right;" >
+
+
+      <div class="new0" id="screen" style="height: 100%;width: 99%; "  >
+
+      </div>
+
+      <div class="new1" style="height: 100%;width: 100%; hidden"  >
+          fsda
+        <iframe src="http://localhost:8888/?hostname=172.19.0.100&username=root&password=MTIzNDU2"  style="width: 100%;height: 100%;">
+    
+        </iframe>
+    </div>
 
     </div>
-    
 
-  <div id="screen" style="height: 100%;width: 68%;float: right; " >
-      
-  </div>
 
 </body>
 
@@ -159,7 +176,6 @@ a{
   var url=document.getElementById("hiddenUrl").innerHTML;
   console.log(url);
 </script>
-
 
 
 <script type="text/javascript">
@@ -218,3 +234,12 @@ function shareOperate(){
   };
 
 </script>
+<script type="text/javascript">
+        $(document).ready(function(){
+            $(".point2 li a").click(function(){
+                var order = $(".point2 li a").index(this);//获取点击之后返回当前a标签index的值
+                $(".new" + order).show().siblings("div").hide();//显示class中con加上返回值所对应的DIV
+            });
+        })
+</script>
+

@@ -75,6 +75,10 @@ class NoVNCController extends MyController{
 		$this->assign('url',$url);
 		$this->display();
 	}
+	public function ceshi(){
+		$url='http://localhost:8888/?hostname=172.19.0.100&username=root&password=123456';
+		$this->display();
+	}
 
 
 }
