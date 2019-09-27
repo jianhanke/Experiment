@@ -139,9 +139,7 @@ a{
       </div>
 
       <div class="new1" style="height: 100%;width: 100%; hidden"  >
-          fsda
         <iframe src="<?php echo ($sshUrl); ?>"  style="width: 100%;height: 100%;">
-    
         </iframe>
     </div>
 

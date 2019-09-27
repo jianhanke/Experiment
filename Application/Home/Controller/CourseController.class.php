@@ -24,7 +24,7 @@ class CourseController extends MyController{
 		$model=D('chapter');
 		$model3=new \Home\Model\Docker_containerModel();
 
-		$image_id=$model->find_Image_By_id($id);
+		$image_id=$model->find_Image_By_id($chapter_id);
 		// dump($image_id);
 
 		$info=$model3->if_Join_Chapter($user_id,$image_id,$chapter_id); //判断是否已经加入此章节
