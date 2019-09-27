@@ -102,7 +102,7 @@ a{
                  <br>
                  
                  <ul class="point2">
-                <!-- <li> <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"  /> </li>   -->
+                <li> <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"  /> </li>  
                 <br>
                   
                   <li> <a id="picture" ><input type="button" value="图形界面"></a></li> <br>
@@ -140,7 +140,7 @@ a{
 
       <div class="new1" style="height: 100%;width: 100%; hidden"  >
           fsda
-        <iframe src="http://localhost:8888/?hostname=172.19.0.100&username=root&password=MTIzNDU2"  style="width: 100%;height: 100%;">
+        <iframe src="<?php echo ($sshUrl); ?>"  style="width: 100%;height: 100%;">
     
         </iframe>
     </div>

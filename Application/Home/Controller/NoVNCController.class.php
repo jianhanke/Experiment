@@ -20,6 +20,7 @@ class NoVNCController extends MyController{
 		$id=$info['id'];
 		$myNote=$info['note'];
 		$chapterId=$info['to_chapter'];
+		$ip=$info['ip'];
 		$myNote=htmlspecialchars_decode(html_entity_decode($myNote));  //将html 解码
 		
 		$chapterInfo=$model2->find_ChapterInfo_ById($chapterId);
@@ -36,6 +37,10 @@ class NoVNCController extends MyController{
 		$showShareOperate=U("Home/NoVNC/showShareOperate/ip_num/$ip_num");
 		$showShareOperate=$hostName.$showShareOperate;
 
+		$ssh=new \Home\Controller\Entity\Ssh();
+		$sshUrl=$ssh->getSshUrl($ip);
+
+		$this->assign('sshUrl',$sshUrl);
 		$this->assign('viewOnly',$viewOnly);
 		$this->assign('shareOperate',$showShareOperate);
 		$this->assign('ip_num',$ip_num);
@@ -77,6 +82,7 @@ class NoVNCController extends MyController{
 	}
 	public function ceshi(){
 		$url='http://localhost:8888/?hostname=172.19.0.100&username=root&password=123456';
+		// $this->
 		$this->display();
 	}
 
