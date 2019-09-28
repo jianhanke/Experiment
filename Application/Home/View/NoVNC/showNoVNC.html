@@ -12,10 +12,9 @@
         .box .new0{
             display: block;
         }
-        
-        
-
-        
+         .box .new1{
+            display: none;
+        }
         .box div{
             /*width: 500px;
             height: 200px;*/
@@ -104,9 +103,10 @@ a{
                  <ul class="point2">
                 <li> <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"  /> </li>  
                 <br>
+                <li> <a id="picture" ><input type="button" value="图形界面"></a></li> <br>
+                  <li >  <a   id="commandLine" ><input  id="ceshi" type="button" value="命令行" onclick="ceshi()" ></a> </li>
                   
-                  <li> <a id="picture" ><input type="button" value="图形界面"></a></li> <br>
-                  <li >  <a><input type="button" value="命令行"></a> </li>
+                  
                  </ul>
               </div>
             <div class="con1">
@@ -134,17 +134,15 @@ a{
     </div>
 
     <div class="box" style="height: 100%;width: 68%;float: right;" >
-
-
       <div class="new0" id="screen" style="height: 100%;width: 99%; "  >
-
       </div>
 
-      <div class="new1" style="height: 100%;width: 100%; hidden"  >
-        <iframe src="{$sshUrl}"  style="width: 100%;height: 100%;">
+         <div class="new1" style="height: 100%;width: 100%; hidden"  >
+        <iframe src="{$sshUrl} " id="ssh"  class="ssh" style="width: 100%;height: 100%;">
         </iframe>
-    </div>
 
+    
+    </div>
     </div>
 
 
@@ -164,16 +162,23 @@ a{
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
    var rfb = new RFB(document.getElementById('screen'),url,{ credentials: { password: '123456' } }  );
-  rfb.connect();
-  
-  // console.log(rfb);
-  // rfb.connect();
-
+  rfb.connect(); 
 </script>
 <script type="text/javascript">
   var url=document.getElementById("hiddenUrl").innerHTML;
   console.log(url);
+       function  ceshi () {
+           // document.getElementById("commandLine").click();
+           
+           // document.getElementById("picture").click();
+           $(window.parent.document).find("#ssh").attr("src", "{$sshUrl}");
+           document.getElementById("ceshi").onclick = '';
+           // document.getElementById("picture").click();
+        }
+
 </script>
+
+
 
 
 <script type="text/javascript">
@@ -239,5 +244,8 @@ function shareOperate(){
                 $(".new" + order).show().siblings("div").hide();//显示class中con加上返回值所对应的DIV
             });
         })
+</script>
+<script type="text/javascript">
+    $(window.parent.document).find("#ssh").attr("src", "{$sshUrl}");
 </script>
 

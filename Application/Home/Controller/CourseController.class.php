@@ -34,7 +34,6 @@ class CourseController extends MyController{
 			$docker=new \Home\Controller\Entity\Docker();
 
 			$docker->startContainerById($container_id);
-			
 			$ip_num=$model3->find_Ip_By_Chapter($user_id,$image_id,$chapter_id);
 
 			$NoVNC=A('NoVNC');
