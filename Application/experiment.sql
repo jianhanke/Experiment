@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: 2019-09-29 12:18:05
+-- Generation Time: 2019-09-29 12:15:22
 -- 服务器版本： 5.7.27-0ubuntu0.18.04.1
 -- PHP Version: 7.2.22-1+ubuntu18.04.1+deb.sury.org+1
 
@@ -113,8 +113,16 @@ CREATE TABLE `docker_container` (
 --
 
 INSERT INTO `docker_container` (`id`, `Container_id`, `student_id`, `ip`, `Image_id`, `ip_num`, `to_chapter`, `doc`, `video`, `note`) VALUES
-(1, '', 100, NULL, '', 1, NULL, NULL, NULL, NULL);
-
+(1, '', 100, NULL, '', 1, NULL, NULL, NULL, NULL),
+(37, '1296288cd2', 1, '172.19.0.2', '3f4e02e760ff', 2, '4', NULL, NULL, NULL),
+(38, 'a2f3bd151a', 1, '172.19.0.3', '3f4e02e760ff', 3, '5', NULL, NULL, NULL),
+(39, 'ed0f5527e9', 1, '172.19.0.4', 'cdcc3b59a03d', 4, NULL, NULL, NULL, NULL),
+(40, '62525e7fd3', 1, '172.19.0.5', 'a236a0d909cd', 5, '1', NULL, NULL, NULL),
+(41, '1557b7a383', 1, '172.19.0.6', 'a236a0d909cd', 6, '2', NULL, NULL, NULL),
+(42, '186396f4d5', 1, '172.19.0.7', 'a236a0d909cd', 7, '3', NULL, NULL, NULL),
+(43, '2edc65fcbb', 1, '172.19.0.8', 'aa0f8f0efbde', 8, NULL, NULL, NULL, NULL),
+(44, 'ef5b960310', 1, '172.19.0.9', '3f4e02e760ff', 9, '6', NULL, NULL, NULL),
+(45, 'b7b7d14958', 1, '172.19.0.10', '950cddbcac8d', 10, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -219,7 +227,10 @@ CREATE TABLE `student_experiment` (
 -- 转存表中的数据 `student_experiment`
 --
 
-
+INSERT INTO `student_experiment` (`Sid`, `Eid`, `status`, `IS_avtive`) VALUES
+(1, 1, 1, 1),
+(1, 2, 1, 1),
+(1, 3, 1, 1);
 
 -- --------------------------------------------------------
 
