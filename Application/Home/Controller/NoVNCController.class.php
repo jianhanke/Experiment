@@ -40,6 +40,10 @@ class NoVNCController extends MyController{
 		$ssh=new \Home\Controller\Entity\Ssh();
 		$sshUrl=$ssh->getSshUrl($ip);
 
+		$noVNC=new \Home\Controller\Entity\NoVNC();
+		$ceshiUrl=$noVNC->getUrlById($ip_num);
+
+		$this->assign('ceshiUrl',$ceshiUrl);
 		$this->assign('sshUrl',$sshUrl);
 		$this->assign('viewOnly',$viewOnly);
 		$this->assign('shareOperate',$showShareOperate);
