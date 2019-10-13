@@ -103,7 +103,8 @@ a{
                  <br>
                  
                  <ul class="point2">
-                <li> <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"  /> </li>  
+                <li> <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"/> </li>  
+                <li>  <a href="<?php echo U('Docker/resetContainer');?>/id/<?php echo ($id); ?>">  <input type="button" value="重置虚拟机"> </a> </li>
                 <br>
                 <li> <a id="picture" ><input type="button" value="图形界面"></a></li> <br>
                   <li >  <a   id="commandLine" ><input  id="ceshi" type="button" value="命令行" onclick="ceshi()" ></a> </li>
@@ -174,7 +175,8 @@ a{
            $(window.parent.document).find("#ssh").attr("src",sshUrl );
            document.getElementById("ceshi").onclick = '';
            // document.getElementById("picture").click();
-        }
+        }s123456
+        
 </script>
 
 

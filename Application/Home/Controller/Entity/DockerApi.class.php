@@ -76,7 +76,7 @@ class DockerApi{
     }
 
     public function deleteContainerById($container_id){
-    	$data=['force'=>true,'link'=>true,'v'=>true,];
+    	$data=['force'=>true,'v'=>true];
     	$info=$this->getJsonInfoByApi("/containers/$container_id?force=true?link=true?v=true",'delete',$data);
     }
 

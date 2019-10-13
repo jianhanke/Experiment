@@ -1,1266 +1,2205 @@
-[ 2019-10-13T14:58:49+08:00 ] ::1 /Experiment/
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021166s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.021200s ]
-
-[ 2019-10-13T14:58:49+08:00 ] ::1 /Experiment/index.php/Home/Login/login
+[ 2019-10-13T21:04:48+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:07:24+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:09:00+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002812s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000163s ]
+
+[ 2019-10-13T21:12:23+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:13:02+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:13:19+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005071s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+
+[ 2019-10-13T21:13:57+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:14:19+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:14:50+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:15:57+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:15:59+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0002s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:16:00+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0037s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:16:01+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:16:02+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001654s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:16:41+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.184607s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.184631s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004031s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019138s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.019161s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001070s ]
-INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
 
-[ 2019-10-13T14:58:52+08:00 ] ::1 /Experiment/index.php/Home/Login/checkLogin
+[ 2019-10-13T21:17:22+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0051s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006871s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+
+[ 2019-10-13T21:18:58+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002893s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002907s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+
+[ 2019-10-13T21:19:39+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
+
+[ 2019-10-13T21:19:59+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+ERR: syntax error, unexpected '}', expecting ',' or ';'
+
+[ 2019-10-13T21:20:22+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+
+[ 2019-10-13T21:23:35+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+
+[ 2019-10-13T21:24:02+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
+
+[ 2019-10-13T21:24:46+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+
+[ 2019-10-13T21:25:28+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001882s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+
+[ 2019-10-13T21:25:53+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+ERR: 非法操作:resetContainer
+
+[ 2019-10-13T21:27:08+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+ERR: 非法操作:resetContainer
+
+[ 2019-10-13T21:27:10+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-SQL: SHOW COLUMNS FROM `student` [ RunTime:0.2311s ]
-SQL: SELECT * FROM `student` WHERE `Sid` = 1 AND `Spwd` = '1' LIMIT 1   [ RunTime:0.0517s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016630s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016655s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000031s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T14:58:53+08:00 ] ::1 /Experiment/index.php/Home/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000015s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000745s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.000756s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000018s ]
-
-[ 2019-10-13T14:58:54+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+[ 2019-10-13T21:27:10+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
-SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0514s ]
-SQL: SELECT * FROM `experiment`  [ RunTime:0.0005s ]
-SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0246s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0008s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0002s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009264s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.009284s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T15:05:13+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
+[ 2019-10-13T21:27:10+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000064s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000121s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T15:05:25+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
+[ 2019-10-13T21:27:10+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+ERR: 非法操作:resetContainer
+
+[ 2019-10-13T21:27:11+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
-
-[ 2019-10-13T15:05:52+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
-
-[ 2019-10-13T15:05:52+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
-
-[ 2019-10-13T15:05:53+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
-
-[ 2019-10-13T15:06:03+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
-
-[ 2019-10-13T15:06:39+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showAllImage
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
-
-[ 2019-10-13T15:06:56+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
-
-[ 2019-10-13T15:08:02+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-NOTIC: [8] Undefined offset: 0 /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 46 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000107s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000126s ]
-
-[ 2019-10-13T15:08:53+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
-
-[ 2019-10-13T15:22:48+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
-
-[ 2019-10-13T15:24:35+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
-
-[ 2019-10-13T15:26:33+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000061s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 84 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
-
-[ 2019-10-13T15:28:29+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
-
-[ 2019-10-13T15:30:15+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
-
-[ 2019-10-13T15:32:48+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/showContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
-
-[ 2019-10-13T15:41:23+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
-
-[ 2019-10-13T15:50:45+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-NOTIC: [2] Use of undefined constant a1112065b8df - assumed 'a1112065b8df' (this will throw an Error in a future version of PHP) /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 81 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
-
-[ 2019-10-13T15:51:03+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
-NOTIC: [2] Use of undefined constant a1112065b8df - assumed 'a1112065b8df' (this will throw an Error in a future version of PHP) /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 81 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
-
-[ 2019-10-13T15:52:34+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000079s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T15:54:51+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
-
-[ 2019-10-13T15:55:58+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
-
-[ 2019-10-13T15:55:59+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
-
-[ 2019-10-13T15:55:59+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000114s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000135s ]
-
-[ 2019-10-13T15:55:59+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000069s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
-
-[ 2019-10-13T16:05:20+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
-ERR: syntax error, unexpected ':', expecting ']'
-
-[ 2019-10-13T16:05:48+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-ERR: syntax error, unexpected '=', expecting ']'
-
-[ 2019-10-13T16:05:49+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-ERR: syntax error, unexpected '=', expecting ']'
-
-[ 2019-10-13T16:05:49+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-ERR: syntax error, unexpected '=', expecting ']'
-
-[ 2019-10-13T16:05:49+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-ERR: syntax error, unexpected '=', expecting ']'
-
-[ 2019-10-13T16:06:01+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:27:11+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
-
-[ 2019-10-13T16:07:09+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000077s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
-
-[ 2019-10-13T16:07:10+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
-
-[ 2019-10-13T16:07:11+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
-
-[ 2019-10-13T16:07:11+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
-
-[ 2019-10-13T16:07:11+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000038s ]
-
-[ 2019-10-13T16:07:51+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
-
-[ 2019-10-13T16:08:32+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
-
-[ 2019-10-13T16:08:33+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T16:08:34+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:27:11+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000100s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000116s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T16:08:34+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:27:11+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000057s ]
-
-[ 2019-10-13T16:08:34+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T16:08:34+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:27:11+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+ERR: 非法操作:resetContainer
+
+[ 2019-10-13T21:27:11+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+ERR: 非法操作:resetContainer
+
+[ 2019-10-13T21:27:12+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T16:08:34+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:27:12+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+ERR: 非法操作:resetContainer
 
-[ 2019-10-13T16:08:34+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:28:03+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000021s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003212s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003241s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
 
-[ 2019-10-13T16:09:09+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:28:10+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
-NOTIC: [2] Use of undefined constant EndpointsConfig - assumed 'EndpointsConfig' (this will throw an Error in a future version of PHP) /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 81 行.
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+ERR: 参数错误或者未定义:id
 
-[ 2019-10-13T16:09:10+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:30:24+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:25+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000047s ]
-NOTIC: [2] Use of undefined constant EndpointsConfig - assumed 'EndpointsConfig' (this will throw an Error in a future version of PHP) /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 81 行.
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
 
-[ 2019-10-13T16:09:10+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:30:25+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
-NOTIC: [2] Use of undefined constant EndpointsConfig - assumed 'EndpointsConfig' (this will throw an Error in a future version of PHP) /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 81 行.
-NOTIC: [8] Undefined index: Id /var/www/html/Experiment/Application/Home/Controller/DockerApiController.class.php 第 85 行.
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
 
-[ 2019-10-13T16:15:13+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:30:25+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
-ERR: syntax error, unexpected '{'
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000037s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
 
-[ 2019-10-13T16:15:14+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:30:25+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:25+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
-ERR: syntax error, unexpected '{'
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
 
-[ 2019-10-13T16:17:01+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:30:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:27+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:30:27+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+ERR: Class 'Home\Model\Docker_ImageModel' not found
+
+[ 2019-10-13T21:31:35+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0003s ]
+ERR: Too few arguments to function Home\Controller\Entity\Docker::runContainerByIdIp(), 1 passed in /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php on line 155 and exactly 2 expected
+
+[ 2019-10-13T21:33:28+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+
+[ 2019-10-13T21:35:09+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-13T21:35:10+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002332s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
+
+[ 2019-10-13T21:35:12+08:00 ] ::1 /Experiment/index.php/Home/Docker/joinExperiment/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='cdcc3b59a03d' ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='cdcc3b59a03d' ) LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-10-13T21:35:18+08:00 ] ::1 /Experiment/index.php/Home/Index/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2019-10-13T21:35:20+08:00 ] ::1 /Experiment/index.php/Home/Course/showCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000009s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000014s ]
+
+[ 2019-10-13T21:35:21+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004685s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000057s ]
+
+[ 2019-10-13T21:37:04+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:18+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:22+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:22+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:23+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:23+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000017s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:23+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:23+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:23+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+ERR: syntax error, unexpected ')', expecting ']'
+
+[ 2019-10-13T21:37:34+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0004s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+
+[ 2019-10-13T21:37:54+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0011s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+
+[ 2019-10-13T21:38:29+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+
+[ 2019-10-13T21:39:44+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+
+[ 2019-10-13T21:40:27+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0002s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `docker_container` SET `Container_id`='' WHERE ( id= )
+
+[ 2019-10-13T21:41:18+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008943s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
 
-[ 2019-10-13T16:17:27+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:41:32+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: Container_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 156 行.
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='' WHERE ( id=53 ) [ RunTime:0.3920s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001442s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
 
-[ 2019-10-13T16:23:11+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T21:45:05+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000048s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='' WHERE ( id=53 ) [ RunTime:0.1340s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-13T22:06:23+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
-ERR: syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
-
-[ 2019-10-13T16:23:41+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0121s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0189s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='' WHERE ( id=53 ) [ RunTime:0.0257s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039668s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000158s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000203s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
 
-[ 2019-10-13T16:24:24+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T22:09:40+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='b934c918eb' WHERE ( id=53 ) [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0314s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
 
-[ 2019-10-13T16:28:57+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
-ERR: syntax error, unexpected ':', expecting ']'
-
-[ 2019-10-13T16:29:11+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
+[ 2019-10-13T22:11:35+08:00 ] ::1 /Experiment/index.php/Home/Index/index
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
 INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
-
-[ 2019-10-13T16:30:37+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
-
-[ 2019-10-13T16:33:40+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000051s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
-
-[ 2019-10-13T16:34:44+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/runContainerById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
-
-[ 2019-10-13T16:49:00+08:00 ] ::1 /Experiment/index.php
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
-INFO: [ app_init ] --END-- [ RunTime:0.014472s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001644s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001679s ]
-
-[ 2019-10-13T16:49:00+08:00 ] ::1 /Experiment/index.php/Home/Login/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000400s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001069s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.001098s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014017s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.014048s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000634s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000650s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000971s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
-
-[ 2019-10-13T16:49:06+08:00 ] ::1 /Experiment/index.php/Home/Login/checkLogin
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000501s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000649s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
-SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0434s ]
-SQL: SELECT * FROM `student` WHERE `Sid` = 1 AND `Spwd` = '1' LIMIT 1   [ RunTime:0.0019s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015992s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.016024s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000572s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000614s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000966s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000988s ]
-
-[ 2019-10-13T16:49:07+08:00 ] ::1 /Experiment/index.php/Home/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000704s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052184s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.052231s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000269s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000287s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000520s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
-
-[ 2019-10-13T16:49:09+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
-SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0069s ]
-SQL: SELECT * FROM `experiment`  [ RunTime:0.0003s ]
-SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0062s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0003s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0047s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0037s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0039s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='9' ) LIMIT 1   [ RunTime:0.0003s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0040s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='12' ) LIMIT 1   [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.131277s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.131301s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000283s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
-
-[ 2019-10-13T16:49:12+08:00 ] ::1 /Experiment/index.php/Home/Index/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000716s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000736s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
-NOTIC: [8] Undefined index: name E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Home\9b653ca157623fe95df0e6306293c727.php 第 42 行.
-NOTIC: [8] Undefined index: name E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Home\9b653ca157623fe95df0e6306293c727.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006567s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.006590s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023644s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000439s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000569s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
 
-[ 2019-10-13T16:49:12+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+[ 2019-10-13T22:11:35+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003745s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.003766s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000240s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000414s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000430s ]
-
-[ 2019-10-13T16:49:14+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000373s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000487s ]
-SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `experiment`  [ RunTime:0.0003s ]
-SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0044s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0038s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0715s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0687s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0008s ]
 SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0175s ]
 SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0039s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='9' ) LIMIT 1   [ RunTime:0.0003s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0045s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='12' ) LIMIT 1   [ RunTime:0.0002s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004717s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004736s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009374s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009388s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000293s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000416s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000431s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
 
-[ 2019-10-13T16:49:20+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:11:37+08:00 ] ::1 /Experiment/index.php/Home/Index/showCourse
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000366s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
-ERR: Call to undefined function Home\Controller\Entity\DockerApi()
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
 
-[ 2019-10-13T16:49:30+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:11:38+08:00 ] ::1 /Experiment/index.php/Home/Course/showCourseById/id/1
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
-ERR: syntax error, unexpected '(', expecting '{'
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0162s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000068s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
 
-[ 2019-10-13T16:49:31+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000749s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
-ERR: syntax error, unexpected '(', expecting '{'
-
-[ 2019-10-13T16:49:31+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000486s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000445s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000468s ]
-ERR: syntax error, unexpected '(', expecting '{'
-
-[ 2019-10-13T16:49:49+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
-ERR: syntax error, unexpected '(', expecting '{'
-
-[ 2019-10-13T16:49:50+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
-ERR: syntax error, unexpected '(', expecting '{'
-
-[ 2019-10-13T16:49:50+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:11:42+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000523s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
-ERR: syntax error, unexpected '(', expecting '{'
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0106s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001993s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
 
-[ 2019-10-13T16:49:50+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:11:53+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='1a3915f6f5' WHERE ( id=53 ) [ RunTime:0.0217s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000035s ]
+
+[ 2019-10-13T22:14:25+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000046s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000369s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
-ERR: syntax error, unexpected '(', expecting '{'
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+ERR: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
 
-[ 2019-10-13T16:50:09+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:14:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000419s ]
-ERR: syntax error, unexpected '(', expecting '{'
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+ERR: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
 
-[ 2019-10-13T16:50:20+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:14:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
+ERR: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+
+[ 2019-10-13T22:14:26+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
+ERR: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
+
+[ 2019-10-13T22:16:29+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
-ERR: syntax error, unexpected '$host' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+ERR: syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING)
 
-[ 2019-10-13T16:51:22+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:17:43+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000623s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000642s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0003s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='b1f7453146' WHERE ( id=53 ) [ RunTime:0.0136s ]
 
-[ 2019-10-13T16:51:22+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:17:43+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+ERR: 参数错误或者未定义:ip_num
 
-[ 2019-10-13T16:51:23+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:18+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+ERR: 参数错误或者未定义:ip_num
 
-[ 2019-10-13T16:51:23+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:20+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000404s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
+ERR: 参数错误或者未定义:ip_num
 
-[ 2019-10-13T16:51:23+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:20+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000021s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000368s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
+ERR: 参数错误或者未定义:ip_num
 
-[ 2019-10-13T16:51:23+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:20+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000557s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000413s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000080s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000129s ]
+ERR: 参数错误或者未定义:ip_num
 
-[ 2019-10-13T16:51:23+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:20+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000496s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000018s ]
+ERR: 参数错误或者未定义:ip_num
 
-[ 2019-10-13T16:51:23+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000302s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000425s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
-
-[ 2019-10-13T16:51:24+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000307s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000387s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000407s ]
-ERR: syntax error, unexpected '$hostName' (T_VARIABLE), expecting function (T_FUNCTION) or const (T_CONST)
-
-[ 2019-10-13T16:51:56+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
-ERR: syntax error, unexpected 'private' (T_PRIVATE)
-
-[ 2019-10-13T16:51:57+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
-ERR: syntax error, unexpected 'private' (T_PRIVATE)
-
-[ 2019-10-13T16:51:57+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000299s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
-ERR: syntax error, unexpected 'private' (T_PRIVATE)
-
-[ 2019-10-13T16:51:57+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000343s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
-ERR: syntax error, unexpected 'private' (T_PRIVATE)
-
-[ 2019-10-13T16:52:02+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000629s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000650s ]
-ERR: Call to undefined method Home\Controller\Entity\DockerApi::hostAndPort()
-
-[ 2019-10-13T16:52:03+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000443s ]
-ERR: Call to undefined method Home\Controller\Entity\DockerApi::hostAndPort()
-
-[ 2019-10-13T16:52:03+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000456s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
-ERR: Call to undefined method Home\Controller\Entity\DockerApi::hostAndPort()
-
-[ 2019-10-13T16:52:03+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:25+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000403s ]
-ERR: Call to undefined method Home\Controller\Entity\DockerApi::hostAndPort()
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+ERR: 参数错误或者未定义:ip_num
 
-[ 2019-10-13T16:52:04+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:28+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000386s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
-ERR: Call to undefined method Home\Controller\Entity\DockerApi::hostAndPort()
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
 
-[ 2019-10-13T16:52:49+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:18:35+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000345s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000421s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000020s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0027s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='0537fe1e3e' WHERE ( id=53 ) [ RunTime:0.0019s ]
+
+[ 2019-10-13T22:18:35+08:00 ] ::1 /Experiment/index.php/Home/NoVNC/showNoVNC/ip_num/5
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001971s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000754s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000781s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
 
-[ 2019-10-13T16:52:50+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
+[ 2019-10-13T22:26:05+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000420s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000585s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000617s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
 
-[ 2019-10-13T16:52:50+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000324s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000392s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
-
-[ 2019-10-13T16:52:50+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/hostAndPort
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000490s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000473s ]
-
-[ 2019-10-13T16:53:32+08:00 ] ::1 /Experiment/index.php/Home/DockerApi/ceshi
+[ 2019-10-13T22:26:14+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='204769e952' WHERE ( id=53 ) [ RunTime:0.0314s ]
+
+[ 2019-10-13T22:26:15+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0184s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-10-13T22:32:04+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0293s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0174s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0146s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001815s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+
+[ 2019-10-13T22:33:02+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0261s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+
+[ 2019-10-13T22:34:59+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0128s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0132s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0089s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000392s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000414s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
+
+[ 2019-10-13T22:35:02+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018916s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+
+[ 2019-10-13T22:35:13+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000055s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0025s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+
+[ 2019-10-13T22:35:26+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0947s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001692s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+
+[ 2019-10-13T22:35:47+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003069s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000045s ]
+
+[ 2019-10-13T22:36:45+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0252s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0111s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001618s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-13T22:37:15+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0295s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0003s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0098s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000047s ]
+
+[ 2019-10-13T22:37:21+08:00 ] ::1 /Experiment/index.php/Home/Docker/resetContainer/id/53
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0243s ]
+SQL: SHOW COLUMNS FROM `docker_image` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `docker_container` WHERE `id` = 53 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: Image_id /var/www/html/Experiment/Application/Home/Controller/DockerController.class.php 第 151 行.
+SQL: SELECT * FROM `docker_image` LIMIT 1   [ RunTime:0.0001s ]
+SQL: UPDATE `docker_container` SET `id`='53',`student_id`='1',`ip`='172.19.0.5',`ip_num`='5',`to_chapter`='1',`doc`=NULL,`video`=NULL,`note`=NULL,`Container_id`='b11a738bd1' WHERE ( id=53 ) [ RunTime:0.0359s ]
+
+[ 2019-10-13T22:37:22+08:00 ] ::1 /Experiment/index.php/Home/Course/joinChapterById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000047s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000042s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0072s ]
+SQL: SELECT `to_image` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `docker_container` WHERE (  student_id='1' and  Image_id='a236a0d909cd' and to_chapter='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( student_id='1' and Image_id='a236a0d909cd' and to_chapter='1'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0152s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE ( ip_num=5 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT `doc`,`video` FROM `chapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+NOTIC: [8] Undefined variable: chapterPath /var/www/html/Experiment/Application/Home/Controller/NoVNCController.class.php 第 31 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
 

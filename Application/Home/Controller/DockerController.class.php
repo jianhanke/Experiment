@@ -139,22 +139,29 @@ class DockerController extends MyController{
 		return $info;
 	}
 
-	public function resetContainer($id){
+	public function resetContainer(){
+
+		$id=I('get.id');
+	
 
 		$model=new \Home\Model\Docker_containerModel();
-		$model2=new \Home\Model\Docker_ImageModel();
+		$model2=new \Home\Model\Docker_imageModel();
 		$info=$model->findContainerById($id);
+
 		$imageName=$model2->findImageNameById($info['Image_id']);
 
 
 
 		$docker=new \Home\Controller\Entity\Docker();
+	
 		$docker->deleteContainerById($info['container_id']);
-		$container_id=$docker->runContainerByIdIp($imageName);
+		$container_id=$docker->runContainerByIdIp($imageName,$info['ip']);
+
 
 		$model->updateContainerId($id,$container_id);
 
-		new NoVNCController()->showNoVNC($info['ip_num']);
+		$this->redirect("Course/joinChapterById",array('id'=>$info['to_chapter']));
+
 
 	}
 
