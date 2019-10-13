@@ -43,7 +43,7 @@ class DockerApiController extends MyController{
         curl_close($ch);
         $result = json_decode($response, true);
 
-        dump($result[0]);
+        dump($result);
         return $result;
 
 	}
@@ -53,7 +53,7 @@ class DockerApiController extends MyController{
        	$info=$this->getJsonInfoByApi("/images/json",'get');
     }
     public function showContainerById(){
-    	$info=$this->getJsonInfoByApi("/containers/473c0cd13b7a/json",'get');	
+    	$info=$this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
     }
 
     public function startContainerById($containerId){
@@ -78,8 +78,9 @@ class DockerApiController extends MyController{
 
 
     public  function runContainerById(){
-    	$data=['Image'=>"950cddbcac8d",'NetworkingConfig'=>['EndpointsConfig'=>['NetworkID'=>'a1112065b8df']]];
+    	$data=['Image'=>"950cddbcac8d",'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>'172.19.0.100']]]]];
     	$data = json_encode($data);
+    	dump($data);
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
 		$containerId=$info['Id'];
 		$this->startContainerById($containerId);
