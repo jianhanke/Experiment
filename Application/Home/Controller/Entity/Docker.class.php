@@ -48,6 +48,11 @@ class Docker{
 		exec("/usr/bin/python $docker_path $container_id");   //启动
 	}
 
+	public function deleteContainerById($container_id){
+		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/deleteContainerById.py';
+		exec("/usr/bin/python $docker_path $container_id");
+	}
+
 
 
 	/**

@@ -127,7 +127,7 @@ class DockerController extends MyController{
 		
 		$docker=new \Home\Controller\Entity\Docker();
 		$ips=$docker->getNewIp();
-		dump($ips);
+		
 		$ip=$ips['ip'];
 		
 		$docker=new \Home\Controller\Entity\Docker();
@@ -137,6 +137,25 @@ class DockerController extends MyController{
 		$info[]=$ip;
 		$info[]=$ips['ip_num'];
 		return $info;
+	}
+
+	public function resetContainer($id){
+
+		$model=new \Home\Model\Docker_containerModel();
+		$model2=new \Home\Model\Docker_ImageModel();
+		$info=$model->findContainerById($id);
+		$imageName=$model2->findImageNameById($info['Image_id']);
+
+
+
+		$docker=new \Home\Controller\Entity\Docker();
+		$docker->deleteContainerById($info['container_id']);
+		$container_id=$docker->runContainerByIdIp($imageName);
+
+		$model->updateContainerId($id,$container_id);
+
+		new NoVNCController()->showNoVNC($info['ip_num']);
+
 	}
 
 	

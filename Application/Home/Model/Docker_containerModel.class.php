@@ -10,6 +10,10 @@ class Docker_containerModel extends Model{
 		return $this->select();
 		
 	}
+	public function findContainerById($id){
+		return $this->find($id);
+	}
+
 
 	public function find_ContainerId_By_ImageId($user_id,$image_id,$chapter_id){
 		$info=$this->where(" student_id='$user_id' and  Image_id='$image_id' and to_chapter='$chapter_id'")->find();
@@ -91,6 +95,13 @@ class Docker_containerModel extends Model{
 
 		$info=$this->where("student_id='$user_id' and Image_id='$image_id' and to_chapter='$chapter_id' ")->find();
 		return $info['ip_num'];
+	}
+
+	public function updateContainerId($id,$container_id){
+
+		$this->where("id=$id");
+		$this->Container_id=$container_id;
+		return $this->save();
 	}
 
 

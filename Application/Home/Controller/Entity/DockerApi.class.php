@@ -1,15 +1,16 @@
 <?php 
 
-namespace Home\Controller;
-use Think\Controller;
+namespace Home\Controller\Entity;
 
-class DockerApiController extends MyController{
+class DockerApi{
 
-    public function ceshi(){
-        $dockerApi=new \Home\Controller\Entity\DockerApi();
-        $info=$dockerApi->getUrl();
-        dump($info);
-    }
+	
+
+	public function getUrl(){
+		$hostName =  \Home\Controller\Entity\Host::getHostName();
+		$hostAndPort="http://$hostName:2375";
+		return $hostAndPort;
+	}
 
 	public function getJsonInfoByApi($params,$method='get',$data=Null,$type='form-data'){
 
@@ -17,7 +18,6 @@ class DockerApiController extends MyController{
 		$url="http://$hostName:2375$params";
 		echo $url;
 		
-
         $ch = curl_init();
         $headers = [
         'form-data' => ['Content-Type: multipart/form-data'],
@@ -35,7 +35,6 @@ class DockerApiController extends MyController{
         	curl_setopt($ch, CURLOPT_POST, true);
         	curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
         }else if($method=='delete'){
-        	dump($data);
         	curl_setopt ($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
         	curl_setopt($ch, CURLOPT_POSTFIELDS,$data);
         }else if($method=='put'){
@@ -52,37 +51,37 @@ class DockerApiController extends MyController{
 
 	}
 
-	public function showAllImage(){
+	// public function showAllImage(){
 
-       	$info=$this->getJsonInfoByApi("/images/json",'get');
-    }
-    public function showContainerById(){
-    	$info=$this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
-    }
+ //       	$info=$this->getJsonInfoByApi("/images/json",'get');
+ //    }
+ //    public function showContainerById(){
+ //    	$info=$this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
+ //    }
+ //    
+ 	 // public function showAllContainer(){
+   //  	$info=$this->getJsonInfoByApi("/containers/json?all=true",'get');	
+   //  }
 
-    public function startContainerById($containerId){
+    public function startContainerById($container_id){
 
-    	$info=$this->getJsonInfoByApi("/containers/$containerId/start",'post');
-
-    }
-
-    public function stopContainerById(){
-
-    	$info=$this->getJsonInfoByApi("/containers/de0a0be85cb5/stop",'post');
+    	$info=$this->getJsonInfoByApi("/containers/$container_id/start",'post');
 
     }
 
-    public function deleteContainerById(){
+    public function stopContainerById($container_id){
+
+    	$info=$this->getJsonInfoByApi("/containers/$container_id/stop",'post');
+
+    }
+
+    public function deleteContainerById($container_id){
     	$data=['force'=>true,'link'=>true,'v'=>true,];
-    	$info=$this->getJsonInfoByApi("/containers/6b8052300208?force=true?link=true?v=true",'delete',$data);
-    }
-    public function showAllContainer(){
-    	$info=$this->getJsonInfoByApi("/containers/json?all=true",'get');	
+    	$info=$this->getJsonInfoByApi("/containers/$container_id?force=true?link=true?v=true",'delete',$data);
     }
 
-
-    public  function runContainerById(){
-    	$data=['Image'=>"950cddbcac8d",'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>'172.19.0.100']]]]];
+    public function runContainerByIdIp($image_id,$ip){
+    	$data=['Image'=>"$image_id",'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"]]]]];
     	$data = json_encode($data);
     	dump($data);
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
@@ -90,9 +89,15 @@ class DockerApiController extends MyController{
 		$this->startContainerById($containerId);
     }
 
+    public function getNewIp(){
 
-
-
-
+		$model=new \Home\Model\Docker_containerModel();
+		$ip_num=$model->find_Max_Ip();
+		$ip_num=(int)$ip_num+1;
+		$ip_prefix=(int)($ip_num/256);
+		$ip_num=$ip_num%256;
+		$ip='172.19.'.$ip_prefix.'.'.$ip_num;
+		return array('ip'=>$ip,'ip_num'=>$ip_num);
+	}
 
 }
