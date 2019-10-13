@@ -43,8 +43,11 @@ class DockerController extends MyController{
 			exit();
 		}else{             //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id
 			$image_id=$model->find_ImageId_By_experimentId($experimentId);
+			$image_name=$model->find_ImageId_By_experimentName($experimentId);
+			dump($image_name);
 			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
-			$info=$this->runContainerById($image_id);
+			// $info=$this->runContainerById($image_id);
+			$info=$this->runContainerById($image_name);  //此处应该是上行的，改一部分
 			dump($info);
 			// 
 			$model3->add_Container($user_id,$info[0],$image_id,$info[1],$info[2]); //学生容器id 加入 docker_container

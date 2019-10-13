@@ -22,4 +22,18 @@ class MyController extends Controller{
 
 	}
 
+	public function showAllContainer(){
+
+		$host =new \Home\Controller\Entity\Host();
+		$hostName=$host->getHostName();
+	 	$hostAndPort="http://$hostName:2375";
+
+	 	$url=$hostAndPort.'/containers/json';
+	 	$info=file_get_content($url);
+	 	dump($info);
+
+	
+	}
+
+
 }

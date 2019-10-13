@@ -19,6 +19,10 @@ class ExperimentModel extends Model{
 		return $this->find($experimentId)['image_id'];
 	}
 
+	public function find_ImageId_By_experimentName($experimentId){
+		return $this->find($experimentId)['image_name'];
+	}
+
 	public function get_All_Id(){
 		return $this->field('Eid')->select();
 	}
