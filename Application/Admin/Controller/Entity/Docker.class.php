@@ -16,7 +16,7 @@ class Docker{
 		return exec("/usr/bin/python $docker_path $container_id"); 
 	}
 
-	public function getAllContainerStatus($container_id){
+	public function getAllContainerStatus(){
 
 		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/showAllContainerStatus.py'; 
 		return exec("/usr/bin/python $docker_path"); 
@@ -28,7 +28,7 @@ class Docker{
 	
 		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/restartContainerById.py'; 
 		exec("/usr/bin/python $docker_path $container_id"); 
-		$this->redirect('handleContainer');
+		
 	}
 
 	public function startContainerById($container_id){  //启动容器
@@ -36,14 +36,13 @@ class Docker{
 		
 		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/startContainerById.py'; 
 		exec("/usr/bin/python $docker_path $container_id"); 
-		$this->redirect('handleContainer');
+		
 	}
 
 	public function shutdownContainerById($container_id){   //关机
 			
 		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/stopContainerById.py'; 
 		exec("/usr/bin/python $docker_path $container_id"); 
-		$this->redirect('handleContainer');
 	}
 
 	

@@ -18,7 +18,8 @@ class DockerController extends MyController{
 	}
 
 	
-	public function joinExperiment($experimentId){
+	public function joinExperiment($id){
+		$experimentId=$id;
 		$model=D('Experiment');
 		
 		$model2=new \Home\Model\Student_experimentModel();

@@ -7,8 +7,10 @@ class DockerController extends MyController{
 
 	public $docker=NULL;
 	public function __construct(){
-		$docker=new \Admin\Controller\Entity\Docker();
+		parent::__construct();
+		$this->docker=new \Admin\Controller\Entity\Docker();
 	}
+
 
 	public function showContainer(){
 		$model=new \Admin\Model\View_containerwithstuandexperModel(); 
@@ -145,7 +147,7 @@ class DockerController extends MyController{
 		$container_id=I('get.container_id');	
 		
 		$this->docker->shutdownContainerById($container_id);
-		$this->redirect('handleContainer');
+		$this->redirect('Docker/handleContainer');
 	}	
 
 	/* 
