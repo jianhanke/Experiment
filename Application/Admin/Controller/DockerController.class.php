@@ -5,16 +5,9 @@ use Think\Controller;
 
 class DockerController extends MyController{
 
-
-	public function ceshi(){
-		$admin1=M('Admin');
-		$admin2=M('Admin');
-		dump($admin1===$admin2);
-		$model3=new \Admin\Model\AdminModel();
-		$model4=D('Admin');
-		$model5=D('Admin');
-		echo "ceshi";
-		dump($model5===$model4);
+	public $docker=NULL;
+	public function __construct(){
+		$docker=new \Admin\Controller\Entity\Docker();
 	}
 
 	public function showContainer(){
@@ -71,14 +64,14 @@ class DockerController extends MyController{
 	public function handleContainer(){     
 		$model=new \Admin\Model\Docker_containerModel();
 		$containers=$model->show_All_Container();   //MySql中所有容器信息
-		$all_status=$this->getAllContainerStatus();
+		$all_status=$this->docker->getAllContainerStatus();
 		// $all_status=substr($all_status, 1, -1);
 		// $arr = explode(']',$all_status);
 		// dump($all_status);
 		// dump($arr);
 		for($i=0;$i<count($containers);$i++){
 			$container_id=$containers[$i]['container_id'];
-			$status=$this->getContainerStatus($container_id);
+			$status=$this->docker->getContainerStatus($container_id);
 			$containers[$i]['status']=$status;
 		}
 		// for($j=0;$j<count($all_status);$j++){
@@ -112,7 +105,7 @@ class DockerController extends MyController{
 			$imageName=I('post.name');
 			
 		try{
-				$imageId=$this->pullImageByName($imageName);
+				$imageId=$this->docker->pullImageByName($imageName);
 				$model=new \Admin\Model\Docker_imageModel();
 				$ImageInfo=array('Image_id'=>$imageId,'name'=>$imageId);
 				$status=$model->add_Image_AndId($ImageInfo);
@@ -132,43 +125,26 @@ class DockerController extends MyController{
 		
 	}
 
-	public function pullImageByName($imageName){
-		$docker_path=dirname(__FILE__).'/ControllerDocker/pullImageByName.py'; 
-		return exec("/usr/bin/python $docker_path $imageName"); 
-	}
-
-	public function getContainerStatus($container_id){
-		$docker_path=dirname(__FILE__).'/ControllerDocker/getContainerStatus.py'; 
-		return exec("/usr/bin/python $docker_path $container_id"); 
-	}
-
-	public function getAllContainerStatus(){
-
-		$docker_path=dirname(__FILE__).'/ControllerDocker/showAllContainerStatus.py'; 
-		return exec("/usr/bin/python $docker_path"); 
-	}
 
 	public function restartContainerById(){   //后台重启容器
 
 		$container_id=I('get.container_id');
-	
-		$docker_path=dirname(__FILE__).'/ControllerDocker/restartContainerById.py'; 
-		exec("/usr/bin/python $docker_path $container_id"); 
+
+		$this->docker->restartContainerById($container_id);
 		$this->redirect('handleContainer');
 	}
 
 	public function startContainerById(){  //启动容器
 		$container_id=I('get.container_id');
 		
-		$docker_path=dirname(__FILE__).'/ControllerDocker/startContainerById.py'; 
-		exec("/usr/bin/python $docker_path $container_id"); 
+		 $this->docker->startContainerById($container_id);
 		$this->redirect('handleContainer');
 	}
 
 	public function shutdownContainerById(){   //关机
 		$container_id=I('get.container_id');	
-		$docker_path=dirname(__FILE__).'/ControllerDocker/stopContainerById.py'; 
-		exec("/usr/bin/python $docker_path $container_id"); 
+		
+		$this->docker->shutdownContainerById($container_id);
 		$this->redirect('handleContainer');
 	}	
 
@@ -213,8 +189,7 @@ class DockerController extends MyController{
 		$count=$model->count_Image_By_Like($search,$keywords);
 		$this->assign('datas',$info);
 		$this->assign('count',$count);
-		$this->display('showImage');
-	
+		$this->display('showImage');	
 	}
 	
 

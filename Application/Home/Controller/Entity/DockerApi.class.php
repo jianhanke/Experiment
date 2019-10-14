@@ -4,18 +4,19 @@ namespace Home\Controller\Entity;
 
 class DockerApi{
 
-	
+   public $hostAndPort=null;
 
-	public function getUrl(){
+	public function __construct(){
 		$hostName =  \Home\Controller\Entity\Host::getHostName();
-		$hostAndPort="http://$hostName:2375";
-		return $hostAndPort;
+		$this->hostAndPort="http://$hostName:2375";
 	}
+
+	
 
 	public function getJsonInfoByApi($params,$method='get',$data=Null,$type='form-data'){
 
-		$hostName =  \Home\Controller\Entity\Host::getHostName();
-		$url="http://$hostName:2375$params";
+		
+		$url=$this->$hostName."$params";
 		echo $url;
 		
         $ch = curl_init();
@@ -87,6 +88,10 @@ class DockerApi{
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
 		$containerId=$info['Id'];
 		$this->startContainerById($containerId);
+    }
+
+    public function restartContainerById($container_id){
+    	$info=$this->getJsonInfoByApi("/containers/$container_id/restart",'post');
     }
 
     public function getNewIp(){

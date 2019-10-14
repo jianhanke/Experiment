@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
 </head>
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="__CONTROLLER__/findStudentByLike" method="post">
+                <form action="/Experiment/index.php/Admin/Student/findStudentByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
@@ -27,7 +27,7 @@
                             <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
                                     
-                            <td> <form action="{:U('Admin/Excel/uploadExcelAndInput/modelName/Student')} " method="post" enctype="multipart/form-data">
+                            <td> <form action="<?php echo U('Admin/Excel/uploadExcelAndInput/modelName/Student');?> " method="post" enctype="multipart/form-data">
                                    <input type="file" name="excelData">
                                    <button type="submit">导入</button>
                                 </form> </td>
@@ -50,26 +50,24 @@
                         <th>密码</th>
                         <th>修改</th>
                     </tr>
-                 <volist   name="datas" id="data">
-                    <tr>
-                        <td> {$data['sid']}  </td>
-                        <td> {$data['sname']}  </td>
-                        <td>  {$data['sage']}  </td>
-                        <td>   {$data['ssex']}  </td>
-                        <td>  {$data['stele']} </td>
-                        <td>   {$data['spwd']}  </td>
+                 <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
+                        <td> <?php echo ($data['sid']); ?>  </td>
+                        <td> <?php echo ($data['sname']); ?>  </td>
+                        <td>  <?php echo ($data['sage']); ?>  </td>
+                        <td>   <?php echo ($data['ssex']); ?>  </td>
+                        <td>  <?php echo ($data['stele']); ?> </td>
+                        <td>   <?php echo ($data['spwd']); ?>  </td>
                         <td>
-                            <a class="link-update" href="__CONTROLLER__/modifyStudentById/user_id/{$data['sid']}">修改</a>
+                            <a class="link-update" href="/Experiment/index.php/Admin/Student/modifyStudentById/user_id/<?php echo ($data['sid']); ?>">修改</a>
                             &nbsp&nbsp&nbsp
-                        <a class="link-update" href="__CONTROLLER__/findStudentWithContainer/student_id/{$data['sid']}">学生所用主机</a>
+                        <a class="link-update" href="/Experiment/index.php/Admin/Student/findStudentWithContainer/student_id/<?php echo ($data['sid']); ?>">学生所用主机</a>
                             
                         </td>
-                    </tr>
-                 </volist>  
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>  
 
                     <tr>
                 </table>
-                <div class="list-page"> {$count} 条 1/1 页</div>
+                <div class="list-page"> <?php echo ($count); ?> 条 1/1 页</div>
             </div>
             
                 

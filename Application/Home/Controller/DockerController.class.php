@@ -9,14 +9,22 @@ class DockerController extends MyController{
 		如果学生已经加入课程，直接启动所在容器	
 		学生还没有加入即第一次加入，run一个容器
 	 */
-	public function joinExperiment(){
+	 
+	public  $docker=NULL;
+
+	public function __construct(){
+		$this->docker=new \Home\Controller\Entity\Docker();
+		// $this->docker=new \Home\Controller\Entity\DockerApi();
+	}
+
+	
+	public function joinExperiment($experimentId){
 		$model=D('Experiment');
 		
 		$model2=new \Home\Model\Student_experimentModel();
 		// $model3=new \Home\Model\Docker_containerModel();
 		$model3=new \Home\Model\Docker_containerModel();
 
-		$experimentId=I('get.id');
 		$user_id=session('user_id');
 	    
 		$is_exist=$model2->if_Join_Experiment($user_id,$experimentId);  //判断是否已经加入课程
@@ -27,9 +35,9 @@ class DockerController extends MyController{
 			dump($image_id);
 			$container_id=$model3->find_Container_By_UserId($user_id,$image_id);
 
-			$docker=new \Home\Controller\Entity\Docker();
+			// $docker=new \Home\Controller\Entity\Docker();
 			
-			$docker->startContainerById($container_id);
+			$this->docker->startContainerById($container_id);
 
 			$ip_num=$model3->find_Ip_id($user_id,$image_id);
 			dump($ip_num);
@@ -65,8 +73,7 @@ class DockerController extends MyController{
 		}
 	}
 	
-	public function restartContainerByIp(){
-		$false_ip=I('get.false_ip');
+	public function restartContainerByIp($false_ip){
 		$ip_num=str_replace('host','',$false_ip);
 		dump($false_ip);
 		dump($ip_num);
@@ -74,25 +81,23 @@ class DockerController extends MyController{
 		$model=new \Home\Model\Docker_containerModel();
 		$container_id=$model->find_ContainerId_By_Ip($ip_num);
 
-		$docker=new \Home\Controller\Entity\Docker();
-		$docker->restartContainerById($container_id);
+		// $docker=new \Home\Controller\Entity\Docker();
+		$this->docker->restartContainerById($container_id);
 		// echo "<script> top.location.href='http://localhost:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
 		$noVNC=new \Home\Controller\Entity\NoVNC();
 		$noVNC->JumpUrlByIp($ip_num);
 		exit();
 	}
 
-	public function startContainerByIp(){
+	public function startContainerByIp($false_ip){
 		
-
-		$false_ip=I('get.false_ip');
 		$ip_num=str_replace('host','',$false_ip);
 
 		$model=new \Home\Model\Docker_containerModel();
 		$container_id=$model->find_ContainerId_By_Ip($ip_num);
 		
-		$docker=new \Home\Controller\Entity\Docker();
-		$docker->startContainerById($container_id);
+		// $docker=new \Home\Controller\Entity\Docker();
+		$this->docker->startContainerById($container_id);
 
 		// echo "<script> top.location.href='http://localhost:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
 		$noVNC=new \Home\Controller\Entity\NoVNC();
@@ -101,15 +106,14 @@ class DockerController extends MyController{
 		exit();
 	}
 
-	public function stopContainerByIp(){
+	public function stopContainerByIp($false_ip){
 		$model=new \Home\Model\Docker_containerModel();
 
-		$false_ip=I('get.false_ip');
 		$ip_num=str_replace('host','',$false_ip);
 		$container_id=$model->find_ContainerId_By_Ip($ip_num);
 		
-		$docker=new \Home\Controller\Entity\Docker();
-		$docker->stopContainerById($container_id);
+		// $docker=new \Home\Controller\Entity\Docker();
+		$this->docker->stopContainerById($container_id);
 
 		// echo "<script> top.location.href='http://localhost:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
 		// $noVNC=new \Home\Controller\Entity\NoVNC();
@@ -125,13 +129,13 @@ class DockerController extends MyController{
 	 */
 	public function runContainerById($image_id){
 		
-		$docker=new \Home\Controller\Entity\Docker();
-		$ips=$docker->getNewIp();
+		// $docker=new \Home\Controller\Entity\Docker();
+		$ips=$this->docker->getNewIp();
 		
 		$ip=$ips['ip'];
 		
-		$docker=new \Home\Controller\Entity\Docker();
-		$container_id=$docker->runContainerByIdIp($image_id,$ip);    //具体docker中 run -it 
+		
+		$container_id=$this->docker->runContainerByIdIp($image_id,$ip);    //具体docker中 run -it 
 
 		$info[]=$container_id;
 		$info[]=$ip;
@@ -139,9 +143,9 @@ class DockerController extends MyController{
 		return $info;
 	}
 
-	public function resetContainer(){
+	public function resetContainer($id){
 
-		$id=I('get.id');
+		
 	
 
 		$model=new \Home\Model\Docker_containerModel();
@@ -152,10 +156,10 @@ class DockerController extends MyController{
 
 
 
-		$docker=new \Home\Controller\Entity\Docker();
+		// $docker=new \Home\Controller\Entity\Docker();
 	
-		$docker->deleteContainerById($info['container_id']);
-		$container_id=$docker->runContainerByIdIp($imageName,$info['ip']);
+		$this->docker->deleteContainerById($info['container_id']);
+		$container_id=$this->docker->runContainerByIdIp($imageName,$info['ip']);
 
 
 		$model->updateContainerId($id,$container_id);

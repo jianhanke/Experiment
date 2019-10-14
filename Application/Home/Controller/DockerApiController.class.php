@@ -16,8 +16,7 @@ class DockerApiController extends MyController{
 		$hostName =  \Home\Controller\Entity\Host::getHostName();
 		$url="http://$hostName:2375$params";
 		echo $url;
-		
-
+        
         $ch = curl_init();
         $headers = [
         'form-data' => ['Content-Type: multipart/form-data'],
