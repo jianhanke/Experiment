@@ -13,8 +13,8 @@ class DockerController extends MyController{
 	public  $docker=NULL;
 
 	public function __construct(){
-		$this->docker=new \Home\Controller\Entity\Docker();
-		// $this->docker=new \Home\Controller\Entity\DockerApi();
+		// $this->docker=new \Home\Controller\Entity\Docker();
+		$this->docker=new \Home\Controller\Entity\DockerApi();
 	}
 
 	

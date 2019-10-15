@@ -49,7 +49,6 @@ a{
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
    var rfb = new RFB(document.getElementById('screen'),url,{ credentials: { password: '123456' } }  );
-   rfb.reconnect  = true;
   rfb.connect();
   
   // console.log(rfb);

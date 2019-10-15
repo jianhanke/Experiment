@@ -7,8 +7,7 @@ class DockerApiController extends MyController{
 
     public function ceshi(){
         $dockerApi=new \Home\Controller\Entity\DockerApi();
-        $info=$dockerApi->getUrl();
-        dump($info);
+        $dockerApi->runContainerByIdIp("950cddbcac8d","172.19.0.100");
     }
 
 	public function getJsonInfoByApi($params,$method='get',$data=Null,$type='form-data'){
@@ -87,6 +86,7 @@ class DockerApiController extends MyController{
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
 		$containerId=$info['Id'];
 		$this->startContainerById($containerId);
+		return $containerId;
     }
 
 

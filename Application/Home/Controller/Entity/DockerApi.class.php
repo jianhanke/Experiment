@@ -16,8 +16,8 @@ class DockerApi{
 	public function getJsonInfoByApi($params,$method='get',$data=Null,$type='form-data'){
 
 		
-		$url=$this->$hostName."$params";
-		echo $url;
+		$url=$this->hostAndPort."$params";
+		dump($url);
 		
         $ch = curl_init();
         $headers = [
@@ -86,8 +86,11 @@ class DockerApi{
     	$data = json_encode($data);
     	dump($data);
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
-		$containerId=$info['Id'];
+        dump($info);
+		$containerId=substr($info['Id'], 0,10);
+        dump($containerId);
 		$this->startContainerById($containerId);
+        return $containerId;
     }
 
     public function restartContainerById($container_id){
