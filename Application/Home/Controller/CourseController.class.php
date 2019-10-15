@@ -31,7 +31,7 @@ class CourseController extends MyController{
 
 		if($info){    //已经加入找到对应容器进入即可，
 			$container_id=$model3->find_ContainerId_By_ImageId($user_id,$image_id,$chapter_id);
-			$docker=new \Home\Controller\Entity\Docker();
+			$docker=new \Home\Controller\Entity\DockerSdk();
 
 			$docker->startContainerById($container_id);
 			$ip_num=$model3->find_Ip_By_Chapter($user_id,$image_id,$chapter_id);
@@ -57,7 +57,7 @@ class CourseController extends MyController{
 
 	public function runContainerById($image_id){
 		
-		$docker=new \Home\Controller\Entity\Docker();
+		$docker=new \Home\Controller\Entity\DockerSdk();
 		$ips=$docker->getNewIp();
 		// dump($ips);
 		$ip=$ips['ip'];
