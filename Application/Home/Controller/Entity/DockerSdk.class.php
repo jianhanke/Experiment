@@ -3,7 +3,7 @@
 
 namespace Home\Controller\Entity;
 
-class Docker{
+class DockerSdk{
 
 	/*
 		docker run -d 运行一个新容器，返回容器id
