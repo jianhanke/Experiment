@@ -43,15 +43,17 @@ class OnlineCompileController extends MyController{
 		for($i=0;$i<count($out);$i++){
 			$out[$i]=str_replace("$beforeFile:","",$out[$i]);
 		}
-		dump ($out);
 		
 		if(!empty($out)){
+
+			echo "不为空";
+			dump ($out);
 			unlink($beforeFile);
+			unlink($afterFile);
 			return 0;
 		}
 		exec("$afterFile  2>&1",$out2,$status2);
 		dump($out2);
-		
 		unlink($beforeFile);
 		unlink($afterFile);
 		return 0;

@@ -1,0 +1,2187 @@
+[ 2019-10-22T13:57:21+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001273s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.086478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.086501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010070s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010108s ]
+
+[ 2019-10-22T13:57:22+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.1759s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0342s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0146s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0814s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014493s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014512s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000039s ]
+
+[ 2019-10-22T13:57:57+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-22T13:59:06+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-10-22T13:59:06+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000014s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2019-10-22T13:59:25+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000926s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2019-10-22T13:59:42+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-10-22T13:59:52+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000992s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T13:59:57+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000096s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000158s ]
+
+[ 2019-10-22T13:59:57+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000019s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2019-10-22T14:01:08+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-10-22T14:01:51+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000100s ]
+
+[ 2019-10-22T14:08:10+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-10-22T14:08:53+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-10-22T14:10:35+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-10-22T14:19:42+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/startCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-10-22T14:19:44+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000021s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000027s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001062s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001073s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
+
+[ 2019-10-22T14:19:45+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0003s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0486s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002680s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002700s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-10-22T14:19:45+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000030s ]
+
+[ 2019-10-22T14:21:11+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017844s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017883s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+
+[ 2019-10-22T14:21:11+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000069s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018909s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000172s ]
+
+[ 2019-10-22T14:27:57+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-22T14:37:24+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.0439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000087s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-10-22T14:37:25+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T14:38:54+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-22T14:39:16+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000045s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001061s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T14:41:25+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2019-10-22T14:52:20+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-22T14:53:42+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001082s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000076s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000089s ]
+
+[ 2019-10-22T15:08:28+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2019-10-22T15:14:19+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2019-10-22T15:14:47+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 34 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000789s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T15:16:13+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+
+[ 2019-10-22T15:16:40+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.112787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.112819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000081s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000112s ]
+
+[ 2019-10-22T15:16:51+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000049s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000766s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T15:18:09+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000078s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.123818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123857s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2019-10-22T15:19:21+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000843s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T15:19:41+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000899s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000086s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2019-10-22T15:19:50+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000930s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000941s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T15:19:59+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+
+[ 2019-10-22T15:20:13+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000729s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-10-22T15:20:20+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000795s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+
+[ 2019-10-22T15:21:06+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000777s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+
+[ 2019-10-22T15:21:18+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000769s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
+
+[ 2019-10-22T15:21:30+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+
+[ 2019-10-22T15:21:48+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000026s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+
+[ 2019-10-22T15:22:03+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000753s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000763s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+
+[ 2019-10-22T15:22:13+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000084s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 44 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001281s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T15:23:56+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000846s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2019-10-22T15:24:20+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000954s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2019-10-22T15:24:36+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000843s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T15:27:44+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000091s ]
+
+[ 2019-10-22T15:27:45+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0335s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001578s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T15:27:46+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000027s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000728s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000738s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000010s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000018s ]
+
+[ 2019-10-22T15:28:02+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T15:28:34+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001108s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000031s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T15:28:46+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000033s ]
+
+[ 2019-10-22T22:50:39+08:00 ] ::1 /Experiment/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000538s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+
+[ 2019-10-22T22:50:40+08:00 ] ::1 /Experiment/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050883s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000591s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000810s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2019-10-22T22:50:44+08:00 ] ::1 /Experiment/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.3266s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 1 AND `Spwd` = '1' LIMIT 1   [ RunTime:0.1804s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048174s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-22T22:50:45+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2019-10-22T22:50:45+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0586s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.200618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T22:50:46+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-10-22T22:53:58+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013509s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013534s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2019-10-22T22:53:58+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003268s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000040s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+
+[ 2019-10-22T22:53:58+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2019-10-22T22:55:26+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008683s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2019-10-22T22:55:26+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001125s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+
+[ 2019-10-22T22:55:26+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000832s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000845s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+
+[ 2019-10-22T23:04:22+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000063s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000848s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-22T23:11:51+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000052s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002074s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000031s ]
+
+[ 2019-10-22T23:13:16+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001180s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+
+[ 2019-10-22T23:13:17+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002713s ]
+
+[ 2019-10-22T23:13:17+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000026s ]
+
+[ 2019-10-22T23:14:18+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-10-22T23:16:20+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001099s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001112s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000017s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+
+[ 2019-10-22T23:16:20+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2019-10-22T23:16:21+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000014s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
+
+[ 2019-10-22T23:21:47+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000839s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T23:27:55+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001131s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000042s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000098s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000115s ]
+
+[ 2019-10-22T23:33:24+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2019-10-22T23:35:23+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000839s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+
+[ 2019-10-22T23:35:41+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000034s ]
+
+[ 2019-10-22T23:35:49+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000836s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000019s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T23:36:14+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000043s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000020s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000032s ]
+
+[ 2019-10-22T23:37:23+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000029s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001043s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001055s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
+
+[ 2019-10-22T23:37:23+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000012s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000022s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0003s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+
+[ 2019-10-22T23:37:24+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000022s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000026s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000661s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000011s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000019s ]
+
+[ 2019-10-22T23:38:32+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000032s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000895s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2019-10-22T23:39:12+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000029s ]
+
+[ 2019-10-22T23:39:24+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001035s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2019-10-22T23:39:34+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2019-10-22T23:43:28+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000935s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2019-10-22T23:43:44+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000045s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0002s ]
+SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.1229s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024937s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2019-10-22T23:43:44+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001044s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T23:45:58+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000030s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001085s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001097s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T23:45:58+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000016s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001355s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+
+[ 2019-10-22T23:45:59+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000027s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000036s ]
+
+[ 2019-10-22T23:48:31+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000036s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000915s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000927s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T23:49:08+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000034s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000981s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000027s ]
+
+[ 2019-10-22T23:49:51+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000033s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
+
+[ 2019-10-22T23:50:11+08:00 ] ::1 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001084s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000024s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000033s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000025s ]
+
+[ 2019-10-22T23:50:11+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000024s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0003s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004150s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000023s ]
+
+[ 2019-10-22T23:50:12+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000028s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000027s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+
+[ 2019-10-22T23:52:49+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000027s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+[ 2019-10-22T23:53:37+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000031s ]
+NOTIC: [8] Undefined variable: myNote /var/www/html/Experiment/Application/Runtime/Cache/Home/7ca312fce73ce5726648dc780b5cd1ea.php 第 50 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000882s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000024s ]
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

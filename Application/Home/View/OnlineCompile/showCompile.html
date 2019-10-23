@@ -4,17 +4,33 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
+<style type="text/css">
+    html, body {
+            width:100%;
+            height:100%;
+            margin:0px;
+            padding:0px;
+    }
+
+</style>
+
 <body>
     
-
-    <form action="{:U('OnlineCompile/startCompile')}"  id="form"  method="post"  >
+<div style="height: 100%;width: 65%;float: left;"  >
+    <form action="http://localhost:81/compile.php"  id="form"  method="post"  style="height: 75%;" target="compile_iframe" >
     
-        <input type="" name="id" value="1"> 
-        <script id="container"   name="myCode"  style="height: 100%;" scrolling="yes"> </script>
-        <input   type="" id="hidden"  name="hidden" >
-        <input type="submit" value="提交"  onclick="ceshi()">  
+        <input type="hidden" name="id" value="1"> 
+        <script id="container"   name="myCode"     style="height: 100%;" scrolling="yes"> </script>
+        
+        <input type="submit" value="提交">  
 
     </form>
+</div>
+
+<div style="height: 100%;width: 35%;float: right; ">
+    <iframe  name="compile_iframe"     style="height: 100%;width: 99%" ></iframe>
+
+</div>
 
 </body>
 </html>
@@ -28,16 +44,16 @@
             <script type="text/javascript">
                  var ue = UE.getEditor('container',{toolbars: [
                     ['fullscreen',  ],
-                    ['bold', 'italic', 'underline',   'removeformat', 'formatmatch', 'autotypeset',   'forecolor','snapscreen','insertcode' ]
+                    [ ]
                           ] ,autoHeightEnabled:false } );
                         ue.ready(function(){
                             ue.setContent('{$myNote}');                
                         });
-            function ceshi(){
-            var info=ue.getPlainTxt();
-            console.log(info);
-            document.getElementById("hidden").value=info;
-            document.getElementById("form").submit();
-        }
+        //     function ceshi(){
+        //     var info=ue.getPlainTxt();
+        //     console.log(info);
+        //     document.getElementById("hidden").value=info;
+        //     document.getElementById("form").submit();
+        // }
 </script>
 
