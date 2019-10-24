@@ -17,10 +17,11 @@
 <body>
     
 <div style="height: 100%;width: 65%;float: left;"  >
-    <form action="http://localhost:81/compile.php"  id="form"  method="post"  style="height: 75%;" target="compile_iframe" >
-    
+    <form action="http://localhost:83/compile.php"  id="form"  method="post"  style="height: 75%;" target="compile_iframe" >
+        
         <input type="hidden" name="id" value="1"> 
-        <script id="container"   name="myCode"     style="height: 100%;" scrolling="yes"> </script>
+        <!-- <script id="container"   name="myCode"     style="height: 100%;" scrolling="yes"> </script> -->
+        <textarea   name="myCode" style="height: 100%;width: 99%"     /> </textarea>
         
         <input type="submit" value="提交">  
 
@@ -57,3 +58,6 @@
         // }
 </script>
 
+<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="js/vendor/trumbowyg.min.js"></script>
