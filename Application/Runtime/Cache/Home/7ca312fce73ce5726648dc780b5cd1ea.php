@@ -15,17 +15,24 @@
 </style>
 
 <body>
-    
+<select  id="select" >
+
+  <option value="http://localhost:81/compile.php">C </option>
+  <option value="http://localhost:82/compile.php">Java</option>
+  <option value="http://localhost:83/compile.php">Python3.7.0</option>
+  
+</select>  
+<br>  
 <div style="height: 100%;width: 65%;float: left;"  >
-    <form action="http://localhost:83/compile.php"  id="form"  method="post"  style="height: 75%;" target="compile_iframe" >
+    <form action=""  id="myform"  method="post"  style="height: 75%;" target="compile_iframe" >
         
         <input type="hidden" name="id" value="1"> 
         <!-- <script id="container"   name="myCode"     style="height: 100%;" scrolling="yes"> </script> -->
         <textarea   name="myCode" style="height: 100%;width: 99%"     /> </textarea>
         
-        <input type="submit" value="提交">  
-
+        <input type="button" value="提交"  onclick="ceshi()" >  
     </form>
+
 </div>
 
 <div style="height: 100%;width: 35%;float: right; ">
@@ -35,29 +42,13 @@
 
 </body>
 </html>
-<script type="text/javascript" src="/Experiment/Public/Home/js/Ueditor/ueditor.config.js"></script>
-
+<script type="text/javascript">
+    function ceshi(){
+        var url=document.getElementById('select').value;  
+        console.log(url);
+        document.getElementById('myform').setAttribute('action',url);
+        document.getElementById('myform').submit();
+    }
     
 
-                        <!-- 编辑器源码文件 -->
-            <script type="text/javascript" src="/Experiment/Public/Home/js/Ueditor/ueditor.all.js"></script>
-                        <!-- 实例化编辑器 -->
-            <script type="text/javascript">
-                 var ue = UE.getEditor('container',{toolbars: [
-                    ['fullscreen',  ],
-                    [ ]
-                          ] ,autoHeightEnabled:false } );
-                        ue.ready(function(){
-                            ue.setContent('<?php echo ($myNote); ?>');                
-                        });
-        //     function ceshi(){
-        //     var info=ue.getPlainTxt();
-        //     console.log(info);
-        //     document.getElementById("hidden").value=info;
-        //     document.getElementById("form").submit();
-        // }
 </script>
-
-<script src="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="js/vendor/trumbowyg.min.js"></script>
