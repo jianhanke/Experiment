@@ -1,12 +1,19 @@
 #!/usr/bin/python
 
-import docker
+import docker 
+import sys
+def runContainerById(name,ip):
+	client=docker.from_env()
+	container=client.containers.run(name,detach=True)
+	myNet=client.networks.get('myNet');
+	# myNet=client.networks.get('b269b776e36e')   #生产环境
+	myNet.connect(container.short_id,ipv4_address=ip)
+	id2=container.short_id
+	print(id2)
+	
 
-def ceshi2():
-
-	id=1000;
-	for i in range(1000):
-		print(i)	
-	print(id)
 if __name__ == '__main__':
-	ceshi2()
+	# runContainerById(sys.argv[1],sys.argv[2])
+    runContainerById('92f7bf669a99','172.19.0.25');
+	
+	

@@ -192,6 +192,15 @@ class DockerController extends MyController{
 		$this->assign('count',$count);
 		$this->display('showImage');	
 	}
+
+	public function dockerController(){
+
+		
+		$this->display();
+	}
+
+
+
 	
 
 }

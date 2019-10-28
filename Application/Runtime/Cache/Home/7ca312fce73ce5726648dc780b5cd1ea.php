@@ -20,6 +20,7 @@
   <option value="http://localhost:81/compile.php">C </option>
   <option value="http://localhost:82/compile.php">Java</option>
   <option value="http://localhost:83/compile.php">Python3.7.0</option>
+  <option value="http://localhost:84/compile.php">php7.2</option>
   
 </select>  
 <br>  

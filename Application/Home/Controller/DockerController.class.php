@@ -12,9 +12,15 @@ class DockerController extends MyController{
 	 
 	public  $docker=NULL;
 
-	public function __construct(){
-		// $this->docker=new \Home\Controller\Entity\DockerSdk();
-		$this->docker=new \Home\Controller\Entity\DockerApi();
+	public function _initialize(){
+
+		$SdkOrApi=new \Admin\Controller\Entity\SdkOrApi();
+		$manner=$SdkOrApi->getControllerManner();
+		if($manner=='PythonSdk'){
+			$this->docker=new \Home\Controller\Entity\DockerSdk();
+		}else{
+			$this->docker=new \Home\Controller\Entity\DockerApi();
+		}
 	}
 
 	
