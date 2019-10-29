@@ -7,6 +7,9 @@ class OnlineCompileController extends MyController{
 
 	public function showCompile(){
 
+		$hostName =  \Home\Controller\Entity\Host::getHostName();
+
+		$this->assign('hostName',$hostName);
 		$this->display();
 	}
 
