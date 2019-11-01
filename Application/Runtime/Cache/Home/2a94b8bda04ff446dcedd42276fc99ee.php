@@ -49,7 +49,7 @@ div{
     <!-- <li><a href="<?php echo U('Index/showExperiment');?>" target="iframe" >主机</a></li> -->
     <li><a href="<?php echo U('Index/showCourse');?>" target="iframe" >课程</a></li>
     <li><a href="<?php echo U('Index/showMyCourse');?>" target="iframe">我的主机</a></li>
-    <li><a href="<?php echo U('OnlineCompile/showCompile');?> " target="iframe">在线编译</a></li>
+    <li><a href="<?php echo U('OnlineCompile/showCompile');?> " target="iframe">在线编程</a></li>
    <li><a href="<?php echo U('Index/showStudentInfoById');?> " target="iframe">个人中心</a></li>
     <li><a href="">用户:<?php echo ($user_name); ?> </a>  </li>
     <li>   <a href="<?php echo U('Login/logout');?> ">注销</a>       </li>

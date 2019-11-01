@@ -5,6 +5,9 @@ use Think\Controller;
 
 class DockerController extends MyController{
 
+
+	public static $name="xiaming";
+
 	public $docker=NULL;
 	public function __construct(){
 		parent::__construct();
@@ -62,6 +65,7 @@ class DockerController extends MyController{
 	/**
 	 *   开关机 容器
 	 */
+	
 	public function handleContainer(){     
 		$model=new \Admin\Model\Docker_containerModel();
 		$containers=$model->show_All_Container();   //MySql中所有容器信息
@@ -195,8 +199,18 @@ class DockerController extends MyController{
 
 	public function dockerController(){
 
-		
-		$this->display();
+		dump(self::$name);
+		self::$name="shishi";
+		dump(self::$name);
+
+		$getInstance=\Admin\Controller\Entity\SdkOrApi::getInstance();
+		if(IS_POST){
+			$select=I('post.select');
+			$getInstance::setControllerManner($select);
+		}
+			$currentManner=$getInstance::getControllerManner();
+			$this->assign('currentManner',$currentManner);
+			$this->display();	
 	}
 
 

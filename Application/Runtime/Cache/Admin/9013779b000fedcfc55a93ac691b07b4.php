@@ -6,15 +6,16 @@
 </head>
 <body>
 	
-	<p>选择前端控制Docker的方式</p>
+	<p>	当前控制方式为: <font color="red" ><?php echo ($currentManner); ?></font> </p> 
 
-	<form  action="<?php echo U('Docker/dockerController');?>" >
-		<select id="select">
-		  <option value ="volvo">DockerApi</option>
-		  <option value ="saab">PythonSdk</option>
+	<form  action="<?php echo U('Docker/dockerController');?>" method="post">
+		<select name="select">
+		  <option value="DockerApi" <?php echo ($currentManner=='DockerApi' ? selected : ''); ?>  >DockerApi</option>
+		  <option value="PythonSdk" <?php echo ($currentManner=='PythonSdk' ? selected : ''); ?> >PythonSdk</option>
 		</select>
 		<input type="submit" name="确定">
 	</form>
+
 
 
 
