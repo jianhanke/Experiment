@@ -13,11 +13,14 @@ class OnlineCompileController extends MyController{
 		$this->display();
 	}
 
+
+
 	public function startCompile(){
 
 		$id=I('post.id');
 
 		$myCode=I('post.myCode');
+		dump($myCode);
 
 		$myCode=htmlspecialchars_decode(html_entity_decode($myCode));
 

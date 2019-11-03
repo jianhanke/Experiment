@@ -29,7 +29,7 @@
 <body>
 <select  id="select" >
 
-  <option value="http://<?php echo ($hostName); ?>:81/compile.php">C </option>
+  <option value="<?php echo U('OnlineCompile/startCompile');?> ">C </option>
   <option value="http://<?php echo ($hostName); ?>:82/compile.php">Java</option>
   <option value="http://<?php echo ($hostName); ?>:83/compile.php">Python3.7.0</option>
   <option value="http://<?php echo ($hostName); ?>:84/compile.php">php7.2</option>

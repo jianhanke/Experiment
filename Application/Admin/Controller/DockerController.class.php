@@ -203,14 +203,50 @@ class DockerController extends MyController{
 		self::$name="shishi";
 		dump(self::$name);
 
-		$getInstance=\Admin\Controller\Entity\SdkOrApi::getInstance();
+		$sdkOrApi=new \Admin\Controller\Entity\SdkOrApi();
 		if(IS_POST){
 			$select=I('post.select');
-			$getInstance::setControllerManner($select);
+			$sdkOrApi->setControllerManner($select);
 		}
-			$currentManner=$getInstance::getControllerManner();
+			$currentManner=$sdkOrApi->getControllerManner();
 			$this->assign('currentManner',$currentManner);
 			$this->display();	
+	}
+
+	public function makeImage(){
+
+		$systemType=I('post.systemType');
+		
+		$docker=new \Home\Controller\Entity\DockerApi();
+
+		$ips=$docker->getNewIp();
+		$ip=$ips['ip'];
+		
+		$container_id=$docker->runContainerByIdIp($image_id,$ip);
+		$info[]=$container_id;
+		$info[]=$ip;
+		$info[]=$ips['ip_num'];
+
+		$model3=new \Home\Model\Docker_containerModel();
+		$model3->add_Container('110',$container_id,$systemType,$ip,$ips['ip_num']);
+
+		$noVNC=new \Home\Controller\Entity\Host();
+		$hostName=$noVNC->getHostName();
+
+		$url='ws://'.$hostName.':6080/websockify?token=host'.$ips['ip_num'];
+		$this->assign('url',$url);
+		$this->display();
+
+
+		}		
+		
+		
+	
+
+	public function chooseMakeImage(){
+
+		$this->display();
+
 	}
 
 
