@@ -222,10 +222,7 @@ class DockerController extends MyController{
 		$ips=$docker->getNewIp();
 		$ip=$ips['ip'];
 		
-		$container_id=$docker->runContainerByIdIp($image_id,$ip);
-		$info[]=$container_id;
-		$info[]=$ip;
-		$info[]=$ips['ip_num'];
+		$container_id=$docker->runContainerByIdIp($systemType,$ip);
 
 		$model3=new \Home\Model\Docker_containerModel();
 		$model3->add_Container('110',$container_id,$systemType,$ip,$ips['ip_num']);
@@ -234,6 +231,7 @@ class DockerController extends MyController{
 		$hostName=$noVNC->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ips['ip_num'];
+		$this->assign('containerId',$container_id);
 		$this->assign('url',$url);
 		$this->display();
 

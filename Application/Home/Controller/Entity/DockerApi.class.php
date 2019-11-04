@@ -17,7 +17,7 @@ class DockerApi{
 
 		
 		$url=$this->hostAndPort."$params";
-		dump($url);
+		// dump($url);
 		
         $ch = curl_init();
         $headers = [
@@ -47,7 +47,7 @@ class DockerApi{
         curl_close($ch);
         $result = json_decode($response, true);
 
-        dump($result);
+        // dump($result);
         return $result;
 
 	}
@@ -84,11 +84,11 @@ class DockerApi{
     public function runContainerByIdIp($image_id,$ip){
     	$data=['Image'=>"$image_id",'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"]]]]];
     	$data = json_encode($data);
-    	dump($data);
+    	// dump($data);
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
-        dump($info);
+        // dump($info);
 		$containerId=substr($info['Id'], 0,10);
-        dump($containerId);
+        // dump($containerId);
 		$this->startContainerById($containerId);
         return $containerId;
     }
