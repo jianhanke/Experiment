@@ -1,351 +1,181 @@
-[ 2019-11-05T12:14:02+08:00 ] ::1 /Experiment/index.php
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.018186s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.018216s ]
-
-[ 2019-11-05T12:14:03+08:00 ] ::1 /Experiment/index.php/Home/Login/login
+[ 2019-11-05T12:32:26+08:00 ] ::1 /Experiment/index.php/Home/Login/login
 INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000306s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000428s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000600s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000626s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129955s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.129982s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000692s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000718s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008647s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.019194s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.019219s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014500s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014251s ]
-INFO: [ app_end ] --END-- [ RunTime:0.014276s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001977s ]
 
-[ 2019-11-05T12:22:05+08:00 ] ::1 /Experiment/index.php
+[ 2019-11-05T12:32:29+08:00 ] ::1 /Experiment/index.php/Home/Login/checkLogin
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000029s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
-
-[ 2019-11-05T12:22:05+08:00 ] ::1 /Experiment/index.php/Home/Login/login
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000363s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000382s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004796s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004816s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000469s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000791s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
-
-[ 2019-11-05T12:22:09+08:00 ] ::1 /Experiment/index.php/Home/Login/checkLogin
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
-SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0054s ]
-SQL: SELECT * FROM `student` WHERE `Sid` = 1 AND `Spwd` = 'c4ca4238a0b923820dcc509a6f75849b' LIMIT 1   [ RunTime:0.0003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004289s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004313s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000242s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000259s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000474s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
-
-[ 2019-11-05T12:22:10+08:00 ] ::1 /Experiment/index.php/Home/Index/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000331s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000459s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000041s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005046s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.005070s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000422s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000437s ]
-
-[ 2019-11-05T12:22:12+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
-SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0087s ]
-SQL: SELECT * FROM `experiment`  [ RunTime:0.0003s ]
-SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0047s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0006s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0044s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0042s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0041s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='9' ) LIMIT 1   [ RunTime:0.0002s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0042s ]
-SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='12' ) LIMIT 1   [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.075735s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.075760s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000254s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000458s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000474s ]
-
-[ 2019-11-05T12:22:14+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000655s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0049s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0043s ]
-SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.1048s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007825s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.007850s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000466s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000684s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000702s ]
-
-[ 2019-11-05T12:22:14+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000735s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000754s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007402s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.007428s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000432s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
-
-[ 2019-11-05T12:22:16+08:00 ] ::1 /Experiment/index.php/Home/Index/showStudentInfoById
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000711s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
-SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0049s ]
-SQL: SELECT * FROM `student` WHERE `Sid` = 1 LIMIT 1   [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005664s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.005687s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000649s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000665s ]
-
-[ 2019-11-05T12:22:16+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003982s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004006s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000455s ]
-
-[ 2019-11-05T12:22:18+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000819s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0062s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0042s ]
-SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.0003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011863s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.011886s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000476s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000494s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000773s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
-
-[ 2019-11-05T12:22:21+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0076s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0042s ]
-SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.0003s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005983s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.006004s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000472s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000651s ]
-
-[ 2019-11-05T12:22:23+08:00 ] ::1 /Experiment/index.php/Home/Index/showCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000393s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
-SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0119s ]
-SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
-INFO: [ view_parse ] --START--
-INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
-NOTIC: [8] Undefined index: name E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Home\9b653ca157623fe95df0e6306293c727.php 第 42 行.
-NOTIC: [8] Undefined index: name E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Home\9b653ca157623fe95df0e6306293c727.php 第 42 行.
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088036s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.088082s ]
-INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
-INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
-
-[ 2019-11-05T12:22:25+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000316s ]
-INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000398s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0078s ]
-SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0046s ]
-SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.0004s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000013s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000023s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.2412s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 1 AND `Spwd` = 'c4ca4238a0b923820dcc509a6f75849b' LIMIT 1   [ RunTime:0.0044s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
 INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004452s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.004473s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017933s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000232s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000247s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000077s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000438s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000454s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000028s ]
 
-[ 2019-11-05T12:22:25+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
+[ 2019-11-05T12:32:31+08:00 ] ::1 /Experiment/index.php/Home/Index/index
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000037s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000704s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000725s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000033s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000022s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000022s ]
+
+[ 2019-11-05T12:32:31+08:00 ] ::1 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0247s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0002s ]
+SQL: SELECT `Eid` FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0272s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000021s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000021s ]
+
+[ 2019-11-05T12:32:32+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000039s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000035s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.0244s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009234s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000026s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000038s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000018s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000031s ]
+
+[ 2019-11-05T12:32:33+08:00 ] ::1 /Experiment/index.php/Home/Index/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000021s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+NOTIC: [8] Undefined index: name /var/www/html/Experiment/Application/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008957s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000015s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000023s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
+
+[ 2019-11-05T12:32:33+08:00 ] ::1 /Experiment/index.php/Home/Index/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000016s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000029s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=1 and t1.Eid=t2.Eid )  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
 INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005783s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.005806s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001941s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001964s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000448s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000035s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000681s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000014s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000020s ]
 
-[ 2019-11-05T12:22:27+08:00 ] ::1 /Experiment/index.php/Home/Index/showStudentInfoById
+[ 2019-11-05T12:32:33+08:00 ] ::1 /Experiment/index.php/Home/OnlineCompile/showCompile
 INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
-INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000027s ]
 INFO: [ app_begin ] --START--
-INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
-INFO: [ app_begin ] --END-- [ RunTime:0.000713s ]
-SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0067s ]
-SQL: SELECT * FROM `student` WHERE `Sid` = 1 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000027s ]
 INFO: [ view_parse ] --START--
 INFO: [ template_filter ] --START--
-INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
-INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
-INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006337s ]
-INFO: [ view_parse ] --END-- [ RunTime:0.006359s ]
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002526s ]
 INFO: [ view_filter ] --START--
-INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000441s ]
-INFO: [ view_filter ] --END-- [ RunTime:0.000456s ]
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
 INFO: [ app_end ] --START--
-INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
-INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
 

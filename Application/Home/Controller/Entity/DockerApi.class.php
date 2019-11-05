@@ -99,7 +99,16 @@ class DockerApi{
 
 
     public function commitContainerById($container_id){
-        $info=$this->getJsonInfoByApi("/commit/container/$container_id",'post');
+
+        $data=['container'=>'11f51fe3c43c'];
+        $data = json_encode($data);
+
+        $info=$this->getJsonInfoByApi("/commit?container=11f51fe3c43c",'post',$data,'json');
+        
+        $image_id=str_replace("sha256:","",$info['Id']);
+        
+        $image_id=substr($image_id, 0,12);  //从0开始截取12个
+        return $image_id;
     }
 
     public function getNewIp(){

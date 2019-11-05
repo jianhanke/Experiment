@@ -239,16 +239,22 @@ class DockerController extends MyController{
 
 		}		
 		public function toMakeImage(){
-			$container_id=I('post.containId');
+			$container_id=I('post.containerId');
+			$imageName=I('post.imageName');
+			$admin_name=session('admin_name');
+
 			$docker=new \Home\Controller\Entity\DockerApi();
-			$docker->commitContainerById($container_id);
+			$image_id=$docker->commitContainerById($container_id);
+			$data=['image_id'=>$image_id,'name'=>$imageName,'from_admin'=>$admin_name];
+
+			$model=D('Makeimage');
+			$model->add($data);
+			
+
+
 		}
 
 
-
-		
-		
-	
 
 	public function chooseMakeImage(){
 

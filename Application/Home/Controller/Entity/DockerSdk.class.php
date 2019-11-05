@@ -53,6 +53,12 @@ class DockerSdk{
 		exec("/usr/bin/python $docker_path $container_id");
 	}
 
+	public function commitContainerById($container_id){
+
+		
+
+	}	
+
 
 
 	/**

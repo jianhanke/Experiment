@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -34,12 +34,12 @@ a{
   
   
 <div  style="height: 100%;width: 10%;float: left; " >
-      <input type="hidden"  id='hiddenUrl' value="{$url}">
+      <input type="hidden"  id='hiddenUrl' value="<?php echo ($url); ?>">
 
 
       <p>输入保存的名字</p>
-      <form  action="{:U('Docker/toMakeImage')}" method="post" >
-            <input type="hidden" name="containerId"   value="{$containerId}" >
+      <form  action="<?php echo U('Docker/toMakeImage');?>" method="post" >
+            <input type="hidden" name="containerId"   value="<?php echo ($containerId); ?>" >
           <input type="text" name="imageName" >
         <input type="submit" name="提交">
       </form>
@@ -56,7 +56,7 @@ a{
 
 <script type="module" crossorigin="anonymous" >
   
-  import RFB from '__PUBLIC__/noVNC/core/rfb.js';
+  import RFB from '/Experiment/Public/noVNC/core/rfb.js';
   console.log("jianhanke!");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
