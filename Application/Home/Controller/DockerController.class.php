@@ -64,7 +64,8 @@ class DockerController extends MyController{
 			// $info=$this->runContainerById($image_id);
 			$info=$this->runContainerById($image_name);  //此处应该是上行的，改一部分
 			dump($info);
-			// 
+			//
+			
 			$model3->add_Container($user_id,$info[0],$image_id,$info[1],$info[2]); //学生容器id 加入 docker_container
 
 			$ip_num=$model3->find_Ip_id($user_id,$image_id);
