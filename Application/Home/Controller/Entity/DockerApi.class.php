@@ -97,6 +97,11 @@ class DockerApi{
     	$info=$this->getJsonInfoByApi("/containers/$container_id/restart",'post');
     }
 
+
+    public function commitContainerById($container_id){
+        $info=$this->getJsonInfoByApi("/commit/container/$container_id",'post');
+    }
+
     public function getNewIp(){
 
 		$model=new \Home\Model\Docker_containerModel();

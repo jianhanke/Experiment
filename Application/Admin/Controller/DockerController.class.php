@@ -231,12 +231,21 @@ class DockerController extends MyController{
 		$hostName=$noVNC->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ips['ip_num'];
+
 		$this->assign('containerId',$container_id);
 		$this->assign('url',$url);
 		$this->display();
 
 
 		}		
+		public function toMakeImage(){
+			$container_id=I('post.containId');
+			$docker=new \Home\Controller\Entity\DockerApi();
+			$docker->commitContainerById($container_id);
+		}
+
+
+
 		
 		
 	
