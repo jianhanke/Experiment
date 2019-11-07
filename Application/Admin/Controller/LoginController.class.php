@@ -12,9 +12,10 @@ class LoginController extends Controller{
 			$model=D('Admin');
 			$info=$model->check_Login($post);
 			if(!empty($info)){
-				// session('admin_id',$info['aid']);
+				session('admin_id',$info['aid']);
 	            session('admin_name',$info['aname']);
-				$this->success('登录成功',U('Index/index'));
+				// $this->success('登录成功',U('Index/index'));
+					$this->redirect('Index/index');
 			}else{
 				$this->error('密码错误');
 			}

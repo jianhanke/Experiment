@@ -21,7 +21,7 @@ class StudentController extends MyController{
 			
 			$is_success=$model->modify_Student_By_Id($info);
 			if($info){
-				$this->success('修改成功');
+				$this->success('修改成功',U('Student/showStudent'));
 			}else{
 				$this->error('修改错误');
 			}
@@ -58,5 +58,27 @@ class StudentController extends MyController{
 		$this->assign('count',$count);
 		$this->display();
 	}
+
+	public function addStudent(){
+
+		if(IS_POST){
+			$post=I('post.');
+			$post['Spwd']=md5($post['Spwd']);
+			$model=D('Student');
+
+			$info=$model->add_Student($post);
+			if($info){
+				$this->success('添加成功');
+			}else{
+				$this->error("添加失败,重新输入");
+			}
+
+		}else{
+				$this->display();	
+		}
+
+		
+	}
+
 
 }

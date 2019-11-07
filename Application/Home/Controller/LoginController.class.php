@@ -12,12 +12,13 @@ class LoginController extends Controller{
   	public function checkLogin(){
         $model=D('Student');
         $post=I('post.');
+        dump($post);
         $post['Spwd']=md5($post['Spwd']);
         $info=$model->check_Login($post);      
        if(isset($info)){
-            $this->redirect('Home/Index/index');
             session('user_id',$info['sid']);
             session('user_name',$info['sname']);
+            $this->redirect('Home/Index/index');
         }else{
             $this->error('账号或密码错误',U('Home/Login/login'));
         }

@@ -42,5 +42,16 @@ class StudentModel extends Model{
 		return $this->select();
 	}
 
+	public function add_Student($post){
+
+		try{
+			return $this->add($post);	
+		}catch(\Exception $e){
+			return 0;
+		}
+		
+	}
+
+
 
 }
