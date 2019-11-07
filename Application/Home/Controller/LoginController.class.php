@@ -15,7 +15,7 @@ class LoginController extends Controller{
         $post['Spwd']=md5($post['Spwd']);
         $info=$model->check_Login($post);      
        if(isset($info)){
-            $this->success('登录成功', U('Home/Index/index'));
+            $this->redirect('Home/Index/index');
             session('user_id',$info['sid']);
             session('user_name',$info['sname']);
         }else{
