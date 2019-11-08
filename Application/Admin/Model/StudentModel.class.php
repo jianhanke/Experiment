@@ -52,6 +52,10 @@ class StudentModel extends Model{
 		
 	}
 
+	public function delete_Student_By_Id($student_id){
+		return $this->delete($student_id);
+	}
+
 
 
 }

@@ -29,16 +29,6 @@
                         
                     </tr>
                  	
-                    <tr>
-                        <td> Chapter  </td>
-                        
-                        <td> <form action="<?php echo U('Admin/Excel/uploadExcelAndInput/modelName/Chapter');?> " method="post" enctype="multipart/form-data">
-								   <input type="file" name="excelData">
-								   <button type="submit">提交</button>
-								</form> </td>
-						<td> <a href="<?php echo U('Admin/Excel/outputExcel/modelName/Chapter');?> ">导出</a>   </td>
-                        
-                    </tr>
 
                     <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
                         <td> <?php echo ($data['table_name']); ?>  </td>

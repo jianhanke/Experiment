@@ -9,28 +9,26 @@
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="__CONTROLLER__/findStudentByLike" method="post">
+                <form action="__CONTROLLER__/findTeacherByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
                             <td>
                                 <select name="search-sort" id="">
-                                    <option value="Sid">学生Id</option>
-                                    <option value="Sname">姓名</option>
-                                    <option value="Sage">年龄</option>
-                                    <option value="Ssex">性别</option>
-                                     <option value="Stele">手机号</option>
-                                    <option value="Spwd">密码</option>
+                                    <option value="Tid">教师Id</option>
+                                    <option value="Tname">姓名</option>
+                                    <option value="Tsex">性别</option>
+                                     <option value="Ttele">手机号</option>
+                                    <option value="Tpwd">密码</option>
                                 </select>   
                             </td>
                             <th width="70">关键字:</th>
                             <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
-                </form>
-
-                            <td>  <a href="{:U('Student/addStudent')}"> <input type="button" value="手动添加" > </a>   </td>
-                            <td>  <a href="{:U('Admin/Excel/outputExcel/modelName/Student')}"> <input type="button" value="下载模板" > </a>   </td>
-                            <td> <form action="{:U('Admin/Excel/uploadExcelAndInput/modelName/Student')} " method="post" enctype="multipart/form-data">
+                            </form>
+                            <td>  <a href="{:U('Teacher/addTeacher')}"> <input type="button" value="手动添加" > </a>   </td>
+                            <td>  <a href="{:U('Admin/Excel/outputExcel/modelName/Teacher')}"> <input type="button" value="下载模板" > </a>   </td>
+                            <td> <form action="{:U('Admin/Excel/uploadExcelAndInput/modelName/Teacher')} " method="post" enctype="multipart/form-data">
                                    <input type="file" name="excelData">
                                    <button type="submit">导入</button>
                                 </form> </td>
@@ -45,9 +43,8 @@
             <div class="result-content">
                 <table class="result-tab" width="100%">
                     <tr>
-                        <th>学生Id</th>
+                        <th>教师Id</th>
                         <th>姓名</th>
-                        <th>年龄</th>
                         <th>性别</th>
                         <th>手机号</th>
                         <th>密码</th>
@@ -55,18 +52,15 @@
                     </tr>
                  <volist   name="datas" id="data">
                     <tr>
-                        <td> {$data['sid']}  </td>
-                        <td> {$data['sname']}  </td>
-                        <td>  {$data['sage']}  </td>
-                        <td>   {$data['ssex']}  </td>
-                        <td>  {$data['stele']} </td>
-                        <td>   {$data['spwd']}  </td>
+                        <td> {$data['tid']}  </td>
+                        <td> {$data['tname']}  </td>
+                        <td>   {$data['tsex']}  </td>
+                        <td>  {$data['ttele']} </td>
+                        <td>   {$data['tpwd']}  </td>
                         <td>
-                            <a class="link-update" href="__CONTROLLER__/modifyStudentById/user_id/{$data['sid']}">修改</a>
+                            <a class="link-update" href="__CONTROLLER__/modifyTeacherById/teacher_id/{$data['tid']}">修改</a>
                             &nbsp&nbsp&nbsp
-                            <a href="{:U('Admin/Student/deleteStudent/student_id')}/{$data['sid']}">删除</a>
-                        <a class="link-update" href="__CONTROLLER__/findStudentWithContainer/student_id/{$data['sid']}">学生所用主机</a>
-                            
+                            <a href="{:U('Admin/Teacher/deleteTeacher/teacher_id')}/{$data['tid']}">删除</a>
                         </td>
                     </tr>
                  </volist>  

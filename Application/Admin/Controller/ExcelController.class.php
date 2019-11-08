@@ -20,7 +20,7 @@ class ExcelController extends MyController{
 
 	public function uploadExcelAndInput($modelName){
 
-        
+            dump($modelName);
         
             $upload= new \Think\Upload();
             $upload->rootPath = './Excel/';  // ./ 代表 从.index开始算起

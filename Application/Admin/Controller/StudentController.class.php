@@ -68,17 +68,23 @@ class StudentController extends MyController{
 
 			$info=$model->add_Student($post);
 			if($info){
-				$this->success('添加成功');
+				$this->success('添加成功',('Student/showStudent'));
 			}else{
 				$this->error("添加失败,重新输入");
 			}
 
 		}else{
 				$this->display();	
-		}
-
-		
+		}		
 	}
+
+	public function deleteStudent($student_id){
+
+		$model=D("Student");
+		$info=$model->delete_Student_By_Id($student_id);
+		$this->redirect('Student/showStudent');
+	}
+
 
 
 }

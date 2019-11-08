@@ -53,6 +53,14 @@
                 </li>
 
                 <li>
+                    <a href="#"><i class="iconfont">&#xe603;</i>教师管理</a>
+                    <ul class="sub-menu">
+                        <li><a href="<?php echo U('Teacher/showTeacher');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>教师信息</a></li>
+                        <!-- <li><a href="#"><i class="iconfont">&#xe678;</i>实验管理</a></li> -->
+                    </ul>
+                </li>
+
+                <li>
 					<a href="#"><i class="iconfont">&#xe603;</i>主机管理</a>
                     <ul class="sub-menu">
                         <li><a href="<?php echo U('Experiment/showExperiment');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>主机信息</a></li>
