@@ -27,6 +27,7 @@
                             <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
                             <td>  <a href="<?php echo U('Student/addStudent');?>"> <input type="button" value="手动添加" > </a>   </td>
+                            <td>  <a href="<?php echo U('Admin/Excel/outputExcel/modelName/Student');?>"> <input type="button" value="下载模板" > </a>   </td>
                             <td> <form action="<?php echo U('Admin/Excel/uploadExcelAndInput/modelName/Student');?> " method="post" enctype="multipart/form-data">
                                    <input type="file" name="excelData">
                                    <button type="submit">导入</button>

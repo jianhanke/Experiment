@@ -10,4 +10,12 @@ class MakeimageModel extends Model{
 		$this->add($post);
 	}
 
+	public function show_ALL_Field(){
+		$sql="select column_name from information_schema.columns where table_name='Makeimage' and table_schema = 'experiment' ";
+		return $this->query($sql);
+	}
+	public function show_All_Data(){
+		return $this->select();
+	}
+
 }

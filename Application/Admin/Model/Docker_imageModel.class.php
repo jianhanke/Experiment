@@ -40,6 +40,8 @@ class Docker_imageModel extends Model{
 	public function add_Info($data){
 		return $this->add($data);
 	}
+
+	
 	
 
 }

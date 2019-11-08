@@ -7,15 +7,15 @@ class ExcelController extends MyController{
 
 
 	public function showExcel(){
-		
+        $model=D('Docker_container');
+        $sql="select table_name from information_schema.tables where table_schema='experiment'";
+        $info=$model->query($sql);
+		$this->assign('datas',$info);
 		$this->display();
 	}
 
     public function ceshi(){
-        $model=D('Docker_image');
-        dump($model);
-        // $data=$model->show_All_Data();
-        // dump($data);
+       
     }
 
 	public function uploadExcelAndInput($modelName){

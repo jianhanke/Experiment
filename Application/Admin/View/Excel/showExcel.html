@@ -39,7 +39,24 @@
 						<td> <a href="{:U('Admin/Excel/outputExcel/modelName/Chapter')} ">导出</a>   </td>
                         
                     </tr>
-                    <tr>
+
+                    <volist name="datas" id="data">
+                            
+                     <tr>
+                        <td> {$data['table_name']}  </td>
+                         <td> <form action="{:U('Admin/Excel/uploadExcelAndInput/modelName')}/{$data['table_name']}" method="post" enctype="multipart/form-data">
+                                   <input type="file" name="excelData">
+                                   <button type="submit">提交</button>
+                                </form> </td>
+                        <td> <a href="{:U('Admin/Excel/outputExcel/modelName')}/{$data['table_name']}">导出</a>   </td>
+                                           
+                    </tr>
+
+
+                    </volist>
+
+
+                    <!-- <tr>
                         <td> Admin  </td>
                         
                         <td> <form action="{:U('Admin/Excel/uploadExcelAndInput/modelName/Admin')} " method="post" enctype="multipart/form-data">
@@ -88,7 +105,7 @@
 								</form> </td>
 						<td> <a href="{:U('Admin/Excel/outputExcel/modelName/Docker_container')} ">导出</a>   </td>
                         
-                    </tr>
+                    </tr> -->
 
                  
                 </table>

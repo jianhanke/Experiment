@@ -7,10 +7,22 @@ class Excel{
 
 	public function outputExcel($modelName){
         vendor("PHPExcel.PHPExcel");
-        $model=D($modelName);
+        $model=M($modelName);
         $fileName = $modelName.date('_Ymd_Hi');
-        $columnName=$model->show_ALL_Field();
-        $data=$model->show_All_Data();
+
+        // $columnName=$model->show_ALL_Field();
+        $sql="select column_name from information_schema.columns where table_name='$modelName' and table_schema = 'experiment' ";
+        $columnName=$model->query($sql);
+
+
+        $lowerColumnName=array();
+        for($i=0;$i<count($columnName);$i++){
+            $lowerColumnName[$i]=strtolower($columnName[$i]['column_name']);
+        }
+
+        // $data=$model->show_All_Data();
+        $data=$model->select();
+
         $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T');
         $objPHPExcel = new \PHPExcel();
         
@@ -19,7 +31,7 @@ class Excel{
         }
         for($i=0;$i<count($data);$i++){
             for($j=0;$j<count($columnName);$j++){
-            $objPHPExcel->getActiveSheet(0)->setCellValue( $cellName[$j].($i+2), $data[$i][$columnName[$j]['column_name']]);
+            $objPHPExcel->getActiveSheet(0)->setCellValue( $cellName[$j].($i+2), $data[$i][$lowerColumnName[$j]]);
             }
         }
         // $objPHPExcel -> getActiveSheet() -> getColumnDimension('C') -> setAutoSize(true);  自动宽度，只对英文数字有效
@@ -47,15 +59,22 @@ class Excel{
         $currentSheet=$PHPExcel->getSheet(0);
         $allRow=$currentSheet->getHighestRow();
         $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T');
-        $model=D($modelName);
-        $columnName=$model->show_ALL_Field();
+        $model=M($modelName);
+
+        // $columnName=$model->show_ALL_Field();
+        $sql="select column_name from information_schema.columns where table_name='$modelName' and table_schema = 'experiment' ";
+        $columnName=$model->query($sql);
+
 
         $cellNum=count($columnName);
         for($i=2;$i<=$allRow;$i++){
             for($j=0;$j<$cellNum;$j++){
         $data[$columnName[$j]['column_name']]=$PHPExcel->getActiveSheet(0)->getCell($cellName[$j][0].$i )->getValue();
             }
-            $model->add_Info($data);
+
+            // $model->add_Info($data);
+             $model->add($data);
+
         }
     }
 }

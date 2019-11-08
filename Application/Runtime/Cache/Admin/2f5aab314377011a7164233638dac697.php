@@ -42,8 +42,8 @@
 			<p>  <?php echo ($data['name']); ?> </p>  
 			<div class="joinExperiment">
 				
-				<a href="<?php echo U('Course/showCourseById');?>/id/<?php echo ($data['cid']); ?>" > 
-				       进入      </a> 
+				<a href="<?php echo U('Course/editCourseById');?>/id/<?php echo ($data['cid']); ?>" > 
+				       编辑      </a> 
 			</div>
 		</div>
     </div><?php endforeach; endif; else: echo "" ;endif; ?>

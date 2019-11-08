@@ -32,5 +32,13 @@ class View_containerwithstuandexperModel extends Model{
 					->count();
 	}
 
+	public function show_ALL_Field(){
+		$sql="select column_name from information_schema.columns where table_name='Admin' and table_schema = 'experiment' ";
+		return $this->query($sql);
+	}
+	public function show_All_Data(){
+		return $this->select();
+	}
+
 
 }
