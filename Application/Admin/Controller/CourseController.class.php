@@ -12,6 +12,58 @@ class CourseController extends MyController{
 		$this->display();
 	}
 
+	public function addCourse(){
+		if(IS_POST){
+			$post=I('post.');
+			if( empty($post['cname']) or empty($post['introduce']) or empty($post['to_teacher_id']) or empty($_FILES['img']['tmp_name']) ){
+				$this->error('填写不完整',U('Course/addCourse'),2);
+			}
+
+		try{
+			$upload = new \Think\Upload();
+			$upload->rootPath = './Public/Course/';  // ./ 代表 项目的根目录
+			$upload->exts      =     array('png','jpeg','jpg');
+			$upload->maxSize= 10*1024*1024;
+			$upload->replace=true;
+			// $upload->saveName= 重命名，但是没有id所以，重命名也没办法
+			$upload->autoSub  = false;    //禁止上传时候的时间目录
+			$pictureInfo   =   $upload->uploadOne($_FILES['img']);
+			if(!$pictureInfo) {// 上传错误提示错误信息
+		        $this->error($upload->getError());
+			}
+		}catch(\Exception $e){
+				$this->error('添加失败,图片上传错误');
+			}
+
+			$post['img']=$pictureInfo['savename'];
+
+			$model=D('Course');
+			$info=$model->add_Info($post);
+			if($info){
+				$this->success('添加成功',U('Course/showCourse'));
+			}else{
+				$this->error('添加失败');
+			}
+			
+			
+
+		}else{
+			$model=D('Teacher');
+			$info=$model->show_Teacher();
+			$this->assign('datas',$info);
+			$this->display();
+		}
+
+		
+	}
+
+
+	public function deleteCourseById($id){
+		$model=D('Course');
+		$model->delete_Course_By_Id($id);
+		$this->redirect('Course/showCourse');
+	}
+
 
 	public function editCourseById(){
 

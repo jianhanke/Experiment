@@ -29,7 +29,28 @@
 	a{ text-decoration:none} 
 	</style>	
 </head>
+<link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
 <body>
+
+<div class="search-wrap">
+            <div class="search-content">
+                
+                    <table class="search-tab">
+                        <tr>
+             					
+							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
+							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
+                            <td>  <a href="<?php echo U('Course/addCourse');?>"> <input type="button" value="添加课程" > </a>   </td>
+                      	
+                        </tr>
+
+                    </table>
+                
+            </div>
+        </div>
+
+
 
 <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="myDiv" style="width: 80%;height: 30%; " >
 
@@ -40,11 +61,12 @@
 				<br />
 				<br />
 			<p>  <?php echo ($data['name']); ?> </p>  
-			<div class="joinExperiment">
+			
 				
 				<a href="<?php echo U('Course/editCourseById');?>/id/<?php echo ($data['cid']); ?>" > 
-				       编辑      </a> 
-			</div>
+				       <input type="button"  value="编辑 ">     </a> 
+				<a href="<?php echo U('Course/deleteCourseById');?>/id/<?php echo ($data['cid']); ?>"><input type="button" value="删除" > </a>
+			
 		</div>
     </div><?php endforeach; endif; else: echo "" ;endif; ?>
 

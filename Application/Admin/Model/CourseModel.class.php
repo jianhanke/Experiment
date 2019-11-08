@@ -23,5 +23,9 @@ class CourseModel extends Model{
 		return $this->add($data);
 	}
 
+	public function delete_Course_By_Id($id){
+		return $this->delete($id);	
+	}
+
 	
 }

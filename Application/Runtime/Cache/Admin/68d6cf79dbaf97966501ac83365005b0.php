@@ -9,29 +9,32 @@
 <body>
 
             
-                <form action="<?php echo U('Experiment/addExperiment');?>" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                <form action="<?php echo U('Course/addCourse');?>" method="post" id="myform" name="myform" enctype="multipart/form-data">
                     <table class="insert-tab" width="100%">
                         <tbody>
                             <tr>
-                                <th><i class="require-red">*</i>主机名字:</th>
+                                <th><i class="require-red">*</i>课程名字:</th>
                                 <td>
-                                    <input class="common-text required" name="Ename" size="25" value="" type="text">
+                                    <input class="common-text required" name="cname" size="25" value="" type="text">
                                 </td>
                             </tr>
                              <tr>
                                 <th><i class="require-red">*</i>照片：</th>
-                                <td><input name="outcome_model" id="" type="file">
+                                <td><input name="img" id="" type="file">
                             </tr>
                             <tr>
-                                <th><i class="require-red">*</i>镜像Id:</th>
+                                <th><i class="require-red">*</i>课程介绍:</th>
                                 <td>
-                                    <input class="common-text required" name="image_id" size="30" value="" type="text">
+                                    <input class="common-text required" name="introduce" size="30" value="" type="text">
                                 </td>
                             </tr>
                             <tr>
-                                <th><i class="require-red">*</i>镜像名字:</th>
-                                <td>
-                                    <input class="common-text required" name="name" size="30" value="" type="text">
+                                <th><i class="require-red">*</i>所属教师:</th>
+                                 <td>
+                                    <select name="to_teacher_id" class="required">
+                                        <option value="">请选择</option>
+                                    <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><option value="<?php echo ($data['tid']); ?>"><?php echo ($data['tname']); ?> </option><?php endforeach; endif; else: echo "" ;endif; ?>
+                                    </select>    
                                 </td>
                             </tr>
                             <tr>
