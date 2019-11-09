@@ -22,8 +22,6 @@ class ChapterModel extends Model{
 	}
 
 	public function add_WordPath_ById($wordPath,$id){
-		dump($wordPath);
-		dump($id);
 		$this->doc=$wordPath;
 		$this->where("id=$id")
 				 ->save();

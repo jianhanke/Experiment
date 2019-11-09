@@ -39,6 +39,8 @@
     
 	<ul class="point">
         
+        <p> <a href="{:U("Course/addChapter")}/to_course/{$id}">&#187; &raquo;添加章节</a>  </p>
+        <br>
             <volist name="datas" id="data">
 		<li><a href="#"> &#9733{$data['name']}  </a>  </li>
 			</volist>
@@ -53,6 +55,7 @@
 			 &#9733{$data['name']}  -->
 			  </a>
               <font  color="red">重复上传,将会替代</font>
+              <p> {$data['name']} </p>
               <br>
 			  	<br />
 			 <b>上传实验指导书  </b>

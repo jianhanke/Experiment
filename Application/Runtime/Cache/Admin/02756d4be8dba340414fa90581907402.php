@@ -39,6 +39,8 @@
     
 	<ul class="point">
         
+        <p> <a href="<?php echo U("Course/addChapter");?>/to_course/<?php echo ($id); ?>">&#187; &raquo;添加章节</a>  </p>
+        <br>
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li><a href="#"> &#9733<?php echo ($data['name']); ?>  </a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
         <div class="box" style="height: 70%;width: 40%;">
@@ -50,6 +52,7 @@
 			 &#9733<?php echo ($data['name']); ?>  -->
 			  </a>
               <font  color="red">重复上传,将会替代</font>
+              <p> <?php echo ($data['name']); ?> </p>
               <br>
 			  	<br />
 			 <b>上传实验指导书  </b>

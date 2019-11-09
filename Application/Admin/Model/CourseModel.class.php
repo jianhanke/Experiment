@@ -27,5 +27,9 @@ class CourseModel extends Model{
 		return $this->delete($id);	
 	}
 
+	public function find_Course_Name($courseId){
+		return $this->find($courseId)['cname'];
+	}
+
 	
 }
