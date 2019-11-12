@@ -200,8 +200,8 @@ class CourseController extends MyController{
 	public function ceshi2(){
 		vendor('PHPOffice.autoload');
 
-		$wordPath='/var/www/html/Experiment/Course/MySql/MySql第一章节/1.docx';
-		$htmPath='/var/www/html/Experiment/Course/MySql/MySql第一章节/1.htm';
+		$wordPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.doc';
+		$htmPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\3.html';
 		$phpWord =   \PhpOffice\PhpWord\IOFactory::load($wordPath);
 		dump($phpWord);
 		$xmlWriter =   \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
@@ -210,6 +210,19 @@ class CourseController extends MyController{
 		// chmod($htmPath, 0777);
 		$xmlWriter->save($htmPath);
 		echo "成功";
+	}
+
+	public function ceshi3(){
+		$wordPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.doc';
+		$htmPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.htm';
+
+		$word = new COM("word.application") or die("Unable to instanciate Word");  
+		 $word->Visible = 1;  
+		 $word->Documents->Open($wordPath);  
+		 $word->Documents[1]->SaveAs($htmPath,8);  
+		 $word->Quit();  
+		 $word = null;  
+		 unset($word); 
 	}
 	
 
