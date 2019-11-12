@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
 </head>
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="__CONTROLLER__/findTeacherByLike" method="post">
+                <form action="/Experiment/index.php/Admin/Teacher/findTeacherByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
@@ -26,9 +26,9 @@
                             <td><input class="common-text" placeholder="关键字" name="keywords" value="" id="" type="text"></td>
                             <td><input class="btn btn-primary btn2" name="sub" value="查询" type="submit"></td>
                             </form>
-                            <td>  <a href="{:U('Teacher/addTeacher')}"> <input type="button" value="手动添加" > </a>   </td>
-                            <td>  <a href="{:U('Admin/Excel/outputExcel/modelName/teacher')}"> <input type="button" value="下载模板" > </a>   </td>
-                            <td> <form action="{:U('Admin/Excel/uploadExcelAndInput/modelName/Teacher')} " method="post" enctype="multipart/form-data">
+                            <td>  <a href="<?php echo U('Teacher/addTeacher');?>"> <input type="button" value="手动添加" > </a>   </td>
+                            <td>  <a href="<?php echo U('Admin/Excel/outputExcel/modelName/Teacher');?>"> <input type="button" value="下载模板" > </a>   </td>
+                            <td> <form action="<?php echo U('Admin/Excel/uploadExcelAndInput/modelName/Teacher');?> " method="post" enctype="multipart/form-data">
                                    <input type="file" name="excelData">
                                    <button type="submit">导入</button>
                                 </form> </td>
@@ -50,24 +50,22 @@
                         <th>密码</th>
                         <th>修改</th>
                     </tr>
-                 <volist   name="datas" id="data">
-                    <tr>
-                        <td> {$data['tid']}  </td>
-                        <td> {$data['tname']}  </td>
-                        <td>   {$data['tsex']}  </td>
-                        <td>  {$data['ttele']} </td>
-                        <td>   {$data['tpwd']}  </td>
+                 <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
+                        <td> <?php echo ($data['tid']); ?>  </td>
+                        <td> <?php echo ($data['tname']); ?>  </td>
+                        <td>   <?php echo ($data['tsex']); ?>  </td>
+                        <td>  <?php echo ($data['ttele']); ?> </td>
+                        <td>   <?php echo ($data['tpwd']); ?>  </td>
                         <td>
-                            <a class="link-update" href="__CONTROLLER__/modifyTeacherById/teacher_id/{$data['tid']}">修改</a>
+                            <a class="link-update" href="/Experiment/index.php/Admin/Teacher/modifyTeacherById/teacher_id/<?php echo ($data['tid']); ?>">修改</a>
                             &nbsp&nbsp&nbsp
-                            <a href="{:U('Admin/Teacher/deleteTeacher/teacher_id')}/{$data['tid']}">删除</a>
+                            <a href="<?php echo U('Admin/Teacher/deleteTeacher/teacher_id');?>/<?php echo ($data['tid']); ?>">删除</a>
                         </td>
-                    </tr>
-                 </volist>  
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>  
 
                     <tr>
                 </table>
-                <div class="list-page"> {$count} 条 1/1 页</div>
+                <div class="list-page"> <?php echo ($count); ?> 条 1/1 页</div>
             </div>
             
                 
