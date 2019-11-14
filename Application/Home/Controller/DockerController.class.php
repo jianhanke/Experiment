@@ -23,9 +23,86 @@ class DockerController extends MyController{
 		}
 	}
 
+	public function test01(){
+
+		$model=new \Home\Model\Experiment_imageModel();
+		
+		$image_id=$model->find_ImageId_By_experimentId("13");
+		dump($image_id);
+
+		$image_name=$model->find_ImageId_By_experimentName("13");
+		dump($image_name);
+
+	
+
+	}
+
+	public function joinMoreExperiment($experimentId){
+
+		$model=new \Home\Model\Experiment_imageModel();
+		$model2=new \Home\Model\Student_experimentModel();
+		$model3=new \Home\Model\Docker_containerModel();
+		
+
+		$user_id=session('user_id');
+	    
+		$is_exist=$model2->if_Join_Experiment($user_id,$experimentId);  //判断是否已经加入课程
+		
+		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
+							
+			$image_ids=$model->find_ImageId_By_experimentId($experimentId);
+			
+			for($i=0;$i<count($image_ids);$i++){
+				$container_id=$model3->find_Container_By_UserId($user_id,$image_ids[$i]);
+				$this->docker->startContainerById($container_id);
+				$ip_num=$model3->find_Ip_id($user_id,$image_ids[$i]);
+				$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
+				$this->assign("url".$i,$url);
+			}
+			$this->display('NoVNC/joinMoreExperiment');
+
+		}else{             //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id
+			$image_ids=$model->find_ImageId_By_experimentId($experimentId);
+			$image_names=$model->find_ImageId_By_experimentName($experimentId);
+
+			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
+
+			for($i=0;$i<count($image_names);$i++){
+				$info=$this->runContainerById($image_names[$i]);  
+			}
+			
+
+
+			for($i=0;$i<count($image_ids);$i++){
+				$model3->add_Container($user_id,$info[0],$image_ids[$i],$info[1],$info[2]);	
+			}
+			
+			$noVNC=new \Home\Controller\Entity\Host();
+			$hostName=$noVNC->getHostName();
+			for($i=0;$i<count($image_ids);$i++){
+				$ip_num=$model3->find_Ip_id($user_id,$image_ids[$i]);
+				$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
+				$this->assign("url".$i,$url);
+			}
+				$this->display('NoVNC/joinMoreExperiment');
+		}
+	}
+
+
+
 	
 	public function joinExperiment($id){
 		$experimentId=$id;
+
+		$model2=new \Home\Model\Experiment_imageModel();
+		$info=$model2->is_Have_More_Image($experimentId);
+		dump($info);
+		if($info==0){
+			$this->error('该实验没有镜像');
+		}else if($info>1){
+			$this->redirect("Home/Docker/joinMoreExperiment/experimentId/$experimentId");
+		}
+
 		$model=D('Experiment');
 		
 		$model2=new \Home\Model\Student_experimentModel();
@@ -39,7 +116,7 @@ class DockerController extends MyController{
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
 			$image_id=$model->find_ImageId_By_experimentId($experimentId);
-			dump($image_id);
+			
 			$container_id=$model3->find_Container_By_UserId($user_id,$image_id);
 
 			// $docker=new \Home\Controller\Entity\Docker();
