@@ -122,6 +122,8 @@ class DockerController extends MyController{
 		
 		// $docker=new \Home\Controller\Entity\Docker();
 		$this->docker->stopContainerById($container_id);
+		$noVNC=new \Home\Controller\Entity\NoVNC();
+		$noVNC->JumpUrlByIp($ip_num);
 
 		// echo "<script> top.location.href='http://localhost:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
 		// $noVNC=new \Home\Controller\Entity\NoVNC();
