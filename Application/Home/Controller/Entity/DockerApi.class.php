@@ -82,7 +82,7 @@ class DockerApi{
     }
 
     public function runContainerByIdIp($image_id,$ip){
-    	$data=['Image'=>"$image_id",'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"]]]]];
+    	$data=['Image'=>"$image_id",'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"]]]],'HostConfig'=>['Privileged'=>'true']];
     	$data = json_encode($data);
     	// dump($data);
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
