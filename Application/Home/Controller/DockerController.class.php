@@ -32,10 +32,21 @@ class DockerController extends MyController{
 
 		$image_name=$model->find_ImageId_By_experimentName("13");
 		dump($image_name);
-
-	
-
 	}
+
+	public function test02(){
+		$this->display('NoVNC/joinMoreExperiment');
+	}
+
+	public function test03(){
+		$this->test04($data="jianhanhanke");
+	}
+
+	public function test04($data=Null){
+		dump("test04进来了，$data");
+	}
+
+
 
 	public function joinMoreExperiment($experimentId){
 
@@ -46,7 +57,7 @@ class DockerController extends MyController{
 
 		$user_id=session('user_id');
 	    
-		$is_exist=$model2->if_Join_Experiment($user_id,$experimentId);  //判断是否已经加入课程
+		$is_exist=$model2->if_Join_Experiment($user_id,$experimentId); 
 		
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
@@ -64,19 +75,14 @@ class DockerController extends MyController{
 		}else{             //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id
 			$image_ids=$model->find_ImageId_By_experimentId($experimentId);
 			$image_names=$model->find_ImageId_By_experimentName($experimentId);
+			$host_Names=$model->find_HostName_By_experimentId($experimentId);
 
 			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
 
 			for($i=0;$i<count($image_names);$i++){
-				$info=$this->runContainerById($image_names[$i]);  
-			}
-			
-
-
-			for($i=0;$i<count($image_ids);$i++){
+				$info=$this->runContainerById($image_names[$i],$hostName=$host_Names[$i]);
 				$model3->add_Container($user_id,$info[0],$image_ids[$i],$info[1],$info[2]);	
 			}
-			
 			$noVNC=new \Home\Controller\Entity\Host();
 			$hostName=$noVNC->getHostName();
 			for($i=0;$i<count($image_ids);$i++){
@@ -222,7 +228,7 @@ class DockerController extends MyController{
 		$ip=$ips['ip'];
 		
 		
-		$container_id=$this->docker->runContainerByIdIp($image_id,$ip);    //具体docker中 run -it 
+		$container_id=$this->docker->runContainerByIdIp($image_id,$ip,$hostName="ceshi",$link_Container="6727d296f74b");    //具体docker中 run -it 
 
 		$info[]=$container_id;
 		$info[]=$ip;
