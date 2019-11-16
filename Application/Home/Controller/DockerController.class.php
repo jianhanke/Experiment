@@ -75,7 +75,6 @@ class DockerController extends MyController{
 			for($i=0;$i<count($image_ids);$i++){
 				$ip_num=$model3->find_Ip_id($user_id,$image_ids[$i]);
 				$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
-				dump($url);
 				$this->assign("url".$i,$url);
 			}
 				$this->display('NoVNC/joinMoreExperiment');
