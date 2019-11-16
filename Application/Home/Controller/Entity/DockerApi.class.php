@@ -82,7 +82,16 @@ class DockerApi{
     }
 
     public function runContainerByIdIp($image_id,$ip,$hostName=Null,$link_Container=Null){
-    	$data=['Image'=>"$image_id",'Hostname'=>$hostName,'HostConfig'=>['Privileged'=>true],'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"],'Links'=>$link_Container]]]];
+
+        $data=Null;
+        if(empty($link_Container)){
+                $data=['Image'=>"$image_id",'Hostname'=>$hostName,'HostConfig'=>['Privileged'=>true],'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"]]]]];
+            }else{
+                    $data=['Image'=>"$image_id",'Hostname'=>$hostName,'HostConfig'=>['Privileged'=>true],'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"],'Links'=>[$link_Container]]]]];
+            }
+
+
+    
     	$data = json_encode($data);
     	// dump($data);
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');

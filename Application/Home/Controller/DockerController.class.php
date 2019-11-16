@@ -23,30 +23,6 @@ class DockerController extends MyController{
 		}
 	}
 
-	public function test01(){
-
-		$model=new \Home\Model\Experiment_imageModel();
-		
-		$image_id=$model->find_ImageId_By_experimentId("13");
-		dump($image_id);
-
-		$image_name=$model->find_ImageId_By_experimentName("13");
-		dump($image_name);
-	}
-
-	public function test02(){
-		$this->display('NoVNC/joinMoreExperiment');
-	}
-
-	public function test03(){
-		$this->test04($data="jianhanhanke");
-	}
-
-	public function test04($data=Null){
-		dump("test04进来了，$data");
-	}
-
-
 
 	public function joinMoreExperiment($experimentId){
 
@@ -62,6 +38,9 @@ class DockerController extends MyController{
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
 			$image_ids=$model->find_ImageId_By_experimentId($experimentId);
+			
+			$noVNC=new \Home\Controller\Entity\Host();
+			$hostName=$noVNC->getHostName();
 			
 			for($i=0;$i<count($image_ids);$i++){
 				$container_id=$model3->find_Container_By_UserId($user_id,$image_ids[$i]);
@@ -79,15 +58,24 @@ class DockerController extends MyController{
 
 			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
 
+			$first_containerId=Null;
+
 			for($i=0;$i<count($image_names);$i++){
-				$info=$this->runContainerById($image_names[$i],$hostName=$host_Names[$i]);
+				$info=$this->runContainerById($image_names[$i],$hostName=$host_Names[$i],$link_Container=$first_containerId);
+				if($i==0){
+					$first_containerId=$info[0];
+				}
 				$model3->add_Container($user_id,$info[0],$image_ids[$i],$info[1],$info[2]);	
 			}
+
+
 			$noVNC=new \Home\Controller\Entity\Host();
 			$hostName=$noVNC->getHostName();
+
 			for($i=0;$i<count($image_ids);$i++){
 				$ip_num=$model3->find_Ip_id($user_id,$image_ids[$i]);
 				$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
+				dump($url);
 				$this->assign("url".$i,$url);
 			}
 				$this->display('NoVNC/joinMoreExperiment');
@@ -144,6 +132,7 @@ class DockerController extends MyController{
 			$image_name=$model->find_ImageId_By_experimentName($experimentId);
 			dump($image_name);
 			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
+
 			// $info=$this->runContainerById($image_id);
 			$info=$this->runContainerById($image_name);  //此处应该是上行的，改一部分
 			dump($info);
@@ -220,7 +209,7 @@ class DockerController extends MyController{
 	/*
 		docker run -d 运行一个新容器，返回容器id,存入数据库
 	 */
-	public function runContainerById($image_id){
+	public function runContainerById($image_id,$hostName=Null,$link_Container=Null){
 		
 		// $docker=new \Home\Controller\Entity\Docker();
 		$ips=$this->docker->getNewIp();
@@ -228,7 +217,7 @@ class DockerController extends MyController{
 		$ip=$ips['ip'];
 		
 		
-		$container_id=$this->docker->runContainerByIdIp($image_id,$ip,$hostName="ceshi",$link_Container="6727d296f74b");    //具体docker中 run -it 
+		$container_id=$this->docker->runContainerByIdIp($image_id,$ip,$hostName=$hostName,$link_Container=$link_Container);    //具体docker中 run -it 
 
 		$info[]=$container_id;
 		$info[]=$ip;
