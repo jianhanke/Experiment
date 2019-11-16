@@ -33,7 +33,7 @@ class Docker_containerModel extends Model{
 	// 	return $info['ip_num'];	
 	// }
 	   public function find_Ip_id($container_id){
-	   		$this->where("Container_id=$container_id")->find()['ip_num'];
+	   		return $this->where("Container_id='$container_id'")->find()['ip_num'];
 	   }
 	
 

@@ -41,7 +41,8 @@ class DockerController extends MyController{
 			
 			$noVNC=new \Home\Controller\Entity\Host();
 			$hostName=$noVNC->getHostName();
-			
+
+			$arr_Url=array();
 			for($i=0;$i<count($image_ids);$i++){
 				$container_id=$model3->find_Container_By_UserId($user_id,$image_ids[$i]);
 				$this->docker->startContainerById($container_id);
@@ -49,9 +50,9 @@ class DockerController extends MyController{
 				  $ip_num=$model3->find_Ip_id($container_id);
 
 				$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
-				$this->assign("url".$i,$url);
+				$arr_Url[$i]=$url;
 			}
-			$this->assign('nums',count($image_names));
+			$this->assign('datas',$arr_Url);
 			$this->display('NoVNC/joinMoreExperiment');
 
 		}else{             //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id
@@ -66,7 +67,7 @@ class DockerController extends MyController{
 			$hostName=$noVNC->getHostName();
 			$first_containerId=Null;
 
-
+			$arr_Url=array();
 			for($i=0;$i<count($image_names);$i++){
 				$info=$this->runContainerById($image_names[$i],$hostName=$host_Names[$i],$link_Container=$first_containerId);
 				if($i==0){
@@ -76,10 +77,10 @@ class DockerController extends MyController{
 
 				$ip_num=$model3->find_Ip_id($info[0]);
 				$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
-				$this->assign("url".$i,$url);
+				$arr_Url[$i]=$url;
 
 			}
-			$this->assign('nums',count($image_names));
+			$this->assign('datas',$arr_Url);
 			$this->display('NoVNC/joinMoreExperiment');
 		}
 	}
@@ -228,7 +229,7 @@ class DockerController extends MyController{
 	public function resetContainer($id){
 
 		
-	
+			
 
 		$model=new \Home\Model\Docker_containerModel();
 		$model2=new \Home\Model\Docker_imageModel();

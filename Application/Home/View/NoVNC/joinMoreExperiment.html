@@ -33,11 +33,12 @@
 
 </style>
 <body>
+
     <div style="float: left;" >
         <ul class="point">
                 
                 <volist name="datas" id="data"  key="k" >
-                    <li><a href="#">Host{$k}</a></li>
+                    <li><a href="#">Host{$k-1}</a></li>
                 </volist>
         </ul>
     </div>
@@ -45,7 +46,7 @@
     <div class="box"  style="height: 100%;width: 68%; float: right;" >
 
       <volist name="datas" id="data"  key="k" >
-          <div class="con{$k}" id="con{$k}"  style="height: 100%;width: 100%;" > </div>
+          <div class="con{$k-1}" id="con{$k-1}"  style="height: 100%;width: 100%;" > </div>
       </volist>
 
     </div>
@@ -62,12 +63,11 @@
     })
 </script>
 
-
  <volist name="datas" id="data"  key="k" >
      <script type="module" crossorigin="anonymous" >
   
       import RFB from '__PUBLIC__/noVNC/core/rfb.js';
-       var rfb = new RFB(document.getElementById("con{$k}"),"{$url{$k}}" ,{ credentials: { password: '123456' } }  );
+       var rfb = new RFB(document.getElementById("con{$k-1}"),"{$data}" ,{ credentials: { password: '123456' } }  );
       rfb.connect(); 
 
     </script>
