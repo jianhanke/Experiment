@@ -28,10 +28,14 @@ class Docker_containerModel extends Model{
 		return $this->where("ip_num=$ip_num")->find()['id'];
 	}
 
-	public function find_Ip_id($user_id,$image_id){
-		$info=$this->where("student_id='$user_id' and Image_id='$image_id'")->find();
-		return $info['ip_num'];	
-	}
+	// public function find_Ip_id($user_id,$image_id){
+	// 	$info=$this->where("student_id='$user_id' and Image_id='$image_id'")->find();
+	// 	return $info['ip_num'];	
+	// }
+	   public function find_Ip_id($container_id){
+	   		$this->where("Container_id=$container_id")->find()['ip_num'];
+	   }
+	
 
 	public function add_Container($user_id,$container_id,$image_id,$ip,$ip_num){
 		$this->Container_id=$container_id;

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,13 +32,13 @@
 开始
 <br>
 
-
+ <?php if(is_array($datas)): $k = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($k % 2 );++$k; echo ($k-1); ?> <br /><?php endforeach; endif; else: echo "" ;endif; ?>
     
 
         
     </body>
 </html>
-<script src="__PUBLIC__/Home/js/jquery-2.0.0.min.js"></script>
+<script src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
 <script type="text/javascript">
       
 		var opts = {
