@@ -21,19 +21,17 @@ class CourseController extends MyController{
 
 		$chapter_id=I('get.id');
 		$user_id=session('user_id');
-		// $model=D('chapter');
+		
 		$model=new \Home\Model\Chapter_imageModel();
 		
 		$model3=new \Home\Model\Docker_containerModel();
 
 		$image_id=$model->find_Image_By_id($chapter_id);
-		// dump($image_id);
-		
 		$info=$model3->if_Join_Chapter($user_id,$image_id,$chapter_id); //判断是否已经加入此章节
 
-		if($info){    //已经加入找到对应容器进入即可，
+		if($info){    
 			$container_id=$model3->find_ContainerId_By_ImageId($user_id,$image_id,$chapter_id);
-			$docker=new \Home\Controller\Entity\DockerSdk();
+			$docker=new \Home\Controller\Entity\DockerApi();
 
 			$docker->startContainerById($container_id);
 			$ip_num=$model3->find_Ip_By_Chapter($user_id,$image_id,$chapter_id);
@@ -46,22 +44,19 @@ class CourseController extends MyController{
 			$info=$this->runContainerById($image_id);
 			$model3->add_Container_To_Chapter($user_id,$info[0],$image_id,$info[1],$info[2],$chapter_id); //学生容器id 加入 docker_container
 			$ip_num=$info[2];
-			// dump($image_id);
-			// dump($info);
-			// dump('ipnum'.$ip_num);
-			// echo "<script> top.location.href='http://localhost:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
+
+
 			$NoVNC=A('NoVNC');
 			$NoVNC->showNoVNC($ip_num);
 			exit();
 		}
-
 	}
 
 	public function runContainerById($image_id){
 		
-		$docker=new \Home\Controller\Entity\DockerSdk();
+		$docker=new \Home\Controller\Entity\DockerApi();
 		$ips=$docker->getNewIp();
-		// dump($ips);
+		
 		$ip=$ips['ip'];
 		
 		$container_id=$docker->runContainerByIdIp($image_id,$ip);    //具体docker中 run -it 
@@ -72,21 +67,7 @@ class CourseController extends MyController{
 		return $info;
 	}
 
-	/*  纯PHP上传文件
-	public function uploadFile(){
-		
 
-		$student_id=session('user_id');
-
-		$chapter_id=I('post.chapter_id');
-		$postfix=strrchr($_FILES['file']['name'], '.');
-		$uploadPath='E:/wamp/apache/library/Experiment/Public/Upload/';
-		$new_name=$student_id.'_'.$chapter_id.$postfix;
-		$newPath=$uploadPath.$new_name;
-		$ROOT = $_SERVER['DOCUMENT_ROOT'];
-		move_uploaded_file($_FILES['file']['tmp_name'],$newPath);
-	}
-		*/
 		public function uploadFile(){
 			$student_id=session('user_id');	
 			$chapter_id=I('post.chapter_id');

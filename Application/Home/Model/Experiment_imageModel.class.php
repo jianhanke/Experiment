@@ -11,9 +11,15 @@ class Experiment_imageModel extends Model{
 		$arr= $this->field('image_id')
 					->where("Eid=$experimentId")
 					->select();
+
 		$result = array_reduce($arr, function ($result, $value) {
 			 return array_merge($result, array_values($value));
 			}, array());
+
+		if(count($result)==1){
+			return $result[0];
+		}
+		
 		return $result;
 
 	}
@@ -26,6 +32,10 @@ class Experiment_imageModel extends Model{
 		$result = array_reduce($arr, function ($result, $value) {
 			 return array_merge($result, array_values($value));
 			}, array());
+
+		if(count($result)==1){
+			return $result[0];
+		}
 		return $result;
 	}
 
@@ -48,15 +58,6 @@ class Experiment_imageModel extends Model{
 
 	}
 
-	public function find_ImageId_By_experimentId($experimentId){
-		return $this->where("Eid=$experimentId")
-					->find($experimentId)['image_id'];
-	}
-
-	public function find_ImageId_By_experimentName($experimentId){
-		return $this->->where("Eid=$experimentId")
-					->find($experimentId)['image_name'];
-	}
 	
 
 

@@ -3,16 +3,16 @@
 namespace Home\Model;
 use Think\Model;
 
-class Docker_imageModel extends Model{
+class Chapter_imageModel extends Model{
 
 	public function findImageNameById($image_id){
-		return $this->where("to_imageId=$image_id")
-					->find()['to_imageName'];
+		return $this->where("Cid=$image_id")
+					->field('to_imageName')
+		 			 ->find()['to_imagename'];
 	}
 
 	public function find_Image_By_id($id){
-		return $this->field('to_imageName')
-		 			 ->find($id)['to_imageName'];
+		return $this->find($id)['to_imageid'];
 	}
 
 
