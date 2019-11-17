@@ -48,6 +48,15 @@ class Experiment_imageModel extends Model{
 
 	}
 
+	public function find_ImageId_By_experimentId($experimentId){
+		return $this->where("Eid=$experimentId")
+					->find($experimentId)['image_id'];
+	}
+
+	public function find_ImageId_By_experimentName($experimentId){
+		return $this->->where("Eid=$experimentId")
+					->find($experimentId)['image_name'];
+	}
 	
 
 
