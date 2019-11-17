@@ -1,0 +1,162 @@
+[ 2019-11-17T19:12:41+08:00 ] ::1 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000795s ]
+
+[ 2019-11-17T19:12:41+08:00 ] ::1 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000649s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000523s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000754s ]
+
+[ 2019-11-17T19:12:45+08:00 ] ::1 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000474s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0088s ]
+SQL: SELECT * FROM `admin` WHERE `Aid` = 1 AND `Apwd` = '1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-11-17T19:12:45+08:00 ] ::1 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000556s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000582s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.128301s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128328s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000243s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000258s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
+[ 2019-11-17T19:12:45+08:00 ] ::1 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000018s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000044s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000551s ]
+
+[ 2019-11-17T19:12:50+08:00 ] ::1 /Experiment/index.php/Admin/Excel/showExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000603s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0134s ]
+SQL: select table_name from information_schema.tables where table_schema='experiment' [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000141s ]
+NOTIC: [8] Undefined variable: count E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Admin\b735124b3311a9ae417963ff77e12148.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.118280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.118329s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000669s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001279s ]
+
+[ 2019-11-17T19:13:06+08:00 ] ::1 /Experiment/index.php/Admin/Excel/outputExcel/modelName/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000837s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0155s ]
+SQL: select column_name from information_schema.columns where table_name='admin' and table_schema = 'experiment'  [ RunTime:0.0118s ]
+SQL: SELECT * FROM `admin`  [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000611s ]
+
+[ 2019-11-17T19:14:03+08:00 ] ::1 /Experiment/index.php/Admin/Excel/uploadExcelAndInput/modelName/admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000844s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001115s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001174s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given E:\wamp\apache\library\Experiment\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0137s ]
+SQL: select column_name from information_schema.columns where table_name='admin' and table_schema = 'experiment'  [ RunTime:0.0114s ]
+SQL: INSERT INTO `admin` (`Aid`,`Apwd`,`Aname`) VALUES ('1','1','root') [ RunTime:0.1111s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000730s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001450s ]
+
+[ 2019-11-17T19:14:06+08:00 ] ::1 /Experiment/index.php/Admin/Excel/showExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000857s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0093s ]
+SQL: select table_name from information_schema.tables where table_schema='experiment' [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: count E:\wamp\apache\library\Experiment\Application\Runtime\Cache\Admin\b735124b3311a9ae417963ff77e12148.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000591s ]
+

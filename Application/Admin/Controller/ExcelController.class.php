@@ -23,7 +23,7 @@ class ExcelController extends MyController{
             dump($modelName);
         
             $upload= new \Think\Upload();
-            $upload->rootPath = './Excel/';  // ./ 代表 从.index开始算起
+            $upload->rootPath = './Source/Excel/';  // ./ 代表 从.index开始算起
             $upload->exts=array('xlsx','xls');
             $info   =   $upload->uploadOne($_FILES['excelData']);
             if(!$info) {// 上传错误提示错误信息
