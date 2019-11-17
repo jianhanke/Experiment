@@ -10,10 +10,7 @@ class ChapterModel extends Model{
 
 		return $this->where("to_course=$id")->select();
 	}
-	public function find_Image_By_id($id){
-		return $this->field('to_image')
-		 			 ->find($id)['to_image'];
-	}
+	
 
 	public function find_ChapterInfo_ById($chapterId){
 

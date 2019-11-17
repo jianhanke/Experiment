@@ -231,14 +231,10 @@ class DockerController extends MyController{
 			
 
 		$model=new \Home\Model\Docker_containerModel();
-		$model2=new \Home\Model\Docker_imageModel();
+		$model2=new \Home\Model\Chapter_imageModel();
 		$info=$model->findContainerById($id);
 
 		$imageName=$model2->findImageNameById($info['Image_id']);
-
-
-
-		// $docker=new \Home\Controller\Entity\Docker();
 	
 		$this->docker->deleteContainerById($info['container_id']);
 		$container_id=$this->docker->runContainerByIdIp($imageName,$info['ip']);

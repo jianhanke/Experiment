@@ -21,12 +21,14 @@ class CourseController extends MyController{
 
 		$chapter_id=I('get.id');
 		$user_id=session('user_id');
-		$model=D('chapter');
+		// $model=D('chapter');
+		$model=new \Home\Model\Chapter_imageModel();
+		
 		$model3=new \Home\Model\Docker_containerModel();
 
 		$image_id=$model->find_Image_By_id($chapter_id);
 		// dump($image_id);
-
+		
 		$info=$model3->if_Join_Chapter($user_id,$image_id,$chapter_id); //判断是否已经加入此章节
 
 		if($info){    //已经加入找到对应容器进入即可，

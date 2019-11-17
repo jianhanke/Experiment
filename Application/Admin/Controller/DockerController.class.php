@@ -17,8 +17,10 @@ class DockerController extends MyController{
 
 	public function showContainer(){
 		$model=new \Admin\Model\View_containerwithstuandexperModel(); 
+
 		$info=$model->show_Info();
 		$count=$model->count_Num();
+		
 		$this->assign('count',$count);
 		$this->assign('datas',$info);
 		$this->display();
