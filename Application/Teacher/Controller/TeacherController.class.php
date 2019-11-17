@@ -3,7 +3,7 @@
 namespace Teacher\Controller;
 use Think\Controller;
 
-class TeacherController extends Controller{
+class TeacherController extends MyController{
 
 	public function showInfo($teacherId){
 
@@ -13,14 +13,57 @@ class TeacherController extends Controller{
 		$this->display();
 	}
 
+
+
 	public function modifyInfo($teacherId){
 
-		$model=D('Teacher');
-		$info=$model->find_Info_ById($teacherId);
-		$this->assign('datas',$info);
-		
-		$this->display();
 
+		if(IS_POST){
+			$post=I('post.');
+			$model=D('Teacher');
+			$info=$model->modify_Info($post);
+
+			if($info !== false){
+				$this->redirect("Teacher/showInfo",array('teacherId'=>$post['Tid']));
+			}else{
+				$this->error('修改失败');
+			}
+		}else{
+			$model=D('Teacher');
+			$info=$model->find_Info_ById($teacherId);
+			$this->assign('datas',$info);
+			$this->display();
+		}
 	}
+
+	public function modifyPwd(){
+
+		if(IS_POST){
+			$teacherId=Session('teacher_id');
+			$post=I('post.');
+			dump($post);
+
+			if($post['newPwd1']==$post['newPwd2']){
+				$info['Tid']=$teacherId;
+				$info['Tpwd']=$post['newPwd1'];
+				$model=D('Teacher');
+				$status=$model->modify_Info($info);	
+
+				if($status !== false){
+					$this->success('修改成功');
+				}else{
+					$this->error('修改失败');
+				}
+
+			}else{
+				echo "<script> alert('密码不一致,请重新输入');  </script> ";
+			}
+
+		}
+			$this->display();	
+		
+		
+	}
+
 
 }

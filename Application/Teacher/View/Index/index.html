@@ -36,15 +36,16 @@
                     <a href="#"><i class="iconfont">&#xe641;</i>个人中心</a>
                     <ul class="sub-menu">
                         <li><a href="{:U('Teacher/showInfo')}/teacherId/{$teacher_id}" target="iframe"><i class="iconfont">&#xe660;</i>个人中心</a></li>
-                        <li><a href="design.html"><i class="iconfont">&#xe602;</i>部门管理</a></li>
-                        <li><a href="design.html"><i class="iconfont">&#xe612;</i>用户管理</a></li>
+                        <li><a href="{:U('Teacher/modifyPwd')}" target="iframe"><i class="iconfont">&#xe612;</i>修改密码</a></li>
+                       <!--  <li><a href="design.html"><i class="iconfont">&#xe602;</i>部门管理</a></li>
+                        <li><a href="design.html"><i class="iconfont">&#xe612;</i>用户管理</a></li> -->
                     </ul>
                 </li>
                 <li>
-                    <a href="#"><i class="iconfont">&#xe603;</i>系统管理</a>
+                    <a href="#"><i class="iconfont">&#xe603;</i>课程管理</a>
                     <ul class="sub-menu">
-                        <li><a href="system.html"><i class="iconfont">&#xe61c;</i>系统设置</a></li>
-                        <li><a href="system.html"><i class="iconfont">&#xe678;</i>数据备份</a></li>
+                        <li><a href="{:U('Course/showMyCourse')}" target="iframe"><i class="iconfont">&#xe61c;</i>我的课程</a></li>
+                        <li><a href="system.html"><i class="iconfont">&#xe678;</i>所属班级</a></li>
                         <li><a href="system.html"><i class="iconfont">&#xe639;</i>数据还原</a></li>
                     </ul>
                 </li>

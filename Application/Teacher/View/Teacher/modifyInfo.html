@@ -11,10 +11,11 @@
       
 
             <div class="result-content">
-                <form action="update.php" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                <form action="{:U('Teacher/modifyInfo')}/teacherId/{$datas['tid']} " method="post" id="myform" name="myform" enctype="multipart/form-data">
                     <table class="insert-tab" width="100%">
                         <tbody>
                             <tr>
+                                <input type="hidden"  name="Tid" value="{$datas['tid']}" >
                                 <th><i class="require-red">*</i>姓名：</th>
                                 <td>
                                     <input class="common-text required" name="Tname" size="12" value="{$datas['tname']}" type="text">
@@ -32,10 +33,10 @@
                             </tr>
 
                             <tr>
-                                <th>电话：</th>
-                                <td><input class="common-text" name="Ttele" size="12" value="{$datas['tname']}" type="text"></td>
+                                <th><i class="require-red">*</i>电话：</th>
+                                <td><input class="common-text" name="Ttele" size="12" value="{$datas['ttele']}" type="text"></td>
                             </tr>
-                            <!-- <tr>
+                            <!-- <tr>1
                                 <th><i class="require-red">*</i>照片：</th>
                                 <td><input name="smallimg" id="" type="file"><input type="submit" onclick="submitForm('/jscss/admin/design/upload')" value="上传图片"/></td>
                             </tr> -->

@@ -15,4 +15,11 @@ class TeacherModel extends Model{
 		return $this->find($teacherId);
 	}
 
+	public function modify_Info($post){
+		return $this->save($post);
+	}
+
+
+
+
 }

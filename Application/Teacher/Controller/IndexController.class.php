@@ -3,7 +3,7 @@
 namespace Teacher\Controller;
 use Think\Controller;
 
-class IndexController extends Controller{
+class IndexController extends MyController{
 
 	public function index(){
 		
