@@ -14,6 +14,33 @@ class ExperimentController extends MyController{
 		$this->display();
 	}
 
+	public function showExperimentImage(){
+
+		$model=new \Admin\Model\Experiment_imageModel();
+		$info=$model->show_All_Info();
+		$this->assign('datas',$info);
+		$this->display();
+	}
+
+	public function deleteExperimentImageById(){
+		$id=I('get.id');
+		$model=new \Admin\Model\Experiment_imageModel();
+		$model->delete_Image_By_Id($id);
+		$this->redirect('showExperimentImage');
+	}
+
+	public function showExperimentContainer(){
+		$model=new \Admin\Model\View_containerwithstuandexperModel(); 
+
+		$info=$model->show_Info();
+		$count=$model->count_Num();
+		
+		$this->assign('count',$count);
+		$this->assign('datas',$info);
+		$this->display();
+	}
+
+
 	public function deleteExperimentById(){
 
 		$model=D('Experiment');
@@ -29,10 +56,21 @@ class ExperimentController extends MyController{
 
 		if(IS_POST){
 			$post=I('post.');
-			dump($post);
-			$info=$model->modify_Experiment_By_Id($post);
-			dump($info);
-				if($info){
+
+			$upload = new \Think\Upload();
+			$upload->rootPath = './Source/Experiment/';  // ./ 代表 项目的根目录
+			$upload->exts      =     array('png','jpeg','jpg');
+			$upload->maxSize= 10*1024*1024;
+			$upload->replace=true;
+			$upload->autoSub  = false;    //禁止上传时候的时间目录
+			$pictureInfo   =   $upload->uploadOne($_FILES['outcome_model']);
+			if(!$pictureInfo) {// 上传错误提示错误信息
+		        $this->error($upload->getError());
+			}
+			$post['outcome_model']=$pictureInfo['savename'];		
+
+			$info=$model->modify_Experiment_By_Id($post);			
+				if($info !==false ){
 					$this->success('修改成功');
 				}else{
 					$this->error('修改失败');
@@ -64,7 +102,7 @@ class ExperimentController extends MyController{
 				$this->error('填写不完整',U('Experiment/addExperiment'),2);
 			}
 			$upload = new \Think\Upload();
-			$upload->rootPath = './Public/Experiment/';  // ./ 代表 项目的根目录
+			$upload->rootPath = './Source/Experiment/';  // ./ 代表 项目的根目录
 			$upload->exts      =     array('png','jpeg','jpg');
 			$upload->maxSize= 10*1024*1024;
 			$upload->replace=true;
@@ -73,23 +111,26 @@ class ExperimentController extends MyController{
 			if(!$pictureInfo) {// 上传错误提示错误信息
 		        $this->error($upload->getError());
 			}
-			dump($pictureInfo);
-			echo $pictureInfo['savename'];
+			// dump($pictureInfo);
+			// echo $pictureInfo['savename'];
 			$model=D('Experiment');
-			$model2=new \Admin\Model\Docker_imageModel();
+			
+			$model2=new \Admin\Model\Experiment_imageModel();
 			$Model = M();
 			$Model->startTrans();
 
-			$experimentInfo=array('Ename'=>$post['Ename'],'image_id'=>$post['image_id'],'outcome_model'=>$pictureInfo['savename']);
-			$imageInfo=array('Image_id'=>$post['image_id'],'name'=>$post['name']);
+			$experimentInfo=array('Ename'=>$post['Ename'],'outcome_model'=>$pictureInfo['savename']);
+			
 			try{
 				$experimentRes=$model->addExperiment($experimentInfo);
-				dump($experimentRes);
-				$imageRes=$model2->add_Image_AndId($imageInfo);
+				$imageInfo=array('Eid'=>$experimentRes,'image_id'=>$post['image_id'],'image_name'=>$post['name']);
+				$imageRes=$model2->add_Info($imageInfo);
 				if($experimentRes && $imageRes){       //事务处理
 					$Model->commit();
+					$this->success('添加成功');
 				}else{
 					$Model->rollback();
+					$this->error('添加失败');
 				}	
 			}catch(\Exception $e){
 				$this->error('数据库添加失败');

@@ -11,28 +11,7 @@ class DockerController extends MyController{
 	public $docker=NULL;
 	public function __construct(){
 		parent::__construct();
-		$this->docker=new \Admin\Controller\Entity\Docker();
-	}
-
-
-	public function showContainer(){
-		$model=new \Admin\Model\View_containerwithstuandexperModel(); 
-
-		$info=$model->show_Info();
-		$count=$model->count_Num();
-		
-		$this->assign('count',$count);
-		$this->assign('datas',$info);
-		$this->display();
-	}
-	
-	public function showImage(){
-		$model=new \Admin\Model\Docker_imageModel();
-		$info=$model->show_Image();
-		$count=$model->count_Num();
-		$this->assign('count',$count);
-		$this->assign('datas',$info);
-		$this->display();
+		$this->docker=new \Home\Controller\Entity\DockerApi();
 	}
 
 	public function deleteContainerById(){  //在Docker中删除此容器，同时删除数据库中容器和课程记录
@@ -52,17 +31,9 @@ class DockerController extends MyController{
 		$model2=new \Admin\Model\Student_experimentModel();
 		$model->delete_Container_By_Id($container_id);
 		$model2->delete_Experiment_By_Id($user_id,$eid);
-		$this->redirect('showContainer');
+		$this->redirect('Experiment/showExperimentContainer');
 	}
 
-	public function deleteImageById(){
-
-		$image_id=I('get.image_id');
-		$model=new \Admin\Model\Docker_imageModel();
-		$model->delete_Image_By_Id($image_id);
-		$this->redirect('showImage');
-
-	}
 
 	/**
 	 *   开关机 容器
@@ -71,7 +42,7 @@ class DockerController extends MyController{
 	public function handleContainer(){     
 		$model=new \Admin\Model\Docker_containerModel();
 		$containers=$model->show_All_Container();   //MySql中所有容器信息
-		$all_status=$this->docker->getAllContainerStatus();
+		$all_status=$this->docker->showAllContainer();
 		// $all_status=substr($all_status, 1, -1);
 		// $arr = explode(']',$all_status);
 		// dump($all_status);
@@ -92,10 +63,11 @@ class DockerController extends MyController{
 
 	public function addImageAndId(){
 		
-			$post=I('post.');
+		$post=I('post.');
 			
 		try{
-			$model=new \Admin\Model\Docker_imageModel();
+			// $model=new \Admin\Model\Chapter_imageModel();
+			$model=new \Admin\Model\Make_imageModel();
 			$status=$model->add_Image_AndId($post);
 			if($status)
 				$this->success('添加成功');
@@ -104,22 +76,28 @@ class DockerController extends MyController{
 				
 		}catch(\Exception $e){
 		 	$this->error('数据库添加失败');
-		}
-		
+		}	
 	}
+
+
 	public function addImage(){
 		if(IS_POST){
 			$imageName=I('post.name');
 			
 		try{
 				$imageId=$this->docker->pullImageByName($imageName);
-				$model=new \Admin\Model\Docker_imageModel();
-				$ImageInfo=array('Image_id'=>$imageId,'name'=>$imageId);
+
+				// $model=new \Admin\Model\Chapter_imageModel();
+				$model=new \Admin\Model\Make_imageModel();
+
+				$ImageInfo=array('image_id'=>$imageId,'name'=>$$imageName);
 				$status=$model->add_Image_AndId($ImageInfo);
-			if($status)
+			if($status){
 				$this->success('添加成功');
-			else
+			}
+			else{
 				$this->error('添加失败');
+			}
 				
 		
 				
@@ -151,7 +129,7 @@ class DockerController extends MyController{
 	public function shutdownContainerById(){   //关机
 		$container_id=I('get.container_id');	
 		
-		$this->docker->shutdownContainerById($container_id);
+		$this->docker->stopContainerById($container_id);
 		$this->redirect('Docker/handleContainer');
 	}	
 
@@ -188,7 +166,7 @@ class DockerController extends MyController{
 	}
 
 	public function findImageByLike(){
-		$model=new \Admin\Model\Docker_imageModel();
+		$model=new \Admin\Model\Chapter_imageModel();
 		$search=I('post.search-sort');
 		$keywords=I('post.keywords'); 
 
@@ -249,11 +227,8 @@ class DockerController extends MyController{
 			$image_id=$docker->commitContainerById($container_id);
 			$data=['image_id'=>$image_id,'name'=>$imageName,'from_admin'=>$admin_name];
 
-			$model=D('Makeimage');
+			$model=new \Home\Model\Make_imageModel();
 			$model->add($data);
-			
-
-
 		}
 
 

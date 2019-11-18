@@ -9,17 +9,15 @@
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="__CONTROLLER__/findExperimentByLike" method="post">
+                <form action="__CONTROLLER__/findImageByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
                             <td>
                                 <select name="search-sort" id="">
-                                    <option value="Eid">ID</option>
-                                    <option value="Ename">实验名字</option>
-                                    <option value="goal">实验目的</option>
-                                    <option value="theory">实验理论</option>
-                                    <option value="environment">环境</option>
+                                    <option value="image_id">镜像Id   </option>
+                                    <option value="name">镜像名字 </option>
+                                    <option value="time"> pull时间</option>
                                 </select>
                             </td>
                             <th width="70">关键字:</th>
@@ -31,29 +29,26 @@
             </div>
         </div>
         <div class="result-wrap">
-            
+           
             <div class="result-content">
                 <table class="result-tab" width="100%">
                     <tr>
-                        <th>ID</th>
-                        <th>实验名字</th>
-                        <th>实验目的</th>
-                        <th>实验理论</th>
-                        <th>环境</th>
-                        <th>图片地址</th>
-                        <td>操作</td>
+                        <th>id</th>
+                        <th>镜像Id</th>
+                        <th>镜像名字</th>
+                
+                        <th>主机名</th>
+                        <th>操作</th>
+
                     </tr>
                  <volist   name="datas" id="data">
                     <tr>
-                        <td> {$data['eid']}  </td>
-                        <td> {$data['ename']}  </td>
-                        <td>  {$data['goal']}  </td>
-                        <td>   {$data['theory']}  </td>
-                        <td>  {$data['environment']} </td>
-                        <td>   {$data['outcome_model']}  </td>
+                        <td>  {$data['eid']}   </td>
+                        <td> {$data['image_id']}  </td>
+                        <td> {$data['image_name']}  </td>
+                        <td>   {$data['hostname']}  </td>
                         <td>
-                        <a class="link-update" href="__CONTROLLER__/modifyExperimentById/experiment_id/{$data['eid']}">修改</a>
-                     <a class="link-del" href="__CONTROLLER__/deleteExperimentById/experiment_id/{$data['eid']} ">删除</a>
+                            <a class="link-del" href="__CONTROLLER__/deleteExperimentImageById/id/{$data['eid']}">删除</a>
                         </td>
                     </tr>
                  </volist>  

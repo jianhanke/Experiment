@@ -33,22 +33,22 @@
             <div class="result-content">
                 <table class="result-tab" width="100%">
                     <tr>
+                        <th>id</th>
                         <th>镜像Id</th>
                         <th>镜像名字</th>
-                        <th>pull时间</th>
+                
                         <th>状态</th>
                         <th>操作</th>
 
                     </tr>
                  <volist   name="datas" id="data">
                     <tr>
-                        <td> {$data['image_id']}  </td>
-                        <td> {$data['name']}  </td>
-                        <td>  {$data['time']}  </td>
+                        <td>  {$data['cid']}   </td>
+                        <td> {$data['to_imageid']}  </td>
+                        <td> {$data['to_imagename']}  </td>
                         <td>   {$data['status']==1? '可用' : '不可用'}  </td>
                         <td>
-                            
-                            <a class="link-del" href="__CONTROLLER__/deleteImageById/image_id/{$data['image_id']}">删除</a>
+                            <a class="link-del" href="__CONTROLLER__/deleteChapterImageById/id/{$data['cid']}">删除</a>
                         </td>
                     </tr>
                  </volist>  

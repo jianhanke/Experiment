@@ -33,10 +33,9 @@
                 <li>
                     <a href="#"><i class="iconfont">&#xe641;</i>Docker管理</a>
                     <ul class="sub-menu">
-                        <li><a href="<?php echo U('Docker/showContainer');?>" target="iframe" ><i class="iconfont">&#xe660;</i>容器清单</a></li>
-                        <li><a href="<?php echo U("Docker/handleContainer");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>主机管理</a></li>
-                        <li><a href="<?php echo U("Docker/showImage");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>镜像管理</a></li>
-                        <li><a href="<?php echo U("Docker/addImage");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>添加镜像</a></li>
+                        <li><a href="<?php echo U("Docker/handleContainer");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>容器管理</a></li>
+                        
+                        <li><a href="<?php echo U("Docker/addImage");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>拉取镜像</a></li>
                         <li><a href="<?php echo U("Docker/dockerController");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>Docker控制</a></li>
                         <li><a href="<?php echo U("Docker/chooseMakeImage");?>" target="iframe"><i class="iconfont">&#xe602;</i>制作镜像</a></li>
 
@@ -63,6 +62,8 @@
 					<a href="#"><i class="iconfont">&#xe603;</i>主机管理</a>
                     <ul class="sub-menu">
                         <li><a href="<?php echo U('Experiment/showExperiment');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>主机信息</a></li>
+                        <li><a href="<?php echo U('Experiment/showExperimentContainer');?>" target="iframe" ><i class="iconfont">&#xe660;</i>主机容器</a></li>
+                         <li><a href="<?php echo U('Experiment/showExperimentImage');?>" target="iframe"  ><i class="iconfont">&#xe602;</i>主机镜像</a></li>
                         <li><a href="<?php echo U('Experiment/addExperiment');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>添加主机</a></li>
                     </ul>
                 </li>
@@ -79,6 +80,7 @@
                     <ul class="sub-menu">
                         <li><a href="<?php echo U('Course/showCourse');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>
                         所有课程</a></li>
+                        <li><a href="<?php echo U('Course/showChapterImage');?>" target="iframe"  ><i class="iconfont">&#xe602;</i>课程镜像</a></li>
                     </ul>
                 </li>
 

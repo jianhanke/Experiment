@@ -5,14 +5,18 @@ use Think\Model;
 
 class ExperimentModel extends Model{
 
-	public function show_Experiment(){
+	// public function show_Experiment(){
 
-		return $this->table("experiment as t1,docker_image as t2")
-					->field("t1.*,t2.name")
-					->where("t1.image_id=t2.Image_id")
-					->order("eid asc")
-					->select();
-	}
+	// 	return $this->table("experiment as t1,docker_image as t2")
+	// 				->field("t1.*,t2.name")
+	// 				->where("t1.image_id=t2.Image_id")
+	// 				->order("eid asc")
+	// 				->select();
+	// }
+	 public function show_Experiment(){
+	 	return $this->select();
+	 }
+	
 
 	public function delete_Experiment_By_Id($experiment_id){
 

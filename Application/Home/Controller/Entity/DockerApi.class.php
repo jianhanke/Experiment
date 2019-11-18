@@ -52,17 +52,17 @@ class DockerApi{
 
 	}
 
-	// public function showAllImage(){
+	public function showAllImage(){
 
- //       	$info=$this->getJsonInfoByApi("/images/json",'get');
- //    }
- //    public function showContainerById(){
- //    	$info=$this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
- //    }
- //    
- 	 // public function showAllContainer(){
-   //  	$info=$this->getJsonInfoByApi("/containers/json?all=true",'get');	
-   //  }
+       	$info=$this->getJsonInfoByApi("/images/json",'get');
+    }
+    public function showContainerById(){
+    	$info=$this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
+    }
+    
+ 	 public function showAllContainer(){
+    	$info=$this->getJsonInfoByApi("/containers/json?all=true",'get');	
+    }
 
     public function startContainerById($container_id){
 

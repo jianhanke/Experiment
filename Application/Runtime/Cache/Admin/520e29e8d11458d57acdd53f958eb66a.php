@@ -1,15 +1,15 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>员工管理系统</title>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
 </head>
 <body>
 
             <div class="result-content">
-                <form action="{:U('Docker/addImageAndId')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                <form action="<?php echo U('Docker/addImageAndId');?>" method="post" id="myform" name="myform" enctype="multipart/form-data">
                     <table class="insert-tab" width="100%">
                         <tbody>
                             
@@ -37,7 +37,7 @@
             </div>
             <br>  <br> <br>
             <div class="result-content">
-                <form action="{:U('Docker/addImage')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                <form action="<?php echo U('Docker/addImage');?>" method="post" id="myform" name="myform" enctype="multipart/form-data">
                     <table class="insert-tab" width="100%">
                         <tbody>
                             <tr>

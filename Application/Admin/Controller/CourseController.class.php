@@ -63,6 +63,16 @@ class CourseController extends MyController{
 		$this->redirect('Course/showCourse');
 	}
 
+	public function showChapterImage(){
+		$model=new \Admin\Model\Chapter_imageModel();
+		$info=$model->show_Image();
+
+		$count=$model->count_Num();
+		$this->assign('count',$count);
+		$this->assign('datas',$info);
+		$this->display();
+	}
+
 
 	public function editCourseById(){
 
@@ -104,13 +114,13 @@ class CourseController extends MyController{
 			$chapter_id=I('post.chapter_id');	
 		}
 
-		$model=new \Home\Model\View_coursetochapterModel();
+		$model=new \Admin\Model\View_coursetochapterModel();
 		$info=$model->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
 		$upload = new \Think\Upload();
-		$upload->rootPath = './Course/';  // ./ 代表 项目的根目录
+		$upload->rootPath = './Source/Course/';  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
 		$upload->exts      =     array('avi','wmv','mpeg','mp4');
 		$upload->maxSize= 50*1024*1024;
@@ -136,7 +146,7 @@ class CourseController extends MyController{
 			$chapter_id=I('post.chapter_id');	
 		}
 		
-		$model=new \Home\Model\View_coursetochapterModel();
+		$model=new \Admin\Model\View_coursetochapterModel();
 		$model2=D('Chapter');
 		$info=$model->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
@@ -144,7 +154,7 @@ class CourseController extends MyController{
 		$new_name=$info['id'];
 
 		$upload = new \Think\Upload();
-		$upload->rootPath = './Course/';  // ./ 代表 项目的根目录
+		$upload->rootPath = './Source/Course/';  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
 		$upload->exts      =     array('docx','doc');
 		$upload->saveName = $new_name;

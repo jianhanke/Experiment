@@ -16,7 +16,7 @@ class Docker{
 		return exec("/usr/bin/python $docker_path $container_id"); 
 	}
 
-	public function getAllContainerStatus(){
+	public function showAllContainer(){
 
 		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/showAllContainerStatus.py'; 
 		return exec("/usr/bin/python $docker_path"); 
