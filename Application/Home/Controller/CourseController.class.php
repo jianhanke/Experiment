@@ -71,6 +71,7 @@ class CourseController extends MyController{
 		$info[]=$ips['ip_num'];
 		return $info;
 	}
+	
 
 	/*  纯PHP上传文件
 	public function uploadFile(){

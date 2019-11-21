@@ -54,14 +54,15 @@ class DockerApi{
 
 	public function showAllImage(){
 
-       	$info=$this->getJsonInfoByApi("/images/json",'get');
+       	return $this->getJsonInfoByApi("/images/json",'get');
     }
     public function showContainerById(){
-    	$info=$this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
+    	return $this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
     }
     
- 	 public function showAllContainer(){
-    	$info=$this->getJsonInfoByApi("/containers/json?all=true",'get');	
+ 	public function showAllContainer(){
+    	return $this->getJsonInfoByApi("/containers/json?all=true",'get');	
+
     }
 
     public function startContainerById($container_id){

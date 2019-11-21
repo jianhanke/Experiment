@@ -34,6 +34,21 @@ class DockerController extends MyController{
 		$this->redirect('Experiment/showExperimentContainer');
 	}
 
+	public function showAllContainer(){
+		$allContainers=$this->docker->showAllContainer();
+		$this->assign('datas',$allContainers);
+		$this->display();
+	}
+
+	// public function dealInfo($info){
+
+	// 	array_walk($info, function (&$item) {
+ //    		$item = array_diff($item, ['Image']);
+	// 	});
+	// 	return $info;
+	// }
+
+
 
 	/**
 	 *   开关机 容器
@@ -49,7 +64,7 @@ class DockerController extends MyController{
 		// dump($arr);
 		for($i=0;$i<count($containers);$i++){
 			$container_id=$containers[$i]['container_id'];
-			$status=$this->docker->getContainerStatus($container_id);
+			$status=$this->docker->showContainerById($container_id);
 			$containers[$i]['status']=$status;
 		}
 		// for($j=0;$j<count($all_status);$j++){
