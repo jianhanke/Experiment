@@ -15,12 +15,12 @@ class DockerController extends MyController{
 	public function _initialize(){
 
 		$SdkOrApi=new \Admin\Controller\Entity\SdkOrApi();
-		$manner=$SdkOrApi->getControllerManner();
-		if($manner=='PythonSdk'){
-			$this->docker=new \Home\Controller\Entity\DockerSdk();
-		}else{
+		// $manner=$SdkOrApi->getControllerManner();
+		// if($manner=='PythonSdk'){
+		// 	$this->docker=new \Home\Controller\Entity\DockerSdk();
+		// }else{
 			$this->docker=new \Home\Controller\Entity\DockerApi();
-		}
+		// }
 	}
 
 
@@ -38,13 +38,14 @@ class DockerController extends MyController{
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
 			$image_ids=$model->find_ImageId_By_experimentId($experimentId);
-			
+
 			$noVNC=new \Home\Controller\Entity\Host();
 			$hostName=$noVNC->getHostName();
 
 			$arr_Url=array();
 			for($i=0;$i<count($image_ids);$i++){
 				$container_id=$model3->find_Container_By_UserId($user_id,$image_ids[$i]);
+				
 				$this->docker->startContainerById($container_id);
 				// $ip_num=$model3->find_Ip_id($user_id,$image_ids[$i]);
 				  $ip_num=$model3->find_Ip_id($container_id);
@@ -65,17 +66,23 @@ class DockerController extends MyController{
 
 			$noVNC=new \Home\Controller\Entity\Host();
 			$hostName=$noVNC->getHostName();
-			$first_containerId=Null;
 
+			$first_containerId=Null;
 			$arr_Url=array();
 			for($i=0;$i<count($image_names);$i++){
 				$info=$this->runContainerById($image_names[$i],$hostName=$host_Names[$i],$link_Container=$first_containerId);
 				if($i==0){
 					$first_containerId=$info[0];
 				}
-				$model3->add_Container($user_id,$info[0],$image_ids[$i],$info[1],$info[2]);
+				$data=array('Container_id'=>$info[0],
+						'student_id'=>$user_id,
+						'ip'=>$info[1],
+						'Image_id'=>$image_ids[$i],
+						'to_experiment'=>$experimentId,
+						'ip_num'=>$info[2]);
+				$model3->add_Container($data);
 
-				$ip_num=$model3->find_Ip_id($info[0]);
+				$ip_num=$info[2];
 				$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
 				$arr_Url[$i]=$url;
 
@@ -93,7 +100,6 @@ class DockerController extends MyController{
 
 		$model2=new \Home\Model\Experiment_imageModel();
 		$info=$model2->is_Have_More_Image($experimentId);
-		dump($info);
 
 		if($info==0){
 			$this->error('该实验没有镜像');
@@ -135,23 +141,38 @@ class DockerController extends MyController{
 			$image_name=$model->find_ImageId_By_experimentName($experimentId);
 
 
-			
 			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
 
 			// $info=$this->runContainerById($image_id);
-			$info=$this->runContainerById($image_name);  //此处应该是上行的，改一部分
-			
-			$model3->add_Container($user_id,$info[0],$image_id,$info[1],$info[2]); //学生容器id 加入 docker_container
+			$info=$this->runContainerById($image_id);  //此处应该是上行的，改一部分
+
+			$data=array('Container_id'=>$info[0],
+						'student_id'=>$user_id,
+						'ip'=>$info[1],
+						'Image_id'=>$image_id,
+						'to_experiment'=>$experimentId,
+						'ip_num'=>$info[2]);
+
+			$model3->add_Container($data); //学生容器id 加入 docker_container
 
 			// $ip_num=$model3->find_Ip_id($user_id,$image_id);
-			$ip_num=$model3->find_Ip_id($info[0]);
+			$ip_num=$info[2];
 
 
-			$noVNC=new \Home\Controller\Entity\NoVNC();
-			$noVNC->JumpUrlByIp($ip_num);
+			 $noVNC=new \Home\Controller\Entity\NoVNC();
+			 $noVNC->JumpUrlByIp($ip_num);
 
 			exit();
 		}
+	}
+
+	public function test01(){
+
+		$model3=new \Home\Model\Docker_containerModel();
+		$info=array('Container_id'=>'321','student_id'=>'100','ip'=>'10.6.7.22','Image_id'=>'3213121fsda','to_experiment'=>'32','ip_num'=>'22');
+		dump($info);
+		$info=$model3->add_Container2($info);
+		dump($info);
 	}
 	
 	public function restartContainerByIp($false_ip){
@@ -214,7 +235,6 @@ class DockerController extends MyController{
 		
 		$ip=$ips['ip'];
 		
-		
 		$container_id=$this->docker->runContainerByIdIp($image_id,$ip,$hostName=$hostName,$link_Container=$link_Container);    //具体docker中 run -it 
 
 		$info[]=$container_id;
@@ -241,8 +261,6 @@ class DockerController extends MyController{
 		$model->updateContainerId($id,$container_id);
 
 		$this->redirect("Course/joinChapterById",array('id'=>$info['to_chapter']));
-
-
 	}
 
 	

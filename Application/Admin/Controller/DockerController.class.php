@@ -57,16 +57,15 @@ class DockerController extends MyController{
 	public function handleContainer(){     
 		$model=new \Admin\Model\Docker_containerModel();
 		$containers=$model->show_All_Container();   //MySql中所有容器信息
+		dump($containers[0]);
 		$all_status=$this->docker->showAllContainer();
-		// $all_status=substr($all_status, 1, -1);
-		// $arr = explode(']',$all_status);
-		// dump($all_status);
-		// dump($arr);
+
 		for($i=0;$i<count($containers);$i++){
 			$container_id=$containers[$i]['container_id'];
 			$status=$this->docker->showContainerById($container_id);
 			$containers[$i]['status']=$status;
 		}
+		dump($containers[0]);
 		// for($j=0;$j<count($all_status);$j++){
 		// 		dump($all_status[$j]);
 		// }

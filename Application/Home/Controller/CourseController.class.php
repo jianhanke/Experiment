@@ -33,7 +33,7 @@ class CourseController extends MyController{
 
 		if($info){    //已经加入找到对应容器进入即可，
 			$container_id=$model3->find_ContainerId_By_ImageId($user_id,$image_id,$chapter_id);
-			$docker=new \Home\Controller\Entity\DockerSdk();
+			$docker=new \Home\Controller\Entity\DockerApi();
 
 			$docker->startContainerById($container_id);
 			$ip_num=$model3->find_Ip_By_Chapter($user_id,$image_id,$chapter_id);
@@ -44,7 +44,16 @@ class CourseController extends MyController{
 		}else{       //没有则加入此章节，并创建容器
 
 			$info=$this->runContainerById($image_id);
-			$model3->add_Container_To_Chapter($user_id,$info[0],$image_id,$info[1],$info[2],$chapter_id); //学生容器id 加入 docker_container
+
+			$data=array('Container_id'=>$info[0],
+						'student_id'=>$user_id,
+						'ip'=>$info[1],
+						'Image_id'=>$image_id,
+						'to_chapter'=>$chapter_id,
+						'ip_num'=>$info[2]);
+
+
+			$model3->add_Container($data); //学生容器id 加入 docker_container
 			$ip_num=$info[2];
 			// dump($image_id);
 			// dump($info);
@@ -59,7 +68,7 @@ class CourseController extends MyController{
 
 	public function runContainerById($image_id){
 		
-		$docker=new \Home\Controller\Entity\DockerSdk();
+		$docker=new \Home\Controller\Entity\DockerApi();
 		$ips=$docker->getNewIp();
 		// dump($ips);
 		$ip=$ips['ip'];

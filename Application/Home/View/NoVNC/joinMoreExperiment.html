@@ -45,7 +45,6 @@
 
     <div class="box"  style="height: 100%;width: 68%; float: right;" >
 
-      <div class="con0" id="con0"  style="height: 100%;width: 100%;" >  </div>
 
       <volist name="datas" id="data"  key="k" >
           <div class="con{$k-1}" id="con{$k-1}"  style="height: 100%;width: 100%;" >  </div>
@@ -66,17 +65,13 @@
       })
   </script>
 
-<script type="module" crossorigin="anonymous" >
-      import RFB from '__PUBLIC__/noVNC/core/rfb.js';
-       var rfb = new RFB(document.getElementById("con0"),"ws://localhost:6080/websockify?token=host12" ,{ credentials: { password: '123456' } }  );
-      rfb.connect(); 
-    </script>
+
 
  <volist name="datas" id="data"  key="k" >
 
      <script type="module" crossorigin="anonymous" >
-      import RFB from '__PUBLIC__/noVNC/core/rfb.js';
-       var rfb = new RFB(document.getElementById("con{$k-1}"),"ws://localhost:6080/websockify?token=host12" ,{ credentials: { password: '123456' } }  );
+      import RFB from '__PUBLIC__/Home/plugin/noVNC/core/rfb.js';
+       var rfb = new RFB(document.getElementById("con{$k-1}"),"{$data}" ,{ credentials: { password: '123456' } }  );
       rfb.connect(); 
     </script>
 

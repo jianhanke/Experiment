@@ -37,14 +37,19 @@ class Docker_containerModel extends Model{
 	   }
 	
 
-	public function add_Container($user_id,$container_id,$image_id,$ip,$ip_num){
-		$this->Container_id=$container_id;
-		$this->student_id=$user_id;
-		$this->Image_id=$image_id;
-		$this->ip=$ip;
-		$this->ip_num=$ip_num;
-		return $this->add();
+	// public function add_Container($user_id,$container_id,$image_id,$ip,$ip_num){
+	// 	$this->Container_id=$container_id;
+	// 	$this->student_id=$user_id;
+	// 	$this->Image_id=$image_id;
+	// 	$this->ip=$ip;
+	// 	$this->ip_num=$ip_num;
+	// 	return $this->add();
+	// }
+
+	public function add_Container($info){
+		return $this->add($info);
 	}
+
 
 	public function find_Max_Ip(){
 		return $this->max('ip_num');

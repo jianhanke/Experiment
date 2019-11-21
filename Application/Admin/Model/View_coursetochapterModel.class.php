@@ -1,6 +1,6 @@
 <?php 
 
-namespace Admin\Model;
+namespace z\Model;
 use Think\Model;
 
 
