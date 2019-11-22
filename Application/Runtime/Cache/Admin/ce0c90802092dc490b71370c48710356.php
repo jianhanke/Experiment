@@ -49,6 +49,7 @@
                         <th>班名</th>
                         <th>年级</th>
                         <th>系别</th>
+                        <th>详细信息</th>
                         <th>操作</th>
                     </tr>
                  <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
@@ -56,7 +57,9 @@
                         <td> <?php echo ($data['class_name']); ?>  </td>
                         <td>  <?php echo ($data['grade']); ?>  </td>
                         <td>   <?php echo ($data['department_name']); ?>  </td>
-                        <td>
+                        <td> <a class="link-update" href="<?php echo U('Class/showClassInfoById');?>/id/<?php echo ($data['id']); ?>">查看</a>   </td>
+                        <td>  
+
                             <a class="link-update" href="<?php echo U('Class/modifyClassInfoById');?>/id/<?php echo ($data['id']); ?>">修改</a>
                             &nbsp&nbsp&nbsp
                             <a class="link-update" href="<?php echo U('Class/deleteClassById');?>/classId/<?php echo ($data['id']); ?>">删除</a>
@@ -70,8 +73,9 @@
             </div>
             
                 
-
+    
 
         </div>
+        
 </body>
 </html>

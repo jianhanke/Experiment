@@ -22,8 +22,8 @@ class View_containerwithstuandexperModel extends Model{
 	}
 
 	public function find_Student_With_Container($student_id){
-		return $this->field("id,Container_id,ip,ip_num,Image_id,name,Eid,Ename")
-					->where("student_id='$student_id' ")
+		
+		return $this->where("student_id='$student_id' ")
 					->select();
 	}
 

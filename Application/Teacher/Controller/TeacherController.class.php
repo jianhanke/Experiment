@@ -13,6 +13,28 @@ class TeacherController extends MyController{
 		$this->display();
 	}
 
+	public function showMyClass(){
+		$teacher_id=Session('teacher_id');
+
+		// $model=new \Teacher\Model\Course_infoModel();
+		// $ids=$model->show_ClassId_ById($teacher_id);
+
+		$model2=new \Teacher\Model\View_classwithdepartmentModel();
+		$datas=$model2->show_MyClass_Info($teacher_id);
+		$this->assign('datas',$datas);
+		$this->display();
+
+	}
+
+	public function showStudentById($classId){
+
+		$model=D('Student');
+		$datas=$model->show_Student_ById($classId);
+		dump($datas[0]);
+		$this->assign("datas",$datas);
+		$this->display();
+	}
+
 
 
 	public function modifyInfo($teacherId){

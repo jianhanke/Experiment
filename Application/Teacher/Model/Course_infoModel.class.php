@@ -21,4 +21,13 @@ class Course_infoModel extends Model{
 					->delete();
 	}
 
+	public function show_ClassId_ById($teacher_id){
+
+		return  $this->field('cid as id')
+					->where("Tid=$teacher_id")
+					->select();
+
+
+	}
+
 }

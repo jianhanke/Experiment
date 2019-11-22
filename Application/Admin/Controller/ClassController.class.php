@@ -16,11 +16,15 @@ class ClassController extends MyController{
 
 	}
 
-	public function showClassInfoById($classId){
-		$model=new \Admin\Model\View_classwithdepartmentModel();
+	public function showClassInfoById($id){
 		
-		$info=$model->show_ClassInfo_ById($classId);
+		$model=new \Admin\Model\View_classwithdepartmentModel();
+		$class=$model->show_ClassInfo_ById($classId);
 
+		$model=new \Admin\Model\View_classinfoModel();
+		$info=$model->show_ClassInfo_ById($id);
+
+		$this->assign('class',$class);
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -32,7 +36,7 @@ class ClassController extends MyController{
 			$post=I('post.');
 			$status=$model->save_ClassInfo_ById($post);
 			if($status){
-				$this->success('修改成功');
+				$this->success('修改成功',U('Class/showAllClassInfo'));
 			}else{
 				$this->error('修改失败');
 			}
@@ -84,10 +88,7 @@ class ClassController extends MyController{
 	
 	}
 
-	public function showClassCourseById($courseId){
 
-		
-	}
 
 
 

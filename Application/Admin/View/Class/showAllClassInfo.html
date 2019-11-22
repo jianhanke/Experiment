@@ -49,6 +49,7 @@
                         <th>班名</th>
                         <th>年级</th>
                         <th>系别</th>
+                        <th>详细信息</th>
                         <th>操作</th>
                     </tr>
                  <volist   name="datas" id="data">
@@ -57,7 +58,9 @@
                         <td> {$data['class_name']}  </td>
                         <td>  {$data['grade']}  </td>
                         <td>   {$data['department_name']}  </td>
-                        <td>
+                        <td> <a class="link-update" href="{:U('Class/showClassInfoById')}/id/{$data['id']}">查看</a>   </td>
+                        <td>  
+
                             <a class="link-update" href="{:U('Class/modifyClassInfoById')}/id/{$data['id']}">修改</a>
                             &nbsp&nbsp&nbsp
                             <a class="link-update" href="{:U('Class/deleteClassById')}/classId/{$data['id']}">删除</a>
@@ -72,8 +75,9 @@
             </div>
             
                 
-
+    
 
         </div>
+        
 </body>
 </html>
