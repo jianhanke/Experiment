@@ -54,7 +54,7 @@
 	<div class="myDiv" style="width: 80%;height: 30%; " >
 
 		<div style="width: 25%;float: left;height: 100%;" >
-			<img src="__PUBLIC__/Course/{$data['img']} " alt="" style="width:100%;height: 100%; ">
+			<img src="__ROOT__/Source/Course/{$data['img']} " alt="" style="width:100%;height: 100%; ">
 		</div>
 		<div style="width: 75%;float:right;height: 100%;  ">
 				<br />
@@ -64,7 +64,7 @@
 				
 				<a href="{:U('Course/editCourseById')}/id/{$data['cid']}" > 
 				       <input type="button"  value="编辑 ">     </a> 
-				<a href="{:U('Course/deleteCourseById')}/id/{$data['cid']}"><input type="button" value="删除" > </a>
+				<a href="{:U('Course/deleteCourseById')}/id/{$data['cid']}"><input type="button" value="解除" > </a>
 			
 		</div>
     </div>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+</head>
+<body>
+	<div class="main-wrap">
+
+        	
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Class/modifyClassInfoById')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                        <input hidden name="id" value="{$datas['id']} " > 
+                            <tr>
+                                <th><i class="require-red">*</i>班名：</th>
+                                <!-- <th><i class="require-red">*</i>年龄：</th> -->
+                                <td>
+                                    <input class="common-text required" name="class_name" size="20" value="{$datas['class_name']} " type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>年级:</th>
+                                <!-- <th><i class="require-red">*</i>年龄：</th> -->
+                                <td>
+                                    <input class="common-text required" name="grade" size="20" value="{$datas['grade']}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="200"><i class="require-red">*</i>系别：</th>
+                                <td>
+                                    <select name="department_id" class="required">
+                                        <option value="{$datas['department_id']}">{$datas['department_name']}</option>
+                                       <volist name="departments" id="department">
+                                            <option value="{$department['department_id']}">{$department['department_name']} </option>
+                                       </volist>     
+
+                                    </select>    
+                                </td>
+                            </tr>
+       
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="保存" type="submit">
+                                    <a href="{:U('Class/showAllClassInfo')} "><input class="btn btn6"  value="返回" type="button"> </a>  
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

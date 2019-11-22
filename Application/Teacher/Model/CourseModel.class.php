@@ -12,4 +12,8 @@ class CourseModel extends Model{
 					->select();
 	}
 
+	public function delete_Course_By_Id($id){
+
+	}
+
 }

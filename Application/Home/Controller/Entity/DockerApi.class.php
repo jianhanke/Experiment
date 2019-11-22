@@ -17,7 +17,6 @@ class DockerApi{
 
 		
 		$url=$this->hostAndPort."$params";
-		// dump($url);
 		
         $ch = curl_init();
         $headers = [
@@ -52,12 +51,22 @@ class DockerApi{
 
 	}
 
+    public function pullImageByName($imageName){
+        
+        return  $this->getJsonInfoByApi("/images/create?fromImage=$imageName",'post');
+    }
+
 	public function showAllImage(){
 
        	return $this->getJsonInfoByApi("/images/json",'get');
     }
-    public function showContainerById(){
-    	return $this->getJsonInfoByApi("/containers/bbbfc08772ab/json",'get');
+    public function showContainerById($container_id){
+    	return $this->getJsonInfoByApi("/containers/$container_id/json",'get');
+    }
+
+    public function showContainerStatus($container_id){
+        $status=$this->getJsonInfoByApi("/containers/$container_id/json",'get')['State']['Status'];
+        return $status;
     }
     
  	public function showAllContainer(){

@@ -19,6 +19,28 @@ class CourseController extends MyController{
 		$this->display();
 	}
 
+	public function editCourseById($id){
+		
+		$model=D('Chapter');
+		$info=$model->find_Chapter_By_Course_Id($id);
+
+		$this->assign('id',$id);
+		$this->assign('datas',$info);
+		$this->display();
+
+	}
+
+	public function deleteCourseById($id){
+
+		$teacherId=Session('teacher_id');
+		dump($id);
+		dump($teacherId);
+
+		$model=new \Teacher\Model\Course_infoModel();
+		$model->delete_Course_By_Id($id,$teacherId);
+		$this->redirect('Course/showMyCourse');
+	}
+
 
 
 

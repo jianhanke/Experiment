@@ -57,18 +57,15 @@ class DockerController extends MyController{
 	public function handleContainer(){     
 		$model=new \Admin\Model\Docker_containerModel();
 		$containers=$model->show_All_Container();   //MySql中所有容器信息
-		dump($containers[0]);
 		$all_status=$this->docker->showAllContainer();
 
 		for($i=0;$i<count($containers);$i++){
 			$container_id=$containers[$i]['container_id'];
-			$status=$this->docker->showContainerById($container_id);
+			$status=$this->docker->showContainerStatus($container_id);
+
 			$containers[$i]['status']=$status;
 		}
-		dump($containers[0]);
-		// for($j=0;$j<count($all_status);$j++){
-		// 		dump($all_status[$j]);
-		// }
+
 		$count=$model->count_Num();
 		$this->assign('datas',$containers);
 		$this->assign('count',$count);
@@ -78,7 +75,8 @@ class DockerController extends MyController{
 	public function addImageAndId(){
 		
 		$post=I('post.');
-			
+		
+
 		try{
 			// $model=new \Admin\Model\Chapter_imageModel();
 			$model=new \Admin\Model\Make_imageModel();
@@ -122,6 +120,13 @@ class DockerController extends MyController{
 			$this->display();
 		}
 		
+	}
+
+	public function test01(){
+		$imageName="ubuntu:latest";
+		// $imageName="registry.cn-hangzhou.aliyuncs.com/jianhanke/ssh_base_desktop_auto";
+		$info=$this->docker->pullImageByName($imageName);
+		dump($info);
 	}
 
 

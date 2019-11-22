@@ -36,8 +36,10 @@
                         <th>id</th>
                         <th>镜像Id</th>
                         <th>镜像名字</th>
+                
                         <th>主机名</th>
                         <th>操作</th>
+
                     </tr>
                  <volist   name="datas" id="data">
                     <tr>

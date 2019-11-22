@@ -64,6 +64,8 @@ class DockerApiController extends MyController{
 
     }
 
+    
+
     public function stopContainerById(){
 
     	$info=$this->getJsonInfoByApi("/containers/de0a0be85cb5/stop",'post');

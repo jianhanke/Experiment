@@ -13,6 +13,26 @@ class IndexController extends MyController{
 		$this->display();
 	}
 
+	public function test01(){
+
+		echo "4234";
+
+	}
+
+	public function test02(){
+		echo "fads";
+
+	}
+
+	public function test03(){
+		echo "fdsafas";
+	}
+
+
+	public function test034(){
+			
+	}
+
 	public function login(){
 		$this->display('Login/login');
 	}

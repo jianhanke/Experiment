@@ -15,4 +15,10 @@ class Course_infoModel extends Model{
 		return $arr;
 	}
 
+	public function delete_Course_By_Id($courseId,$teacherId){
+
+		return $this->where("Cid=$courseId and Tid=$teacherId")
+					->delete();
+	}
+
 }
