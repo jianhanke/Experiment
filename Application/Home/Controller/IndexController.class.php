@@ -12,22 +12,7 @@ class IndexController extends MyController{
 		$this->assign('user_name',$user_name);
 		$this->display();
 	}
-
-	public function test01(){
-
-		echo "4234";
-
-	}
-
-	public function test02(){
-		echo "fads";
-
-	}
-
-	public function test03(){
-		echo "fdsafas";
-	}
-
+	
 
 	public function test034(){
 			

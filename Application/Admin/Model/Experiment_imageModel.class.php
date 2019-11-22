@@ -17,4 +17,18 @@ class Experiment_imageModel extends Model{
 		$this->where("Eid=$id")->delete();
 	}
 
+	public function save_ExperimentInfo_ById($info){
+
+		return $this->save($info);
+	}
+
+	public function delete_Experiment_ById($classId){
+		return $this->delete($classId);
+	}
+
+	public function add_Experiment_Info($info){
+		return $this->add($info);
+	}
+
+
 }

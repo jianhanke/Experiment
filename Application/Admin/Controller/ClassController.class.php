@@ -7,7 +7,7 @@ class ClassController extends MyController{
 
 	public function showAllClassInfo(){
 
-		$model=new \Admin\Model\View_classwithinfoModel();
+		$model=new \Admin\Model\View_classwithdepartmentModel();
 		$info=$model->show_AllClass_Info();
 		$count=$model->count_All_Class();
 		$this->assign('count',$count);
@@ -17,7 +17,7 @@ class ClassController extends MyController{
 	}
 
 	public function showClassInfoById($classId){
-		$model=new \Admin\Model\View_classwithinfoModel();
+		$model=new \Admin\Model\View_classwithdepartmentModel();
 		
 		$info=$model->show_ClassInfo_ById($classId);
 
@@ -38,7 +38,7 @@ class ClassController extends MyController{
 			}
 
 		}else{
-			$model=new \Admin\Model\View_classwithinfoModel();
+			$model=new \Admin\Model\View_classwithdepartmentModel();
 			$model2=D('Department');
 
 			$info=$model->show_ClassInfo_ById($classId);
@@ -74,15 +74,19 @@ class ClassController extends MyController{
 			}else{
 				$this->error('添加失败');
 			}
-			
+
 		}else{
 			$model2=D('Department');
 			$departments=$model2->show_AllDepartment_Info();
 			$this->assign('departments',$departments);
 			$this->display();
 		}
-		
+	
+	}
 
+	public function showClassCourseById($courseId){
+
+		
 	}
 
 

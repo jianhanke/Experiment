@@ -33,8 +33,6 @@ class CourseController extends MyController{
 	public function deleteCourseById($id){
 
 		$teacherId=Session('teacher_id');
-		dump($id);
-		dump($teacherId);
 
 		$model=new \Teacher\Model\Course_infoModel();
 		$model->delete_Course_By_Id($id,$teacherId);

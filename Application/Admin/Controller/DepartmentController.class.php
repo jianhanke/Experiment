@@ -7,9 +7,8 @@ class DepartmentController extends MyController{
 
 	public function showAllDepartmentInfo(){
 
-		$model=M('Department');
+		$model=D('Department');
 		$datas=$model->show_AllDepartment_Info();
-		dump($datas[0]);
 		$this->assign('datas',$datas);
 		$this->display();
 	}
@@ -17,7 +16,7 @@ class DepartmentController extends MyController{
 	public function showDepartmentInfoById($id){
 		
 		$model=D('Department');
-		$info=$model->show_ClassInfo_ById($id);
+		$info=$model->show_DepartmentInfo_ById($id);
 		dump($info);
 
 		$this->assign('datas',$info);
@@ -29,7 +28,7 @@ class DepartmentController extends MyController{
 		if(IS_POST){
 			$model=D('Department');
 			$post=I('post.');
-			$status=$model->save_ClassInfo_ById($post);
+			$status=$model->save_DepartmentInfo_ById($post);
 			if($status){
 				$this->success('修改成功');
 			}else{
@@ -38,16 +37,17 @@ class DepartmentController extends MyController{
 		}else{
 			
 			$model=D('Department');
-			$datas=$model->show_ClassInfo_ById($id);
-			$this->assign('datas',$info);
+			$datas=$model->show_DepartmentInfo_ById($id);
+
+			$this->assign('datas',$datas);
 			$this->display();		
 		}	
 	}
 
-	public function deleteDepartmentById($classId){
+	public function deleteDepartmentById($id){
 
 		$model=D('Department');
-		$status=$model->delete_Department_ById($classId);
+		$status=$model->delete_Department_ById($id);
 		if($status){
 			$this->success('删除成功',U('Department/showAllDepartmentInfo'));
 		}else{
@@ -60,7 +60,7 @@ class DepartmentController extends MyController{
 
 		if(IS_POST){
 			$post=I('post.');
-			$model=D('Class');
+			$model=D('Department');
 			$status=$model->add_Department_Info($post);
 
 			if($status){
@@ -75,9 +75,9 @@ class DepartmentController extends MyController{
 			$this->assign('datas',$datas);
 			$this->display();
 		}
-		
-
 	}
+
+
 
 
 }

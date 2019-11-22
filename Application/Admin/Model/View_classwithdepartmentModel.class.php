@@ -3,7 +3,7 @@
 namespace Admin\Model;
 use Think\Model;
 
-class View_classwithinfoModel extends Model{
+class View_classwithdepartmentModel extends Model{
 
 	public function show_AllClass_Info(){
 		return $this->select();
