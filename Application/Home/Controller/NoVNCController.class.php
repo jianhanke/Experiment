@@ -28,7 +28,10 @@ class NoVNCController extends MyController{
 		// 	$chapterInfo['doc']='2.htm';
 		// }
 		// $chapterPath=$model3->find_Chapter_Course($chapterId);
-		$basePath=$chapterPath['cname'].'/'.$chapterPath['name'];
+		// dump($chapterInfo);
+		// $basePath=$chapterPath['cname'].'/'.$chapterPath['name'];
+		// dump($basePath);
+
 		$videoPath=$chapterInfo['video'];
 		$docPath=$chapterInfo['doc'];
 		

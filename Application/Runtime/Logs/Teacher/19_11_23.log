@@ -2264,3 +2264,593 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
 
+[ 2019-11-23T13:35:01+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+
+[ 2019-11-23T13:35:01+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001945s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001995s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T13:35:03+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `teacher` WHERE `Tid` = 1 AND `Tpwd` = '1' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-11-23T13:35:03+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003093s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2019-11-23T13:35:03+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001549s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001597s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2019-11-23T13:35:05+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005102s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2019-11-23T13:35:05+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/showMyClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM view_classwithdepartment as t1 join  view_classinfo as t2  on t1.id=t2.id  WHERE ( t2.Tid = 1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/1d96dd14cd768f3f8e60d3ddc664a963.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003394s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2019-11-23T13:35:06+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005547s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005585s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2019-11-23T13:35:16+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/showInfo/teacherId/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher` WHERE `Tid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002430s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2019-11-23T13:35:17+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/modifyPwd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+NOTIC: [8] Undefined variable: teacherId /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/89667a99f497b759e32e55697baebeb0.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001827s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001869s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2019-11-23T13:35:18+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005217s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005267s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-11-23T13:35:19+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/showMyClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM view_classwithdepartment as t1 join  view_classinfo as t2  on t1.id=t2.id  WHERE ( t2.Tid = 1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/1d96dd14cd768f3f8e60d3ddc664a963.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-11-23T13:35:20+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004814s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004863s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-11-23T13:35:21+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005053s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-11-23T13:38:13+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004089s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-11-23T13:38:14+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/showMyClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM view_classwithdepartment as t1 join  view_classinfo as t2  on t1.id=t2.id  WHERE ( t2.Tid = 1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/1d96dd14cd768f3f8e60d3ddc664a963.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003339s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2019-11-23T13:38:15+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005270s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-11-23T13:38:17+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/showInfo/teacherId/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher` WHERE `Tid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2019-11-23T13:38:18+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/modifyPwd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Undefined variable: teacherId /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/89667a99f497b759e32e55697baebeb0.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003440s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2019-11-23T13:38:18+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004657s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2019-11-23T13:38:20+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/showMyClass
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM view_classwithdepartment as t1 join  view_classinfo as t2  on t1.id=t2.id  WHERE ( t2.Tid = 1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/1d96dd14cd768f3f8e60d3ddc664a963.php 第 35 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003847s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2019-11-23T13:38:22+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0005s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2019-11-23T13:38:22+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Index/system.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+ERR: 非法操作:system
+
+[ 2019-11-23T13:38:24+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/showInfo/teacherId/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher` WHERE `Tid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002897s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002951s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-11-23T13:38:26+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Teacher/modifyPwd
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined variable: teacherId /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/89667a99f497b759e32e55697baebeb0.php 第 14 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-11-23T13:38:26+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/showMyCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT `Cid` FROM `course_info` WHERE ( Tid=1 )  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course` WHERE (  `cid` = '2' ) OR (  `cid` = '1' )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Teacher/62ad9855c24fb02f422ed820980edea9.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004725s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-11-23T13:38:27+08:00 ] 10.6.0.32 /Experiment/index.php/Teacher/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+

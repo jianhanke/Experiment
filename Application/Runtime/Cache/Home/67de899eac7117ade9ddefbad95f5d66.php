@@ -114,7 +114,7 @@ a{
                  </ul>
               </div>
             <div class="con1">
-                <video src="/Experiment/Source/Course/<?php echo ($video); ?>" style="width: 100%;"  controls="" ></video>
+                <video src="/Experiment/Source/Chapter/<?php echo ($video); ?>" style="width: 100%;"  controls="" ></video>
             </div>
 
             <div class="con2" style="height: 90%;" >
@@ -128,7 +128,7 @@ a{
             <div class="con3" style="height: 100%;width: 100%;" >
 
             <?php if(($doc == '')): ?><font  color="red" size="20" >暂时为空 </font>
-              <?php else: ?> <iframe src="/Experiment/Source/Course/<?php echo ($doc); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
+              <?php else: ?> <iframe src="/Experiment/Source/Chapter/<?php echo ($doc); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
                 
             </div>
             

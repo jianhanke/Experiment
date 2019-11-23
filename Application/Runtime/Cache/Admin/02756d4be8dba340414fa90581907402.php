@@ -67,7 +67,7 @@
                     
                     <form action="<?php echo U('Course/uploadVideo');?> " method="post" enctype="multipart/form-data" >
                         <input type="file"  name="video" >
-                        <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> "  >
+                        <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> ">
                         <!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->
                         <input type="submit" value="上传" >
                      </form>

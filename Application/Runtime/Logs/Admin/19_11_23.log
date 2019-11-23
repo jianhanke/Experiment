@@ -1011,3 +1011,3257 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
 
+[ 2019-11-23T12:39:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2019-11-23T12:39:25+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005799s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T13:38:31+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+
+[ 2019-11-23T13:38:31+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-11-23T13:44:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+
+[ 2019-11-23T13:44:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-11-23T13:44:58+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `admin` WHERE `Aid` = 1 AND `Apwd` = '1' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-11-23T13:44:58+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004697s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000054s ]
+
+[ 2019-11-23T13:44:58+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001305s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2019-11-23T13:45:03+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Student/showStudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000122s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `student`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006222s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-11-23T13:45:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Class/showAllClassInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `view_classwithdepartment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_classwithdepartment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-11-23T13:45:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Class/addClassInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003505s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003562s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-11-23T13:45:07+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Department/showAllDepartmentInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/525eef9fdb1bbe3d7d910ba1977461cf.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-11-23T13:45:07+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Department/addDepartmentInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002344s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-11-23T13:45:10+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004330s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004372s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2019-11-23T13:45:11+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `view_containerwithstuandexper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `view_containerwithstuandexper`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_containerwithstuandexper` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005332s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2019-11-23T13:45:11+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2019-11-23T13:45:12+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002067s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-11-23T13:45:12+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Excel/showExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0007s ]
+SQL: select table_name from information_schema.tables where table_schema='experiment' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/b735124b3311a9ae417963ff77e12148.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006333s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-11-23T13:45:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004339s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004377s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2019-11-23T13:45:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showChapterImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `chapter_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter_image`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chapter_image` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003700s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003760s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2019-11-23T13:45:15+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Student/showStudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005088s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-11-23T13:45:16+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Class/showAllClassInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `view_classwithdepartment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_classwithdepartment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004783s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004826s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2019-11-23T13:45:18+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Class/addClassInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2019-11-23T13:45:19+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Department/showAllDepartmentInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/525eef9fdb1bbe3d7d910ba1977461cf.php 第 65 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-11-23T13:45:19+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Department/addDepartmentInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `department` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `department`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001963s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-11-23T13:45:20+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004868s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004912s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000045s ]
+
+[ 2019-11-23T13:45:21+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `view_containerwithstuandexper` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `view_containerwithstuandexper`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_containerwithstuandexper` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-11-23T13:45:22+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002873s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2019-11-23T13:45:22+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2019-11-23T13:45:23+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Excel/showExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0007s ]
+SQL: select table_name from information_schema.tables where table_schema='experiment' [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/b735124b3311a9ae417963ff77e12148.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005956s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-11-23T13:45:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000022s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000040s ]
+
+[ 2019-11-23T13:45:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showChapterImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `chapter_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter_image`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `chapter_image` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000532s ]
+
+[ 2019-11-23T13:45:25+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Student/showStudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000416s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `student`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-11-23T13:45:30+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Class/showAllClassInfo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `view_classwithdepartment` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `view_classwithdepartment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_classwithdepartment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-11-23T13:45:38+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-11-23T13:45:40+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005697s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005750s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-11-23T13:45:47+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002668s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000091s ]
+
+[ 2019-11-23T13:46:26+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+ERR: 参数错误或者未定义:chapter_id
+
+[ 2019-11-23T13:46:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+
+[ 2019-11-23T13:47:18+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0010s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0008s ]
+
+[ 2019-11-23T13:52:43+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0008s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0007s ]
+
+[ 2019-11-23T13:54:22+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+
+[ 2019-11-23T13:54:31+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000390s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: info /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 98 行.
+
+[ 2019-11-23T14:03:36+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001737s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000028s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2019-11-23T14:03:37+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006163s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006220s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-11-23T14:06:38+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001930s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T14:06:39+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004841s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004891s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-11-23T14:09:11+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006567s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-11-23T14:09:21+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Undefined variable: chapter_id /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 96 行.
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2019-11-23T14:09:22+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-11-23T14:09:53+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: UPDATE `chapter` SET `doc`='MySql/MySql第一章节/1.htm' WHERE ( id=1  ) [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000064s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2019-11-23T14:09:54+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006081s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-11-23T14:21:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000137s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-11-23T14:22:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined variable: course_name /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 104 行.
+NOTIC: [8] Undefined variable: chapter_name /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 104 行.
+NOTIC: [8] Undefined variable: new_name /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 104 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: savepath /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 111 行.
+NOTIC: [8] Undefined index: savename /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 111 行.
+SQL: UPDATE `chapter` SET `video`='' WHERE ( id=1  ) [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001583s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000048s ]
+
+[ 2019-11-23T14:22:06+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005660s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-11-23T14:28:50+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005694s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005745s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-11-23T14:28:50+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001226s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000061s ]
+
+[ 2019-11-23T14:28:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-11-23T14:28:53+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005519s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-11-23T14:29:02+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000317s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0008s ]
+
+[ 2019-11-23T14:30:34+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000049s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000046s ]
+
+[ 2019-11-23T14:30:35+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006655s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006713s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-11-23T14:33:17+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0005s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: UPDATE `chapter` SET `doc`='MySql/MySql第一章节/1.htm' WHERE ( id=1  ) [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001822s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001861s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2019-11-23T14:33:18+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000609s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005489s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005540s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-11-23T14:41:01+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000115s ]
+
+[ 2019-11-23T14:41:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000055s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2019-11-23T14:41:14+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-11-23T14:41:14+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-11-23T14:41:27+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000052s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000105s ]
+
+[ 2019-11-23T14:41:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-11-23T14:41:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-11-23T14:41:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-11-23T14:41:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-11-23T14:41:40+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-11-23T14:41:50+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+
+[ 2019-11-23T14:41:51+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+
+[ 2019-11-23T14:41:51+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-11-23T14:42:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2019-11-23T14:42:06+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-11-23T14:42:06+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-11-23T14:42:38+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-11-23T14:42:39+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-11-23T14:42:39+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-11-23T14:42:39+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-11-23T14:42:39+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T14:43:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2019-11-23T14:43:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-11-23T14:43:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-11-23T14:43:53+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-11-23T14:43:53+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-11-23T14:43:53+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-11-23T14:44:35+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-11-23T14:44:35+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2019-11-23T14:44:36+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000080s ]
+NOTIC: [8] Use of undefined constant ROOT_PATH - assumed 'ROOT_PATH' /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 122 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-11-23T14:49:02+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: UPDATE `chapter` SET `doc`='MySql/MySql第一章节/1.htm' WHERE ( id=1  ) [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2019-11-23T14:49:03+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-11-23T15:00:07+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+ERR: 1054:Unknown column 'MySql' in 'where clause'
+ [ SQL语句 ] : UPDATE `chapter` SET `doc`='//.htm' WHERE ( id=MySql )
+ERR: 1054:Unknown column 'MySql' in 'where clause'
+ [ SQL语句 ] : UPDATE `chapter` SET `doc`='//.htm' WHERE ( id=MySql )
+
+[ 2019-11-23T15:04:20+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+NOTIC: [8] Array to string conversion /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 149 行.
+SQL: UPDATE `chapter` SET `doc`='Array1.htm' WHERE ( id=1  ) [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001275s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000058s ]
+
+[ 2019-11-23T15:04:21+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005560s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005616s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2019-11-23T15:05:09+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadWord
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+NOTIC: [8] Array to string conversion /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 149 行.
+SQL: UPDATE `chapter` SET `doc`='Array1.htm' WHERE ( id=1  ) [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001342s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2019-11-23T15:05:10+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006058s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2019-11-23T15:05:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/uploadVideo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `view_coursetochapter` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_coursetochapter` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0004s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: UPDATE `chapter` SET `video`='MySql/MySql第一章节/1.mp4' WHERE ( id=1  ) [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000051s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2019-11-23T15:05:29+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=1 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005520s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-11-23T15:11:21+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004904s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T15:11:23+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/editCourseById/id/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `chapter` WHERE ( to_course=3 )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2019-11-23T15:11:44+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-11-23T15:11:46+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-11-23T15:12:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002143s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+
+[ 2019-11-23T15:12:07+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000107s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004133s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-11-23T15:12:50+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000073s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000121s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002140s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002194s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-11-23T15:12:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-11-23T15:13:04+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002150s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002204s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+
+[ 2019-11-23T15:13:07+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003879s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-11-23T15:14:06+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('PHP','132','5dd8dc3e8e7f2.jpg') [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002122s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-11-23T15:14:07+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004852s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004901s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-11-23T15:14:22+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000111s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003732s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003784s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-11-23T15:14:55+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-11-23T15:22:51+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000119s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000582s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000641s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003740s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003780s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2019-11-23T15:23:02+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000128s ]
+
+[ 2019-11-23T15:23:30+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+NOTIC: [8] Undefined variable: pictureInfo /home/jianhanke/Experiment/Application/Admin/Controller/CourseController.class.php 第 30 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0010s ]
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('Thinkphp','321',NULL)
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('Thinkphp','321',NULL)
+
+[ 2019-11-23T15:26:39+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('Thinkphp','321','5dd8df2fb67ff.jpg')
+ERR: 1062:Duplicate entry '0' for key 'PRIMARY'
+ [ SQL语句 ] : INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('Thinkphp','321','5dd8df2fb67ff.jpg')
+
+[ 2019-11-23T15:30:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('Thinkphp','321','5dd8e02c1f8a7.jpg') [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000131s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002835s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-11-23T15:30:53+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005521s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000050s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000044s ]
+
+[ 2019-11-23T15:32:54+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000112s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T15:33:02+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002195s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+
+[ 2019-11-23T15:33:04+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-11-23T15:33:10+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002354s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-11-23T15:33:12+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-11-23T15:33:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('21','312','5dd8e0c454c6e.jpg') [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002054s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002106s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T15:33:25+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005340s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000073s ]
+
+[ 2019-11-23T15:35:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000070s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-11-23T15:35:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('312','312','5dd8e1313ed8c.jpg') [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002225s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T15:35:14+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000900s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005771s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005823s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-11-23T15:35:34+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005782s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005821s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2019-11-23T15:35:36+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000071s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2019-11-23T15:35:43+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000073s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('31','312','5dd8e14f03fec.jpg') [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T15:44:22+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003134s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000059s ]
+
+[ 2019-11-23T15:44:23+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `view_containerwithstuandexper` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `view_containerwithstuandexper`  [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_containerwithstuandexper` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005106s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2019-11-23T15:44:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003571s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003620s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2019-11-23T15:44:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002236s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002291s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000023s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000042s ]
+
+[ 2019-11-23T15:44:27+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000051s ]
+
+[ 2019-11-23T15:44:29+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000105s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-11-23T15:44:33+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005094s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005142s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-11-23T15:44:38+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000053s ]
+
+[ 2019-11-23T15:44:46+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('321','312','5dd8e36e1c200.jpg') [ RunTime:0.0007s ]
+
+[ 2019-11-23T15:49:03+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('321','312','5dd8e46f4f475.jpg') [ RunTime:0.0020s ]
+
+[ 2019-11-23T15:49:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('321','312','5dd8e47930b6a.jpg') [ RunTime:0.0018s ]
+
+[ 2019-11-23T15:50:15+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('321','312','5dd8e4b7e9236.jpg') [ RunTime:0.0008s ]
+
+[ 2019-11-23T15:50:49+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('321','312','5dd8e4d959c80.jpg') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: INSERT INTO `course_info` (`Cid`,`Tid`) VALUES ('12','1') [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000059s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2019-11-23T15:51:03+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0017s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('321','312','5dd8e4e75905b.jpg') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: INSERT INTO `course_info` (`Cid`,`Tid`) VALUES ('13','1') [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-11-23T15:52:16+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('321','312','5dd8e5308e05b.jpg') [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: INSERT INTO `course_info` (`Cid`,`Tid`) VALUES ('14','1') [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000337s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2019-11-23T15:53:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000067s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005931s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005983s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-11-23T15:53:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-11-23T15:53:27+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000110s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-11-23T15:57:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003786s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-11-23T15:57:32+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-11-23T15:58:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+
+[ 2019-11-23T15:59:10+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005422s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-11-23T15:59:12+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-11-23T15:59:21+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+
+[ 2019-11-23T16:01:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('312','312','5dd8e7497231d.jpg') [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0006s ]
+SQL: INSERT INTO `course_info` (`Cid`,`Tid`) VALUES ('15','1') [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-11-23T16:01:58+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/addCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000069s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given /home/jianhanke/Experiment/ThinkPHP/Library/Think/Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0007s ]
+SQL: INSERT INTO `course` (`cname`,`introduce`,`img`) VALUES ('312','312','5dd8e776bb387.jpg') [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `course_info` [ RunTime:0.0014s ]
+SQL: INSERT INTO `course_info` (`Cid`,`Tid`) VALUES ('16','1') [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001616s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001656s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000067s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000062s ]
+
+[ 2019-11-23T16:01:59+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Course/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000062s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Application/Runtime/Cache/Admin/2f5aab314377011a7164233638dac697.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004897s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-11-23T16:09:12+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000125s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-11-23T16:09:12+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
