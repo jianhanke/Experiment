@@ -9,8 +9,8 @@ class Host{
 		return $_SERVER['SERVER_NAME'];
 	}
 
-	public static function getCourseRealPath(){
-		return dirname(dirname(dirname(dirname(dirname(__FILE__)))))."/Course/"  ;
+	public static function getRootRealPath(){
+		return dirname(dirname(dirname(dirname(dirname(__FILE__)))));
 	}
 
 }

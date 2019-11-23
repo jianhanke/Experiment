@@ -36,41 +36,27 @@
 
 <body>
 	
-    
+
 	<ul class="point">
         
-        <p> <a href="<?php echo U("Admin/Course/addChapter");?>/to_course/<?php echo ($id); ?>">&#187; &raquo;添加章节</a>  </p>
-        <br>
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li><a href="#"> &#9733<?php echo ($data['name']); ?>  </a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
         </ul>
         <div class="box" style="height: 70%;width: 40%;">
             
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div  class="con<?php echo ($key); ?>"  style="height: 70%;width: 100%;" >
-           <!--  <b> 进入</b> <br /> 
+            <b> 进入</b> <br /> 
 		<a href="<?php echo U('Course/joinChapterById');?>/id/<?php echo ($data['id']); ?>" target="block">
 
-			 &#9733<?php echo ($data['name']); ?>  -->
+			 &#9733<?php echo ($data['name']); ?> 
 			  </a>
-              <font  color="red">重复上传,将会替代</font>
-              <p> <?php echo ($data['name']); ?> </p>
-              <br>
-			  	<br />
-			 <b>上传实验指导书  </b>
-				<form action="<?php echo U('Admin/Course/uploadWord');?> " method="post" enctype="multipart/form-data" >
-						<input type="file"  name="word" >
+			  	<br /><br /><br />
+			 <b   >上传报告</b>
+				<form action="<?php echo U('Course/uploadFile');?> " method="post" enctype="multipart/form-data" >
+						<input type="file"  name="file" >
 						<input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> "  >
 						<!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->
 						<input type="submit" value="上传" >
 				</form>
-                <br>
-                 <p>  <b >上传视频(限50M,后缀限:'avi','wmv','mpeg','mp4')  </b>  </p>  
-                    
-                    <form action="<?php echo U('Admin/Course/uploadVideo');?> " method="post" enctype="multipart/form-data" >
-                        <input type="file"  name="video" >
-                        <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> "  >
-                        <!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->
-                        <input type="submit" value="上传" >
-                     </form>
 
               </div><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>

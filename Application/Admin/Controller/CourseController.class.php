@@ -1,8 +1,6 @@
 <?php 
-
 namespace Admin\Controller;
 use Think\Controller;
-
 class CourseController extends MyController{
 
 	public function showCourse(){
@@ -11,7 +9,6 @@ class CourseController extends MyController{
 		$this->assign('datas',$info);
 		$this->display();
 	}
-
 	public function addCourse(){
 		if(IS_POST){
 			$post=I('post.');
@@ -33,9 +30,7 @@ class CourseController extends MyController{
 		}catch(\Exception $e){
 				$this->error('添加失败,图片上传错误');
 			}
-
 			$post['img']=$pictureInfo['savename'];
-
 			$model=D('Course');
 			$info=$model->add_Info($post);
 			if($info){
@@ -45,37 +40,28 @@ class CourseController extends MyController{
 			}
 			
 			
-
 		}else{
 			$model=D('Teacher');
 			$info=$model->show_Teacher();
 			$this->assign('datas',$info);
 			$this->display();
 		}
-
 		
 	}
-
-
 	public function deleteCourseById($id){
 		$model=D('Course');
 		$model->delete_Course_By_Id($id);
 		$this->redirect('Course/showCourse');
 	}
-
 	public function showChapterImage(){
 		$model=new \Admin\Model\Chapter_imageModel();
 		$info=$model->show_Image();
-
 		$count=$model->count_Num();
 		$this->assign('count',$count);
 		$this->assign('datas',$info);
 		$this->display();
 	}
-
-
 	public function editCourseById(){
-
 		$id=I('get.id');
 		$model=D('Chapter');
 		$info=$model->find_Chapter_By_Course_Id($id);
@@ -83,7 +69,6 @@ class CourseController extends MyController{
 		$this->assign('datas',$info);
 		$this->display();
 	}
-
 	public function addChapter($to_course){
 		
 		if(IS_POST){
@@ -93,7 +78,6 @@ class CourseController extends MyController{
 			$this->uploadVideo($chapter_id);
 			$this->uploadWord($chapter_id);
 			$this->success('添加成功',U("Admin/Course/editCourseById/id/$to_course"));
-
 		}else{
 			// $to_course=I('get.to_course');
 			$model=D('Course');
@@ -105,22 +89,18 @@ class CourseController extends MyController{
 			$this->assign('courseName',$courseName);
 			$this->display();	
 		}
-
 	}
-
 	public function uploadVideo($chapter_id){
-
 		if(empty($chapter_id)){
 			$chapter_id=I('post.chapter_id');	
 		}
-
 		$model=new \Admin\Model\View_coursetochapterModel();
 		$info=$model->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
 		$upload = new \Think\Upload();
-		$upload->rootPath = './Source/Course/';  // ./ 代表 项目的根目录
+		$upload->rootPath = './Source/Chapter/';  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
 		$upload->exts      =     array('avi','wmv','mpeg','mp4');
 		$upload->maxSize= 50*1024*1024;
@@ -137,9 +117,7 @@ class CourseController extends MyController{
 					$this->success('上传成功');
 				}
 		} 
-
 	}
-
 	public function uploadWord($chapter_id){
 		
 		if(empty($chapter_id)){
@@ -148,13 +126,14 @@ class CourseController extends MyController{
 		
 		$model=new \Admin\Model\View_coursetochapterModel();
 		$model2=D('Chapter');
+
+
 		$info=$model->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
-
 		$upload = new \Think\Upload();
-		$upload->rootPath = './Source/Course/';  // ./ 代表 项目的根目录
+		$upload->rootPath = './Source/Chapter/';  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
 		$upload->exts      =     array('docx','doc');
 		$upload->saveName = $new_name;
@@ -163,11 +142,13 @@ class CourseController extends MyController{
 		$upload->autoSub  = false;    //禁止上传时候的时间目录
 
 		$host=new \Admin\Controller\Entity\Host();
-		  $courseRealPath=$host-> getCourseRealPath();
+		  $courseRealPath=$host-> getRootRealPath().'/Source/Chapter/';
 		$info   =   $upload->uploadOne($_FILES['word']);
-		
+
+		echo $courseRealPath;
 
 		if(!$info) {// 上传错误提示错误信息
+				echo "进到错误地方";
 		        $this->error($upload->getError());
 		}else{// 上传成功 获取上传文件信息
 		         // echo $info['savepath'].$info['savename'];
@@ -180,17 +161,29 @@ class CourseController extends MyController{
 		         if(!empty(I('post.chapter_id'))){
 					$this->success('上传成功');
 				}
-
 		} 
 	}
 	public function saveWordToHtm($wordPath,$htmPath){
+		
 		vendor('PHPOffice.autoload');
+
+		$phpWord = \PhpOffice\PhpWord\IOFactory::load($wordPath);
+		$xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
+		$xmlWriter->save($htmPath);
+	}
+
+	public function test01(){
+		$wordPath= "/home/jianhanke/Experiment/Course/MySql/MySql第一章节/1.docx";
+	    $htmPath=   "/home/jianhanke/Experiment/Course/MySql/MySql第一章节/1.htm";
+
+	    vendor('PHPOffice.autoload');
+		echo "试试";
 		$phpWord = \PhpOffice\PhpWord\IOFactory::load($wordPath);
 		$xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
 		$xmlWriter->save($htmPath);
 
+	    
 	}
-
 
 	  // 使用python脚本，将word转化为htm
 	// public function saveWordToHtm($wordPath,$htmPath){
@@ -199,17 +192,14 @@ class CourseController extends MyController{
 	// 	$word=new \Admin\Controller\Entity\Word();
 	// 	$word->saveWordToHtm($wordPath,$htmPath);
 	// }
-
 	public function ceshi(){
 		$wordPath='E:\wamp\apache\library\Experiment/Course/MySql/MySql第一章节/1.doc';
 		$htmPath='E:\wamp\apache\library\Experiment/Course/MySql/MySql第一章节/1.htm';
-
 		$word=new \Admin\Controller\Entity\Word();
 		$word->saveWordToHtm($wordPath,$htmPath);	
 	}
 	public function ceshi2(){
 		vendor('PHPOffice.autoload');
-
 		$wordPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.doc';
 		$htmPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\3.html';
 		$phpWord =   \PhpOffice\PhpWord\IOFactory::load($wordPath);
@@ -221,11 +211,9 @@ class CourseController extends MyController{
 		$xmlWriter->save($htmPath);
 		echo "成功";
 	}
-
 	public function ceshi3(){
 		$wordPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.doc';
 		$htmPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.htm';
-
 		$word = new COM("word.application") or die("Unable to instanciate Word");  
 		 $word->Visible = 1;  
 		 $word->Documents->Open($wordPath);  
@@ -235,11 +223,5 @@ class CourseController extends MyController{
 		 unset($word); 
 	}
 	
-
-
 	
-
-
-
-
 }
