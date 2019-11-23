@@ -9,6 +9,7 @@ class CourseController extends MyController{
 		$this->assign('datas',$info);
 		$this->display();
 	}
+
 	public function addCourse(){
 		if(IS_POST){
 			$post=I('post.');
@@ -59,10 +60,11 @@ class CourseController extends MyController{
 		$this->display();
 	}
 	public function editCourseById(){
-		$id=I('get.id');
+		$courseId=I('get.id');
 		$model=D('Chapter');
-		$info=$model->find_Chapter_By_Course_Id($id);
-		$this->assign('id',$id);
+		$info=$model->find_Chapter_By_Course_Id($courseId);
+		dump($info[0]);
+		$this->assign('id',$courseId);
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -107,13 +109,11 @@ class CourseController extends MyController{
 		if(!$res['status']) {// 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 		}else{// 上传成功 获取上传文件信息
-		         $model=D('Chapter');
-		         $model->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
+		        $model=D('Chapter');
+		        $model->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
 				$this->success('上传成功');
 		} 
-
 	}
-
 
 	public function uploadWord($chapter_id){
 		
@@ -143,8 +143,7 @@ class CourseController extends MyController{
 		         $uploadFile->saveWordToHtm($wordPath,$htmPath);
 		         
 		         $model2=D('Chapter');
-		         $model2->add_WordPath_ById($res['status'].$new_name.'.htm',$chapter_id);
-		        
+		         $model2->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
 				$this->success('上传成功');
 		} 
 	}

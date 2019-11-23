@@ -36,15 +36,15 @@
 
 <body>
 	
-    
+ <div  style="float: left;" >
 	<ul class="point">
         
         <p> <a href="<?php echo U("Course/addChapter");?>/to_course/<?php echo ($id); ?>">&#187; &raquo;添加章节</a>  </p>
         <br>
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li><a href="#"> &#9733<?php echo ($data['name']); ?>  </a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
-        </ul>
-        <div class="box" style="height: 70%;width: 40%;">
-            
+    </ul>
+</div>   
+        <div class="box" style="height: 70%;width: 40%; float: right; ">
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div  class="con<?php echo ($key); ?>"  style="height: 70%;width: 100%;" >
            <!--  <b> 进入</b> <br /> 
 		<a href="<?php echo U('Course/joinChapterById');?>/id/<?php echo ($data['id']); ?>" target="block">
@@ -55,22 +55,34 @@
               <p> <?php echo ($data['name']); ?> </p>
               <br>
 			  	<br />
-			 <b>上传实验指导书  </b>
-				<form action="<?php echo U('Course/uploadWord');?> " method="post" enctype="multipart/form-data" >
-						<input type="file"  name="word" >
-						<input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> "  >
-						<!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->
-						<input type="submit" value="上传" >
-				</form>
-                <br>
                  <p>  <b >上传视频(限50M,后缀限:'avi','wmv','mpeg','mp4')  </b>  </p>  
-                    
+
+                <video src="/Experiment/Source/Chapter/<?php echo ($data['video']); ?>"  style="width: 50%;"    controls="" ></video>
+
                     <form action="<?php echo U('Course/uploadVideo');?> " method="post" enctype="multipart/form-data" >
                         <input type="file"  name="video" >
                         <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> ">
                         <!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->
                         <input type="submit" value="上传" >
                      </form>
+                <br />
+
+
+
+
+			 <b>上传实验指导书  </b>
+             <form action="<?php echo U('Course/uploadWord');?> " method="post" enctype="multipart/form-data" >
+                        <input type="file"  name="word" >
+                        <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> "  >
+                        <!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->
+                        <input type="submit" value="上传" >
+                </form>
+                <?php if(($data['doc'] == '')): ?><font  color="red" size="20" >暂时为空 </font>
+              <?php else: ?> <iframe src="/Experiment/Source/Chapter/<?php echo ($data['doc']); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
+            
+				
+                <br>
+                
 
               </div><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>

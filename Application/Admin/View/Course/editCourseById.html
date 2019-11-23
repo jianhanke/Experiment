@@ -36,7 +36,7 @@
 
 <body>
 	
-    
+ <div  style="float: left;" >
 	<ul class="point">
         
         <p> <a href="{:U("Course/addChapter")}/to_course/{$id}">&#187; &raquo;添加章节</a>  </p>
@@ -44,9 +44,9 @@
             <volist name="datas" id="data">
 		<li><a href="#"> &#9733{$data['name']}  </a>  </li>
 			</volist>
-        </ul>
-        <div class="box" style="height: 70%;width: 40%;">
-            
+    </ul>
+</div>   
+        <div class="box" style="height: 70%;width: 40%; float: right; ">
             <volist name="datas" id="data">
             <div  class="con{$key}"  style="height: 70%;width: 100%;" >
            <!--  <b> 进入</b> <br /> 
@@ -58,22 +58,36 @@
               <p> {$data['name']} </p>
               <br>
 			  	<br />
-			 <b>上传实验指导书  </b>
-				<form action="{:U('Course/uploadWord')} " method="post" enctype="multipart/form-data" >
-						<input type="file"  name="word" >
-						<input type="hidden" name="chapter_id" value="{$data['id']} "  >
-						<!-- <input type="texhiddetn"  name="chapter_name"  value="{$data['name']} -->
-						<input type="submit" value="上传" >
-				</form>
-                <br>
                  <p>  <b >上传视频(限50M,后缀限:'avi','wmv','mpeg','mp4')  </b>  </p>  
-                    
+
+                <video src="__ROOT__/Source/Chapter/{$data['video']}"  style="width: 50%;"    controls="" ></video>
+
                     <form action="{:U('Course/uploadVideo')} " method="post" enctype="multipart/form-data" >
                         <input type="file"  name="video" >
                         <input type="hidden" name="chapter_id" value="{$data['id']} ">
                         <!-- <input type="texhiddetn"  name="chapter_name"  value="{$data['name']} -->
                         <input type="submit" value="上传" >
                      </form>
+                <br />
+
+
+
+
+			 <b>上传实验指导书  </b>
+             <form action="{:U('Course/uploadWord')} " method="post" enctype="multipart/form-data" >
+                        <input type="file"  name="word" >
+                        <input type="hidden" name="chapter_id" value="{$data['id']} "  >
+                        <!-- <input type="texhiddetn"  name="chapter_name"  value="{$data['name']} -->
+                        <input type="submit" value="上传" >
+                </form>
+                <if condition="($data['doc'] eq '')">
+              <font  color="red" size="20" >暂时为空 </font>
+              <else /> <iframe src="__ROOT__/Source/Chapter/{$data['doc']} " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe>
+            </if>
+            
+				
+                <br>
+                
 
               </div>
 			</volist>
