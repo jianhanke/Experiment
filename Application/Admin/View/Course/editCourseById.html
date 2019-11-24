@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+    <meta charset="UTF-8">
+    <title>Document</title>
 </head>
 <style>
-		html, body {
+        html, body {
             width:100%;
             height:100%;
             margin:0px;
             padding:0px;
         }
         *{padding:0; margin:0;}
-		a{ text-decoration:none} 
-		.point{
+        a{ text-decoration:none} 
+        .point{
             float: left;
             list-style: none;
         }
@@ -35,29 +35,28 @@
 </style>
 
 <body>
-	
+    
  <div  style="float: left;" >
-	<ul class="point">
+    <ul class="point">
         
         <p> <a href="{:U("Course/addChapter")}/to_course/{$id}">&#187; &raquo;添加章节</a>  </p>
         <br>
             <volist name="datas" id="data">
-		<li><a href="#"> &#9733{$data['name']}  </a>  </li>
-			</volist>
+        <li><a href="#"> &#9733{$data['name']}  </a>  </li>
+            </volist>
     </ul>
 </div>   
         <div class="box" style="height: 70%;width: 40%; float: right; ">
             <volist name="datas" id="data">
             <div  class="con{$key}"  style="height: 70%;width: 100%;" >
            <!--  <b> 进入</b> <br /> 
-		<a href="{:U('Course/joinChapterById')}/id/{$data['id']}" target="block">
-
-			 &#9733{$data['name']}  -->
-			  </a>
+        <a href="{:U('Course/joinChapterById')}/id/{$data['id']}" target="block">
+             &#9733{$data['name']}  -->
+              </a>
               <font  color="red">重复上传,将会替代</font>
               <p> {$data['name']} </p>
               <br>
-			  	<br />
+                <br />
                  <p>  <b >上传视频(限50M,后缀限:'avi','wmv','mpeg','mp4')  </b>  </p>  
 
                 <video src="__ROOT__/Source/Chapter/{$data['video']}"  style="width: 50%;"    controls="" ></video>
@@ -73,7 +72,7 @@
 
 
 
-			 <b>上传实验指导书  </b>
+             <b>上传实验指导书  </b>
              <form action="{:U('Course/uploadWord')} " method="post" enctype="multipart/form-data" >
                         <input type="file"  name="word" >
                         <input type="hidden" name="chapter_id" value="{$data['id']} "  >
@@ -85,15 +84,15 @@
               <else /> <iframe src="__ROOT__/Source/Chapter/{$data['doc']} " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe>
             </if>
             
-				
+                
                 <br>
                 
 
               </div>
-			</volist>
+            </volist>
         </div>
-	
-	
+    
+    
 </body>
 </html>
 <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.12.0.min.js"></script>
@@ -104,6 +103,4 @@
                 $(".con" + order).show().siblings("div").hide();//显示class中con加上返回值所对应的DIV
             });
         })
-
 </script>
-    

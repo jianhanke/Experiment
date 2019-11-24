@@ -14,9 +14,7 @@ class ExcelController extends MyController{
 		$this->display();
 	}
 
-    public function ceshi(){
-       
-    }
+
 
 	public function uploadExcelAndInput($modelName){
 

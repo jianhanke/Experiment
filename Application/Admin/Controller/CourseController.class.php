@@ -46,6 +46,7 @@ class CourseController extends MyController{
 			$this->display();
 		}
 	}
+
 	public function deleteCourseById($id){
 		$model=D('Course');
 		$model->delete_Course_By_Id($id);
@@ -63,7 +64,6 @@ class CourseController extends MyController{
 		$courseId=I('get.id');
 		$model=D('Chapter');
 		$info=$model->find_Chapter_By_Course_Id($courseId);
-		dump($info[0]);
 		$this->assign('id',$courseId);
 		$this->assign('datas',$info);
 		$this->display();
@@ -74,14 +74,21 @@ class CourseController extends MyController{
 			$post=I('post.');
 			$model=D('Chapter');
 			$chapter_id=$model->add_Info($post);
+
+			$model2=new \Teacher\Model\Chapter_imageModel();
+			$chapterInfo=array('Cid'=>$chapter_id,'to_imageId'=>$post['to_image'],'to_imageName'=>Null);
+			$model2->add_ChapterInfo($chapterInfo);
+
 			$this->uploadVideo($chapter_id);
 			$this->uploadWord($chapter_id);
-			$this->success('添加成功',U("Admin/Course/editCourseById/id/$to_course"));
+			
+			$this->success('添加成功',U("Course/editCourseById",array('id'=>$to_course)));
 		}else{
 			// $to_course=I('get.to_course');
 			$model=D('Course');
 			$courseName=$model->find_Course_Name($to_course);
-			$model2=D('Makeimage');
+			
+			$model2=new \Admin\Model\Make_imageModel();
 			$data=$model2->show_All_Data();
 			$this->assign('datas',$data);
 			$this->assign('id',$to_course);

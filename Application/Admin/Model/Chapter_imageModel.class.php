@@ -35,6 +35,10 @@ class Chapter_imageModel extends Model{
 	public function add_Info($data){
 		return $this->add($data);
 	}
+	
+	public function add_ChapterInfo($post){
+		return $this->add($post);
+	}
 
 	
 	

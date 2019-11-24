@@ -15,4 +15,8 @@ class Make_imageModel extends Model{
 		return  $this->add($imageInfo);	
 	}
 
+	public function show_All_Data(){
+		return $this->select();
+	}
+
 }

@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>员工管理系统</title>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+</head>
+<body>
+                <br>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                当前课程为: <font color="red">{$courseName}</font>  </p>
+                <br>
+               
+                <br>
+           
+
+                <form action="{:U('Course/addChapter')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                        <input type="hidden" name="to_course" value="{$id}" >
+                          <tr>
+                                <th><i class="require-red">*</i>章节名称:</th>
+                                <td>
+                                    <input class="common-text required" name="name" size="25" value="" type="text">
+                                </td>
+                            </tr>
+                        <tr>  
+                            <th><i class="require-red">*</i>上传指导书:</th>
+                                     <td>
+                                    
+                        <input type="file"  name="word" >
+                        <!-- <input type="texhiddetn"  name="chapter_name"  value="{$data['name']} -->
+                  
+                                </td>
+                         </tr>
+                         <tr>
+                            <th><i class="require-red">*</i>上传实验视频</th>
+                            <td>
+                               
+                        <input type="file"  name="video" >
+
+                            </td>
+                         </tr>
+                          
+             
+
+                            <tr>
+                                <th><i class="require-red">*</i>所需镜像:</th>
+                                 <td>
+                                    <select name="to_image" class="required">
+                                        <option value="">请选择</option>
+                                    <volist name="datas" id="data">
+                                        <option value="{$data['image_id']}">{$data['name']} </option>
+                                    </volist>
+                                    </select>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                    <a href="{:U('Course/editCourseById')}/id/{$id}"> <input class="btn btn6" value="返回" type="button"> </a>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+
+</body>
+</html>

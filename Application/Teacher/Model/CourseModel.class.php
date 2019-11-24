@@ -12,6 +12,10 @@ class CourseModel extends Model{
 					->select();
 	}
 
+	public function find_Course_Name($courseId){
+		return $this->find($courseId)['cname'];
+	}
+
 	public function delete_Course_By_Id($id){
 
 	}
