@@ -17,4 +17,22 @@ class View_classwithdepartmentModel extends Model{
 					->where("t2.Tid = $teacher_id")
 					->select();
 	}
+
+	public function show_AllGrade_ById($id){
+
+		$arr= $this->distinct(true)
+					->field('grade')
+					->where("department_id=$id")
+					->select();
+		// return array_column($arr,'grade');
+		return $arr;
+
+	}
+
+	public function show_AllClass_ById($condition){
+		return $this->field('class_name,id')
+					->where($condition)
+					->select();
+	}
+
 }

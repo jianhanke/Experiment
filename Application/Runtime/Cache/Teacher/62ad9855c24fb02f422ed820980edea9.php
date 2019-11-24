@@ -64,6 +64,8 @@
 				<a href="<?php echo U('Course/editCourseById');?>/id/<?php echo ($data['cid']); ?>" > 
 				       <input type="button"  value="编辑 ">     </a> 
 				<a href="<?php echo U('Course/deleteCourseById');?>/id/<?php echo ($data['cid']); ?>"><input type="button" value="解除" > </a>
+
+				<a href="<?php echo U('Course/courseRelateClass');?>/courseId/<?php echo ($data['cid']); ?>  "> <input type="button" value="关联班级" >  </a>
 			
 		</div>
     </div><?php endforeach; endif; else: echo "" ;endif; ?>

@@ -16,8 +16,8 @@ class CourseModel extends Model{
 		return $this->find($courseId)['cname'];
 	}
 
-	public function delete_Course_By_Id($id){
-
+	public function show_Course_ById($courseId){
+		return $this->find($courseId);
 	}
 
 }

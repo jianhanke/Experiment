@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/main.css"/>
+</head>
+<body>
+<div>
+
+
+
+
+<div class="result-content">
+                <form action="{:U('Course/courseRelateClass')}" method="post" >
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+                            <tr>
+                                <input type="hidden"  name="Cid"  value="{$datas['cid']}"   >
+                                <th><i class="require-red">*</i>课程名：</th>
+                                <td>
+                                    <p> {$datas['cname']}  </p>
+                                </td>
+                            </tr>
+							 <tr>
+                                <th>：</th>
+                                <td><img src="__ROOT__/Source/Course/{$datas['img']}" width="250"></td>
+                            </tr>
+                            <tr>
+                                <th width="120"><i class="require-red">*</i>学院  ：</th>
+                            	<td>     
+								<select  name="" id="province_id" style="width:150px;">
+								<option>请选择</option>
+						        <volist name="departments" id="department">    <!-- 可能要改name值 -->
+						        	<option  value="{$department['id']}">{$department['department_name']}</option>
+						        </volist>                                                  
+						     </select>
+                            	</td>  
+                            </tr>
+                          <tr>
+                                <th width="120"><i class="require-red">*</i>年级  ：</th>
+                            	<td>    
+								<select name=""  id="city_id" style="width:150px;" >     <!-- 可能要改name值 -->
+									 <option>请选择</option>
+								  </select>
+
+                            	 </td> 
+                           <tr>
+                           <tr>
+                                <th width="120"><i class="require-red">*</i>年级  ：</th>
+                            	<td>
+									<select name="Tclass"  id="district_id" style="width:150px;" >
+									  <option value="0">请选择</option>
+								   </select>  
+                           		</td>
+                           </tr>    
+								
+
+							<tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="关联" type="submit">
+                                   <a href="{:U('Course/showMyCourse/')}"> <input class="btn btn6"  value="返回" type="button"> </a>   
+                                </td>
+                            </tr>
+                        </tbody></table>
+                </form>
+            </div>
+
+</div>
+<script src="__PUBLIC__/Home/js/jquery-2.0.0.min.js"></script>
+<script>
+	$("#province_id").change(function(){
+	var province_id=$(this).val();
+	$.ajax({
+		url:"{:U('Course/getCurrentGrade')}" ,  //路径
+		Type:"POST",
+		data:"id="+province_id,             //参数
+		dataType:"json",                    
+		success:function(data){
+			var city = data.city;
+			var option=$("<option></option>");
+			$(option).val("0");
+			$(option).html("请选择");
+			var option1=$("<option></option>");
+			$(option1).val("0");
+			$(option1).html("请选择");
+			$("#city_id").html(option);
+			$("#district_id").html(option1);
+			for(var i in city){
+				var option=$("<option></option>");
+				$(option).val(city[i]['grade']);     //可能改此处
+				$(option).html(city[i]['grade']);    //可能改此处
+				$("#city_id").append(option);
+			}
+		}
+		
+	});
+});
+</script>
+<script>
+$("#city_id").change(function(){
+	var city_id=$(this).val();                   
+	var province_id=$("#province_id").val();     //全选取路径可能需要更改 
+	$.ajax({   
+		url:"{:U('Course/getCurrentClass')}" , //路径
+		Type:"POST",
+		data:{"departmentId":province_id,"grade":city_id},  //参数
+		dataType:"json",
+		success:function(data){
+			var district = data.district;
+			var option=$("<option></option>");
+			$(option).val("0");
+			$(option).html("请选择");
+			$("#district_id").html(option);
+			for(var i in district){
+				var option=$("<option></option>");
+				$(option).val(district[i]['id']);    //可能改此处
+				$(option).html(district[i]['class_name']);   //可能改此处
+				$("#district_id").append(option);
+			}
+		}
+	});
+});
+</script>
+</body>
+</html>

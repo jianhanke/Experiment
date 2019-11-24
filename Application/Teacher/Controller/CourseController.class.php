@@ -125,6 +125,67 @@ class CourseController extends MyController{
 		} 
 	}
 
+	public function courseRelateClass(){
+
+		if(IS_POST){
+			// $info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'),'Tclass'=>)
+			$post=I('post.');
+			$post['Tid']=Session('teacher_id');
+			$model=new \Teacher\Model\Course_infoModel();
+			$status=$model->save_Info($post);
+			if($status){
+				echo " <script> alert('关联成功');  </script>";
+				$courseId=$post['Cid'];
+				$model=D('Department');
+				$departments=$model->show_AllDepartment_Info();
+				$model2=D('Course');
+				$datas=$model2->show_Course_ById($courseId);
+				$this->assign('datas',$datas);
+				$this->assign('departments',$departments);
+				$this->display();
+
+			}else if($status==0){
+				$this->error('请勿重复关联',U('Course/courseRelateClass',array('courseId'=>$post['Cid'])));
+			}else{
+				$this->error('关联失败');
+			}
+		}else{
+			$courseId=I('get.courseId');
+			$model=D('Department');
+			$departments=$model->show_AllDepartment_Info();
+			$model2=D('Course');
+			$datas=$model2->show_Course_ById($courseId);
+			$this->assign('datas',$datas);
+			$this->assign('departments',$departments);
+			$this->display();
+		}
+
+	}
+
+
+	public function getCurrentGrade($id){
+		
+		$model=new \Teacher\Model\View_classwithdepartmentModel();
+		$grades=$model->show_AllGrade_ById($id);
+
+		$data=array('status'=>0,'city'=>$grades);
+		header("Content-type: application/json");
+		exit(json_encode($data));
+	}
+
+	// public function get_district($departmentId,$grade){
+	public function getCurrentClass($departmentId,$grade){
+		$condition=array('department_id'=>$departmentId,'grade'=>$grade);
+		// $condition=array('department_id'=>1,'grade'=>17);
+
+		$model=new \Teacher\Model\View_classwithdepartmentModel();
+		$class=$model->show_AllClass_ById($condition);
+		
+
+		$data=array('status'=>0,'district'=>$class);
+		header("Content-type: application/json");
+		exit(json_encode($data));
+	}
 
 
 

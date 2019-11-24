@@ -26,8 +26,18 @@ class Course_infoModel extends Model{
 		return  $this->field('cid as id')
 					->where("Tid=$teacher_id")
 					->select();
-
-
 	}
+
+	public function save_Info($post){
+		$Tclass=$post['Tclass'];
+		$Cid=$post['Cid'];
+		$Tid=$post['Tid'];
+		 $this->Tclass=$Tclass;
+		return	$this->where("Cid=$Cid and Tid=$Tid")
+					->save();
+		// return $this->where("Cid=$post['Cid'] and Tid=$post['Tid']")
+		// 			->save($post);
+	}
+
 
 }

@@ -31,7 +31,7 @@ class TeacherController extends MyController{
 		$model=D('Student');
 		$datas=$model->show_Student_ById($classId);
 		dump($datas[0]);
-		$this->assign("datas",$datas);
+		$this->assign("datas",json_encode($datas));
 		$this->display();
 	}
 
