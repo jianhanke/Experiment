@@ -18,6 +18,6 @@ class Course_classModel extends Model{
 		return $this->where($info)
 					->select();
 	}
-
+	
 
 }

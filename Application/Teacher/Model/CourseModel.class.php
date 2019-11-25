@@ -7,6 +7,10 @@ class CourseModel extends Model{
 
 	public function show_MyCourse_Info($info){
 
+		if(empty($info)){
+			return null;
+		}
+
 		$info['_logic']="OR";
 		return $this->where($info)
 					->select();

@@ -9,11 +9,14 @@ class CourseController extends MyController{
 
 		$teacherId=Session('teacher_id');
 
-		$model1=new \Teacher\Model\Course_infoModel();
+		$model1=new \Teacher\Model\Course_teacherModel();
 		$model2=D('Course');
 			
 		$info=$model1->find_My_CourseId($teacherId);
 		$datas=$model2->show_MyCourse_Info($info);
+		if(empty($datas)){
+			echo "<script> alert('课程为空');   </script>";
+		}
 
 		$this->assign('datas',$datas);
 		$this->display();
@@ -33,7 +36,7 @@ class CourseController extends MyController{
 
 		$teacherId=Session('teacher_id');
 
-		$model=new \Teacher\Model\Course_infoModel();
+		$model=new \Teacher\Model\Course_teacherModel();
 		$model->delete_Course_By_Id($id,$teacherId);
 		$this->redirect('Course/showMyCourse');
 	}
@@ -130,10 +133,9 @@ class CourseController extends MyController{
 		if(IS_POST){
 			// $info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'),'Tclass'=>)
 			$post=I('post.');
-			dump($post);
-			$post['Tid']=Session('teacher_id');
-			$model=new \Teacher\Model\Course_infoModel();
-			// $status=$model->save_Info($post);
+			$post['teacher_id']=Session('teacher_id');
+			$model=new \Teacher\Model\Course_classModel();
+
 			$status=$model->add_Info($post);
 			if($status){
 				echo " <script> alert('关联成功');  </script>";
@@ -191,7 +193,7 @@ class CourseController extends MyController{
 	public function otherCourse(){
 		
 		$teacherId=Session('teacher_id');
-		$model2=new \Teacher\Model\Course_infoModel();
+		$model2=new \Teacher\Model\Course_teacherModel();
 		$myCourseIds=$model2->find_My_CourseId($teacherId);
 		
 		$model=D('Course');
@@ -204,8 +206,8 @@ class CourseController extends MyController{
 	public function relateMyCourse($courseId){
 
 		$teacherId=Session('teacher_id');
-		$model=new \Teacher\Model\Course_infoModel();
-		$info=array('Tid'=>$teacherId,'Cid'=>$courseId);
+		$model=new \Teacher\Model\Course_teacherModel();
+		$info=array('teacher_id'=>$teacherId,'course_id'=>$courseId);
 		$status=$model->relate_To_MyCourse($info);
 		if($status){
 			$this->success('关联成功',U('Course/showMyCourse'));

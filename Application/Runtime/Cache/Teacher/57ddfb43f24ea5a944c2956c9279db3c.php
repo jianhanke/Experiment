@@ -16,7 +16,7 @@
                     <table class="insert-tab" width="100%">
                         <tbody>
                             <tr>
-                                <input type="hidden"  name="Cid"  value="<?php echo ($datas['cid']); ?>"   >
+                                <input type="hidden"  name="course_id"  value="<?php echo ($datas['cid']); ?>"   >
                                 <th><i class="require-red">*</i>课程名：</th>
                                 <td>
                                     <p> <?php echo ($datas['cname']); ?>  </p>
@@ -48,7 +48,7 @@
                            <tr>
                                 <th width="120"><i class="require-red">*</i>年级  ：</th>
                             	<td>
-									<select name="Tclass"  id="district_id" style="width:150px;" >
+									<select name="class_id"  id="district_id" style="width:150px;" >
 									  <option value="0">请选择</option>
 								   </select>  
                            		</td>

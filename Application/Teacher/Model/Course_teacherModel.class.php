@@ -6,7 +6,7 @@ use Think\Model;
 class Course_teacherModel extends Model{
 
 	public function find_My_CourseId($teacherId){
-		return $this->field('course_id')
+		return $this->field('course_id  as cid')
 					->where("teacher_id=$teacherId")
 					->select();
 		
@@ -29,7 +29,7 @@ class Course_teacherModel extends Model{
 	public function add_Info($post){
 		return $this->add($post);
 	}
-	
+
 	public function relate_To_MyCourse($info){
 		return $this->add($info);
 	}
