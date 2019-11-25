@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
  	
@@ -29,8 +29,8 @@
 	a{ text-decoration:none} 
 	</style>	
 </head>
-<link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
-<link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/main.css"/>
 <body>
 
 <div class="search-wrap">
@@ -41,7 +41,7 @@
              					
 							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
 							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
-                            <td>  <a href="<?php echo U('Course/addCourse');?>"> <input type="button" value="添加课程" > </a>   </td>
+                            <td>  <a href="{:U('Course/addCourse')}"> <input type="button" value="添加课程" > </a>   </td>
                       	
                         </tr>
 
@@ -50,30 +50,29 @@
             </div>
 </div>
 
-<?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="myDiv" style="width: 80%;height: 30%; " >
+<volist name="datas" id="data">
+	<div class="myDiv" style="width: 80%;height: 30%; " >
 
 		<div style="width: 25%;float: left;height: 100%;" >
-			<img src="/Experiment/Source/Course/<?php echo ($data['img']); ?> " alt="" style="width:100%;height: 100%; ">
+			<img src="__ROOT__/Source/Course/{$data['img']} " alt="" style="width:100%;height: 100%; ">
 		</div>
 		<div style="width: 75%;float:right;height: 100%;  ">
 				<br />
 				<br />
-			<p>  <?php echo ($data['name']); ?> </p>  
+			<p>  {$data['name']} </p>  
 			
 				
-				<a href="<?php echo U('Course/editCourseById');?>/id/<?php echo ($data['cid']); ?>" > 
-				       <input type="button"  value="编辑 ">     </a> 
-				<a href="<?php echo U('Course/deleteCourseById');?>/id/<?php echo ($data['cid']); ?>"><input type="button" value="解除关联" > </a>
-
-				<a href="<?php echo U('Course/courseRelateClass');?>/courseId/<?php echo ($data['cid']); ?>"> <input type="button" value="关联班级" >  </a>
-
-				<a href="<?php echo U('Course/courseProgress');?>/courseId/<?php echo ($data['cid']); ?>"> <input type="button" value="学生进展">  </a>
+		<a href="{:U('Course/showCourseById')}/courseId/{$data['cid']}  "> <input type="button" value="查看详细信息" >  </a>				
+	
+		<a href="{:U('Course/relateMyCourse')}/courseId/{$data['cid']}  "> <input type="button" value="关联到我的课" >  </a>
 			
 		</div>
-    </div><?php endforeach; endif; else: echo "" ;endif; ?>
+    </div>
+</volist>
 
 
 
 
 </body>
 </html>
+

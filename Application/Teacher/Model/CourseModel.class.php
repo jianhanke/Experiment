@@ -19,5 +19,14 @@ class CourseModel extends Model{
 	public function show_Course_ById($courseId){
 		return $this->find($courseId);
 	}
+	public function none_myCourse($info){
+
+		for($i=0;$i<count($info);$i++){
+			$info[$i]['cid']=array('neq',$info[$i]['cid']);
+		}
+		return $this->where($info)
+					->select();
+	}
+
 
 }

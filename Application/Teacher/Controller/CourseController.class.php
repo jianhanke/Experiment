@@ -130,9 +130,11 @@ class CourseController extends MyController{
 		if(IS_POST){
 			// $info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'),'Tclass'=>)
 			$post=I('post.');
+			dump($post);
 			$post['Tid']=Session('teacher_id');
 			$model=new \Teacher\Model\Course_infoModel();
-			$status=$model->save_Info($post);
+			// $status=$model->save_Info($post);
+			$status=$model->add_Info($post);
 			if($status){
 				echo " <script> alert('关联成功');  </script>";
 				$courseId=$post['Cid'];
@@ -181,12 +183,51 @@ class CourseController extends MyController{
 		$model=new \Teacher\Model\View_classwithdepartmentModel();
 		$class=$model->show_AllClass_ById($condition);
 		
-
 		$data=array('status'=>0,'district'=>$class);
 		header("Content-type: application/json");
 		exit(json_encode($data));
 	}
 
+	public function otherCourse(){
+		
+		$teacherId=Session('teacher_id');
+		$model2=new \Teacher\Model\Course_infoModel();
+		$myCourseIds=$model2->find_My_CourseId($teacherId);
+		
+		$model=D('Course');
+		$datas=$model->none_myCourse($myCourseIds);	
+		
+		$this->assign('datas',$datas);
+		$this->display();
+	}
+
+	public function relateMyCourse($courseId){
+
+		$teacherId=Session('teacher_id');
+		$model=new \Teacher\Model\Course_infoModel();
+		$info=array('Tid'=>$teacherId,'Cid'=>$courseId);
+		$status=$model->relate_To_MyCourse($info);
+		if($status){
+			$this->success('关联成功',U('Course/showMyCourse'));
+		}else{
+			$this->error('关联失败');
+		}
+	}
+
+	public function showCourseById($courseId){
+		$model=D('Chapter');
+		$info=$model->find_Chapter_By_Course_Id($courseId);
+		$this->assign('datas',$info);
+		$this->display();
+	}
+
+	public function courseProgress($courseId){
+
+		$model=new \Teacher\Model\Course_infoModel();
+		$info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'));
+		$status=$model->show_ClassId_ByCourseId($info);
+		dump($status);
+	}
 
 
 }

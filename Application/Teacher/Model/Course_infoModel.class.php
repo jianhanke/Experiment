@@ -39,5 +39,19 @@ class Course_infoModel extends Model{
 		// 			->save($post);
 	}
 
+	public function add_Info($post){
+		return $this->add($post);
+	}
+
+
+	public function relate_To_MyCourse($info){
+		return $this->add($info);
+	}
+
+	public function show_ClassId_ByCourseId($info){
+		return $this->where($info)
+					->select();
+	}
+
 
 }

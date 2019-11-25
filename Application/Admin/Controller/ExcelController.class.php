@@ -14,7 +14,7 @@ class ExcelController extends MyController{
 		$this->display();
 	}
 
-
+    
 
 	public function uploadExcelAndInput($modelName){
 
