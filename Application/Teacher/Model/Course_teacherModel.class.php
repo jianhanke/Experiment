@@ -27,7 +27,7 @@ class Course_teacherModel extends Model{
 
 	
 	public function add_Info($post){
-		return $this->add($post);
+		return $this->add($post);	
 	}
 
 	public function relate_To_MyCourse($info){

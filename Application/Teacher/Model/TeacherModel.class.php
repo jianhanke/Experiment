@@ -19,6 +19,10 @@ class TeacherModel extends Model{
 		return $this->save($post);
 	}
 
+	public function show_Teacher(){
+
+		return $this->select();
+	}
 
 
 

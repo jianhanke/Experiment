@@ -45,9 +45,9 @@
                     <a href="#"><i class="iconfont">&#xe603;</i>课程管理</a>
                     <ul class="sub-menu">
                         <li><a href="<?php echo U('Course/showMyCourse');?>" target="iframe"><i class="iconfont">&#xe61c;</i>所带课程</a></li>
-                        <li><a href="<?php echo U('Teacher/showMyClass');?>" target="iframe"><i class="iconfont">&#xe678;</i>所带班级</a></li>
+                        <li><a href="<?php echo U('Course/showMyClass');?>" target="iframe"><i class="iconfont">&#xe678;</i>所带班级</a></li>
                         <li><a href="<?php echo U('Course/otherCourse');?>" target="iframe"><i class="iconfont">&#xe61c;</i>其他课程</a></li>
-                        <li><a href="system.html"><i class="iconfont">&#xe639;</i>数据还原</a></li>
+                        <!-- <li><a href="system.html"><i class="iconfont">&#xe639;</i>数据还原</a></li> -->
                     </ul>
                 </li>
             </ul>

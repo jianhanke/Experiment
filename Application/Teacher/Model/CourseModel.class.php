@@ -32,5 +32,8 @@ class CourseModel extends Model{
 					->select();
 	}
 
+	public function add_Info($post){
+		return $this->add($post);
+	}
 
 }

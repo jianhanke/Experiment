@@ -13,16 +13,15 @@ class CourseController extends MyController{
 	public function addCourse(){
 		if(IS_POST){
 			$post=I('post.');
-			if( empty($post['cname']) or empty($post['introduce']) or empty($post['to_teacher_id']) or empty($_FILES['img']['tmp_name']) ){
+			if( empty($post['cname']) or empty($post['introduce']) or empty($_FILES['img']['tmp_name']) ){
 				$this->error('填写不完整',U('Course/addCourse'),2);
 			}
 		try{
 			$uploadFile=new \Admin\Controller\Entity\UploadFile();
 			$res=$uploadFile->addCoursePicture();
-			if(!$res['status']) {// 上传错误提示错误信息
+			if(!$res['status']) {                // 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 			}
-
 		}catch(\Exception $e){
 			$this->error('添加失败,图片上传错误');
 		}
@@ -30,10 +29,10 @@ class CourseController extends MyController{
 			$model=D('Course');
 			$id=$model->add_Info($post);
 
-			$courseInfo=array('Cid'=>$id,'Tid'=>$post['to_teacher_id']);
-			$model2=new \Admin\Model\Course_infoModel();
-			$model2->addCourseInfo($courseInfo);
-
+			$courseInfo=array('course_id'=>$id,'teacher_id'=>$post['to_teacher_id']);
+				
+			$model2=new \Teacher\Model\Course_teacherModel();
+			$status=$model2->add_Info($courseInfo);
 			if($id){
 				$this->success('添加成功',U('Course/showCourse'));
 			}else{
@@ -153,6 +152,20 @@ class CourseController extends MyController{
 		         $model2->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
 				$this->success('上传成功');
 		} 
+	}
+
+	public function deleteChapterImageById($id){
+
+		dump($id);
+		$model=new \Admin\Model\Chapter_imageModel();
+		$status=$model->delete_ChapterImage_ById($id);
+		echo $model->_sql();
+		dump($status);
+		if($status){
+			echo "<script> alert('删除成功');   </script>";
+		}else{
+			$this->error('删除失败');
+		}
 	}
 
 

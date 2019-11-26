@@ -14,6 +14,10 @@ class Chapter_imageModel extends Model{
 		return $this->count();
 	}
 
+	public function delete_ChapterImage_ById($id){
+		return $this->delete($id);
+	}
+
 
 	
 

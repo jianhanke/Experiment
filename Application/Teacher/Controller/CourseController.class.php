@@ -14,7 +14,9 @@ class CourseController extends MyController{
 			
 		$info=$model1->find_My_CourseId($teacherId);
 		$datas=$model2->show_MyCourse_Info($info);
+		
 		if(empty($datas)){
+			// echo "<script>  javascript :history.back(-1); </script> ";
 			echo "<script> alert('课程为空');   </script>";
 		}
 
@@ -32,12 +34,13 @@ class CourseController extends MyController{
 
 	}
 
-	public function deleteCourseById($id){
+	public function cancelCourseById($id){
 
 		$teacherId=Session('teacher_id');
 
 		$model=new \Teacher\Model\Course_teacherModel();
 		$model->delete_Course_By_Id($id,$teacherId);
+
 		$this->redirect('Course/showMyCourse');
 	}
 
@@ -131,28 +134,43 @@ class CourseController extends MyController{
 	public function courseRelateClass(){
 
 		if(IS_POST){
-			// $info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'),'Tclass'=>)
-			$post=I('post.');
-			$post['teacher_id']=Session('teacher_id');
-			$model=new \Teacher\Model\Course_classModel();
 
-			$status=$model->add_Info($post);
-			if($status){
-				echo " <script> alert('关联成功');  </script>";
-				$courseId=$post['Cid'];
-				$model=D('Department');
-				$departments=$model->show_AllDepartment_Info();
-				$model2=D('Course');
-				$datas=$model2->show_Course_ById($courseId);
-				$this->assign('datas',$datas);
-				$this->assign('departments',$departments);
-				$this->display();
-
-			}else if($status==0){
-				$this->error('请勿重复关联',U('Course/courseRelateClass',array('courseId'=>$post['Cid'])));
-			}else{
-				$this->error('关联失败');
+			if(empty(I('post.class_id'))){
+				echo "<script>  alert('填写不完整')  </script>";
+				echo "<script>  javascript :history.back(-1); </script> ";
+				exit();
 			}
+			
+			$post=I('post.');
+
+			dump($post);
+			$teacherId=Session('teacher_id');
+			
+			$model=new \Teacher\Model\Class_teacherModel();
+			$status=$model->add_Info(array('class_id'=>$post['class_id'],'teacher_id'=>$teacherId));
+
+			$model2=new \Teacher\Model\Course_classModel();
+			$status2=$model2->add_Info(array('course_id'=>$post['course_id'],'class_id'=>$post['class_id']));
+			
+			dump($status);
+			dump($status2);
+			
+			// if($status){
+			// 	echo " <script> alert('关联成功');  </script>";
+			// 	$courseId=$post['Cid'];
+			// 	$model=D('Department');
+			// 	$departments=$model->show_AllDepartment_Info();
+			// 	$model2=D('Course');
+			// 	$datas=$model2->show_Course_ById($courseId);
+			// 	$this->assign('datas',$datas);
+			// 	$this->assign('departments',$departments);
+			// 	$this->display();
+
+			// }else if($status==0){
+			// 	$this->error('请勿重复关联',U('Course/courseRelateClass',array('courseId'=>$post['Cid'])));
+			// }else{
+			// 	$this->error('关联失败');
+			// }
 		}else{
 			$courseId=I('get.courseId');
 			$model=D('Department');
@@ -163,7 +181,6 @@ class CourseController extends MyController{
 			$this->assign('departments',$departments);
 			$this->display();
 		}
-
 	}
 
 
@@ -179,15 +196,25 @@ class CourseController extends MyController{
 
 	// public function get_district($departmentId,$grade){
 	public function getCurrentClass($departmentId,$grade){
-		$condition=array('department_id'=>$departmentId,'grade'=>$grade);
-		// $condition=array('department_id'=>1,'grade'=>17);
+
+		$condition=array('department_id'=>$departmentId,'grade'=>$grade,'teacher_id'=>Session('teacher_id'));
 
 		$model=new \Teacher\Model\View_classwithdepartmentModel();
-		$class=$model->show_AllClass_ById($condition);
+		$class=$model->show_NoneSlect_class($condition);
 		
 		$data=array('status'=>0,'district'=>$class);
 		header("Content-type: application/json");
 		exit(json_encode($data));
+	}
+
+	public function test01(){
+
+		$condition=array('department_id'=>1,'grade'=>17,'teacher_id'=>Session('teacher_id'));
+
+		$model=new \Teacher\Model\View_classwithdepartmentModel();
+		$class=$model->show_NoneSlect_class($condition);
+		echo $model->_sql();
+		dump($class);
 	}
 
 	public function otherCourse(){
@@ -225,11 +252,64 @@ class CourseController extends MyController{
 
 	public function courseProgress($courseId){
 
-		$model=new \Teacher\Model\Course_infoModel();
-		$info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'));
-		$status=$model->show_ClassId_ByCourseId($info);
-		dump($status);
+		// $model=new \Teacher\Model\Course_infoModel();
+		// $info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'));
+		// $status=$model->show_ClassId_ByCourseId($info);
+		// dump($status);
 	}
+
+
+	public function showMyClass(){
+
+		$teacher_id=Session('teacher_id');
+		$model2=new \Teacher\Model\View_course_teacher_classModel();
+		$datas=$model2->show_MyClass_Info($teacher_id);
+		
+		$this->assign('datas',$datas);
+		$this->display();
+	}
+
+
+	public function addCourse(){
+		if(IS_POST){
+			$post=I('post.');
+			if( empty($post['cname']) or empty($post['introduce']) or empty($_FILES['img']['tmp_name']) ){
+				$this->error('填写不完整',U('Course/addCourse'),2);
+			}
+		try{
+			$uploadFile=new \Admin\Controller\Entity\UploadFile();
+			$res=$uploadFile->addCoursePicture();
+			if(!$res['status']) {                // 上传错误提示错误信息
+		        $this->error($res['upload']->getError());
+			}
+		}catch(\Exception $e){
+			$this->error('添加失败,图片上传错误');
+		}
+			$post['img']=$res['status']['savename'];
+			$model=D('Course');
+			dump($post);
+			$id=$model->add_Info($post);
+
+			$courseAndTeacher=array('course_id'=>$id,'teacher_id'=>Session('teacher_id'));
+
+			$model2=new \Teacher\Model\Course_teacherModel();
+			$status=$model2->add_Info($courseAndTeacher);
+
+			if($status){
+				$this->success('添加成功',U('Course/showMyCourse'));
+			}else{
+				$this->error('添加失败');
+			}
+		}else{
+			$model=D('Teacher');
+			$info=$model->show_Teacher();
+			$this->assign('datas',$info);
+			$this->display();
+		}
+	}
+
+
+
 
 
 }

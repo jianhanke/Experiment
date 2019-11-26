@@ -30,7 +30,7 @@
                                 <th width="120"><i class="require-red">*</i>学院  ：</th>
                             	<td>     
 								<select  name="" id="province_id" style="width:150px;">
-								<option>请选择</option>
+								<option  selected="true" disabled="true" >请选择</option>
 						        <?php if(is_array($departments)): $i = 0; $__LIST__ = $departments;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$department): $mod = ($i % 2 );++$i;?><!-- 可能要改name值 -->
 						        	<option  value="<?php echo ($department['id']); ?>"><?php echo ($department['department_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>                                                  
 						     </select>
@@ -40,16 +40,17 @@
                                 <th width="120"><i class="require-red">*</i>年级  ：</th>
                             	<td>    
 								<select name=""  id="city_id" style="width:150px;" >     <!-- 可能要改name值 -->
-									 <option>请选择</option>
+									 <option  selected="true" disabled="true" >请选择</option>
 								  </select>
 
                             	 </td> 
                            <tr>
                            <tr>
-                                <th width="120"><i class="require-red">*</i>年级  ：</th>
+                                <th width="120"><i class="require-red">*</i>年级：</th>
                             	<td>
 									<select name="class_id"  id="district_id" style="width:150px;" >
-									  <option value="0">请选择</option>
+									  <option  selected="true" disabled="true" >请选择 </option>
+
 								   </select>  
                            		</td>
                            </tr>    
@@ -78,9 +79,6 @@
 		dataType:"json",                    
 		success:function(data){
 			var city = data.city;
-			var option=$("<option></option>");
-			$(option).val("0");
-			$(option).html("请选择");
 			var option1=$("<option></option>");
 			$(option1).val("0");
 			$(option1).html("请选择");
@@ -108,15 +106,23 @@ $("#city_id").change(function(){
 		dataType:"json",
 		success:function(data){
 			var district = data.district;
-			var option=$("<option></option>");
+			var option=$("<option selected='true' disabled='true' ></option>");
 			$(option).val("0");
 			$(option).html("请选择");
 			$("#district_id").html(option);
 			for(var i in district){
-				var option=$("<option></option>");
-				$(option).val(district[i]['id']);    //可能改此处
-				$(option).html(district[i]['class_name']);   //可能改此处
-				$("#district_id").append(option);
+				if(district[i]['teacher_id']==null){
+					var option=$("<option ></option>");
+					$(option).val(district[i]['id']);    //可能改此处
+					$(option).html(district[i]['class_name']);   //可能改此处
+					$("#district_id").append(option);
+				}else{
+					var option=$("<option  selected='true' ></option>");
+					$(option).val(district[i]['id']);    //可能改此处
+					$(option).html(district[i]['class_name']);   //可能改此处
+					$("#district_id").append(option);
+				}
+				
 			}
 		}
 	});

@@ -1,0 +1,12 @@
+[ 2019-11-26T17:00:29+08:00 ] 10.6.0.32 /Experiment/index.php/Course/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000136s ]
+ERR: 无法加载模块:Course
+
+[ 2019-11-26T17:00:33+08:00 ] 10.6.0.32 /Experiment/index.php/Admin%20/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+ERR: 无法加载模块:Admin 
+
