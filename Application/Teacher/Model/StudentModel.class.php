@@ -12,4 +12,8 @@ class StudentModel extends Model{
 					->select();
 	}
 
+	public function addInfo($post){
+		return $this->add($post);
+	}
+
 }

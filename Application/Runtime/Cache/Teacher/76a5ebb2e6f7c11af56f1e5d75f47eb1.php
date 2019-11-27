@@ -8,6 +8,25 @@
 </head>
 <body>
         
+        <div class="search-wrap">
+            <div class="search-content">
+                
+                    <table class="search-tab">
+                        <tr>
+                                
+                            <th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
+                            <th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
+                            <td>  <a href="<?php echo U('Teacher/addClassStudent');?>/classId/<?php echo ($classId); ?>"> <input type="button" value="添加学生" > </a>   </td>
+                        
+                        </tr>
+
+                    </table>
+                
+            </div>
+</div>
+
+        
+
         <div class="result-wrap">
            
             <div class="result-content">

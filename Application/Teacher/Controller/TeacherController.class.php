@@ -13,11 +13,33 @@ class TeacherController extends MyController{
 		$this->display();
 	}
 
+	public function addClassStudent(){
+
+		if(IS_POST){
+			$post=I('post.');
+			dump($post);
+			$model=D('Student');
+			$status=$model->addInfo($post);
+			dump($status);
+			if($status){
+				$this->success('添加成功',U('Teacher/showStudentById',array('classId'=>$post['Class_id'])));
+			}else{
+				$this->error('添加失败');
+			}
+		}else{
+			$classId=I('get.classId');
+			$this->assign('classId',$classId);
+			$this->display();
+		}
+	
+	}
+
 
 	public function showStudentById($classId){
 
 		$model=D('Student');
 		$datas=$model->show_Student_ById($classId);
+		$this->assign('classId',$classId);
 		$this->assign("datas",$datas);
 		$this->display();
 	}
