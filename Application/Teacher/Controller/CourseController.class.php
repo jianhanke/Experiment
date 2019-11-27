@@ -316,7 +316,21 @@ class CourseController extends MyController{
 		}
 	}
 
-	
+	public function findStudentByLike(){  
+		dump(I('post.'));
+		$model=D('Student');
+		$search=I('post.search-sort');
+		$keywords=I('post.keywords');  // %表示任意长度的， _表示任意一个
+		$info=$model->find_Student_By_Like($search,$keywords);
+		dump($info);
+		// $count=$model->count_Student_By_Like($search,$keywords);
+		$this->assign('datas',$info);
+		// $this->assign('count',$count);
+		// $this->redirect('Teacher/showStudentById',array('classId'=>I('post.classId')));
+		$this->display('Teacher/showStudentById');
+	}
+
+
 
 
 

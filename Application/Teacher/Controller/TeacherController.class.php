@@ -31,7 +31,6 @@ class TeacherController extends MyController{
 			$this->assign('classId',$classId);
 			$this->display();
 		}
-	
 	}
 
 

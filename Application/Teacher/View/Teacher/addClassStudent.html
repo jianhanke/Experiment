@@ -31,6 +31,31 @@
                                 </td>
                             </tr>
                             <tr>
+                                <th><i class="require-red">*</i>年龄：</th>
+                                <!-- <th><i class="require-red">*</i>年龄：</th> -->
+                                <td>
+                                    <input class="common-text required" name="Sage" size="30"  type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th width="120"><i class="require-red">*</i>性别：</th>
+                                <td>
+                                    <select name="Ssex" class="required">
+                                        <option value="">请选择</option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>电话:</th>
+                                <td><input class="common-text" name="Stele" size="30"  type="text"></td>
+                            </tr>
+                             <tr>
+                                <th><i class="require-red">*</i>密码:</th>
+                                <td><input class="common-text" name="Spwd" size="30"  type="text"></td>
+                            </tr>
+                            <tr>
                                 <th></th>
                                 <td>
                                     <input class="btn btn-primary btn6 mr10" value="添加学生" type="submit">

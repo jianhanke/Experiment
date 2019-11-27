@@ -71,10 +71,7 @@ class Excel{
             for($j=0;$j<$cellNum;$j++){
         $data[$columnName[$j]['column_name']]=$PHPExcel->getActiveSheet(0)->getCell($cellName[$j][0].$i )->getValue();
             }
-
-            // $model->add_Info($data);
              $model->add($data);
-
         }
     }
 }

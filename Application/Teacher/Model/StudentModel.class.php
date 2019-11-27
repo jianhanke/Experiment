@@ -16,4 +16,9 @@ class StudentModel extends Model{
 		return $this->add($post);
 	}
 
+
+	public function find_Student_By_Like($search,$keywords){
+		return $this->where("$search like '%$keywords%'")->select();
+	}
+
 }
