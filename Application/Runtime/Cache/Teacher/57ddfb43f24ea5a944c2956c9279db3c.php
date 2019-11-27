@@ -46,7 +46,7 @@
                             	 </td> 
                            <tr>
                            <tr>
-                                <th width="120"><i class="require-red">*</i>年级：</th>
+                                <th width="120"><i class="require-red">*</i>班级：</th>
                             	<td>
 									<select name="class_id"  id="district_id" style="width:150px;" >
 									  <option  selected="true" disabled="true" >请选择 </option>
@@ -55,7 +55,6 @@
                            		</td>
                            </tr>    
 								
-
 							<tr>
                                 <th></th>
                                 <td>
@@ -69,6 +68,8 @@
 
 </div>
 <script src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
+
+
 <script>
 	$("#province_id").change(function(){
 	var province_id=$(this).val();
@@ -106,7 +107,7 @@ $("#city_id").change(function(){
 		dataType:"json",
 		success:function(data){
 			var district = data.district;
-			var option=$("<option selected='true' disabled='true' ></option>");
+			var option=$("<option  disabled='true' ></option>");
 			$(option).val("0");
 			$(option).html("请选择");
 			$("#district_id").html(option);
@@ -117,9 +118,9 @@ $("#city_id").change(function(){
 					$(option).html(district[i]['class_name']);   //可能改此处
 					$("#district_id").append(option);
 				}else{
-					var option=$("<option  selected='true' ></option>");
+					var option=$("<option  disabled='true' style='color:red'  ></option>");
 					$(option).val(district[i]['id']);    //可能改此处
-					$(option).html(district[i]['class_name']);   //可能改此处
+					$(option).html(district[i]['class_name']+"(已关联)");   //可能改此处
 					$("#district_id").append(option);
 				}
 				

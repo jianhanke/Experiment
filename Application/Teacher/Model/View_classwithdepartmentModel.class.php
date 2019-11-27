@@ -42,7 +42,7 @@ class View_classwithdepartmentModel extends Model{
 		$grade=$condition['grade'];
 		return $this->field('t1.*,t2.teacher_id')
 					->table("view_classwithdepartment AS t1")
-					->join("left join view_course_teacher_class as t2  on t1.id = t2.course_id and t2.teacher_id =$teacher_id ")
+					->join("left join view_course_teacher_class as t2  on (t1.id = t2.class_id and t2.teacher_id =$teacher_id )")
 					->where("t1.department_id=$department_id and  t1.grade =$grade")
 					->select();
 	

@@ -34,7 +34,10 @@
                                     <input class="common-text required" name="introduce" size="30" value="" type="text">
                                 </td>
                             </tr>
-                         <!--    <tr>
+                                
+                            
+<!-- 
+                            <tr>
                                 <th><i class="require-red">*</i>所属教师:</th>
                                  <td>
                                     <select name="to_teacher_id" class="required">
@@ -45,11 +48,12 @@
                                     </select>    
                                 </td>
                             </tr> -->
+
                             <tr>
                                 <th></th>
                                 <td>
                                     <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
-                                    <input class="btn btn6" onClick="history.go(-1)" value="返回" type="button">
+                                    <input class="btn btn6" onClick="{:U('Course/showMyCourse')}" value="返回" type="button">
                                 </td>
                             </tr>
                         </tbody></table>

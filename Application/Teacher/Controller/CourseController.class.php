@@ -145,6 +145,9 @@ class CourseController extends MyController{
 
 			dump($post);
 			$teacherId=Session('teacher_id');
+
+			$Model = M();
+			$Model->startTrans();
 			
 			$model=new \Teacher\Model\Class_teacherModel();
 			$status=$model->add_Info(array('class_id'=>$post['class_id'],'teacher_id'=>$teacherId));
@@ -152,9 +155,14 @@ class CourseController extends MyController{
 			$model2=new \Teacher\Model\Course_classModel();
 			$status2=$model2->add_Info(array('course_id'=>$post['course_id'],'class_id'=>$post['class_id']));
 			
-			dump($status);
-			dump($status2);
-			
+			if($status && $status2){
+				$this->success('修改成功');
+				$Model->commit();
+			}else{
+				$Model->rollback();
+				$this->error('添加失败');
+			}
+
 			// if($status){
 			// 	echo " <script> alert('关联成功');  </script>";
 			// 	$courseId=$post['Cid'];

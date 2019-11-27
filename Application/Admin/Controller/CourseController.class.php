@@ -31,8 +31,7 @@ class CourseController extends MyController{
 
 			$courseInfo=array('course_id'=>$id,'teacher_id'=>$post['to_teacher_id']);
 				
-			$model2=new \Teacher\Model\Course_teacherModel();
-			$status=$model2->add_Info($courseInfo);
+			
 			if($id){
 				$this->success('添加成功',U('Course/showCourse'));
 			}else{
