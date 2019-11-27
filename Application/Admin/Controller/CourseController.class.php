@@ -156,67 +156,14 @@ class CourseController extends MyController{
 
 	public function deleteChapterImageById($id){
 
-		dump($id);
 		$model=new \Admin\Model\Chapter_imageModel();
 		$status=$model->delete_ChapterImage_ById($id);
-		echo $model->_sql();
-		dump($status);
 		if($status){
-			echo "<script> alert('删除成功');   </script>";
+			$this->success('删除成功');
 		}else{
 			$this->error('删除失败');
 		}
 	}
 
-
-	public function test01(){
-		$wordPath= "/home/jianhanke/Experiment/Course/MySql/MySql第一章节/1.docx";
-	    $htmPath=   "/home/jianhanke/Experiment/Course/MySql/MySql第一章节/1.htm";
-
-	    vendor('PHPOffice.autoload');
-		echo "试试";
-		$phpWord = \PhpOffice\PhpWord\IOFactory::load($wordPath);
-		$xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
-		$xmlWriter->save($htmPath);	    
-	}
-
-	  // 使用python脚本，将word转化为htm
-	// public function saveWordToHtm($wordPath,$htmPath){
-	// 	dump($wordPath);
-	// 	dump($htmPath);
-	// 	$word=new \Admin\Controller\Entity\Word();
-	// 	$word->saveWordToHtm($wordPath,$htmPath);
-	// }
-	public function ceshi(){
-		$wordPath='E:\wamp\apache\library\Experiment/Course/MySql/MySql第一章节/1.doc';
-		$htmPath='E:\wamp\apache\library\Experiment/Course/MySql/MySql第一章节/1.htm';
-		$word=new \Admin\Controller\Entity\Word();
-		$word->saveWordToHtm($wordPath,$htmPath);	
-	}
-	public function ceshi2(){
-		vendor('PHPOffice.autoload');
-		$wordPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.doc';
-		$htmPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\3.html';
-		$phpWord =   \PhpOffice\PhpWord\IOFactory::load($wordPath);
-		dump($phpWord);
-		$xmlWriter =   \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
-		dump($xmlWriter);
-		// touch($htmPath);
-		// chmod($htmPath, 0777);
-		$xmlWriter->save($htmPath);
-		echo "成功";
-	}
-	public function ceshi3(){
-		$wordPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.doc';
-		$htmPath='E:\wamp\apache\library\Experiment\Course\MySql\MySql的第二章节\2.htm';
-		$word = new COM("word.application") or die("Unable to instanciate Word");  
-		 $word->Visible = 1;  
-		 $word->Documents->Open($wordPath);  
-		 $word->Documents[1]->SaveAs($htmPath,8);  
-		 $word->Quit();  
-		 $word = null;  
-		 unset($word); 
-	}
-	
 	
 }

@@ -33,7 +33,7 @@
             <div class="result-content">
                 <table class="result-tab" width="100%">
                     <tr>
-                        <th>id</th>
+                        <th>章节Id</th>
                         <th>镜像Id</th>
                         <th>镜像名字</th>
                 
@@ -47,7 +47,7 @@
                         <td> <?php echo ($data['to_imagename']); ?>  </td>
                         <td>   <?php echo ($data['status']==1? '可用' : '不可用'); ?>  </td>
                         <td>
-                            <a class="link-del" href="/Experiment/index.php/Admin/Course/deleteChapterImageById/id/<?php echo ($data['cid']); ?>">删除</a>
+                            <a class="link-del" href="/Experiment/index.php/Admin/Course/deleteChapterImageById/id/<?php echo ($data['id']); ?>">删除</a>
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>  
 
