@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>员工管理系统</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
 </head>
 <body>
 <div class="topbar-wrap white">

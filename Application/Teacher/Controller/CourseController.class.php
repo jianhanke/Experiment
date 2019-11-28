@@ -7,14 +7,22 @@ class CourseController extends MyController{
 
 	public function showMyCourse(){
 
-		$teacherId=Session('teacher_id');
+		
 
 		$model1=new \Teacher\Model\Course_teacherModel();
 		$model2=D('Course');
 			
-		$info=$model1->find_My_CourseId($teacherId);
+		$info=$model1->find_My_CourseId(Session('teacher_id'));
 		$datas=$model2->show_MyCourse_Info($info);
+
+		 
+		$model3=new \Teacher\Model\View_course_teacher_classModel();
 		
+		$teacherId=Session('teacher_id');
+		for($i=0;$i<count($datas);$i++){
+			$classIds=$model3->find_ClassId_ById($datas[$i]['cid'],$teacherId);
+			$datas[$i]['classIds']=$classIds;
+		}
 		if(empty($datas)){
 			// echo "<script>  javascript :history.back(-1); </script> ";
 			echo "<script> alert('课程为空');   </script>";
@@ -23,6 +31,15 @@ class CourseController extends MyController{
 		$this->assign('datas',$datas);
 		$this->display();
 	}
+
+	public function getClassIdById($courseId=1){
+
+		$model=new \Teacher\Model\View_course_teacher_classModel();
+		$datas=$model->find_ClassId_ById($courseId,Session('teacher_id'));
+		dump($datas);
+		echo $model->_sql();
+	}
+
 
 	public function editCourseById($id){
 		
@@ -266,10 +283,10 @@ class CourseController extends MyController{
 		$teacher_id=Session('teacher_id');
 		$model2=new \Teacher\Model\View_course_teacher_classModel();
 		$datas=$model2->show_MyClass_Info($teacher_id);
-
-		$model=new \Teacher\Model\Course_classModel();		
-		$classIds=$model->show_ClassId_ByCourseId(array('course_id'=>$courseId));
-		$this->assign('classIds',$classIds);
+		// dump($datas);
+		// $model=new \Teacher\Model\Course_classModel();		
+		// $classIds=$model->show_ClassId_ByCourseId(array('course_id'=>$courseId));
+		// $this->assign('classIds',$classIds);
 		$this->assign('datas',$datas);
 		$this->display();
 	}

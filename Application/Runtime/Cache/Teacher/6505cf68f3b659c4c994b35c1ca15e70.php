@@ -29,8 +29,8 @@
 	a{ text-decoration:none} 
 	</style>	
 </head>
-<link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/common.css"/>
-<link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
 <body>
 
 <div class="search-wrap">
@@ -53,7 +53,7 @@
 <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="myDiv" style="width: 80%;height: 30%; " >
 
 		<div style="width: 25%;float: left;height: 100%;" >
-			<img src="/Experiment5/Source/Course/<?php echo ($data['img']); ?> " alt="" style="width:100%;height: 100%; ">
+			<img src="/Experiment/Source/Course/<?php echo ($data['img']); ?> " alt="" style="width:100%;height: 100%; ">
 		</div>
 		<div style="width: 75%;float:right;height: 100%;  ">
 				<br />

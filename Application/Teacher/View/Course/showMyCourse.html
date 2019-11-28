@@ -69,13 +69,14 @@
 				<a href="{:U('Course/courseRelateClass')}/courseId/{$data['cid']}"> <input type="button" value="关联班级" >  </a>
 
 				<!-- <a href="{:U('Student/courseProgress')}/courseId/{$data['cid']}">  -->
-					<a href="#">
-				<select >
-                                        <option value="">学生进展</option>
-                                        <option value="男" >男 </option>
-                                        <option value="女">女  </option>
-                </select>
-				  </a>
+					
+						<select onchange='location.href=this.options[this.selectedIndex].value'>
+                            <option  selected="true" disabled="true" >班级进展</option>
+                            	<volist name="data['classIds']" id="classInfo">
+                          	 <option   value="{:U('Student/courseProgress')}/courseId/{$data['cid']}/classId/{$classInfo['id']}"> {$classInfo['class_name']} </option>
+                            	</volist>
+               			 </select>
+				  
 			
 		</div>
     </div>
@@ -86,4 +87,5 @@
 
 </body>
 </html>
+
 
