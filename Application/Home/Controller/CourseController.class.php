@@ -11,8 +11,9 @@ class CourseController extends MyController{
 
 		$id=I('get.id');
 		$model=D('Chapter');
-		$info=$model->find_Chapter_By_Course_Id($id);
-		// dump($info);
+		// $info=$model->find_Chapter_By_Course_Id($id);
+		$info=$model->show_MyChapterInfo_ById($id,Session('user_id'));
+
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -100,29 +101,50 @@ class CourseController extends MyController{
 		public function uploadFile(){
 			$student_id=session('user_id');	
 			$chapter_id=I('post.chapter_id');
-			$new_name=$student_id.'_'.$chapter_id;
+			$new_name=$student_id.'_';
 			
 			$model=new \Home\Model\View_coursetochapterModel();
 			$info=$model->find_Chapter_Course($chapter_id);	
+
 			$chapter_name=$info['name'];
 			$course_name=$info['cname'];
+			$savepath=$course_name.'/'.$chapter_name."/";
 
-			$upload = new \Think\Upload();
-			$upload->rootPath = './Source/Uploads/';  // ./ 代表 项目的根目录
-			$upload->savePath  = $course_name.'/'.$chapter_name."/";
-			$upload->exts      =     array('doc','docx');
-			$upload->saveName = $new_name;
-			$upload->replace=true;
-			$upload->autoSub  = false;    //禁止上传时候的时间目录
-			// $upload->subName  = array('date','Ymd');
+			$uploadFile=new \Home\Controller\Entity\UploadFile();
+			$res=$uploadFile->uploadReport($savepath,$new_name);
 			
-			$info   =   $upload->uploadOne($_FILES['file']);
-			dump($info);
-			if(!$info) {// 上传错误提示错误信息
-		        $this->error($upload->getError());
-		    }else{// 上传成功 获取上传文件信息
-		         echo $info['savepath'].$info['savename'];
+			if(!$res['status']) {// 上传错误提示错误信息
+		        $this->error($res['upload']->getError());
+		    }else{
+		    	$model2=new \Home\Model\Chapter_reportModel();
+		    	$info=array('upload_path'=>$res['status']['savepath'].$res['status']['savename'],
+		    				'chapter_id'=>$chapter_id,
+		    				'student_id'=>$student_id,
+		    		);
+		    	try{
+		    		$status=$model2->add_Info($info);
+		    	}catch(\Exception $e){
+		    		echo "<script>  alert('请勿重复上传'); </script>";
+		    		echo "<script>  javascript :history.back(-1); </script> ";
+		    		exit();
+		    	}
+		    	if($status){
+		    			$this->success('上传成功');
+			    	}else{
+			    		$this->error('上传失败');
+			    	}
+		    	
 		    }
+
+		}
+
+		public function downloadMyReport($reportId=null){
+			 	$Http = new \Org\Net\Http();
+
+		      $filename="./Source/Uploads/MySql/MySql第一章节/1_.docx";
+		      $showname="1.docx";
+		      $Http::download($filename, $showname);
+
 		}
 
 

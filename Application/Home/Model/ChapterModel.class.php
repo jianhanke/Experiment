@@ -18,5 +18,14 @@ class ChapterModel extends Model{
 					->find($chapterId);
 	}
 
+	public function show_MyChapterInfo_ById($chapterId,$studentId){
+
+		return $this->field('t1.*,t2.id as upload_id')
+					->table('chapter as t1')
+					->join("left join chapter_report as t2 on t1.id=t2.chapter_id and t2.student_id=$studentId")
+					->where("t1.to_course=$chapterId ")
+					->select();
+	}
+
 
 }

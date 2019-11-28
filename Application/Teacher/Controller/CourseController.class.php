@@ -40,7 +40,6 @@ class CourseController extends MyController{
 		echo $model->_sql();
 	}
 
-
 	public function editCourseById($id){
 		
 		$model=D('Chapter');

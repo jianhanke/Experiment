@@ -59,6 +59,14 @@
 						<input type="hidden" name="chapter_id" value="{$data['id']} "  >
 						<!-- <input type="texhiddetn"  name="chapter_name"  value="{$data['name']} -->
 						<input type="submit" value="上传" >
+                        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+                        <if condition="$data['upload_id'] neq NULL ">
+                            <font color="green" >(已上传)</font> <a href="{:U('Course/downloadMyReport')}/reportId/{$data['upload_id']}"> <input type="button" value="点击下载"> </a>
+                        <else />
+                                <font color="red" >(未上传)</font>
+                        </if>
+
 				</form>
 
               </div>
