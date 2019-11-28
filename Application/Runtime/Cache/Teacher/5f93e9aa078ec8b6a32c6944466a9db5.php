@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="/Experiment5/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment5/Public/Admin/css/main.css"/>
 </head>
 <body>
 	<div class="main-wrap">
@@ -56,10 +56,11 @@
                                 <td><input class="common-text" name="Spwd" size="30"  type="text"></td>
                             </tr>
                             <tr>
-                                <th></th>
+                                <th> </th>
                                 <td>
+
                                     <input class="btn btn-primary btn6 mr10" value="添加学生" type="submit">
-                                    <a href="<?php echo U('');?> "> <input class="btn btn6" value="返回" type="button"> </a>
+                                    <a href="<?php echo U('Teacher/showStudentById');?>/classId/<?php echo ($classId); ?>"> <input class="btn btn6" value="返回" type="button"> </a>
                                 </td>
                             </tr>
                         </tbody></table>

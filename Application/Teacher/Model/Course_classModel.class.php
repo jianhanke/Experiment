@@ -15,8 +15,15 @@ class Course_classModel extends Model{
 
 	
 	public function show_ClassId_ByCourseId($info){
-		return $this->where($info)
+		$arr= $this->field('class_id')
+					->distinct(true)
+					->where($info)
 					->select();
+
+		return array_reduce($arr, function ($result, $value) {
+			 return array_merge($result, array_values($value));
+			}, array());
+		
 	}
 	
 

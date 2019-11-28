@@ -56,7 +56,7 @@
                 <br />
                  
 
-                <video src="/Experiment/Source/Chapter/<?php echo ($data['video']); ?>"  style="width: 50%;"    controls="" ></video>
+                <video src="/Experiment5/Source/Chapter/<?php echo ($data['video']); ?>"  style="width: 50%;"    controls="" ></video>
 
                 <br />
 
@@ -66,7 +66,7 @@
              <b>实验指导书  </b>
 
                 <?php if(($data['doc'] == '')): ?><font  color="red" size="20" >暂时为空 </font>
-              <?php else: ?> <iframe src="/Experiment/Source/Chapter/<?php echo ($data['doc']); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
+              <?php else: ?> <iframe src="/Experiment5/Source/Chapter/<?php echo ($data['doc']); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
             
                 
                 <br>
@@ -78,7 +78,7 @@
     
 </body>
 </html>
-<script type="text/javascript" src="/Experiment/Public/Home/js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="/Experiment5/Public/Home/js/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
         $(document).ready(function(){
             $(".point li a").click(function(){

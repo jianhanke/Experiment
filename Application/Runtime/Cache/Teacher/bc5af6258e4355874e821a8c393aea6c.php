@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>员工管理系统</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/main.css"/>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
                             </tr>
                             <tr>
                                 <th>照片：</th>
-                                <td><img src="/Experiment/Public/Teacher/images/default.jpg" width="150"></td>
+                                <td><img src="/Experiment5/Public/Teacher/images/default.jpg" width="150"></td>
                             </tr>
                             <tr>
                                 <th>姓名：</th>

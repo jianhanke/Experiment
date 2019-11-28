@@ -64,7 +64,7 @@ class IndexController extends MyController{
 		dump($info);
 	}
 
-	public function showMyCourse(){
+	public function showMyExperiment(){
 		$model=new \Home\Model\Student_experimentModel();
 
 		$user_id=session('user_id');
@@ -73,12 +73,6 @@ class IndexController extends MyController{
 		// echo $model-> _sql();
 		$this->assign('datas',$info);
 		$this->display();
-	}
-
-	public function ceshi(){
-		$info="ceshi";
-		dump($info);
-		dump(__EXT__);
 	}
 
 	public function showStudentInfoById(){
@@ -97,6 +91,18 @@ class IndexController extends MyController{
 		$this->assign('datas',$info);
 		$this->display('showExperiment');
 
+	}
+
+	public function showMyCourse(){
+		$studentId=Session('user_id');
+
+		$model=D('Student');
+		$classId=$model->find_MyClass_ById($studentId);
+
+		$model2=new \Home\Model\Course_classModel();
+		$datas=$model2->find_MyCourse_ById($classId);
+		$this->assign('datas',$datas);
+		$this->display();
 	}
 
 

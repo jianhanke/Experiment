@@ -14,5 +14,9 @@ class StudentModel extends Model{
 	public function show_Student_Info_By_Id($Sid){
 		return $this->find($Sid);
 	}
+
+	public function find_MyClass_ById($studentId){
+		return $this->find($studentId)['class_id'];
+	}
 	
 }

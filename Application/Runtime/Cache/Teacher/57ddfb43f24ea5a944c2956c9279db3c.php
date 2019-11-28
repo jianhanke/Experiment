@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment5/Public/Teacher/css/main.css"/>
 </head>
 <body>
 <div>
@@ -24,7 +24,7 @@
                             </tr>
 							 <tr>
                                 <th>：</th>
-                                <td><img src="/Experiment/Source/Course/<?php echo ($datas['img']); ?>" width="250"></td>
+                                <td><img src="/Experiment5/Source/Course/<?php echo ($datas['img']); ?>" width="250"></td>
                             </tr>
                             <tr>
                                 <th width="120"><i class="require-red">*</i>学院  ：</th>
@@ -67,7 +67,7 @@
             </div>
 
 </div>
-<script src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
+<script src="/Experiment5/Public/Home/js/jquery-2.0.0.min.js"></script>
 
 
 <script>

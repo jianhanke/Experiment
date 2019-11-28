@@ -258,13 +258,7 @@ class CourseController extends MyController{
 		$this->display();
 	}
 
-	public function courseProgress($courseId){
-
-		// $model=new \Teacher\Model\Course_infoModel();
-		// $info=array('Cid'=>$courseId,'Tid'=>Session('teacher_id'));
-		// $status=$model->show_ClassId_ByCourseId($info);
-		// dump($status);
-	}
+	
 
 
 	public function showMyClass(){
@@ -272,7 +266,10 @@ class CourseController extends MyController{
 		$teacher_id=Session('teacher_id');
 		$model2=new \Teacher\Model\View_course_teacher_classModel();
 		$datas=$model2->show_MyClass_Info($teacher_id);
-		
+
+		$model=new \Teacher\Model\Course_classModel();		
+		$classIds=$model->show_ClassId_ByCourseId(array('course_id'=>$courseId));
+		$this->assign('classIds',$classIds);
 		$this->assign('datas',$datas);
 		$this->display();
 	}
@@ -317,12 +314,12 @@ class CourseController extends MyController{
 	}
 
 	public function findStudentByLike(){  
-		dump(I('post.'));
+		
 		$model=D('Student');
 		$search=I('post.search-sort');
 		$keywords=I('post.keywords');  // %表示任意长度的， _表示任意一个
 		$info=$model->find_Student_By_Like($search,$keywords);
-		dump($info);
+
 		// $count=$model->count_Student_By_Like($search,$keywords);
 		$this->assign('datas',$info);
 		// $this->assign('count',$count);

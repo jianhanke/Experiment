@@ -40,7 +40,7 @@
 <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="myDiv" style="width: 80%;height: 30%; " >
 
 		<div style="width: 25%;float: left;height: 100%;" >
-			<img src="/Experiment/Source/Experiment/<?php echo ($data['outcome_model']); ?> " alt="" style="width:100%;height: 100%; ">
+			<img src="/Experiment5/Source/Experiment/<?php echo ($data['outcome_model']); ?> " alt="" style="width:100%;height: 100%; ">
 		</div>
 		<div style="width: 75%;float:right;height: 100%;  ">
 				<br />
