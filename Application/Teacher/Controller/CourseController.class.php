@@ -329,19 +329,31 @@ class CourseController extends MyController{
 		}
 	}
 
-	public function findStudentByLike(){  
-		
-		$model=D('Student');
-		$search=I('post.search-sort');
-		$keywords=I('post.keywords');  // %表示任意长度的， _表示任意一个
-		$info=$model->find_Student_By_Like($search,$keywords);
+	public function downloadMyReport($reportId){
 
-		// $count=$model->count_Student_By_Like($search,$keywords);
-		$this->assign('datas',$info);
-		// $this->assign('count',$count);
-		// $this->redirect('Teacher/showStudentById',array('classId'=>I('post.classId')));
-		$this->display('Teacher/showStudentById');
+			$model=new \Home\Model\Chapter_reportModel();
+			$path=$model->find_RepoartPath_ById($reportId);
+
+			$arr=explode('/', $path);
+			$showname=array_pop($arr);
+
+			if(empty($path)){
+				$this->error('下载失误');
+				
+			}
+			 $filePath="./Source/Uploads/".$path;
+
+			 try{
+			 	$Http = new \Org\Net\Http();
+		      	$Http::download($filePath, $showname);	
+			 }catch(\Exception $e){
+			 	echo "<script> alert('下载出错');  </script>";
+			 	echo "<script>  javascript :history.back(-1); </script> ";
+		    	exit();
+		   	 
+			 }
 	}
+
 
 
 

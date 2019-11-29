@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
 </head>
 <body>
 	<div class="main-wrap">
@@ -12,11 +12,11 @@
         	
         <div class="result-wrap">
             <div class="result-content">
-                <form action="{:U('Teacher/addClassStudent')}" method="post" id="myform" name="myform" enctype="multipart/form-data">
+                <form action="<?php echo U('Student/addClassToStudent');?>" method="post" id="myform" name="myform" enctype="multipart/form-data">
                     <table class="insert-tab" width="100%">
                         <tbody>
                          <tr>
-                            <input type="hidden" name="Class_id" value="{$classId}" >
+                            <input type="hidden" name="Class_id" value="<?php echo ($classId); ?>" >
                                 <th><i class="require-red">*</i>学号：</th>
                                 <!-- <th><i class="require-red">*</i>年龄：</th> -->
                                 <td>
@@ -60,7 +60,7 @@
                                 <td>
 
                                     <input class="btn btn-primary btn6 mr10" value="添加学生" type="submit">
-                                    <a href="{:U('Teacher/showStudentById')}/classId/{$classId}"> <input class="btn btn6" value="返回" type="button"> </a>
+                                    <a href="<?php echo U('Student/showClassToStudent');?>/classId/<?php echo ($classId); ?>"> <input class="btn btn6" value="返回" type="button"> </a>
                                 </td>
                             </tr>
                         </tbody></table>

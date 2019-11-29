@@ -24,6 +24,12 @@ class CourseModel extends Model{
 		return $this->find($courseId)['cname'];
 	}
 
+	public function find_Course_ByChapterId($chapterId){
+		return $this->table('course as t1,chapter as t2')
+					->where("t2.id=$chapterId and  t2.to_course=t1.cid")
+					->select()[0];
+	}
+
 	public function show_Course_ById($courseId){
 		return $this->find($courseId);
 	}

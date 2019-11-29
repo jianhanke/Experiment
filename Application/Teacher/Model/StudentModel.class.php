@@ -21,4 +21,5 @@ class StudentModel extends Model{
 		return $this->where("$search like '%$keywords%'")->select();
 	}
 
+
 }

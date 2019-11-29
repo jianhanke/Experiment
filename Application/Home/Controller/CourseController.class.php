@@ -138,13 +138,36 @@ class CourseController extends MyController{
 
 		}
 
-		public function downloadMyReport($reportId=null){
+		public function downloadMyReport($reportId){
+
+			$model=new \Home\Model\Chapter_reportModel();
+			$path=$model->find_RepoartPath_ById($reportId);
+
+			$arr=explode('/', $path);
+			$showname=array_pop($arr);
+
+			if(empty($path)){
+				$this->error('下载失误');
+				
+			}
+			 $filePath="./Source/Uploads/".$path;
+
+			 try{
 			 	$Http = new \Org\Net\Http();
+		      	$Http::download($filePath, $showname);	
+			 }catch(\Exception $e){
+			 	echo "<script> alert('下载出错');  </script>";
+			 	echo "<script>  javascript :history.back(-1); </script> ";
+		    		exit();
+			 }
+		}
 
-		      $filename="./Source/Uploads/MySql/MySql第一章节/1_.docx";
-		      $showname="1.docx";
-		      $Http::download($filename, $showname);
-
+		public function ceshi(){
+			$path="MySql/MySql第一章节/1_.docx";
+			// $name=strrchr($path,'/');
+			// dump($name);
+			
+			dump(array_pop($arr) );
 		}
 
 
