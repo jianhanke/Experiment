@@ -105,6 +105,8 @@ class CourseController extends MyController{
 	}
 
 	public function uploadWord($chapter_id){
+		
+		
 
 		if(empty($chapter_id)){
 			$chapter_id=I('post.chapter_id');	

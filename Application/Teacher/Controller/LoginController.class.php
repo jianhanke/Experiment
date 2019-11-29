@@ -26,9 +26,8 @@ class LoginController extends Controller{
 		}
 	}
 	public function logout(){
-
-		session(null);
-		$this->success('退出成功',U('Admin/login/login'));
+		session('teacher_id',null);
+		$this->success('退出成功',U('login/login'));
 	
 
 	}

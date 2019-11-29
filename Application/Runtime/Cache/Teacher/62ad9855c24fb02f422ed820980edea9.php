@@ -71,7 +71,7 @@
 					
 						<select onchange='location.href=this.options[this.selectedIndex].value'>
                             <option  selected="true" disabled="true" >班级进展</option>
-                            	<?php if(is_array($data['classIds'])): $i = 0; $__LIST__ = $data['classIds'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$classInfo): $mod = ($i % 2 );++$i;?><option   value="<?php echo U('Student/courseToClassProgress');?>/courseId/<?php echo ($data['cid']); ?>/classId/<?php echo ($classInfo['id']); ?>"> <?php echo ($classInfo['class_name']); ?> </option><?php endforeach; endif; else: echo "" ;endif; ?>
+                            	<?php if(is_array($data['classIds'])): $i = 0; $__LIST__ = $data['classIds'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$classInfo): $mod = ($i % 2 );++$i;?><option   value="<?php echo U('Course/courseToClassProgress');?>/courseId/<?php echo ($data['cid']); ?>/classId/<?php echo ($classInfo['id']); ?>"> <?php echo ($classInfo['class_name']); ?> </option><?php endforeach; endif; else: echo "" ;endif; ?>
                			 </select>
 				  
 			

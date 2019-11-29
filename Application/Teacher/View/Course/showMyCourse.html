@@ -73,7 +73,7 @@
 						<select onchange='location.href=this.options[this.selectedIndex].value'>
                             <option  selected="true" disabled="true" >班级进展</option>
                             	<volist name="data['classIds']" id="classInfo">
-                          	 <option   value="{:U('Student/courseToClassProgress')}/courseId/{$data['cid']}/classId/{$classInfo['id']}"> {$classInfo['class_name']} </option>
+                          	 <option   value="{:U('Course/courseToClassProgress')}/courseId/{$data['cid']}/classId/{$classInfo['id']}"> {$classInfo['class_name']} </option>
                             	</volist>
                			 </select>
 				  

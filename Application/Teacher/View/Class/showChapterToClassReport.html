@@ -50,7 +50,9 @@
                         <td> {$data['sname']}  </td>
                         <td>  
                         <if condition="$data['id'] neq NULL ">
-                        <a href="{:U('Course/downloadMyReport')}/reportId/{$data['id']}">下载</a>
+
+                        <a href="{:U('Course/downloadMyReport')}/reportId/{$data['id']}"  type="doc" >
+                        <img src="__PUBLIC__/Teacher/images/icon_doc.gif">下载</a>
                            </td>
                         <else />
                             暂无

@@ -1,20 +1,20 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
 </head>
 <body>
 
 <div class="search-wrap">
             <div class="search-content">
-                <form action="{:U('Student/findStudentByLike')}" method="post">
+                <form action="<?php echo U('Class/findStudentByLike');?>" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
-                            <input type="hidden" name="classId" value="{$classId}">
+                            <input type="hidden" name="classId" value="<?php echo ($classId); ?>">
                             <td>
                                 <select name="search-sort" id="">
                                     <option value="Sid">学生Id</option>
@@ -30,9 +30,9 @@
                             <td><input class="btn btn-primary btn2"  value="查询" type="submit"></td>
                 </form>
 
-                            <td>  <a href="{:U('Student/addClassToStudent')}/classId/{$classId}"> <input type="button" value="手动添加学生" > </a>   </td>
-                            <td>  <a href="{:U('Excel/outputExcel')}/modelName/student"> <input type="button" value="下载模板" > </a>   </td>
-                            <td> <form action="{:U('Excel/uploadExcelAndInput')}/modelName/Student" method="post" enctype="multipart/form-data">
+                            <td>  <a href="<?php echo U('Class/addClassToStudent');?>/classId/<?php echo ($classId); ?>"> <input type="button" value="手动添加学生" > </a>   </td>
+                            <td>  <a href="<?php echo U('Excel/outputExcel');?>/modelName/student"> <input type="button" value="下载模板" > </a>   </td>
+                            <td> <form action="<?php echo U('Excel/uploadExcelAndInput');?>/modelName/Student" method="post" enctype="multipart/form-data">
                                    <input type="file" name="excelData">
                                    <button type="submit">导入</button>
                                 </form> </td>
@@ -56,19 +56,17 @@
 
 
                     </tr>
-                 <volist   name="datas" id="data">
-                    <tr>
-                        <td> {$data['sid']}  </td>
-                        <td> {$data['sname']}  </td>
-                        <td>  {$data['sage']}  </td>
-                        <td>   {$data['ssex']}  </td>
-                        <td>  {$data['stele']} </td>
-                    </tr>
-                 </volist>
+                 <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><tr>
+                        <td> <?php echo ($data['sid']); ?>  </td>
+                        <td> <?php echo ($data['sname']); ?>  </td>
+                        <td>  <?php echo ($data['sage']); ?>  </td>
+                        <td>   <?php echo ($data['ssex']); ?>  </td>
+                        <td>  <?php echo ($data['stele']); ?> </td>
+                    </tr><?php endforeach; endif; else: echo "" ;endif; ?>
 
                     <tr>
                 </table>
-                <div class="list-page"> {$count} 条 1/1 页</div>
+                <div class="list-page"> <?php echo ($count); ?> 条 1/1 页</div>
             </div>
             
                 
