@@ -24,6 +24,21 @@ class DockerController extends MyController{
 	}
 
 
+	public function judgeExperimentType($experimentId){
+
+		$model=new \Home\Model\Experiment_imageModel();
+		$info=$model->is_Have_More_Image($experimentId);
+
+		if($info==0){
+			$this->error('该实验没有镜像');
+		}else if($info>1){
+			$this->redirect("Home/Docker/joinMoreExperiment/experimentId/$experimentId");
+		}
+			$this->redirect("Home/Docker/joinExperiment/experimentId/$experimentId");	
+		
+	}
+
+
 	public function joinMoreExperiment($experimentId){
 
 		$model=new \Home\Model\Experiment_imageModel();
@@ -95,23 +110,12 @@ class DockerController extends MyController{
 
 
 	
-	public function joinExperiment($id){
-		$experimentId=$id;
-
-		$model2=new \Home\Model\Experiment_imageModel();
-		$info=$model2->is_Have_More_Image($experimentId);
-
-		if($info==0){
-			$this->error('该实验没有镜像');
-		}else if($info>1){
-			$this->redirect("Home/Docker/joinMoreExperiment/experimentId/$experimentId");
-		}
-
-		// $model=D('Experiment');
-		$model=new \Home\Model\Experiment_imageModel();
+	public function joinExperiment($experimentId){
 		
+
 		$model2=new \Home\Model\Student_experimentModel();
 		$model3=new \Home\Model\Docker_containerModel();
+		$model4=D('Experiment');
 
 		$user_id=session('user_id');
 
@@ -120,31 +124,24 @@ class DockerController extends MyController{
 		
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
-			$image_id=$model->find_ImageId_By_experimentId($experimentId);
+			$containerInfo=$model3->find_Container_Info(array('student_id'=>$user_id,'to_experiment'=>$experimentId));
+			
+			$this->docker->startContainerById($containerInfo['container_id']);
+			
+			$isDesktop=$model4->is_Desktop_ById($experimentId);
+			if($isDesktop){
+				\Home\Controller\Entity\NoVNC::JumpUrlByIp($containerInfo['ip_num']);
+			}
+				\Home\Controller\Entity\Ssh::jumpSshUrlByIP($containerInfo['ip']);
 
 			
-			$container_id=$model3->find_Container_By_UserId($user_id,$image_id);
-
-
-			$this->docker->startContainerById($container_id);
-
-			$ip_num=$model3->find_Ip_id($container_id);
-
-	
-			
-			$noVNC=new \Home\Controller\Entity\NoVNC();
-			$noVNC->JumpUrlByIp($ip_num);
- 
-			exit();
-		}else{             //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id
+		}else{   //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id    
+			$model=new \Home\Model\Experiment_imageModel();
+		    
 			$image_id=$model->find_ImageId_By_experimentId($experimentId);
-			$image_name=$model->find_ImageId_By_experimentName($experimentId);
-
-
-			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
-
-			// $info=$this->runContainerById($image_id);
 			$info=$this->runContainerById($image_id);  //此处应该是上行的，改一部分
+
+			$model2->student_Join_Experiment($user_id,$experimentId);
 
 			$data=array('Container_id'=>$info[0],
 						'student_id'=>$user_id,
@@ -152,28 +149,18 @@ class DockerController extends MyController{
 						'Image_id'=>$image_id,
 						'to_experiment'=>$experimentId,
 						'ip_num'=>$info[2]);
-
 			$model3->add_Container($data); //学生容器id 加入 docker_container
 
-			// $ip_num=$model3->find_Ip_id($user_id,$image_id);
-			$ip_num=$info[2];
 
-
-			 $noVNC=new \Home\Controller\Entity\NoVNC();
-			 $noVNC->JumpUrlByIp($ip_num);
-
-			exit();
+			$isDesktop=$model4->is_Desktop_ById($experimentId);
+			if($isDesktop){
+				\Home\Controller\Entity\NoVNC::JumpUrlByIp($info[2]);
+			}
+				\Home\Controller\Entity\Ssh::jumpSshUrlByIP($info[1]);
 		}
 	}
 
-	public function test01(){
 
-		$model3=new \Home\Model\Docker_containerModel();
-		$info=array('Container_id'=>'321','student_id'=>'100','ip'=>'10.6.7.22','Image_id'=>'3213121fsda','to_experiment'=>'32','ip_num'=>'22');
-		dump($info);
-		$info=$model3->add_Container2($info);
-		dump($info);
-	}
 	
 	public function restartContainerByIp($false_ip){
 		$ip_num=str_replace('host','',$false_ip);

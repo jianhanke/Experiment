@@ -49,7 +49,7 @@
 			<p>  {$data['ename']} </p>  
 			<div class="joinExperiment">
 
-				<a href="{:U('Docker/joinExperiment')}/id/{$data['eid']}" target="block"   > 
+				<a href="{:U('Docker/judgeExperimentType')}/experimentId/{$data['eid']}" target="block"   > 
 
 				 {$data['is_Join']===true ? '进入主机' : '加入' }      </a> 
 			</div>

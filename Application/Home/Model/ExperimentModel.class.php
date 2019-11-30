@@ -6,7 +6,8 @@ use Think\Model;
 class ExperimentModel extends Model{
 
 	public function show_Experiment(){
-		return $this->select();
+		return $this->order("Eid desc")
+					->select();
 	}
 
 	public function find_Experiment($experimentId){
@@ -30,6 +31,10 @@ class ExperimentModel extends Model{
 	public function serach_Key_Wordl($keyword){
 		$sql="select * from experiment where Ename like '%$keyword%' ";
 		return $this->query($sql);
+	}
+
+	public function is_Desktop_ById($experimentId){
+		return  $this->find($experimentId)['is_desktop'];
 	}
 
 
