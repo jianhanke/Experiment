@@ -161,56 +161,6 @@ class DockerController extends MyController{
 	}
 
 
-	
-	public function restartContainerByIp($false_ip){
-		$ip_num=str_replace('host','',$false_ip);
-		dump($false_ip);
-		dump($ip_num);
-		
-		$model=new \Home\Model\Docker_containerModel();
-		$container_id=$model->find_ContainerId_By_Ip($ip_num);
-
-		// $docker=new \Home\Controller\Entity\Docker();
-		$this->docker->restartContainerById($container_id);
-		
-		$noVNC=new \Home\Controller\Entity\NoVNC();
-		$noVNC->JumpUrlByIp($ip_num);
-		exit();
-	}
-
-	public function startContainerByIp($false_ip){
-		
-		$ip_num=str_replace('host','',$false_ip);
-
-		$model=new \Home\Model\Docker_containerModel();
-		$container_id=$model->find_ContainerId_By_Ip($ip_num);
-		
-		// $docker=new \Home\Controller\Entity\Docker();
-		$this->docker->startContainerById($container_id);
-
-		$noVNC=new \Home\Controller\Entity\NoVNC();
-		$noVNC->JumpUrlByIp($ip_num);
-
-		exit();
-	}
-
-	public function stopContainerByIp($false_ip){
-		$model=new \Home\Model\Docker_containerModel();
-
-		$ip_num=str_replace('host','',$false_ip);
-		$container_id=$model->find_ContainerId_By_Ip($ip_num);
-		
-		// $docker=new \Home\Controller\Entity\Docker();
-		$this->docker->stopContainerById($container_id);
-		$noVNC=new \Home\Controller\Entity\NoVNC();
-		$noVNC->JumpUrlByIp($ip_num);
-
-		// echo "<script> top.location.href='http://localhost:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
-		// $noVNC=new \Home\Controller\Entity\NoVNC();
-		// $noVNC->JumpUrlByIp($ip_num);
-		exit();
-
-	}
 
 	/*
 		docker run -d 运行一个新容器，返回容器id,存入数据库
@@ -223,34 +173,10 @@ class DockerController extends MyController{
 		$ip=$ips['ip'];
 		
 		$container_id=$this->docker->runContainerByIdIp($image_id,$ip,$hostName=$hostName,$link_Container=$link_Container);    //具体docker中 run -it 
-
 		$info[]=$container_id;
 		$info[]=$ip;
 		$info[]=$ips['ip_num'];
 		return $info;
 	}
-
-	public function resetContainer($id){
-
-		
-			
-
-		$model=new \Home\Model\Docker_containerModel();
-		$model2=new \Home\Model\Chapter_imageModel();
-		$info=$model->findContainerById($id);
-
-		$imageName=$model2->findImageNameById($info['Image_id']);
-	
-		$this->docker->deleteContainerById($info['container_id']);
-		$container_id=$this->docker->runContainerByIdIp($imageName,$info['ip']);
-
-
-		$model->updateContainerId($id,$container_id);
-
-		$this->redirect("Course/joinChapterById",array('id'=>$info['to_chapter']));
-	}
-
-	
-
 
 }
