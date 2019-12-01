@@ -45,7 +45,7 @@ namespace Admin\Controller\Entity;
 		$upload = new \Think\Upload();
 		$upload->rootPath = './Source/Chapter/';  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
-		$upload->exts      =     array('docx','doc');
+		$upload->exts      =     array('docx');
 		$upload->saveName = $new_name;
 		$upload->replace=true;
 		$upload->maxSize= 10*1024*1024;

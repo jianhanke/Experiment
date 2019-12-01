@@ -1,6 +1,7 @@
 <?php 
 namespace Admin\Controller;
 use Think\Controller;
+
 class CourseController extends MyController{
 
 	public function showCourse(){
