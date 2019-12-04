@@ -1,9 +1,9 @@
 <?php 
 
 namespace Home\Controller;
+use \Common\Controller\BaseHomeController;
 
-
-class OnlineCompileController extends MyController{
+class OnlineCompileController extends BaseHomeController{
 
 	public function showCompile(){
 

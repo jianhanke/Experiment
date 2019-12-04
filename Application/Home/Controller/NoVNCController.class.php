@@ -1,8 +1,9 @@
 <?php 
 
 namespace Home\Controller;
+use \Common\Controller\BaseHomeController;
 
-class NoVNCController extends MyController{
+class NoVNCController extends BaseHomeController{
 
 
 	public function showNoVNC($ip_num){

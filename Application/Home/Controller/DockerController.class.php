@@ -1,9 +1,9 @@
 <?php 
 
 namespace Home\Controller;
-use Think\Controller;
+use \Common\Controller\BaseHomeController;
 
-class DockerController extends MyController{
+class DockerController extends BaseHomeController{
 
 	/*
 		如果学生已经加入课程，直接启动所在容器	

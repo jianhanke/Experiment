@@ -1,9 +1,9 @@
 <?php 
 
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\BaseAdminController;
 
-class ExperimentController extends MyController{
+class ExperimentController extends BaseAdminController{
 
 	public function showExperiment(){
 		$model=D('Experiment');

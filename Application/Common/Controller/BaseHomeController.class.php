@@ -1,9 +1,9 @@
 <?php 
 
-namespace Home\Controller;
+namespace Common\Controller;
 use Think\Controller;
 
-class MyController extends Controller{
+class BaseHomeController extends Controller{
 	
                                       //__construct() 在实例化时候才会调用
 	public function _initialize(){   //每次调用方法时候，都会调用此方法

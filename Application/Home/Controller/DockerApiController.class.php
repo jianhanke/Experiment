@@ -1,9 +1,9 @@
 <?php 
 
 namespace Home\Controller;
-use Think\Controller;
+use \Common\Controller\BaseHomeController;
 
-class DockerApiController extends MyController{
+class DockerApiController extends BaseHomeController{
 
     public function ceshi(){
         $dockerApi=new \Home\Controller\Entity\DockerApi();

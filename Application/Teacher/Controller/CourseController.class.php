@@ -1,9 +1,9 @@
 <?php 
 
 namespace Teacher\Controller;
-use Think\Controller;
+use Common\Controller\BaseTeacherController;
 
-class CourseController extends MyController{
+class CourseController extends BaseTeacherController{
 
 	public function showMyCourse(){
 

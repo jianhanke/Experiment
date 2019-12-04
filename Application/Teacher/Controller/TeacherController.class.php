@@ -1,9 +1,9 @@
 <?php 
 
 namespace Teacher\Controller;
+use Common\Controller\BaseTeacherController;
 
-
-class TeacherController extends MyController{
+class TeacherController extends BaseTeacherController{
 
 	public function showInfo($teacherId){
 
@@ -44,7 +44,7 @@ class TeacherController extends MyController{
 				$status=D('Teacher')->modify_Info($info);	
 
 				if($status !== false){
-					$this->success('修改成功');
+					echo "<script> alert('修改成功');  </script>";
 				}else{
 					$this->error('修改失败');
 				}

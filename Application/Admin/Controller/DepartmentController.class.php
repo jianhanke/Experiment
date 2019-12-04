@@ -1,7 +1,7 @@
 <?php 
 
 namespace Admin\Controller;
-use Think\Controller;
+BaseAdminController
 
 class DepartmentController extends MyController{
 

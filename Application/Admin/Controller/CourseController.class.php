@@ -1,8 +1,8 @@
 <?php 
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\BaseAdminController;
 
-class CourseController extends MyController{
+class CourseController extends BaseAdminController{
 
 	public function showCourse(){
 		$model=D('Course');

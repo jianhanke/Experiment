@@ -1,9 +1,9 @@
 <?php 
 
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\BaseAdminController;
 
-class ExcelController extends MyController{
+class ExcelController extends BaseAdminController{
 
 
 	public function showExcel(){

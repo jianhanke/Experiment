@@ -1,9 +1,9 @@
 <?php 
 
 namespace Teacher\Controller;
-use Think\Controller;
+use Common\Controller\BaseTeacherController;
 
-class ExcelController extends MyController{
+class ExcelController extends BaseTeacherController{
 
 
 	public function uploadExcelAndInput($modelName){

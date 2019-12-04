@@ -1,9 +1,9 @@
 <?php 
 
 namespace Teacher\Controller;
-use Think\Controller;
+use Common\Controller\BaseTeacherController;
 
-class IndexController extends MyController{
+class IndexController extends BaseTeacherController{
 
 	public function index(){
 		

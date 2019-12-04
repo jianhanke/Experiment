@@ -1,9 +1,9 @@
 <?php 
 
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\BaseAdminController;
 
-class DockerController extends MyController{
+class DockerController extends BaseAdminController{
 
 
 	public static $name="xiaming";

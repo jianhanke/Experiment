@@ -1,9 +1,9 @@
 <?php 
 
 namespace Home\Controller;
+use \Common\Controller\BaseHomeController;
 
-
-class CourseController extends MyController{
+class CourseController extends BaseHomeController{
 
 
 	public  function showCourseById(){

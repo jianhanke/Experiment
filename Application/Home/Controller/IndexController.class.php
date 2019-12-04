@@ -1,9 +1,9 @@
 <?php 
 
 namespace Home\Controller;
-use Think\Controller;
+use \Common\Controller\BaseHomeController;
 
-class IndexController extends MyController{
+class IndexController extends BaseHomeController{
 
 	public function index(){
 		$user_id=session('user_id');

@@ -1,9 +1,9 @@
 <?php 
 
 namespace Admin\Controller;
-use Think\Controller;
+use Common\Controller\BaseAdminController;
 
-class ClassController extends MyController{
+class ClassController extends BaseAdminController{
 
 	public function showAllClassInfo(){
 
