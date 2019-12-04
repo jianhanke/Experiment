@@ -39,7 +39,6 @@ class TeacherController extends MyController{
 		if(IS_POST){
 			$teacherId=Session('teacher_id');
 			$post=I('post.');
-			dump($post);
 
 			if($post['newPwd1']==$post['newPwd2']){
 				$info['Tid']=$teacherId;

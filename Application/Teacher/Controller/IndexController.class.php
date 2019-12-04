@@ -14,15 +14,14 @@ class IndexController extends MyController{
 		$this->display();
 	}
 
-	// public function test01(){
-	// 	$arr=array('软件学院','计算机学院');
-	// 	dump($arr);
+	public function test01(){
 		
-	// 	$this->assign('datas',json_encode($arr));
-	// 	$this->display();
-	// }
+		
+		
+		// $model=new \Teacher\Logic\ViewCourseTeacherClassLogic();
+		// $model->test01();
 
 
-
+	}
 
 }

@@ -12,7 +12,6 @@ class LoginController extends Controller{
   	public function checkLogin(){
         $model=D('Student');
         $post=I('post.');
-        dump($post);
         $post['Spwd']=md5($post['Spwd']);
         $info=$model->check_Login($post);      
        if(isset($info)){

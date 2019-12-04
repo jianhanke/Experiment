@@ -44,9 +44,9 @@ class CourseController extends MyController{
 
 		$teacherId=Session('teacher_id');
 
-		$model=new \Teacher\Model\Course_teacherModel();
-		$model->delete_Course_By_Id($id,$teacherId);
-
+		// $model=new \Teacher\Model\Course_teacherModel();
+		// $model->delete_Course_By_Id($id,$teacherId);
+		$status=D('ViewCourseTeacherClass','Logic')->delTeacherToCourse(1,1);
 		$this->redirect('Course/showMyCourse');
 	}
 

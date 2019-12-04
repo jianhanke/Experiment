@@ -1,6 +1,6 @@
 <?php 
 
-namespace Admin\Model;
+namespace Teacher\Model;
 use Think\Model;
 
 class Chapter_reportModel extends Model{
