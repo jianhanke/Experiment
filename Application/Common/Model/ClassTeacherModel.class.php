@@ -11,4 +11,11 @@ class ClassTeacherModel extends Model{
 			         ->delete();
 	}
 
+	
+	public function add_info($post){
+
+		return $this->add($post);
+		
+	}
+
 }

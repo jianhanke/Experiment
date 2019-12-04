@@ -153,8 +153,8 @@ class CourseController extends MyController{
 			$Model = M();
 			$Model->startTrans();
 			
-			$model=new \Teacher\Model\Class_teacherModel();
-			$status=$model->add_Info(array('class_id'=>$post['class_id'],'teacher_id'=>$teacherId));
+			// $model=new \Teacher\Model\Class_teacherModel();
+			$status=D('ClassTeacher')->add_Info(array('class_id'=>$post['class_id'],'teacher_id'=>$teacherId));
 
 			$model2=new \Teacher\Model\Course_classModel();
 			$status2=$model2->add_Info(array('course_id'=>$post['course_id'],'class_id'=>$post['class_id']));
