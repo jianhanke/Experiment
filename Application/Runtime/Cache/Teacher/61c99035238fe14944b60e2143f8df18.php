@@ -41,7 +41,10 @@
         
         <p> <a href="<?php echo U("Course/addChapter");?>/to_course/<?php echo ($id); ?>">&#187; &raquo;添加章节</a>  </p>
         <br>
-            <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li>&#9733 <a href="#"> <?php echo ($data['name']); ?>  </a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li>&#9733 <a href="#"> <?php echo ($data['name']); ?>  </a>
+          &ensp;&ensp;&ensp;&ensp;&ensp;
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <a href="<?php echo U('Course/deleteChapterById');?>/chapterId/<?php echo ($data['id']); ?>">删除</a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
 </div>   
         <div class="box" style="height: 70%;width: 40%; float: right; ">
@@ -51,7 +54,17 @@
              &#9733<?php echo ($data['name']); ?>  -->
               </a>
               <font  color="red">重复上传,将会替代</font>
-              <p> <?php echo ($data['name']); ?> </p>
+              <p> <?php echo ($data['name']); ?>    </p>
+              <p>关联实验所需虚拟机</p>
+              <form action="<?php echo U('Chapter/ChapterRelateImage');?>"  method="post">
+                <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?>">
+                  <select  name="to_imageId"  style="width:150px;">
+                        <option  selected="true" disabled="true" >请选择</option>
+                    <?php if(is_array($experimentInfo)): $i = 0; $__LIST__ = $experimentInfo;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$experiment): $mod = ($i % 2 );++$i;?><option value="<?php echo ($experiment['eid']); ?>"><?php echo ($experiment['ename']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
+                  </select>
+                  <input type="submit" value="关联">
+              </form>
+
               <br>
                 <br />
                  <p>  <b >上传视频(限50M,后缀限:'avi','wmv','mpeg','mp4')  </b>  </p>  

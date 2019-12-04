@@ -42,7 +42,10 @@
         <p> <a href="{:U("Course/addChapter")}/to_course/{$id}">&#187; &raquo;添加章节</a>  </p>
         <br>
             <volist name="datas" id="data">
-        <li>&#9733 <a href="#"> {$data['name']}  </a>  </li>
+        <li>&#9733 <a href="#"> {$data['name']}  </a>
+          &ensp;&ensp;&ensp;&ensp;&ensp;
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+            <a href="{:U('Course/deleteChapterById')}/chapterId/{$data['id']}">删除</a>  </li>  
             </volist>
     </ul>
 </div>   
@@ -54,7 +57,19 @@
              &#9733{$data['name']}  -->
               </a>
               <font  color="red">重复上传,将会替代</font>
-              <p> {$data['name']} </p>
+              <p> {$data['name']}    </p>
+              <p>关联实验所需虚拟机</p>
+              <form action="{:U('Chapter/ChapterRelateImage')}"  method="post">
+                <input type="hidden" name="chapter_id" value="{$data['id']}">
+                  <select  name="to_imageId"  style="width:150px;">
+                        <option  selected="true" disabled="true" >请选择</option>
+                    <volist name="experimentInfo"  id="experiment">
+                        <option value="{$experiment['eid']}">{$experiment['ename']}</option>
+                    </volist>
+                  </select>
+                  <input type="submit" value="关联">
+              </form>
+
               <br>
                 <br />
                  <p>  <b >上传视频(限50M,后缀限:'avi','wmv','mpeg','mp4')  </b>  </p>  

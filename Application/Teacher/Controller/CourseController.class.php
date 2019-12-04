@@ -25,10 +25,17 @@ class CourseController extends BaseTeacherController{
 		$this->display();
 	}
 
+	public function deleteChapterById($chapterId){
+		$status=D('Chapter')->dedChapterById($chapterId);
+		echo "<script> alert('删除成功'); </script>";
+	}
+
 	public function editCourseById($id){
-		
-		
+
+		$experimentInfo=D('Experiment')->getAllDataIdName();	
 		$info=D('Chapter')->find_Chapter_By_Course_Id($id);
+		
+		$this->assign('experimentInfo',$experimentInfo);
 		$this->assign('id',$id);
 		$this->assign('datas',$info);
 		$this->display();

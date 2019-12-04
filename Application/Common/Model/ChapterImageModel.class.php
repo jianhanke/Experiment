@@ -6,12 +6,17 @@ use Think\Model;
 class ChapterImageModel extends Model{
 
 
-	public function add_ChapterInfo($post){
-		return $this->add($post);
+	public function add_ChapterInfo($info){
+		return $this->add($info);
 	}
 
 	public function show_All_Data(){
 		return $this->select();
 	}
+
+	public function addData($data){
+		return $this->addAll($data);
+	}
+
 	
 }

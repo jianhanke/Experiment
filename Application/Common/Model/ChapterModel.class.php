@@ -53,5 +53,9 @@ class ChapterModel extends Model{
 					->select();
 	}
 
+	public function dedChapterById($chapterId){
+		return $this->delete($chapterId);
+	}
+
 
 }
