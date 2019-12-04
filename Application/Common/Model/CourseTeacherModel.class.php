@@ -5,7 +5,7 @@ use Think\Model;
 
 class CourseTeacherModel extends Model{
 
-	public function delCourseToTeacher($condition){
+	public function delData($condition){
 		return $this->where($condition)
 					->delete();
 	}

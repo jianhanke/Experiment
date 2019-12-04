@@ -23,9 +23,9 @@ class ViewCourseTeacherClassLogic extends Model{
 				unset($arr['teacher_id']);
 			}
 
-			$status1=D('CourseTeacher')->delCourseToTeacher(array('course_id'=>$courseId,'teacher_id'=>$teacherId));
-			$status2=D('ClassTeacher')->delClassToTeacher($array);
-			$status3=D('CourseClass')->delCourseToClass($array2);
+			$status1=D('CourseTeacher')->delData(array('course_id'=>$courseId,'teacher_id'=>$teacherId));
+			$status2=D('ClassTeacher')->delData($array);
+			$status3=D('CourseClass')->delData($array2);
 			return $status1;
 	}
 

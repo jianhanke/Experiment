@@ -5,7 +5,7 @@ use Think\Model;
 
 class CourseClassModel extends Model{
 	
-	public function delCourseToClass($condition){
+	public function delData($condition){
 		$condition['_logic']='OR';
 		return $this->where($condition)
 					->delete();

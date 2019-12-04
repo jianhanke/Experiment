@@ -7,11 +7,9 @@ class CourseController extends MyController{
 
 	public function showMyCourse(){
 
-	
-		$model1=new \Teacher\Model\Course_teacherModel();
 		$model2=D('Course');
-			
-		$info=$model1->find_My_CourseId(Session('teacher_id'));
+		
+		$info=D('CourseTeacher')->find_My_CourseId(Session('teacher_id'));
 		$datas=$model2->show_MyCourse_Info($info);
 
 		 
@@ -156,8 +154,9 @@ class CourseController extends MyController{
 			// $model=new \Teacher\Model\Class_teacherModel();
 			$status=D('ClassTeacher')->add_Info(array('class_id'=>$post['class_id'],'teacher_id'=>$teacherId));
 
-			$model2=new \Teacher\Model\Course_classModel();
-			$status2=$model2->add_Info(array('course_id'=>$post['course_id'],'class_id'=>$post['class_id']));
+			// $model2=new \Teacher\Model\Course_classModel();
+
+		   $status2=D('CourseClass')->add_Info(array('course_id'=>$post['course_id'],'class_id'=>$post['class_id']));
 			
 			if($status && $status2){
 				$this->success('修改成功');
@@ -232,8 +231,7 @@ class CourseController extends MyController{
 	public function otherCourse(){
 		
 		$teacherId=Session('teacher_id');
-		$model2=new \Teacher\Model\Course_teacherModel();
-		$myCourseIds=$model2->find_My_CourseId($teacherId);
+		$myCourseIds=D('CourseTeacher')->find_My_CourseId($teacherId);
 		
 		$model=D('Course');
 		$datas=$model->none_myCourse($myCourseIds);	
@@ -245,9 +243,9 @@ class CourseController extends MyController{
 	public function relateMyCourse($courseId){
 
 		$teacherId=Session('teacher_id');
-		$model=new \Teacher\Model\Course_teacherModel();
+		// $model=new \Teacher\Model\Course_teacherModel();
 		$info=array('teacher_id'=>$teacherId,'course_id'=>$courseId);
-		$status=$model->relate_To_MyCourse($info);
+		$status=D('CourseTeacher')->relate_To_MyCourse($info);
 		if($status){
 			$this->success('关联成功',U('Course/showMyCourse'));
 		}else{
@@ -286,8 +284,8 @@ class CourseController extends MyController{
 
 			$courseAndTeacher=array('course_id'=>$id,'teacher_id'=>Session('teacher_id'));
 
-			$model2=new \Teacher\Model\Course_teacherModel();
-			$status=$model2->add_Info($courseAndTeacher);
+			
+			$status=D('CourseTeacher')->add_Info($courseAndTeacher);
 
 			if($status){
 				$this->success('添加成功',U('Course/showMyCourse'));
