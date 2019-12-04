@@ -1,14 +1,14 @@
 <?php 
 
 namespace Teacher\Controller;
-use Think\Controller;
+
 
 class TeacherController extends MyController{
 
 	public function showInfo($teacherId){
 
-		$model=D('Teacher');
-		$info=$model->find_Info_ById($teacherId);
+		
+		$info=D('Teacher')->find_Info_ById($teacherId);
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -18,8 +18,7 @@ class TeacherController extends MyController{
 
 		if(IS_POST){
 			$post=I('post.');
-			$model=D('Teacher');
-			$info=$model->modify_Info($post);
+			$info=D('Teacher')->modify_Info($post);
 
 			if($info !== false){
 				$this->redirect("Teacher/showInfo",array('teacherId'=>$post['Tid']));
@@ -27,8 +26,7 @@ class TeacherController extends MyController{
 				$this->error('修改失败');
 			}
 		}else{
-			$model=D('Teacher');
-			$info=$model->find_Info_ById($teacherId);
+			$info=D('Teacher')->find_Info_ById($teacherId);
 			$this->assign('datas',$info);
 			$this->display();
 		}
@@ -43,8 +41,7 @@ class TeacherController extends MyController{
 			if($post['newPwd1']==$post['newPwd2']){
 				$info['Tid']=$teacherId;
 				$info['Tpwd']=$post['newPwd1'];
-				$model=D('Teacher');
-				$status=$model->modify_Info($info);	
+				$status=D('Teacher')->modify_Info($info);	
 
 				if($status !== false){
 					$this->success('修改成功');

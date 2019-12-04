@@ -1,6 +1,6 @@
 <?php 
 
-namespace Teacher\Model;
+namespace Common\Model;
 use Think\Model;
 
 class ChapterModel extends Model{

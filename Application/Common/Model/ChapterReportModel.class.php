@@ -1,9 +1,9 @@
 <?php 
 
-namespace Teacher\Model;
+namespace Common\Model;
 use Think\Model;
 
-class Chapter_reportModel extends Model{
+class ChapterReportModel extends Model{
 	
 	public function find_RepoartPath_ById($id){
 

@@ -1,9 +1,9 @@
 <?php 
 
-namespace Teacher\Model;
+namespace Common\Logic;
 use Think\Model;
 
-class View_classwithdepartmentModel extends Model{
+class ViewClasswithdepartmentLogic extends Model{
 
 	public function show_ClassInfo_ById($classId){
 		return $this->find($classId);

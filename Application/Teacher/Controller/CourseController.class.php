@@ -7,17 +7,13 @@ class CourseController extends MyController{
 
 	public function showMyCourse(){
 
-		$model2=D('Course');
 		
 		$info=D('CourseTeacher')->find_My_CourseId(Session('teacher_id'));
-		$datas=$model2->show_MyCourse_Info($info);
+		$datas=D('Course')->show_MyCourse_Info($info);
 
-		 
-		$model3=new \Teacher\Model\View_course_teacher_classModel();
-		
 		$teacherId=Session('teacher_id');
 		for($i=0;$i<count($datas);$i++){
-			$classIds=$model3->find_ClassId_ById($datas[$i]['cid'],$teacherId);
+			$classIds=D('ViewCourseTeacherClass','Logic')->find_ClassId_ById($datas[$i]['cid'],$teacherId);
 			$datas[$i]['classIds']=$classIds;
 		}
 		if(empty($datas)){
@@ -31,8 +27,8 @@ class CourseController extends MyController{
 
 	public function editCourseById($id){
 		
-		$model=D('Chapter');
-		$info=$model->find_Chapter_By_Course_Id($id);
+		
+		$info=D('Chapter')->find_Chapter_By_Course_Id($id);
 		$this->assign('id',$id);
 		$this->assign('datas',$info);
 		$this->display();
@@ -44,7 +40,7 @@ class CourseController extends MyController{
 
 		// $model=new \Teacher\Model\Course_teacherModel();
 		// $model->delete_Course_By_Id($id,$teacherId);
-		$status=D('ViewCourseTeacherClass','Logic')->delTeacherToCourse(1,1);
+		$status=D('ViewCourseTeacher','Logic')->delTeacherToCourse(1,1);
 		$this->redirect('Course/showMyCourse');
 	}
 
@@ -55,9 +51,9 @@ class CourseController extends MyController{
 			$model=D('Chapter');
 			$chapter_id=$model->add_Info($post);
 
-			$model2=new \Teacher\Model\Chapter_imageModel();
+
 			$chapterInfo=array('Cid'=>$chapter_id,'to_imageId'=>$post['to_image'],'to_imageName'=>Null);
-			$model2->add_ChapterInfo($chapterInfo);
+			D('ChapterImage')->add_ChapterInfo($chapterInfo);
 
 			$this->uploadVideo($chapter_id);
 			$this->uploadWord($chapter_id);
@@ -65,11 +61,10 @@ class CourseController extends MyController{
 			$this->success('添加成功',U("Course/editCourseById",array('id'=>$to_course)));
 		}else{
 			// $to_course=I('get.to_course');
-			$model=D('Course');
-			$courseName=$model->find_Course_Name($to_course);
 			
-			$model2=new \Teacher\Model\Make_imageModel();
-			$data=$model2->show_All_Data();
+			$courseName=D('Course')->find_Course_Name($to_course);
+			
+			$data=D('ChapterImage')->show_All_Data();
 			$this->assign('datas',$data);
 			$this->assign('id',$to_course);
 			$this->assign('courseName',$courseName);
@@ -96,8 +91,7 @@ class CourseController extends MyController{
 		if(!$res['status']) {// 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 		}else{   // 上传成功 获取上传文件信息
-		        $model=D('Chapter');
-		        $model->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
+		        D('Chapter')->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
 				$this->success('上传成功');
 		} 
 	}
@@ -127,8 +121,7 @@ class CourseController extends MyController{
 		         $htmPath=$courseRealPath.$res['status']['savepath'].$new_name.'.htm';
 		         $uploadFile->saveWordToHtm($wordPath,$htmPath);
 		         
-		         $model2=D('Chapter');
-		         $model2->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
+		         D('Chapter')->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
 				$this->success('上传成功');
 		} 
 	}
@@ -184,10 +177,10 @@ class CourseController extends MyController{
 			// }
 		}else{
 			$courseId=I('get.courseId');
-			$model=D('Department');
-			$departments=$model->show_AllDepartment_Info();
-			$model2=D('Course');
-			$datas=$model2->show_Course_ById($courseId);
+			
+			$departments=D('Department')->show_AllDepartment_Info();
+			
+			$datas=D('Course')->show_Course_ById($courseId);
 			$this->assign('datas',$datas);
 			$this->assign('departments',$departments);
 			$this->display();
@@ -196,9 +189,8 @@ class CourseController extends MyController{
 
 
 	public function getCurrentGrade($id){
-		
-		$model=new \Teacher\Model\View_classwithdepartmentModel();
-		$grades=$model->show_AllGrade_ById($id);
+
+		$grades=D('ViewClasswithdepartment','Logic')->show_AllGrade_ById($id);
 
 		$data=array('status'=>0,'city'=>$grades);
 		header("Content-type: application/json");
@@ -210,8 +202,8 @@ class CourseController extends MyController{
 
 		$condition=array('department_id'=>$departmentId,'grade'=>$grade,'teacher_id'=>Session('teacher_id'));
 
-		$model=new \Teacher\Model\View_classwithdepartmentModel();
-		$class=$model->show_NoneSlect_class($condition);
+		
+		$class=D('ViewClasswithdepartment','Logic')->show_NoneSlect_class($condition);
 		
 		$data=array('status'=>0,'district'=>$class);
 		header("Content-type: application/json");
@@ -222,8 +214,8 @@ class CourseController extends MyController{
 
 		$condition=array('department_id'=>1,'grade'=>17,'teacher_id'=>Session('teacher_id'));
 
-		$model=new \Teacher\Model\View_classwithdepartmentModel();
-		$class=$model->show_NoneSlect_class($condition);
+		
+		$class=D('ViewClasswithdepartment','Logic')->show_NoneSlect_class($condition);
 		echo $model->_sql();
 		dump($class);
 	}
@@ -233,8 +225,7 @@ class CourseController extends MyController{
 		$teacherId=Session('teacher_id');
 		$myCourseIds=D('CourseTeacher')->find_My_CourseId($teacherId);
 		
-		$model=D('Course');
-		$datas=$model->none_myCourse($myCourseIds);	
+		$datas=D('Course')->none_myCourse($myCourseIds);	
 		
 		$this->assign('datas',$datas);
 		$this->display();
@@ -254,8 +245,8 @@ class CourseController extends MyController{
 	}
 
 	public function showCourseById($courseId){
-		$model=D('Chapter');
-		$info=$model->find_Chapter_By_Course_Id($courseId);
+		
+		$info=D('Chapter')->find_Chapter_By_Course_Id($courseId);
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -278,9 +269,8 @@ class CourseController extends MyController{
 			$this->error('添加失败,图片上传错误');
 		}
 			$post['img']=$res['status']['savename'];
-			$model=D('Course');
-			dump($post);
-			$id=$model->add_Info($post);
+			
+			$id=D('Course')->add_Info($post);
 
 			$courseAndTeacher=array('course_id'=>$id,'teacher_id'=>Session('teacher_id'));
 
@@ -293,8 +283,7 @@ class CourseController extends MyController{
 				$this->error('添加失败');
 			}
 		}else{
-			$model=D('Teacher');
-			$info=$model->show_Teacher();
+			$info=D('Teacher')->show_Teacher();
 			$this->assign('datas',$info);
 			$this->display();
 		}
@@ -302,8 +291,7 @@ class CourseController extends MyController{
 
 	public function downloadMyReport($reportId){
 
-			$model=new \Home\Model\Chapter_reportModel();
-			$path=$model->find_RepoartPath_ById($reportId);
+			$path=D('ChapterReport')->find_RepoartPath_ById($reportId);
 
 			$arr=explode('/', $path);
 			$showname=array_pop($arr);
@@ -332,13 +320,10 @@ class CourseController extends MyController{
 		// $model=D('Student');
 		// $stuDatas=$model->find_Student_WithReport($classId);
 		
-		$model=D('Chapter');
-		$chapterInfo=$model->find_Chapter_Info();
-		$model2=new \Teacher\Model\View_classwithdepartmentModel();
-		$classInfo=$model2->show_ClassInfo_ById($classId);
+		$chapterInfo=D('Chapter')->find_Chapter_Info();
 
-		$model3=D('Course');
-		$courseInfo=$model3->find_Course_ById($courseId);
+		$classInfo=D('ViewClasswithdepartment','Logic')->show_ClassInfo_ById($classId);
+		$courseInfo=D('Course')->find_Course_ById($courseId);
 
 		$this->assign('chapterInfo',$chapterInfo);
 		$this->assign('courseInfo',$courseInfo);

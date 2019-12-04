@@ -1,9 +1,9 @@
 <?php 
 
-namespace Teacher\Model;
+namespace Common\Model;
 use Think\Model;
 
-class Chapter_imageModel extends Model{
+class ChapterImageModel extends Model{
 
 
 	public function add_ChapterInfo($post){
