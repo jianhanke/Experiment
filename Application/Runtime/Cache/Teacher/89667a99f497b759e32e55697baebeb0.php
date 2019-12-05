@@ -16,12 +16,12 @@
                         <tbody>
                             <tr>
                                 <th><i class="require-red">*</i>新密码：</th>
-                                <td><input class="common-text" name="newPwd1" size="30" value="" type="text"></td>
+                                <td><input class="common-text" name="newPwd1" size="30" value="" autocomplete="off" type="text"></td>
                             </tr>
 
                             <tr>
                                 <th><i class="require-red">*</i>重复新密码：</th>
-                                <td><input class="common-text" name="newPwd2" size="30" value="" type="text"></td>
+                                <td><input class="common-text" autocomplete="off" name="newPwd2" size="30" value="" type="text"></td>
                             </tr>
                               <tr>
                                 <th></th>

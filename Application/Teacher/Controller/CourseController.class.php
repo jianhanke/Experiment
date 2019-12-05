@@ -18,7 +18,7 @@ class CourseController extends BaseTeacherController{
 		}
 		if(empty($datas)){
 			// echo "<script>  javascript :history.back(-1); </script> ";
-			echo "<script> alert('课程为空');   </script>";
+			echo "<script> alert('课程为空'); </script>";
 		}
 
 		$this->assign('datas',$datas);
@@ -34,7 +34,6 @@ class CourseController extends BaseTeacherController{
 
 		$experimentInfo=D('Experiment')->getAllDataIdName();	
 		$info=D('Chapter')->find_Chapter_By_Course_Id($id);
-		
 		$this->assign('experimentInfo',$experimentInfo);
 		$this->assign('id',$id);
 		$this->assign('datas',$info);
@@ -44,10 +43,7 @@ class CourseController extends BaseTeacherController{
 	public function cancelCourseById($id){
 
 		$teacherId=Session('teacher_id');
-
-		// $model=new \Teacher\Model\Course_teacherModel();
-		// $model->delete_Course_By_Id($id,$teacherId);
-		$status=D('ViewCourseTeacher','Logic')->delTeacherToCourse(1,1);
+		$status=D('ViewCourseTeacherClass','Logic')->delTeacherToCourse($teacherId,$id);
 		$this->redirect('Course/showMyCourse');
 	}
 

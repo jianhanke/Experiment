@@ -6,6 +6,7 @@ use Think\Model;
 class ChapterImageModel extends Model{
 
 
+
 	public function add_ChapterInfo($info){
 		return $this->add($info);
 	}
@@ -18,5 +19,9 @@ class ChapterImageModel extends Model{
 		return $this->addAll($data);
 	}
 
+	public function delData($data){
+		return $this->where($data)
+					->delete();
+	}
 	
 }

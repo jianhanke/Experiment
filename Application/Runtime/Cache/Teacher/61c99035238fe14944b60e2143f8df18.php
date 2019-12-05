@@ -57,6 +57,7 @@
               <p> <?php echo ($data['name']); ?>    </p>
               <p>关联实验所需虚拟机</p>
               <form action="<?php echo U('Chapter/ChapterRelateImage');?>"  method="post">
+                <input type="hidden" name="courseId" value="<?php echo ($id); ?>" >
                 <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?>">
                   <select  name="to_imageId"  style="width:150px;">
                         <option  selected="true" disabled="true" >请选择</option>

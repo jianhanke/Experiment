@@ -60,6 +60,7 @@
               <p> {$data['name']}    </p>
               <p>关联实验所需虚拟机</p>
               <form action="{:U('Chapter/ChapterRelateImage')}"  method="post">
+                <input type="hidden" name="courseId" value="{$id}" >
                 <input type="hidden" name="chapter_id" value="{$data['id']}">
                   <select  name="to_imageId"  style="width:150px;">
                         <option  selected="true" disabled="true" >请选择</option>
