@@ -125,7 +125,6 @@ class DockerController extends BaseHomeController{
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
 			$containerInfo=$model3->find_Container_Info(array('student_id'=>$user_id,'to_experiment'=>$experimentId));
-			
 			$this->docker->startContainerById($containerInfo['container_id']);
 			
 			$isDesktop=$model4->is_Desktop_ById($experimentId);

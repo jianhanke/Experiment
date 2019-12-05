@@ -23,5 +23,10 @@ class ChapterImageModel extends Model{
 		return $this->where($data)
 					->delete();
 	}
+
+	public function delChapterImage($chapterId){
+		return $this->where("Cid=$chapterId")
+					->delete();
+	}
 	
 }

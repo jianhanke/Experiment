@@ -39,13 +39,13 @@
  <div  style="float: left;" >
     <ul class="point">
         
-        <p> <a href="{:U("Course/addChapter")}/to_course/{$id}">&#187; &raquo;添加章节</a>  </p>
+        <p> <a href="{:U('Chapter/addChapter')}/to_course/{$id}">&#187; &raquo;添加章节</a>  </p>
         <br>
             <volist name="datas" id="data">
         <li>&#9733 <a href="#"> {$data['name']}  </a>
           &ensp;&ensp;&ensp;&ensp;&ensp;
         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-            <a href="{:U('Course/deleteChapterById')}/chapterId/{$data['id']}">删除</a>  </li>  
+            <a href="{:U('Chapter/deleteChapterById')}/chapterId/{$data['id']}/courseId/{$id}">删除</a>  </li>  
             </volist>
     </ul>
 </div>   

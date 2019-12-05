@@ -39,12 +39,12 @@
  <div  style="float: left;" >
     <ul class="point">
         
-        <p> <a href="<?php echo U("Course/addChapter");?>/to_course/<?php echo ($id); ?>">&#187; &raquo;添加章节</a>  </p>
+        <p> <a href="<?php echo U('Chapter/addChapter');?>/to_course/<?php echo ($id); ?>">&#187; &raquo;添加章节</a>  </p>
         <br>
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li>&#9733 <a href="#"> <?php echo ($data['name']); ?>  </a>
           &ensp;&ensp;&ensp;&ensp;&ensp;
         &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-            <a href="<?php echo U('Course/deleteChapterById');?>/chapterId/<?php echo ($data['id']); ?>">删除</a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
+            <a href="<?php echo U('Chapter/deleteChapterById');?>/chapterId/<?php echo ($data['id']); ?>/courseId/<?php echo ($id); ?>">删除</a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
 </div>   
         <div class="box" style="height: 70%;width: 40%; float: right; ">

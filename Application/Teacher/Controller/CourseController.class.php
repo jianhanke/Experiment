@@ -47,33 +47,7 @@ class CourseController extends BaseTeacherController{
 		$this->redirect('Course/showMyCourse');
 	}
 
-	public function addChapter($to_course){
-		
-		if(IS_POST){
-			$post=I('post.');
-			$model=D('Chapter');
-			$chapter_id=$model->add_Info($post);
-
-
-			$chapterInfo=array('Cid'=>$chapter_id,'to_imageId'=>$post['to_image'],'to_imageName'=>Null);
-			D('ChapterImage')->add_ChapterInfo($chapterInfo);
-
-			$this->uploadVideo($chapter_id);
-			$this->uploadWord($chapter_id);
-			
-			$this->success('添加成功',U("Course/editCourseById",array('id'=>$to_course)));
-		}else{
-			// $to_course=I('get.to_course');
-			
-			$courseName=D('Course')->find_Course_Name($to_course);
-			
-			$data=D('ChapterImage')->show_All_Data();
-			$this->assign('datas',$data);
-			$this->assign('id',$to_course);
-			$this->assign('courseName',$courseName);
-			$this->display();	
-		}
-	}
+	
 	public function uploadVideo($chapter_id){
 
 		
