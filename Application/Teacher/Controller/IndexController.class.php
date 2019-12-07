@@ -2,6 +2,7 @@
 
 namespace Teacher\Controller;
 use Common\Controller\BaseTeacherController;
+use \MyUtils\FileController\Person;
 
 class IndexController extends BaseTeacherController{
 
@@ -12,16 +13,6 @@ class IndexController extends BaseTeacherController{
 		$this->assign('teacher_id',$teacher_id);
 		$this->assign('teacher_name',$teacher_name);
 		$this->display();
-	}
-
-	public function test01(){
-		
-		
-		
-		// $model=new \Teacher\Logic\ViewCourseTeacherClassLogic();
-		// $model->test01();
-
-
 	}
 
 }

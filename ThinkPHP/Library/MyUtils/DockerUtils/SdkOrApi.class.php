@@ -1,7 +1,7 @@
 <?php 
 
 
-namespace Admin\Controller\Entity;
+namespace MyUtils\DockerUtils;
 
  class  SdkOrApi{
 

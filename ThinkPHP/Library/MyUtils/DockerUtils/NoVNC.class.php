@@ -1,11 +1,12 @@
 <?php 
 
-namespace Admin\Controller\Entity;
+namespace MyUtils\DockerUtils;
+
 
 class NoVNC{
 	
 	public static function JumpUrlByIp($ip_num){
-		$hostName =  \Home\Controller\Entity\Host::getHostName();
+		$hostName = \MyUtils\HostUtils\Host::getHostName();
 		echo "<script> top.location.href='http://$hostName:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
 	}
 

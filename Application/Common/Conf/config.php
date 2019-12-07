@@ -6,11 +6,10 @@ return array(
 	'URL_MODEL'             => 1,
 	// 'URL_DENY_SUFFIX' => 'html',  禁止指定伪静态
 	'URL_HTML_SUFFIX' => '',         //指定伪静态为空
-	'TMPL_PARSE_STRING' =>array(
-		'__ADMINS__'    =>    'adminceefsdfs',
-		'__DOCKER__'    =>    's',
-	),
-	define('CONTROLLER_DOCKER_PATH','hujing2'),
+	'LOAD_EXT_CONFIG'   =>  'upload',     //加载自定义配置
+
+	
+
 	'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  'localhost', // 服务器地址
     'DB_NAME'               =>  'experiment',          // 数据库名

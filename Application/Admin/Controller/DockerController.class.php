@@ -11,7 +11,7 @@ class DockerController extends BaseAdminController{
 	public $docker=NULL;
 	public function __construct(){
 		parent::__construct();
-		$this->docker=new \Home\Controller\Entity\DockerApi();
+		$this->docker=new \MyUtils\DockerUtils\DockerApi();
 	}
 
 	public function deleteContainerById(){  //在Docker中删除此容器，同时删除数据库中容器和课程记录
@@ -202,7 +202,7 @@ class DockerController extends BaseAdminController{
 		self::$name="shishi";
 		dump(self::$name);
 
-		$sdkOrApi=new \Admin\Controller\Entity\SdkOrApi();
+		$sdkOrApi=new \MyUtils\DockerUtils\SdkOrApi();
 		if(IS_POST){
 			$select=I('post.select');
 			$sdkOrApi->setControllerManner($select);
@@ -216,7 +216,7 @@ class DockerController extends BaseAdminController{
 
 		$systemType=I('post.systemType');
 		
-		$docker=new \Home\Controller\Entity\DockerApi();
+		$docker=new \MyUtils\DockerUtils\DockerApi();
 
 		$ips=$docker->getNewIp();
 		$ip=$ips['ip'];
@@ -226,7 +226,7 @@ class DockerController extends BaseAdminController{
 		$model3=new \Home\Model\Docker_containerModel();
 		$model3->add_Container('110',$container_id,$systemType,$ip,$ips['ip_num']);
 
-		$noVNC=new \Home\Controller\Entity\Host();
+		$noVNC=new \MyUtils\HostUtils\Host();
 		$hostName=$noVNC->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ips['ip_num'];
@@ -242,7 +242,7 @@ class DockerController extends BaseAdminController{
 			$imageName=I('post.imageName');
 			$admin_name=session('admin_name');
 
-			$docker=new \Home\Controller\Entity\DockerApi();
+			$docker=new \MyUtils\DockerUtils\DockerApi();
 			$image_id=$docker->commitContainerById($container_id);
 			$data=['image_id'=>$image_id,'name'=>$imageName,'from_admin'=>$admin_name];
 

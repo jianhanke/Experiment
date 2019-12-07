@@ -1,7 +1,7 @@
 <?php 
 
 
-namespace Admin\Controller\Entity;
+namespace MyUtils\HostUtils;
 
 class Host{
 
@@ -10,7 +10,7 @@ class Host{
 	}
 
 	public static function getRootRealPath(){
-		return dirname(dirname(dirname(dirname(dirname(__FILE__)))));
+		return $_SERVER['DOCUMENT_ROOT'].__ROOT__;
 	}
 
 }

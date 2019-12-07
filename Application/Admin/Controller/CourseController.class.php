@@ -18,7 +18,7 @@ class CourseController extends BaseAdminController{
 				$this->error('填写不完整',U('Course/addCourse'),2);
 			}
 		try{
-			$uploadFile=new \Admin\Controller\Entity\UploadFile();
+			$uploadFile=new \MyUtils\FileUtils\UploadFile();
 			$res=$uploadFile->addCoursePicture();
 			if(!$res['status']) {                // 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
@@ -108,7 +108,7 @@ class CourseController extends BaseAdminController{
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
 
-		$uploadFile=new \Admin\Controller\Entity\UploadFile();
+		$uploadFile=new \MyUtils\FileUtils\UploadFile();
 		$res=$uploadFile->uploadChapterVideo($course_name,$chapter_name,$new_name);
 
 
@@ -135,13 +135,13 @@ class CourseController extends BaseAdminController{
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
 
-		$uploadFile=new \Admin\Controller\Entity\UploadFile();
+		$uploadFile=new \MyUtils\FileUtils\UploadFile();
 		$res=$uploadFile->uploadChapterWord($course_name,$chapter_name,$new_name);
 
 		if(!$res['status']) {// 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 		}else{// 上传成功 获取上传文件信息
-		         $host=new \Admin\Controller\Entity\Host();
+		         $host=new \MyUtils\HostUtils\Host()
 				 $courseRealPath=$host-> getRootRealPath().'/Source/Chapter/';
 
 		         $wordPath=$courseRealPath.$res['status']['savepath'].$res['status']['savename'];

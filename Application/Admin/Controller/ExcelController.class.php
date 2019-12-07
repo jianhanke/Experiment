@@ -30,7 +30,7 @@ class ExcelController extends BaseAdminController{
               $filePath=$upload->rootPath.$info['savepath'].$info['savename'];
               $ext=$info['ext'];
               try{
-                $excel=new \Admin\Controller\Entity\Excel();
+                $excel=new \MyUtils\FileUtils\Excel();
                 $excel->inputExcel($modelName,$filePath,$ext);
                 $this->success('导入成功');
               }catch(\Exception $e){
@@ -46,7 +46,7 @@ class ExcelController extends BaseAdminController{
 
 
     public function outputExcel($modelName){
-        $excel=new \Admin\Controller\Entity\Excel();
+        $excel=new \MyUtils\FileUtils\Excel();
         $excel->outputExcel($modelName);
     }
 
@@ -85,11 +85,7 @@ class ExcelController extends BaseAdminController{
         }
 
     }
-    public function addStudent($data){
-        dump($data);
-        $model=D('Student');
-        $model->add_Student($data);
-    }
+
 
 
 

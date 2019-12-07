@@ -18,7 +18,7 @@
                             <td><a href="<?php echo U('Course/editCourseById');?>/id/<?php echo ($courseInfo['cid']); ?>"><?php echo ($courseInfo['cname']); ?> </a></td>
 
                             <th width="120">当前班级:</th>
-                            <td> <a href="<?php echo U('Student/showClassToStudent');?>/classId/<?php echo ($classInfo['id']); ?> "><?php echo ($classInfo['class_name']); ?></a>   </td>
+                            <td> <a href="<?php echo U('Class/showClassToStudent');?>/classId/<?php echo ($classInfo['id']); ?> "><?php echo ($classInfo['class_name']); ?></a>   </td>
                         </tr>
 
                     </table>

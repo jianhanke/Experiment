@@ -1,24 +1,28 @@
 <?php 
 
-
-namespace Admin\Controller\Entity;
+namespace MyUtils\DockerUtils;
 
 class Docker{
 
+	private $basPath=null;
+
+	public function __construct(){
+		$this->basPath=dirname(dirname(__FILE__)).'/ControllerDocker/';
+	}
 	
 	public function pullImageByName($imageName){
-		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/pullImageByName.py'; 
+		$docker_path=$this->basPath.'pullImageByName.py'; 
 		return exec("/usr/bin/python $docker_path $imageName"); 
 	}
 
 	public function getContainerStatus($container_id){
-		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/getContainerStatus.py'; 
+		$docker_path=$this->basPath.'getContainerStatus.py'; 
 		return exec("/usr/bin/python $docker_path $container_id"); 
 	}
 
 	public function showAllContainer(){
 
-		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/showAllContainerStatus.py'; 
+		$docker_path=$this->basPath.'showAllContainerStatus.py'; 
 		return exec("/usr/bin/python $docker_path"); 
 	}
 
@@ -26,7 +30,7 @@ class Docker{
 
 		
 	
-		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/restartContainerById.py'; 
+		$docker_path=$this->basPath.'restartContainerById.py'; 
 		exec("/usr/bin/python $docker_path $container_id"); 
 		
 	}
@@ -34,14 +38,14 @@ class Docker{
 	public function startContainerById($container_id){  //启动容器
 		
 		
-		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/startContainerById.py'; 
+		$docker_path=$this->basPath.'startContainerById.py'; 
 		exec("/usr/bin/python $docker_path $container_id"); 
 		
 	}
 
 	public function shutdownContainerById($container_id){   //关机
 			
-		$docker_path=dirname(dirname(__FILE__)).'/ControllerDocker/stopContainerById.py'; 
+		$docker_path=$this->basPath.'stopContainerById.py'; 
 		exec("/usr/bin/python $docker_path $container_id"); 
 	}
 

@@ -1,9 +1,9 @@
 <?php 
 
 namespace Admin\Controller;
-BaseAdminController
+use Common\Controller\BaseAdminController;
 
-class DepartmentController extends MyController{
+class DepartmentController extends BaseAdminController{
 
 	public function showAllDepartmentInfo(){
 
