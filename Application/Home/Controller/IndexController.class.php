@@ -23,20 +23,18 @@ class IndexController extends BaseHomeController{
 	}
 
 	public function showCourse(){
-		$model=D('Course');
-		$info=$model->show_All_Course();
-		// dump($info);
+		
+		$info=D('Course')->show_All_Course();
 		$this->assign('datas',$info);
 		$this->display();
 
 	}	
 
 	public function showExperiment(){
-		// $model=new \Home\Model\ExperimentModel();
-		$model=D('Experiment');
-		$info=$model->show_Experiment();
+		
+		$info=D('Experiment')->show_Experiment();
 		$user_id=session('user_id');
-		$all_Id=$model->get_All_Id();
+		
 		$arr=array();
 		for($i=0;$i<count($info);$i++){
 			// array_push($arr,$info[$i]['eid']);
@@ -65,11 +63,9 @@ class IndexController extends BaseHomeController{
 	}
 
 	public function showMyExperiment(){
-		$model=new \Home\Model\Student_experimentModel();
-
 		$user_id=session('user_id');
 
-		$info=$model->show_My_Experiment($user_id);
+		$info=D('StudentExperiment')->show_My_Experiment($user_id);
 		// echo $model-> _sql();
 		$this->assign('datas',$info);
 		$this->display();
@@ -77,17 +73,15 @@ class IndexController extends BaseHomeController{
 
 	public function showStudentInfoById(){
 		$user_id=session('user_id');
-		$model=D('Student');
-		$info=$model->show_Student_Info_By_Id($user_id);
+		
+		$info=D('Student')->show_Student_Info_By_Id($user_id);
 		$this->assign('datas',$info);
 		$this->display('showStudentInfo');
 	}
 
-	public function serachKeyWord(){
+	public function serachKeyWord($keyword){
 
-		$keyword=I('get.keyword');
-		$model=D('Experiment');
-		$info=$model->serach_Key_Wordl($keyword);
+		$info=D('Experiment')->serach_Key_Wordl($keyword);
 		$this->assign('datas',$info);
 		$this->display('showExperiment');
 
@@ -96,11 +90,8 @@ class IndexController extends BaseHomeController{
 	public function showMyCourse(){
 		$studentId=Session('user_id');
 
-		$model=D('Student');
-		$classId=$model->find_MyClass_ById($studentId);
-
-		$model2=new \Home\Model\Course_classModel();
-		$datas=$model2->find_MyCourse_ById($classId);
+		$classId=D('Student')->find_MyClass_ById($studentId);
+		$datas=D('CourseClass')->find_MyCourse_ById($classId);
 		$this->assign('datas',$datas);
 		$this->display();
 	}
@@ -133,6 +124,23 @@ class IndexController extends BaseHomeController{
 		echo "ceshi";
 		$ips=(new \MyUtils\DockerUtils\DockerApi())->getNewIp();
 
+	}
+
+	public function test02(){
+		$datas=D('ExperimentImage')->getDataById(13);
+		dump($datas);
+	}
+
+	public function test03(){
+		$data=array('Container_id'=>1,
+						'student_id'=>1,
+						'ip'=>1,
+						'Image_id'=>1,
+						'to_experiment'=>1,
+						'ip_num'=>1);
+			
+			$status=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
+			dump($status);
 	}
 
 

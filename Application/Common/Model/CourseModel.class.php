@@ -46,4 +46,9 @@ class CourseModel extends Model{
 		return $this->add($post);
 	}
 
+	public function show_All_Course(){
+
+		return $this->select();
+	}
+
 }

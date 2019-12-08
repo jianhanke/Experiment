@@ -28,5 +28,15 @@ class ChapterImageModel extends Model{
 		return $this->where("Cid=$chapterId")
 					->delete();
 	}
+
+	public function findImageNameById($image_id){
+		return $this->where("Cid=$image_id")
+					->field('to_imageName')
+		 			 ->find()['to_imagename'];
+	}
+
+	public function find_Image_By_id($id){
+		return $this->find($id)['to_imageid'];
+	}
 	
 }

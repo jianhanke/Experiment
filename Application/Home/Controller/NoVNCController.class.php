@@ -13,25 +13,15 @@ class NoVNCController extends BaseHomeController{
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
 		
-		$model=new \Home\Model\Docker_containerModel();
-		$model2=D('Chapter');
-		$model3=new \Home\Model\View_coursetochapterModel();
-
-		$info=$model->find_Container_By_Ip($ip_num);
+		$info=D('DockerContainer')->find_Container_By_Ip($ip_num);
 		$id=$info['id'];
 		$myNote=$info['note'];
 		$chapterId=$info['to_chapter'];
 		$ip=$info['ip'];
 		$myNote=htmlspecialchars_decode(html_entity_decode($myNote));  //将html 解码
 		
-		$chapterInfo=$model2->find_ChapterInfo_ById($chapterId);
-		// if($chapterInfochapterInfo['doc']==Null){
-		// 	$chapterInfo['doc']='2.htm';
-		// }
-		// $chapterPath=$model3->find_Chapter_Course($chapterId);
-		// dump($chapterInfo);
-		// $basePath=$chapterPath['cname'].'/'.$chapterPath['name'];
-		// dump($basePath);
+		$chapterInfo=D('Chapter')->find_ChapterInfo_ById($chapterId);
+
 
 		$videoPath=$chapterInfo['video'];
 		$docPath=$chapterInfo['doc'];
@@ -62,11 +52,7 @@ class NoVNCController extends BaseHomeController{
 	public function saveNote(){
 		$myNote=I('post.myNote');
 		$id=I('post.id');
-		// dump($myNote);
-		// dump($id);
-
-		$model=new \Home\Model\Docker_containerModel();
-		$model->save_Note($id,$myNote);
+		D('DockerContainer')->save_Note($id,$myNote);
 	}
 
 	public function showViewOnly($ip_num){

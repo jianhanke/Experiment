@@ -11,4 +11,12 @@ class ChapterReportModel extends Model{
 					->find($id)['upload_path'];
 	}
 
+	public function add_Info($info){
+		return $this->add($info);
+	}
+
+	public function save_Info($info){
+		return $this->save($info);
+	}
+
 }

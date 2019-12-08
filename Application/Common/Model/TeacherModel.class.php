@@ -23,7 +23,7 @@ class TeacherModel extends Model{
 
 		return $this->select();
 	}
-
+	
 
 
 }

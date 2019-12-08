@@ -21,5 +21,17 @@ class StudentModel extends Model{
 		return $this->where("$search like '%$keywords%'")->select();
 	}
 
+	public function check_Login($post){
+	   
+            return $this-> where($post)->find();
+       
+	}
+	public function show_Student_Info_By_Id($Sid){
+		return $this->find($Sid);
+	}
+
+	public function find_MyClass_ById($studentId){
+		return $this->find($studentId)['class_id'];
+	}
 
 }
