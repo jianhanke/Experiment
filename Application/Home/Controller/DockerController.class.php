@@ -14,12 +14,12 @@ class DockerController extends BaseHomeController{
 
 	public function _initialize(){
 
-		$SdkOrApi=new \Admin\Controller\Entity\SdkOrApi();
+		// $SdkOrApi=new \MyUtils\DockerUtils\SdkOrApi();
 		// $manner=$SdkOrApi->getControllerManner();
 		// if($manner=='PythonSdk'){
 		// 	$this->docker=new \Home\Controller\Entity\DockerSdk();
 		// }else{
-			$this->docker=new \Home\Controller\Entity\DockerApi();
+			$this->docker=new \MyUtils\DockerUtils\DockerApi();
 		// }
 	}
 
@@ -54,7 +54,7 @@ class DockerController extends BaseHomeController{
 							
 			$image_ids=$model->find_ImageId_By_experimentId($experimentId);
 
-			$noVNC=new \Home\Controller\Entity\Host();
+			$noVNC=new \MyUtils\HostUtils\Host();
 			$hostName=$noVNC->getHostName();
 
 			$arr_Url=array();
@@ -79,7 +79,7 @@ class DockerController extends BaseHomeController{
 			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
 
 
-			$noVNC=new \Home\Controller\Entity\Host();
+			$noVNC=new \MyUtils\HostUtils\Host();
 			$hostName=$noVNC->getHostName();
 
 			$first_containerId=Null;
@@ -129,9 +129,9 @@ class DockerController extends BaseHomeController{
 			
 			$isDesktop=$model4->is_Desktop_ById($experimentId);
 			if($isDesktop){
-				\Home\Controller\Entity\NoVNC::JumpUrlByIp($containerInfo['ip_num']);
+				 \MyUtils\DockerUtils\NoVNC::JumpUrlByIp($containerInfo['ip_num']);
 			}
-				\Home\Controller\Entity\Ssh::jumpSshUrlByIP($containerInfo['ip']);
+				\MyUtils\DockerUtils\Ssh::jumpSshUrlByIP($containerInfo['ip']);
 
 			
 		}else{   //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id    
@@ -153,9 +153,9 @@ class DockerController extends BaseHomeController{
 
 			$isDesktop=$model4->is_Desktop_ById($experimentId);
 			if($isDesktop){
-				\Home\Controller\Entity\NoVNC::JumpUrlByIp($info[2]);
+				 \MyUtils\DockerUtils\NoVNC::JumpUrlByIp($info[2]);
 			}
-				\Home\Controller\Entity\Ssh::jumpSshUrlByIP($info[1]);
+			       \MyUtils\DockerUtils\Ssh::jumpSshUrlByIP($info[1]);
 		}
 	}
 
@@ -166,7 +166,7 @@ class DockerController extends BaseHomeController{
 	 */
 	public function runContainerById($image_id,$hostName=Null,$link_Container=Null){
 		
-		// $docker=new \Home\Controller\Entity\Docker();
+		
 		$ips=$this->docker->getNewIp();
 		
 		$ip=$ips['ip'];

@@ -8,7 +8,7 @@ class NoVNCController extends BaseHomeController{
 
 	public function showNoVNC($ip_num){
 		// dump($ip_num);
-		$noVNC=new \Home\Controller\Entity\Host();
+		$noVNC=new \MyUtils\DockerUtils\Host();
 		$hostName=$noVNC->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
@@ -41,10 +41,10 @@ class NoVNCController extends BaseHomeController{
 		$showShareOperate=U("Home/NoVNC/showShareOperate/ip_num/$ip_num");
 		$showShareOperate=$hostName.$showShareOperate;
 
-		$ssh=new \Home\Controller\Entity\Ssh();
+		$ssh=new \MyUtils\DockerUtils\Ssh();
 		$sshUrl=$ssh->getSshUrl($ip);
 
-		$noVNC=new \Home\Controller\Entity\NoVNC();
+		$noVNC=new \MyUtils\DockerUtils\NoVNC();
 		$ceshiUrl=$noVNC->getUrlById($ip_num);
 
 		$this->assign('ceshiUrl',$ceshiUrl);
@@ -72,7 +72,7 @@ class NoVNCController extends BaseHomeController{
 	}
 
 	public function showViewOnly($ip_num){
-		$noVNC=new \Home\Controller\Entity\Host();
+		$noVNC=new \MyUtils\DockerUtils\Host();
 		$hostName=$noVNC->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
@@ -81,7 +81,7 @@ class NoVNCController extends BaseHomeController{
 	}
 
 	public function showShareOperate($ip_num){
-		$noVNC=new \Home\Controller\Entity\Host();
+		$noVNC=new \MyUtils\DockerUtils\Host();
 		$hostName=$noVNC->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;

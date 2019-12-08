@@ -105,5 +105,33 @@ class IndexController extends BaseHomeController{
 		$this->display();
 	}
 
+	public function test01(){
+		$upload=new \MyUtils\FileUtils\UploadFile();
+		$excel=new \MyUtils\FileUtils\Excel();
+		dump($upload);
+
+		dump($excel);
+
+		$upload=new \MyUtils\DockerUtils\NoVNC();
+		dump($upload);
+
+		$upload=new \MyUtils\DockerUtils\SdkOrApi();
+		dump($upload);
+
+
+		$upload=new \MyUtils\DockerUtils\Docker();
+		dump($upload);
+
+		$upload=new \MyUtils\DockerUtils\Ssh();
+		dump($upload);
+
+		echo \MyUtils\HostUtils\Host::getHostName();
+
+		// $noVNC=new \MyUtils\HostUtils\Host();
+		$hostName=new \MyUtils\HostUtils\Host() -> getHostName();
+		echo $hostName;
+
+	}
+
 
 }

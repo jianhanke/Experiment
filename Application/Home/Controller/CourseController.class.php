@@ -34,7 +34,7 @@ class CourseController extends BaseHomeController{
 
 		if($info){    //已经加入找到对应容器进入即可，
 			$container_id=$model3->find_ContainerId_By_ImageId($user_id,$image_id,$chapter_id);
-			$docker=new \Home\Controller\Entity\DockerApi();
+			$docker=new \MyUtils\DockerUtils\DockerApi();
 
 			$docker->startContainerById($container_id);
 			$ip_num=$model3->find_Ip_By_Chapter($user_id,$image_id,$chapter_id);
@@ -69,7 +69,7 @@ class CourseController extends BaseHomeController{
 
 	public function runContainerById($image_id){
 		
-		$docker=new \Home\Controller\Entity\DockerApi();
+		$docker=new \MyUtils\DockerUtils\DockerApi();
 		$ips=$docker->getNewIp();
 		// dump($ips);
 		$ip=$ips['ip'];
@@ -110,7 +110,7 @@ class CourseController extends BaseHomeController{
 			$course_name=$info['cname'];
 			$savepath=$course_name.'/'.$chapter_name."/";
 
-			$uploadFile=new \Home\Controller\Entity\UploadFile();
+			$uploadFile=new \MyUtils\FileUtils\UploadFile();
 			$res=$uploadFile->uploadReport($savepath,$new_name);
 			
 			if(!$res['status']) {// 上传错误提示错误信息
@@ -156,8 +156,11 @@ class CourseController extends BaseHomeController{
 			 	$Http = new \Org\Net\Http();
 		      	$Http::download($filePath, $showname);	
 			 }catch(\Exception $e){
-			 	echo "<script> alert('下载出错');  </script>";
-			 	echo "<script>  javascript :history.back(-1); </script> ";
+			 	echo $filePath;
+			echo "<br />";
+			echo $showname;
+			 	// echo "<script> alert('下载出错');  </script>";
+			 	// echo "<script>  javascript :history.back(-1); </script> ";
 		    		exit();
 			 }
 		}

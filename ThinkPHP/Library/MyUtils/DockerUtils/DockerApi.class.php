@@ -7,7 +7,7 @@ class DockerApi{
    public $hostAndPort=null;
 
 	public function __construct(){
-		$hostName =  \Home\Controller\Entity\Host::getHostName();
+		$hostName =  \MyUtils\HostUtils\Host::getHostName();
 		$this->hostAndPort="http://$hostName:2375";
 	}
 
