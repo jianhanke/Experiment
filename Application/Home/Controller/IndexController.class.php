@@ -128,8 +128,10 @@ class IndexController extends BaseHomeController{
 		echo \MyUtils\HostUtils\Host::getHostName();
 
 		// $noVNC=new \MyUtils\HostUtils\Host();
-		$hostName=new \MyUtils\HostUtils\Host() -> getHostName();
-		echo $hostName;
+
+
+		echo "ceshi";
+		$ips=(new \MyUtils\DockerUtils\DockerApi())->getNewIp();
 
 	}
 

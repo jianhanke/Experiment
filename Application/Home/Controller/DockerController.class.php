@@ -54,8 +54,7 @@ class DockerController extends BaseHomeController{
 							
 			$image_ids=$model->find_ImageId_By_experimentId($experimentId);
 
-			$noVNC=new \MyUtils\HostUtils\Host();
-			$hostName=$noVNC->getHostName();
+			$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
 			$arr_Url=array();
 			for($i=0;$i<count($image_ids);$i++){
@@ -79,8 +78,7 @@ class DockerController extends BaseHomeController{
 			$model2->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
 
 
-			$noVNC=new \MyUtils\HostUtils\Host();
-			$hostName=$noVNC->getHostName();
+			$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
 			$first_containerId=Null;
 			$arr_Url=array();
