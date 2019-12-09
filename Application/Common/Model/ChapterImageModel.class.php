@@ -36,7 +36,9 @@ class ChapterImageModel extends Model{
 	}
 
 	public function find_Image_By_id($id){
-		return $this->find($id)['to_imageid'];
+
+		return $this->where("Cid=$id")
+					->find()['to_imageid'];
 	}
 	
 }

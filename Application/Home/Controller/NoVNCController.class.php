@@ -9,7 +9,7 @@ class NoVNCController extends BaseHomeController{
 	public function showNoVNC($ip_num){
 		// dump($ip_num);
 		
-		$hostName=(new \MyUtils\DockerUtils\Host())->getHostName();
+		$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
 		
@@ -57,7 +57,7 @@ class NoVNCController extends BaseHomeController{
 
 	public function showViewOnly($ip_num){
 		
-		$hostName=(new \MyUtils\DockerUtils\Host())->getHostName();
+		$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
 		$this->assign('url',$url);
@@ -66,7 +66,7 @@ class NoVNCController extends BaseHomeController{
 
 	public function showShareOperate($ip_num){
 		
-		$hostName=(new \MyUtils\DockerUtils\Host())->getHostName();
+		$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
 		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
 		$this->assign('url',$url);

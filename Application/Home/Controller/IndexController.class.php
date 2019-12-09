@@ -14,9 +14,6 @@ class IndexController extends BaseHomeController{
 	}
 	
 
-	public function test034(){
-			
-	}
 
 	public function login(){
 		$this->display('Login/login');
@@ -37,7 +34,7 @@ class IndexController extends BaseHomeController{
 		
 		$arr=array();
 		for($i=0;$i<count($info);$i++){
-			// array_push($arr,$info[$i]['eid']);
+			
 			$experiment_id=$info[$i]['eid'];
 			$is_Join=$this->isJoinExperimentById($user_id,$experiment_id);
 			$info[$i]['is_Join']=$is_Join;
@@ -49,6 +46,7 @@ class IndexController extends BaseHomeController{
 	public function isJoinExperimentById($user_id,$experiment_id){
 		$model=new \Home\Model\Student_experimentModel();
 		return $model->if_Join_Experiment($user_id,$experiment_id);
+	       // return  D("StudentExperiment")->if_Join_Experiment($user_id,$experimentId);
 	}
 	
 	public function showCousrse(){
@@ -66,6 +64,7 @@ class IndexController extends BaseHomeController{
 		$user_id=session('user_id');
 
 		$info=D('StudentExperiment')->show_My_Experiment($user_id);
+		// $info=D('ViewStuContainerExperiment','Logic')->show_My_Experiment($user_id);
 		// echo $model-> _sql();
 		$this->assign('datas',$info);
 		$this->display();
@@ -88,12 +87,30 @@ class IndexController extends BaseHomeController{
 	}
 
 	public function showMyCourse(){
-		$studentId=Session('user_id');
 
+		$studentId=Session('user_id');
 		$classId=D('Student')->find_MyClass_ById($studentId);
-		$datas=D('CourseClass')->find_MyCourse_ById($classId);
+		if($classId){
+			$datas=D('CourseClass')->find_MyCourse_ById($classId);	
+		}else{
+			echo "<script> alert('当前为空');  </script>";
+		}
 		$this->assign('datas',$datas);
 		$this->display();
+	}
+
+	public function test05(){
+		$info1=D('ViewStuContainerExperiment','Logic')->show_My_Experiment(1);
+		$info2=D('StudentExperiment')->show_My_Experiment(1);
+		echo  D("StudentExperiment")->if_Join_Experiment(1,1);
+		echo "<br />";
+		echo D('ViewStuContainerExperiment','Logic')->if_Join_Experiment(1,1);
+		// dump($info1);
+		// dump($info2);
+	}
+
+	public function test06(){
+		$status=D('StuContainerExperiment')->student_Join_Experiment(1,1,1);
 	}
 
 	public function test01(){
@@ -143,5 +160,10 @@ class IndexController extends BaseHomeController{
 			dump($status);
 	}
 
+	public function test04(){
+		$model=D('ViewStuContainerChapter','Logic');
+		$model->test01();
+		D('StuContainerExperiment')->test01();
+	}
 
 }

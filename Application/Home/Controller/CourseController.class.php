@@ -8,15 +8,14 @@ class CourseController extends BaseHomeController{
 
 	public  function showCourseById($id){
 
+		
 		$info=D('Chapter')->show_MyChapterInfo_ById($id,Session('user_id'));
 
 		$this->assign('datas',$info);
 		$this->display();
 	}
 
-	public function joinChapterById(){
-
-		$chapter_id=I('get.id');
+	public function joinChapterById($chapter_id){
 		$user_id=session('user_id');
 		
 		$image_id=D('ChapterImage')->find_Image_By_id($chapter_id);
@@ -47,10 +46,7 @@ class CourseController extends BaseHomeController{
 
 			D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
 			$ip_num=$info[2];
-			// dump($image_id);
-			// dump($info);
-			// dump('ipnum'.$ip_num);
-			// echo "<script> top.location.href='http://localhost:6080/vnc.html?path=/websockify?token=host$ip_num' </script> ";
+			
 			$NoVNC=A('NoVNC');
 			$NoVNC->showNoVNC($ip_num);
 			exit();
@@ -61,7 +57,8 @@ class CourseController extends BaseHomeController{
 	public function runContainerById($image_id){
 		
 		
-		$ips=(new \MyUtils\DockerUtils\DockerApi())->getNewIp();
+		$docker=new \MyUtils\DockerUtils\DockerApi();
+		$ips=$docker->getNewIp();
 		// dump($ips);
 		$ip=$ips['ip'];
 		

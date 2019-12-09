@@ -43,6 +43,7 @@ class DockerController extends BaseHomeController{
 		$user_id=session('user_id');
 	    
 		$is_exist=D('StudentExperiment')->if_Join_Experiment($user_id,$experimentId); 
+		// $is_exist=D('StuContainerExperiment')->if_Join_Experiment($user_id,$experimentId);
 		
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
@@ -66,8 +67,6 @@ class DockerController extends BaseHomeController{
 			$datas=D('ExperimentImage')->getDataById($experimentId);
 
 			D('StudentExperiment')->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
-
-
 			$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
 			$first_containerId=Null;
@@ -98,15 +97,15 @@ class DockerController extends BaseHomeController{
 	public function joinExperiment($experimentId){
 		
 		$user_id=session('user_id');
-
-	    
 		$is_exist=D('StudentExperiment')->if_Join_Experiment($user_id,$experimentId);  //判断是否已经加入课程
+		// $is_exist=D('StuContainerExperiment')->if_Join_Experiment($user_id,$experimentId);
 		
+
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 			
 			$containerInfo=D('DockerContainer')->find_Container_Info(array('student_id'=>$user_id,'to_experiment'=>$experimentId));
 			$this->docker->startContainerById($containerInfo['container_id']);
-			
+			dump($containerInfo);
 			
 			$isDesktop=D('Experiment')->is_Desktop_ById($experimentId);
 			if($isDesktop){
@@ -130,7 +129,6 @@ class DockerController extends BaseHomeController{
 						'ip_num'=>$info[2]);
 
 			$status=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
-			dump($status);
 
 			$isDesktop=D('Experiment')->is_Desktop_ById($experimentId);
 			if($isDesktop){

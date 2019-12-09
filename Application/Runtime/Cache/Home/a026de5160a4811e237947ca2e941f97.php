@@ -45,7 +45,7 @@
             
             <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div  class="con<?php echo ($key); ?>"  style="height: 70%;width: 100%;" >
             <b> 进入</b> <br /> 
-		<a href="<?php echo U('Course/joinChapterById');?>/id/<?php echo ($data['id']); ?>" target="block">
+		<a href="<?php echo U('Course/joinChapterById');?>/chapter_id/<?php echo ($data['id']); ?>" target="block">
 
 			 &#9733<?php echo ($data['name']); ?> 
 			  </a>
