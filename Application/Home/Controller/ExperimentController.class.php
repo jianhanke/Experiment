@@ -3,7 +3,7 @@
 namespace Home\Controller;
 use \Common\Controller\BaseHomeController;
 
-class DockerController extends BaseHomeController{
+class ExperimentController extends BaseHomeController{
 
 	/*
 		如果学生已经加入课程，直接启动所在容器	
@@ -31,9 +31,9 @@ class DockerController extends BaseHomeController{
 		if($info==0){
 			$this->error('该实验没有镜像');
 		}else if($info>1){
-			$this->redirect("Home/Docker/joinMoreExperiment/experimentId/$experimentId");
+			$this->redirect("Home/Experiment/joinMoreExperiment/experimentId/$experimentId");
 		}
-			$this->redirect("Home/Docker/joinExperiment/experimentId/$experimentId");	
+			$this->redirect("Home/Experiment/joinExperiment/experimentId/$experimentId");	
 		
 	}
 

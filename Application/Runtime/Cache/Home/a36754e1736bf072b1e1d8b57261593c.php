@@ -48,7 +48,7 @@
 			<p>  <?php echo ($data['ename']); ?> </p>  
 			<div class="joinExperiment">
 
-				<a href="<?php echo U('Docker/judgeExperimentType');?>/experimentId/<?php echo ($data['eid']); ?>" target="block"   > 
+				<a href="<?php echo U('Experiment/judgeExperimentType');?>/experimentId/<?php echo ($data['eid']); ?>" target="block"   > 
 
 				 <?php echo ($data['is_Join']===true ? '进入主机' : '加入'); ?>      </a> 
 			</div>
