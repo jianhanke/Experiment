@@ -53,8 +53,9 @@ class DockerController extends BaseAdminController{
 	 */
 	
 	public function handleContainer(){ 
-		    
-		$containers=D('DockerContainer')->show_All_Container();   //MySql中所有容器信息
+		
+		$model=D('DockerContainer');
+		$containers=$model->show_All_Container();   //MySql中所有容器信息
 		$all_status=$this->docker->showAllContainer();
 
 		for($i=0;$i<count($containers);$i++){

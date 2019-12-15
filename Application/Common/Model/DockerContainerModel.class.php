@@ -10,6 +10,11 @@ class DockerContainerModel extends Model{
 		return $this->select();
 		
 	}
+
+	public function count_Num(){
+		return $this->count();
+	}
+	
 	public function findContainerById($id){
 		return $this->find($id);
 	}
