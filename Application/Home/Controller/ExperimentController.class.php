@@ -56,8 +56,8 @@ class ExperimentController extends BaseHomeController{
 				
 				$data=D('DockerContainer')->findDataById($user_id,$image_ids[$i]);
 				$this->docker->startContainerById($data['container_id']);
-				$url='ws://'.$hostName.':6080/websockify?token=host'.$data['ip_num'];
-				$arr_Url[$i]=$url;
+				dump("ceshi");
+				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($data['ip_num']);
 			}
 			$this->assign('datas',$arr_Url);
 			$this->display('NoVNC/joinMoreExperiment');
@@ -84,7 +84,7 @@ class ExperimentController extends BaseHomeController{
 						'to_experiment'=>$experimentId,
 						'ip_num'=>$info[2]);
 				D('DockerContainer')->addData($data);
-				$arr_Url[$i]=$url='ws://'.$hostName.':6080/websockify?token=host'.$info[2];
+				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($info[2]);
 			}
 			$this->assign('datas',$arr_Url);
 			$this->display('NoVNC/joinMoreExperiment');
