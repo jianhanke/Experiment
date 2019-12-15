@@ -27,7 +27,7 @@ class DepartmentController extends BaseAdminController{
 		if(IS_POST){
 			
 			$post=I('post.');
-			$status=D('Department')->save_DepartmentInfo_ById($post);
+			$status=D('Department')->editData($post);
 			if($status){
 				$this->success('修改成功');
 			}else{

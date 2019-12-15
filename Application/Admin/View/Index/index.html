@@ -5,6 +5,19 @@
     <title>实验平台管理</title>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/main.css"/>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $("#myFold ul li").next("ul").hide();
+            $("#myFold ul li").click(function()
+        {
+            $(this).next("ul").toggle();
+            });
+            });
+        </script> 
+
+
 </head>
 <body>
 <div class="topbar-wrap white">
@@ -28,10 +41,10 @@
         <div class="sidebar-title">
             <h1>菜单</h1>
         </div>
-        <div class="sidebar-content">
+        <div class="sidebar-content" id="myFold" >
             <ul class="sidebar-list">
                 <li>
-                    <a href="#"><i class="iconfont">&#xe641;</i>Docker管理</a>
+                    <li><a href="#"><i class="iconfont">&#xe641;</i>Docker管理</a> </li> 
                     <ul class="sub-menu">
                         <li><a href="{:U("Docker/handleContainer")}" target="iframe"  ><i class="iconfont">&#xe602;</i>容器管理</a></li>
                         <li><a href="{:U("Docker/showAllContainer")}" target="iframe"  ><i class="iconfont">&#xe602;</i>宿主机容器</a></li>
@@ -43,7 +56,7 @@
                 </li>
 
                 <li>
-                    <a href="#"><i class="iconfont">&#xe603;</i>学生管理</a>
+                   <li>  <a href="#"><i class="iconfont">&#xe603;</i>学生管理</a> </li>
                     <ul class="sub-menu">
                         <li><a href="{:U('Student/showStudent')}" target="iframe" ><i class="iconfont">&#xe61c;</i>学生信息</a></li>
                         <!-- <li><a href="#"><i class="iconfont">&#xe678;</i>实验管理</a></li> -->
@@ -51,7 +64,8 @@
                 </li>
 
                  <li>
-                    <a href="#"><i class="iconfont">&#xe603;</i>院系班级</a>
+
+                   <li>  <a href="#"><i class="iconfont">&#xe603;</i>院系班级</a>  </li>
                     <ul class="sub-menu">
 
                         <!-- <li><a href="{:U('Class/showAllClassInfo')}" target="iframe" ><i class="iconfont">&#xe61c;</i>学生信息</a></li> -->
@@ -65,7 +79,7 @@
 
 
                 <li>
-                    <a href="#"><i class="iconfont">&#xe603;</i>教师管理</a>
+                     <li> <a href="#"><i class="iconfont">&#xe603;</i>教师管理</a>  </li>
                     <ul class="sub-menu">
                         <li><a href="{:U('Teacher/showTeacher')}" target="iframe" ><i class="iconfont">&#xe61c;</i>教师信息</a></li>
                         <!-- <li><a href="#"><i class="iconfont">&#xe678;</i>实验管理</a></li> -->
@@ -73,7 +87,7 @@
                 </li>
 
                 <li>
-					<a href="#"><i class="iconfont">&#xe603;</i>主机管理</a>
+				 <li>	<a href="#"><i class="iconfont">&#xe603;</i>主机管理</a> </li>
                     <ul class="sub-menu">
                         <li><a href="{:U('Experiment/showExperiment')}" target="iframe" ><i class="iconfont">&#xe61c;</i>主机信息</a></li>
                         <li><a href="{:U('Experiment/showExperimentContainer')}" target="iframe" ><i class="iconfont">&#xe660;</i>主机容器</a></li>
@@ -83,14 +97,14 @@
                 </li>
 
                 <li>
-                    <a href="#"><i class="iconfont">&#xe603;</i>Excel</a>
+                    <li> <a href="#"><i class="iconfont">&#xe603;</i>Excel</a> </li>
                     <ul class="sub-menu">
                         <li><a href="{:U('Excel/showExcel')}" target="iframe" ><i class="iconfont">&#xe61c;</i>Excel管理</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="#"><i class="iconfont">&#xe603;</i>课程管理</a>
+                    <li> <a href="#"><i class="iconfont">&#xe603;</i>课程管理</a> </li>
                     <ul class="sub-menu">
                         <li><a href="{:U('Course/showCourse')}" target="iframe" ><i class="iconfont">&#xe61c;</i>
                         所有课程</a></li>

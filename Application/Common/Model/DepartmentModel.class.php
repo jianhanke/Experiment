@@ -15,6 +15,10 @@ class DepartmentModel extends Model{
 					->select();
 	}
 
+	public function editData($post){
+		return $this->save($post);
+	}
+
 
 	public function save_ExperimentInfo_ById($info){
 
@@ -32,6 +36,8 @@ class DepartmentModel extends Model{
 	public function show_DepartmentInfo_ById($id){
 		return $this->find($id);
 	}
+
+
 
 
 }
