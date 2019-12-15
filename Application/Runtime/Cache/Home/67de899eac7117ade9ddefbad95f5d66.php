@@ -163,10 +163,10 @@ a{
   console.log("jianhanke!");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
-   var rfb = new RFB(document.getElementById('screen'),url,{ credentials: { password: '123456' },reconnect:true,reconnect_delay:10000,autoconnect:true }  );
+   var rfb = new RFB(document.getElementById('screen'),url,{ credentials: { password: '123456' } }  );
    rfb.reconnect=true;
    rfb.autoconnect=true;
-   rfb.reconnect_delay=10000;
+   rfb.reconnect_delay=500;
   rfb.connect(); 
 </script>
 <script type="text/javascript">
