@@ -6,17 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
     <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
     <script type="text/javascript" src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function()
-        {
-            $("#test01 ul li").next("ul").hide();
-            $("#test01 ul li").click(function()
-        {
-            $(this).next("ul").toggle();
-            });
-            });
-        </script> 
-
+    <script type="text/javascript" src="/Experiment/Public/Home/js/myJs.js"></script>
 
 </head>
 <body>
@@ -41,7 +31,7 @@
         <div class="sidebar-title">
             <h1>菜单</h1>
         </div>
-        <div class="sidebar-content" id="test01" >
+        <div class="sidebar-content" id="myFold" >
             <ul class="sidebar-list">
                 <li>
                     <li><a href="#"><i class="iconfont">&#xe641;</i>Docker管理</a> </li> 
