@@ -9,8 +9,7 @@ class LoginController extends Controller{
 
 		if(IS_POST){
 			$post=I('post.');
-			$model=D('Admin');
-			$info=$model->check_Login($post);
+			$info=D('Admin')->check_Login($post);
 			if(!empty($info)){
 				session('admin_id',$info['aid']);
 	            session('admin_name',$info['aname']);

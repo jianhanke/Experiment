@@ -27,10 +27,8 @@ class DockerController extends BaseAdminController{
 		// exec("/usr/bin/python $docker_path $container_id");
 
 		//删除数据库中的容器和课程记录
-		$model=new \Admin\Model\Docker_containerModel(); 
-		$model2=new \Admin\Model\Student_experimentModel();
-		$model->delete_Container_By_Id($container_id);
-		$model2->delete_Experiment_By_Id($user_id,$eid);
+		D('DockerContainer')->delete_Container_By_Id($container_id);
+		D('StudentExperiment')->delete_Experiment_By_Id($user_id,$eid);
 		$this->redirect('Experiment/showExperimentContainer');
 	}
 
@@ -54,9 +52,9 @@ class DockerController extends BaseAdminController{
 	 *   开关机 容器
 	 */
 	
-	public function handleContainer(){     
-		$model=new \Admin\Model\Docker_containerModel();
-		$containers=$model->show_All_Container();   //MySql中所有容器信息
+	public function handleContainer(){ 
+		    
+		$containers=D('DockerContainer')->show_All_Container();   //MySql中所有容器信息
 		$all_status=$this->docker->showAllContainer();
 
 		for($i=0;$i<count($containers);$i++){
@@ -158,7 +156,8 @@ class DockerController extends BaseAdminController{
 	 */
 
 	public function findContainerByLike(){   
-		$model=new \Admin\Model\View_containerwithstuandexperModel();
+		$model=D('ViewContainerStuExperiment','Logic');
+
 		$search=I('post.search-sort');
 		$keywords=I('post.keywords');  // %表示任意长度的， _表示任意一个
 		$info=$model->find_Container_By_Like($search,$keywords);

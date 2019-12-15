@@ -1,6 +1,6 @@
 <?php 
 
-namespace Admin\Model;
+namespace Common\Model;
 use Think\Model;
 
 class AdminModel extends Model{

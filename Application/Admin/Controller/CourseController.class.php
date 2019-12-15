@@ -5,8 +5,8 @@ use Common\Controller\BaseAdminController;
 class CourseController extends BaseAdminController{
 
 	public function showCourse(){
-		$model=D('Course');
-		$info=$model->show_All_Course();
+		
+		$info=D('Course')->show_All_Course();
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -27,8 +27,8 @@ class CourseController extends BaseAdminController{
 			$this->error('添加失败,图片上传错误');
 		}
 			$post['img']=$res['status']['savename'];
-			$model=D('Course');
-			$id=$model->add_Info($post);
+			
+			$id=D('Course')->add_Info($post);
 
 			$courseInfo=array('course_id'=>$id,'teacher_id'=>$post['to_teacher_id']);
 				
@@ -39,31 +39,30 @@ class CourseController extends BaseAdminController{
 				$this->error('添加失败');
 			}
 		}else{
-			$model=D('Teacher');
-			$info=$model->show_Teacher();
+			$info=D('Teacher')->show_Teacher();
 			$this->assign('datas',$info);
 			$this->display();
 		}
 	}
 
 	public function deleteCourseById($id){
-		$model=D('Course');
-		$model->delete_Course_By_Id($id);
+		
+		D('Course')->delete_Course_By_Id($id);
 		$this->redirect('Course/showCourse');
 	}
 	public function showChapterImage(){
-		$model=new \Admin\Model\Chapter_imageModel();
+		
+		$model=D('ChapterImage');
 		$info=$model->show_Image();
 		$count=$model->count_Num();
 		$this->assign('count',$count);
 		$this->assign('datas',$info);
 		$this->display();
 	}
-	public function editCourseById(){
-		$courseId=I('get.id');
-		$model=D('Chapter');
-		$info=$model->find_Chapter_By_Course_Id($courseId);
-		$this->assign('id',$courseId);
+	public function editCourseById($id){
+
+		$info=D('Chapter')->find_Chapter_By_Course_Id($id);
+		$this->assign('id',$id);
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -71,24 +70,22 @@ class CourseController extends BaseAdminController{
 		
 		if(IS_POST){
 			$post=I('post.');
-			$model=D('Chapter');
-			$chapter_id=$model->add_Info($post);
+			
+			$chapter_id=D('Chapter')->add_Info($post);
 
-			$model2=new \Teacher\Model\Chapter_imageModel();
 			$chapterInfo=array('Cid'=>$chapter_id,'to_imageId'=>$post['to_image'],'to_imageName'=>Null);
-			$model2->add_ChapterInfo($chapterInfo);
-
+			D('ChapterImage')->add_ChapterInfo($chapterInfo);
+			
 			$this->uploadVideo($chapter_id);
 			$this->uploadWord($chapter_id);
 			
 			$this->success('添加成功',U("Course/editCourseById",array('id'=>$to_course)));
 		}else{
 			// $to_course=I('get.to_course');
-			$model=D('Course');
-			$courseName=$model->find_Course_Name($to_course);
 			
-			$model2=new \Admin\Model\Make_imageModel();
-			$data=$model2->show_All_Data();
+			$courseName=D('Course')->find_Course_Name($to_course);
+			$data=D('MakeImage')->show_All_Data();
+
 			$this->assign('datas',$data);
 			$this->assign('id',$to_course);
 			$this->assign('courseName',$courseName);
@@ -102,8 +99,9 @@ class CourseController extends BaseAdminController{
 			$chapter_id=I('post.chapter_id');	
 		}	
 	
-		$model=new \Admin\Model\View_coursetochapterModel();
-		$info=$model->find_Chapter_Course($chapter_id);
+		
+		
+		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
@@ -115,8 +113,8 @@ class CourseController extends BaseAdminController{
 		if(!$res['status']) {// 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 		}else{// 上传成功 获取上传文件信息
-		        $model=D('Chapter');
-		        $model->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
+		        
+		        D('Chapter')->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
 				$this->success('上传成功');
 		} 
 	}
@@ -129,8 +127,8 @@ class CourseController extends BaseAdminController{
 			$chapter_id=I('post.chapter_id');	
 		}
 		
-		$model=new \Admin\Model\View_coursetochapterModel();
-		$info=$model->find_Chapter_Course($chapter_id);
+		
+		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
 		$chapter_name=$info['name'];
 		$new_name=$info['id'];
@@ -141,15 +139,14 @@ class CourseController extends BaseAdminController{
 		if(!$res['status']) {// 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 		}else{// 上传成功 获取上传文件信息
-		         $host=new \MyUtils\HostUtils\Host()
+		         $host=new \MyUtils\HostUtils\Host();
 				 $courseRealPath=$host-> getRootRealPath().'/Source/Chapter/';
 
 		         $wordPath=$courseRealPath.$res['status']['savepath'].$res['status']['savename'];
 		         $htmPath=$courseRealPath.$res['status']['savepath'].$new_name.'.htm';
 		         $uploadFile->saveWordToHtm($wordPath,$htmPath);
 		         
-		         $model2=D('Chapter');
-		         $model2->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
+		         D('Chapter')->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
 				$this->success('上传成功');
 		} 
 	}

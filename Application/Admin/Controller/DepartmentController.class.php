@@ -7,17 +7,16 @@ class DepartmentController extends BaseAdminController{
 
 	public function showAllDepartmentInfo(){
 
-		$model=D('Department');
-		$datas=$model->show_AllDepartment_Info();
+		
+		$datas=D('Department')->show_AllDepartment_Info();
 		$this->assign('datas',$datas);
 		$this->display();
 	}
 
 	public function showDepartmentInfoById($id){
 		
-		$model=D('Department');
-		$info=$model->show_DepartmentInfo_ById($id);
-		dump($info);
+		
+		$info=D('Department')->show_DepartmentInfo_ById($id);
 
 		$this->assign('datas',$info);
 		$this->display();
@@ -26,9 +25,9 @@ class DepartmentController extends BaseAdminController{
 	public function modifyDepartmentInfoById($id){
 
 		if(IS_POST){
-			$model=D('Department');
+			
 			$post=I('post.');
-			$status=$model->save_DepartmentInfo_ById($post);
+			$status=D('Department')->save_DepartmentInfo_ById($post);
 			if($status){
 				$this->success('修改成功');
 			}else{
@@ -36,8 +35,7 @@ class DepartmentController extends BaseAdminController{
 			}
 		}else{
 			
-			$model=D('Department');
-			$datas=$model->show_DepartmentInfo_ById($id);
+			$datas=D('Department')->show_DepartmentInfo_ById($id);
 
 			$this->assign('datas',$datas);
 			$this->display();		
@@ -46,8 +44,7 @@ class DepartmentController extends BaseAdminController{
 
 	public function deleteDepartmentById($id){
 
-		$model=D('Department');
-		$status=$model->delete_Department_ById($id);
+		$status=D('Department')->delete_Department_ById($id);
 		if($status){
 			$this->success('删除成功',U('Department/showAllDepartmentInfo'));
 		}else{
@@ -60,8 +57,7 @@ class DepartmentController extends BaseAdminController{
 
 		if(IS_POST){
 			$post=I('post.');
-			$model=D('Department');
-			$status=$model->add_Department_Info($post);
+			$status=D('Department')->add_Department_Info($post);
 
 			if($status){
 				$this->success('添加成功');
@@ -70,8 +66,7 @@ class DepartmentController extends BaseAdminController{
 			}
 			
 		}else{
-			$model2=D('Department');
-			$datas=$model2->show_AllDepartment_Info();
+			$datas=D('Department')->show_AllDepartment_Info();
 			$this->assign('datas',$datas);
 			$this->display();
 		}

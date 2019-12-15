@@ -1,9 +1,9 @@
 <?php 
 
-namespace Admin\Model;
+namespace Common\Logic;
 use Think\Model;
 
-class View_containerwithstuandexperModel extends Model{
+class ViewContainerStuExperimentLogic extends Model{
 
 	public function show_Info(){
 

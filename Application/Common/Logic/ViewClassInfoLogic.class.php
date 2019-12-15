@@ -1,9 +1,9 @@
 <?php 
 
-namespace Admin\Model;
+namespace Common\Logic;
 use Think\Model;
 
-class View_classinfoModel extends Model{
+class ViewClassInfoLogic extends Model{
 
 	public function show_ClassInfo_ById(){
 

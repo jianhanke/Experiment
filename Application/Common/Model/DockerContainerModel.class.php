@@ -13,6 +13,11 @@ class DockerContainerModel extends Model{
 	public function findContainerById($id){
 		return $this->find($id);
 	}
+	public function show_All_Container(){
+
+		return $this->order("id desc")   //降序，和Docker容器保持一致,最新的放在上面
+					->select();
+	}
 
 
 	public function find_ContainerId_By_ImageId($user_id,$image_id,$chapter_id){

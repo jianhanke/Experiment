@@ -16,21 +16,20 @@ class ExperimentController extends BaseAdminController{
 
 	public function showExperimentImage(){
 
-		$model=new \Admin\Model\Experiment_imageModel();
-		$info=$model->show_All_Info();
+		$info=D('ExperimentImage')->show_All_Info();
 		$this->assign('datas',$info);
 		$this->display();
 	}
 
-	public function deleteExperimentImageById(){
-		$id=I('get.id');
-		$model=new \Admin\Model\Experiment_imageModel();
-		$model->delete_Image_By_Id($id);
+	public function deleteExperimentImageById($id){
+		
+		D('ExperimentImage')->delete_Image_By_Id($id);
 		$this->redirect('showExperimentImage');
 	}
 
 	public function showExperimentContainer(){
-		$model=new \Admin\Model\View_containerwithstuandexperModel(); 
+			
+		$model=D('ViewContainerStuExperiment','Logic');
 
 		$info=$model->show_Info();
 		$count=$model->count_Num();
@@ -41,12 +40,9 @@ class ExperimentController extends BaseAdminController{
 	}
 
 
-	public function deleteExperimentById(){
+	public function deleteExperimentById($experiment_id){
 
-		$model=D('Experiment');
-		$experiment_id=I('experiment_id');
-
-		$info=$model->delete_Experiment_By_Id($experiment_id);  //$info是 操作了多少个对象
+		$info=D('Experiment')->delete_Experiment_By_Id($experiment_id);  //$info是 操作了多少个对象
 		$this->redirect('showExperiment');
 	}
 
@@ -111,20 +107,16 @@ class ExperimentController extends BaseAdminController{
 			if(!$pictureInfo) {// 上传错误提示错误信息
 		        $this->error($upload->getError());
 			}
-			// dump($pictureInfo);
-			// echo $pictureInfo['savename'];
-			$model=D('Experiment');
-			
-			$model2=new \Admin\Model\Experiment_imageModel();
+
 			$Model = M();
 			$Model->startTrans();
 
 			$experimentInfo=array('Ename'=>$post['Ename'],'outcome_model'=>$pictureInfo['savename']);
 			
 			try{
-				$experimentRes=$model->addExperiment($experimentInfo);
+				$experimentRes=D('Experiment')->addExperiment($experimentInfo);
 				$imageInfo=array('Eid'=>$experimentRes,'image_id'=>$post['image_id'],'image_name'=>$post['name']);
-				$imageRes=$model2->add_Info($imageInfo);
+				$imageRes=D('ExperimentImage')->add_Info($imageInfo);
 				if($experimentRes && $imageRes){       //事务处理
 					$Model->commit();
 					$this->success('添加成功');

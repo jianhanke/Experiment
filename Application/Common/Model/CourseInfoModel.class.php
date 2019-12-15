@@ -1,9 +1,9 @@
 <?php 
 
-namespace Admin\Model;
+namespace Common\Model;
 use Think\Model;
 
-class Course_infoModel extends Model{
+class CourseInfoModel extends Model{
 
 	public function addCourseInfo($post){
 		return $this->add($post);

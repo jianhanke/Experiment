@@ -3,7 +3,7 @@
 namespace Common\Logic;
 use Think\Model;
 
-class ViewClasswithdepartmentLogic extends Model{
+class ViewClassDepartmentLogic extends Model{
 
 	public function show_ClassInfo_ById($classId){
 		return $this->find($classId);
@@ -46,6 +46,14 @@ class ViewClasswithdepartmentLogic extends Model{
 					->where("t1.department_id=$department_id and  t1.grade =$grade")
 					->select();
 	
+	}
+
+	public function show_AllClass_Info(){
+		return $this->select();
+	}
+
+	public function count_All_Class(){
+		return $this->count();
 	}
 
 }

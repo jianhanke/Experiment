@@ -15,11 +15,11 @@ class StudentController extends BaseAdminController{
 	}
 
 	public function modifyStudentById(){
-		$model=D('Student');
+		
 		if(IS_POST){
 			$info=I('post.');
 			
-			$is_success=$model->modify_Student_By_Id($info);
+			$is_success=D('Student')->modify_Student_By_Id($info);
 			if($info){
 				$this->success('修改成功',U('Student/showStudent'));
 			}else{
@@ -27,7 +27,7 @@ class StudentController extends BaseAdminController{
 			}
 		}else{
 			$user_id=I('get.user_id');
-			$info=$model->find_Student_By_Id($user_id);
+			$info=D('Student')->find_Student_By_Id($user_id);
 			$this->assign('datas',$info);
 			$this->display('modifyStudent');
 		}
@@ -44,14 +44,13 @@ class StudentController extends BaseAdminController{
 	}
 
 	public function findStudentWithContainer(){
-		$model=new \Admin\Model\View_containerwithstuandexperModel();
-		$model2=D('Student');
 
+		$model=D('ViewContainerStuExperiment','Logic');
 		$student_id=I('get.student_id');
 
 		$info=$model->find_Student_With_Container($student_id);
 		$count=$model->count_Student_With_Container($student_id);
-		$student=$model2->find_Student_By_Id($student_id);
+		$student=D('Student')->find_Student_By_Id($student_id);
 
 		$this->assign('student',$student);
 		$this->assign('datas',$info);
@@ -64,9 +63,8 @@ class StudentController extends BaseAdminController{
 		if(IS_POST){
 			$post=I('post.');
 			$post['Spwd']=md5($post['Spwd']);
-			$model=D('Student');
 
-			$info=$model->add_Student($post);
+			$info=D('Student')->add_Student($post);
 			if($info){
 				$this->success('添加成功',('Student/showStudent'));
 			}else{
@@ -79,9 +77,8 @@ class StudentController extends BaseAdminController{
 	}
 
 	public function deleteStudent($student_id){
-
-		$model=D("Student");
-		$info=$model->delete_Student_By_Id($student_id);
+		
+		$info=D('Student')->delete_Student_By_Id($student_id);
 		$this->redirect('Student/showStudent');
 	}
 

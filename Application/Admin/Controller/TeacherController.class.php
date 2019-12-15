@@ -17,11 +17,11 @@ class TeacherController extends BaseAdminController{
 	}
 
 	public function modifyTeacherById(){
-		$model=D('Teacher');
+
 		if(IS_POST){
 			$info=I('post.');
 			dump($info);
-			$is_success=$model->modify_Teacher_By_Id($info);
+			$is_success=D('Teacher')->modify_Teacher_By_Id($info);
 			if($info){
 				$this->success('修改成功',U('Teacher/showTeacher'));
 			}else{
@@ -29,7 +29,7 @@ class TeacherController extends BaseAdminController{
 			}
 		}else{
 			$teacher_id=I('get.teacher_id');
-			$info=$model->find_Teacher_By_Id($teacher_id);
+			$info=D('Teacher')->find_Teacher_By_Id($teacher_id);
 			$this->assign('datas',$info);
 			$this->display('modifyTeacher');
 		}
@@ -50,9 +50,9 @@ class TeacherController extends BaseAdminController{
 		if(IS_POST){
 			$post=I('post.');
 			$post['Spwd']=md5($post['Spwd']);
-			$model=D('Teacher');
+			
 
-			$info=$model->add_Teacher($post);
+			$info=D('Teacher')->add_Teacher($post);
 			if($info){
 				$this->success('添加成功',U('Teacher/showTeacher'));
 			}else{
@@ -66,8 +66,7 @@ class TeacherController extends BaseAdminController{
 
 	public function deleteTeacher($teacher_id){
 
-		$model=D("Teacher");
-		$info=$model->delete_Teacher_By_Id($teacher_id);
+		$info=D("Teacher")->delete_Teacher_By_Id($teacher_id);
 		$this->redirect('Teacher/showTeacher');
 	}
 
