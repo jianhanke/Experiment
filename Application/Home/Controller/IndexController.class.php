@@ -44,8 +44,8 @@ class IndexController extends BaseHomeController{
 	}
 
 	public function isJoinExperimentById($user_id,$experiment_id){
-		$model=new \Home\Model\Student_experimentModel();
-		return $model->if_Join_Experiment($user_id,$experiment_id);
+		
+		return D('StudentExperiment')->if_Join_Experiment($user_id,$experiment_id);
 	       // return  D("StudentExperiment")->if_Join_Experiment($user_id,$experimentId);
 	}
 	

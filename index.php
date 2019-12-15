@@ -20,6 +20,9 @@ define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
 
+//重置缓存目录
+define('RUNTIME_PATH','./Runtime/');
+
 define('WORKING_PATH',str_replace('\\','/',__DIR__));
 define('UPLOAD_ROOT_PATH','/Public/Upload/');
 

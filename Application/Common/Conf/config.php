@@ -6,16 +6,5 @@ return array(
 	'URL_MODEL'             => 1,
 	// 'URL_DENY_SUFFIX' => 'html',  禁止指定伪静态
 	'URL_HTML_SUFFIX' => '',         //指定伪静态为空
-	'LOAD_EXT_CONFIG'   =>  'upload',     //加载自定义配置
-
-	
-
-	'DB_TYPE'               =>  'mysql',     // 数据库类型
-    'DB_HOST'               =>  'localhost', // 服务器地址
-    'DB_NAME'               =>  'experiment',          // 数据库名
-    'DB_USER'               =>  'root',      // 用户名
-    'DB_PWD'                =>  '123456',          // 密码
-    'DB_PORT'               =>  '3306',        // 端口
-    'DB_CHARSET'            =>  'utf8', 
-    //'DB_PREFIX'             =>  '',    // 数据库表前缀
+	'LOAD_EXT_CONFIG'   =>  'upload,db',     //加载自定义配置
 );

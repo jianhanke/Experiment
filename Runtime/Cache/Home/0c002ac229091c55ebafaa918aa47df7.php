@@ -42,7 +42,7 @@
 			<p>  <?php echo ($data['ename']); ?> </p>  
 			<div class="joinExperiment">
 
-				<a href="<?php echo U('Docker/judgeExperimentType');?>/experimentId/<?php echo ($data['eid']); ?>" target="block"   > 
+				<a href="<?php echo U('Experiment/judgeExperimentType');?>/experimentId/<?php echo ($data['eid']); ?>" target="block"   > 
 				进入     </a> 
 			</div>
 		</div>
