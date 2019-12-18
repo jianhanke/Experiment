@@ -57,7 +57,7 @@ class CourseController extends BaseHomeController{
 	public function runContainerById($image_id){
 		
 		
-		$docker=new \MyUtils\DockerUtils\DockerApi();
+		$docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay('Api');
 		$ips=getNewIp();
 		// dump($ips);
 		$ip=$ips['ip'];

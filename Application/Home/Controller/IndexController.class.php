@@ -13,10 +13,22 @@ class IndexController extends BaseHomeController{
 		$this->display();
 	}
 	public function test22(){
-		$ip=getNewIp();
-		dump($ip);
+		$dockerApi=new \MyUtils\DockerUtils\DockerSdk();
+		// $datas=$dockerApi->showAllImage();
+		dump($dockerApi);
 	}
 	
+	public function test23(){
+		$docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay('Api');
+		dump($docker);
+	}
+
+	public function test24(){
+		$port=C('NOVNC_PORT');
+		$way=new \MyUtils\DockerUtils\NoVNC();
+		$way->getPort();
+		dump($port);
+	}
 
 
 	public function login(){

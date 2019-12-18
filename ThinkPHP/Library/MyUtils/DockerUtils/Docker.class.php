@@ -1,29 +1,29 @@
 <?php
 
+namespace MyUtils\DockerUtils;
+
 interface Docker{
 
-	public function pullImageByName();
+	public function pullImageByName($imageName);
 
 	public function showAllImage();
 
-    public function showContainerById();
+    public function showContainerById($container_id);
 
-    public function showContainerStatus();
+    public function showContainerStatus($container_id);
     
  	public function showAllContainer();
 
-    public function startContainerById();
+    public function startContainerById($container_id);
 
-    public function stopContainerById(){;
+    public function stopContainerById($container_id);
 
-    public function deleteContainerById();
+    public function deleteContainerById($container_id);
 
-    public function runContainerByIdIp();
+    public function runContainerByIdIp($image_id,$ip,$hostName=Null,$link_Container=Null);
 
-    public function restartContainerById();
-    	
-    public function commitContainerById();
+    public function restartContainerById($container_id);
 
-    public function getNewIp();
-
+    public function commitContainerById($container_id);
+    
 }

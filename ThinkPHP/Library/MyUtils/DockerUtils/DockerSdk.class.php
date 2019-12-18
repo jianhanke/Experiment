@@ -2,13 +2,27 @@
 
 namespace MyUtils\DockerUtils;
 
-class DockerSdk{
+class DockerSdk implements Docker{
 
 	private $basPath=null;
 
 	public function __construct(){
 		$this->basPath=dirname(dirname(__FILE__)).'/ControllerDocker/';
 	}
+
+	public function showAllImage(){}
+
+    public function showContainerById($container_id){}
+
+    public function showContainerStatus($container_id){}
+    
+
+    public function deleteContainerById($container_id){}
+
+    public function runContainerByIdIp($image_id,$ip,$hostName=Null,$link_Container=Null){}
+
+
+    public function commitContainerById($container_id){}
 	
 	public function pullImageByName($imageName){
 		$docker_path=$this->basPath.'pullImageByName.py'; 
@@ -43,15 +57,10 @@ class DockerSdk{
 		
 	}
 
-	public function shutdownContainerById($container_id){   //关机
+	public function stopContainerById($container_id){   //关机
 			
 		$docker_path=$this->basPath.'stopContainerById.py'; 
 		exec("/usr/bin/python $docker_path $container_id"); 
 	}
-
-	
-
-
-
 
 }

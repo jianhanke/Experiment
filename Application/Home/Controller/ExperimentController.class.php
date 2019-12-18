@@ -19,7 +19,7 @@ class ExperimentController extends BaseHomeController{
 		// if($manner=='PythonSdk'){
 		// 	$this->docker=new \Home\Controller\Entity\DockerSdk();
 		// }else{
-			$this->docker=new \MyUtils\DockerUtils\DockerApi();
+			$this->docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay('Api');
 		// }
 	}
 
