@@ -146,7 +146,7 @@ class ExperimentController extends BaseHomeController{
 	public function runContainerById($image_id,$hostName=Null,$link_Container=Null){
 		
 		
-		$ips=$this->docker->getNewIp();
+		$ips=getNewIp();
 		
 		$ip=$ips['ip'];
 		

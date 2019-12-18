@@ -12,6 +12,10 @@ class IndexController extends BaseHomeController{
 		$this->assign('user_name',$user_name);
 		$this->display();
 	}
+	public function test22(){
+		$ip=getNewIp();
+		dump($ip);
+	}
 	
 
 

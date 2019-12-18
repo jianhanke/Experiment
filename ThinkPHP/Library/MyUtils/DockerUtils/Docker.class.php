@@ -1,57 +1,29 @@
-<?php 
+<?php
 
-namespace MyUtils\DockerUtils;
+interface Docker{
 
-class Docker{
+	public function pullImageByName();
 
-	private $basPath=null;
+	public function showAllImage();
 
-	public function __construct(){
-		$this->basPath=dirname(dirname(__FILE__)).'/ControllerDocker/';
-	}
-	
-	public function pullImageByName($imageName){
-		$docker_path=$this->basPath.'pullImageByName.py'; 
-		return exec("/usr/bin/python $docker_path $imageName"); 
-	}
+    public function showContainerById();
 
-	public function getContainerStatus($container_id){
-		$docker_path=$this->basPath.'getContainerStatus.py'; 
-		return exec("/usr/bin/python $docker_path $container_id"); 
-	}
+    public function showContainerStatus();
+    
+ 	public function showAllContainer();
 
-	public function showAllContainer(){
+    public function startContainerById();
 
-		$docker_path=$this->basPath.'showAllContainerStatus.py'; 
-		return exec("/usr/bin/python $docker_path"); 
-	}
+    public function stopContainerById(){;
 
-	public function restartContainerById($container_id){   //后台重启容器
+    public function deleteContainerById();
 
-		
-	
-		$docker_path=$this->basPath.'restartContainerById.py'; 
-		exec("/usr/bin/python $docker_path $container_id"); 
-		
-	}
+    public function runContainerByIdIp();
 
-	public function startContainerById($container_id){  //启动容器
-		
-		
-		$docker_path=$this->basPath.'startContainerById.py'; 
-		exec("/usr/bin/python $docker_path $container_id"); 
-		
-	}
+    public function restartContainerById();
+    	
+    public function commitContainerById();
 
-	public function shutdownContainerById($container_id){   //关机
-			
-		$docker_path=$this->basPath.'stopContainerById.py'; 
-		exec("/usr/bin/python $docker_path $container_id"); 
-	}
-
-	
-
-
-
+    public function getNewIp();
 
 }

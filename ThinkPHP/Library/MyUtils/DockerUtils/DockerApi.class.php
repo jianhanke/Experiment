@@ -98,9 +98,6 @@ class DockerApi{
             }else{
                     $data=['Image'=>"$image_id",'Hostname'=>$hostName,'HostConfig'=>['Privileged'=>true],'NetworkingConfig'=>['EndpointsConfig'=>['myNet'=>['IPAMConfig'=>['IPv4Address'=>"$ip"],'Links'=>[$link_Container]]]]];
             }
-
-
-    
     	$data = json_encode($data);
     	// dump($data);
 		$info=$this->getJsonInfoByApi("/containers/create",'post',$data,'json');
@@ -130,14 +127,6 @@ class DockerApi{
         return $image_id;
     }
 
-    public function getNewIp(){
-
-		$ip_num=D('DockerContainer') ->find_Max_Ip();
-		$ip_num=(int)$ip_num+1;
-		$ip_prefix=(int)($ip_num/256);
-		$ip_num=$ip_num%256;
-		$ip='172.19.'.$ip_prefix.'.'.$ip_num;
-		return array('ip'=>$ip,'ip_num'=>$ip_num);
-	}
+    
 
 }

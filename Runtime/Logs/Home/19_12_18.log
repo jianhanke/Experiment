@@ -1,0 +1,1136 @@
+[ 2019-12-18T16:02:39+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-12-18T16:02:39+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000103s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2019-12-18T16:03:05+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 174804055 AND `Spwd` = 'c4ca4238a0b923820dcc509a6f75849b' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:03:05+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000040s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-12-18T16:03:05+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `experiment` ORDER BY Eid desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='15' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003832s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000077s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2019-12-18T16:03:13+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000107s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=2 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:03:13+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 174804055 AND `to_experiment` = '2' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0014s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000086s ]
+
+[ 2019-12-18T16:14:36+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=2 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:14:36+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000062s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000064s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 174804055 AND `to_experiment` = '2' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 2 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000113s ]
+
+[ 2019-12-18T16:14:39+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=3 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:14:39+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 174804055 AND `to_experiment` = '3' LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 3 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2019-12-18T16:14:48+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=10 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:14:48+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000071s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 174804055 AND `to_experiment` = '10' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 10 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000102s ]
+
+[ 2019-12-18T16:14:53+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=15 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:14:54+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='15' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 174804055 AND `to_experiment` = '15' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001115s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001696s ]
+
+[ 2019-12-18T16:15:18+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=1 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:15:18+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000033s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000068s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0004s ]
+SQL: SELECT `image_id` FROM `experiment_image` WHERE ( Eid=1 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT MAX(ip_num) AS tp_max FROM `docker_container` LIMIT 1   [ RunTime:0.0003s ]
+SQL: INSERT INTO `student_experiment` (`Sid`,`Eid`) VALUES ('174804055','1') [ RunTime:0.0008s ]
+SQL: INSERT INTO `docker_container` (`Container_id`,`student_id`,`ip`,`Image_id`,`to_experiment`,`ip_num`) VALUES ('24190b0855','174804055','172.19.0.62','6cc5a06c0f2d','1','62') [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 1 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2019-12-18T16:15:35+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment` ORDER BY Eid desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='15' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='13' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804055' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002347s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000055s ]
+
+[ 2019-12-18T16:15:36+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Index/showCourse
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+NOTIC: [8] Undefined index: name /home/jianhanke/Experiment/Runtime/Cache/Home/9b653ca157623fe95df0e6306293c727.php 第 42 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003300s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2019-12-18T16:15:40+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Course/showCourseById/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000103s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `chapter` [ RunTime:0.0005s ]
+SQL: SELECT t1.*,t2.id as upload_id FROM chapter as t1 left join chapter_report as t2 on t1.id=t2.chapter_id and t2.student_id=174804055  WHERE ( t1.to_course=1  )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005104s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000045s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-12-18T16:15:44+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Index/showMyExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM student_experiment as t1,experiment as t2 WHERE ( t1.Sid=174804055 and t1.Eid=t2.Eid )  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002527s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-12-18T16:15:45+08:00 ] 10.6.3.71 /Experiment/index.php/Home/OnlineCompile/showCompile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-12-18T16:15:47+08:00 ] 10.6.3.71 /Experiment/index.php/Home/Index/showStudentInfoById
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 174804055 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002723s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-12-18T16:30:05+08:00 ] 10.6.0.32 /Experiment/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000110s ]
+
+[ 2019-12-18T16:30:05+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000046s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-12-18T16:30:06+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 1 AND `Spwd` = 'c4ca4238a0b923820dcc509a6f75849b' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:30:06+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003230s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-12-18T16:30:06+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment` ORDER BY Eid desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='15' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='13' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000080s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003397s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2019-12-18T16:30:14+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=15 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:30:14+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='15' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 1 AND `to_experiment` = '15' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000051s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-12-18T16:42:50+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=14 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T16:42:50+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000066s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 1 AND `to_experiment` = '14' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 14 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000109s ]
+
+[ 2019-12-18T16:56:51+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+
+[ 2019-12-18T16:58:52+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+
+[ 2019-12-18T16:58:52+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+
+[ 2019-12-18T16:58:53+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-12-18T17:00:26+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000140s ]
+
+[ 2019-12-18T17:00:26+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-12-18T17:00:26+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-12-18T17:00:26+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+
+[ 2019-12-18T17:00:26+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000075s ]
+
+[ 2019-12-18T17:00:45+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+
+[ 2019-12-18T17:05:45+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+
+[ 2019-12-18T17:05:45+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-12-18T17:05:45+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-12-18T17:05:46+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-12-18T17:05:46+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-12-18T17:05:46+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+
+[ 2019-12-18T17:05:46+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-12-18T17:05:46+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-12-18T17:05:46+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+
+[ 2019-12-18T17:06:06+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000074s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000122s ]
+
+[ 2019-12-18T17:06:07+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000085s ]
+
+[ 2019-12-18T17:06:07+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-12-18T17:06:07+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-12-18T17:06:07+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-12-18T17:07:52+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0007s ]
+SQL: SELECT MAX(ip_num) AS tp_max FROM `docker_container` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000061s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000104s ]
+
+[ 2019-12-18T17:11:37+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/test10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+ERR: 非法操作:test10
+
+[ 2019-12-18T17:11:39+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=15 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T17:11:39+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='15' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 1 AND `to_experiment` = '15' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000116s ]
+
+[ 2019-12-18T17:11:42+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=14 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T17:11:43+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='1' and Eid='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `docker_container` WHERE `student_id` = 1 AND `to_experiment` = '14' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 14 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000098s ]
+
+[ 2019-12-18T17:11:50+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/logout
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002284s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002335s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000077s ]
+
+[ 2019-12-18T17:11:51+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-12-18T17:11:55+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 174804054 AND `Spwd` = 'c4ca4238a0b923820dcc509a6f75849b' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000076s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001830s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+
+[ 2019-12-18T17:11:58+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002197s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-12-18T17:12:05+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 174804054 AND `Spwd` = 'c81e728d9d4c2f636f067f89cc14862c' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002201s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+
+[ 2019-12-18T17:12:08+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002051s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000049s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-12-18T17:13:07+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Login/checkLogin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `student` WHERE `Sid` = 174804050 AND `Spwd` = 'c4ca4238a0b923820dcc509a6f75849b' LIMIT 1   [ RunTime:0.0004s ]
+
+[ 2019-12-18T17:13:07+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000029s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002168s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000066s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+
+[ 2019-12-18T17:13:07+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000083s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment` ORDER BY Eid desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='15' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='13' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003604s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000031s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000047s ]
+
+[ 2019-12-18T17:17:00+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/judgeExperimentType/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment_image` WHERE ( Eid=15 ) LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-18T17:17:01+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Experiment/joinExperiment/experimentId/15
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='15' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT `image_id` FROM `experiment_image` WHERE ( Eid=15 )  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0006s ]
+SQL: SELECT MAX(ip_num) AS tp_max FROM `docker_container` LIMIT 1   [ RunTime:0.0001s ]
+SQL: INSERT INTO `student_experiment` (`Sid`,`Eid`) VALUES ('174804050','15') [ RunTime:0.0010s ]
+SQL: INSERT INTO `docker_container` (`Container_id`,`student_id`,`ip`,`Image_id`,`to_experiment`,`ip_num`) VALUES ('6d40c390a7','174804050','172.19.0.63','561a37e79257','15','63') [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `experiment` WHERE `Eid` = 15 LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000103s ]
+
+[ 2019-12-18T17:17:10+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000100s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000041s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002965s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-12-18T17:17:10+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `experiment` ORDER BY Eid desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='15' ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='14' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='13' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='12' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='10' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='3' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='2' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2019-12-18T17:17:34+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000079s ]
+
+[ 2019-12-18T17:17:34+08:00 ] 10.6.0.32 /Experiment/index.php/Home/Index/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `experiment` ORDER BY Eid desc  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student_experiment` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='15' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='14' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='13' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='12' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='10' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='3' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='2' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `student_experiment` WHERE ( Sid='174804050' and Eid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000073s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000065s ]
+

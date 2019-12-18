@@ -58,7 +58,7 @@ class CourseController extends BaseHomeController{
 		
 		
 		$docker=new \MyUtils\DockerUtils\DockerApi();
-		$ips=$docker->getNewIp();
+		$ips=getNewIp();
 		// dump($ips);
 		$ip=$ips['ip'];
 		
