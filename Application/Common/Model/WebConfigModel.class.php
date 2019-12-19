@@ -26,6 +26,7 @@ class WebConfigModel extends Model{
 //直接修改数据库配置文件,无法正确运行,可以直接更改此配置信息(又出现脏数据),请在后台更改配置信息
 //************************************************************************************
 return array(
+		'DOCKER_API_PORT'            => '{$config['DOCKER_API_PORT']}' ,
 		'Api_Or_Sdk'				 => '{$config['Api_Or_Sdk']}' ,
 		'NOVNC_PORT'                 => '{$config['NOVNC_PORT']}' ,
 		'WEB_SSH_PORT'               => '{$config['WEB_SSH_PORT']}' ,

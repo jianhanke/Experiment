@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
     <script type="text/javascript" src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
     <script type="text/javascript" src="/Experiment/Public/Home/js/myJs.js"></script>
-
 </head>
 <body>
 <div class="topbar-wrap white">

@@ -10,8 +10,8 @@ class Excel{
         $model=M($modelName);
         $fileName = $modelName.date('_Ymd_Hi');
 
-        // $columnName=$model->show_ALL_Field();
-        $sql="select column_name from information_schema.columns where table_name='$modelName' and table_schema = 'experiment' ";
+        $dataName=C('DB_NAME');
+        $sql="select column_name from information_schema.columns where table_name='$modelName' and table_schema = '$dataName' ";
         $columnName=$model->query($sql);
 
 

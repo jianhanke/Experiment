@@ -10,7 +10,8 @@ class DockerApi  implements Docker{
 	public function __construct(){
 
 		$hostName =  \MyUtils\HostUtils\Host::getHostName();
-		$this->hostAndPort="http://$hostName:2375";
+        $port=C('DOCKER_API_PORT');
+		$this->hostAndPort="http://$hostName:$port";
 	}
 
     public function getName(){

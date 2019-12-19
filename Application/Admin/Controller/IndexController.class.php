@@ -20,6 +20,31 @@ class IndexController extends BaseAdminController{
 
 	}
 
+	public function test11(){
+		$dataName=C('DB_NAME');
+        $sql="select column_name from information_schema.columns where table_name='student' and table_schema = '$dataName' ";
+        $columnName=M('Student')->query($sql);
+        dump($columnName);
+
+        $result= array_reduce($columnName, function ($result, $value) {
+			 return array_merge($result, array_values($value));
+			}, array());
+        
+        $condition=array('like','%1%');
+        $where=array();
+        foreach ($result as $con ){
+        	$where[$con]=$condition;
+        }
+        dump($where);
+	}
+
+	public function test12(){
+		$datas=M('Student')->where(array('Sid'=>array('like','%1%')))->select();
+		dump($datas);
+	}
+
+
+
 	public function test01(){
 		echo $_SERVER['DOCUMENT_ROOT'].__ROOT__;
 		$host=new \MyUtils\HostUtils\Host();
@@ -41,6 +66,14 @@ class IndexController extends BaseAdminController{
 		$upload=new \MyUtils\DockerUtils\Docker();
 		dump($upload);
 
+	}
+
+	public function test02(){
+		$where = array('like','%1%');
+		$mail='hanke';
+		$where['mail'] = array('like','%'."$mail".'%');
+		dump($where);
+		M('Student')->relation(true)->where($where)->select();
 	}
 
 }
