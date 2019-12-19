@@ -25,5 +25,7 @@ interface Docker{
     public function restartContainerById($container_id);
 
     public function commitContainerById($container_id);
+
+    public function getName();
     
 }

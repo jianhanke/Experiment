@@ -6,12 +6,12 @@ use Common\Controller\BaseAdminController;
 class DockerController extends BaseAdminController{
 
 
-	public static $name="xiaming";
 
 	public $docker=NULL;
 	public function __construct(){
 		parent::__construct();
-		$this->docker=new \MyUtils\DockerUtils\DockerApi();
+		$way=C('Api_Or_Sdk');
+		$this->docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay($way);
 	}
 
 	public function deleteContainerById(){  //在Docker中删除此容器，同时删除数据库中容器和课程记录
@@ -37,20 +37,6 @@ class DockerController extends BaseAdminController{
 		$this->assign('datas',$allContainers);
 		$this->display();
 	}
-
-	// public function dealInfo($info){
-
-	// 	array_walk($info, function (&$item) {
- //    		$item = array_diff($item, ['Image']);
-	// 	});
-	// 	return $info;
-	// }
-
-
-
-	/**
-	 *   开关机 容器
-	 */
 	
 	public function handleContainer(){ 
 		
@@ -109,9 +95,6 @@ class DockerController extends BaseAdminController{
 			else{
 				$this->error('添加失败');
 			}
-				
-		
-				
 		}catch(\Exception $e){
 		 	$this->error('失败');
 		}
@@ -197,19 +180,26 @@ class DockerController extends BaseAdminController{
 	}
 
 	public function dockerController(){
-
-		dump(self::$name);
-		self::$name="shishi";
-		dump(self::$name);
-
-		$sdkOrApi=new \MyUtils\DockerUtils\SdkOrApi();
+		// $currentWay=C('Api_Or_Sdk');
+		
 		if(IS_POST){
-			$select=I('post.select');
-			$sdkOrApi->setControllerManner($select);
+			$value=I('post.value');
+			
+			// $sdkOrApi->setControllerManner($way);
+			D('WebConfig')->editData($name='Api_Or_Sdk',$value);
+			// A('Config')->ConfigUpdateToFile();
+			A('Config')->updateConfigToFile();
+			echo "<script> alert('更新更改,自行刷新'); </script> ";
+			// $this->redirect('index/home');
+			// $url=U('Docker/dockerController');
+			// echo "<script> location.href='$url'</script>";
+		}else{
+			$currentWay=$this->docker->getName();
+			// dump($this->docker);
+			$this->assign('currentWay',$currentWay);
+			$this->display();
 		}
-			$currentManner=$sdkOrApi->getControllerManner();
-			$this->assign('currentManner',$currentManner);
-			$this->display();	
+				
 	}
 
 	public function makeImage(){

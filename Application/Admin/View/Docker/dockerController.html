@@ -5,15 +5,18 @@
 	<title>Document</title>
 </head>
 <body>
-	
-	<p>	当前控制方式为: <font color="red" >{$currentManner}</font> </p> 
+	<p>	当前控制方式为: <font color="red" > {$currentWay} </font> </p> 
 
+
+	<p>修改操作Docker方式(完成后,自行刷新)</p>
 	<form  action="{:U('Docker/dockerController')}" method="post">
-		<select name="select">
-		  <option value="DockerApi" {$currentManner=='DockerApi'  ?  selected : '' }  >DockerApi</option>
-		  <option value="PythonSdk" {$currentManner=='PythonSdk'  ?  selected : '' } >PythonSdk</option>
+		<select name="value">
+		  <option value="DockerApi" {$currentWay== 'DockerApi'  ? selected  : '' }  >DockerApi</option>
+		  <option value="PythonSdk" {$currentWay== 'PythonSdk'  ?  selected : '' } >PythonSdk</option>
 		</select>
-		<input type="submit" name="确定">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="submit" value="确定">
 	</form>
 
 

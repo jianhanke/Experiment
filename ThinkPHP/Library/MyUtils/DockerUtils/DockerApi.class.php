@@ -4,13 +4,19 @@ namespace MyUtils\DockerUtils;
 
 class DockerApi  implements Docker{
 
-   public $hostAndPort=null;
+   private $hostAndPort=null;
+   const NAME='DockerApi';
 
 	public function __construct(){
 
 		$hostName =  \MyUtils\HostUtils\Host::getHostName();
 		$this->hostAndPort="http://$hostName:2375";
 	}
+
+    public function getName(){
+
+        return self::NAME;
+    }
 
 	public function getJsonInfoByApi($params,$method='get',$data=Null,$type='form-data'){
 

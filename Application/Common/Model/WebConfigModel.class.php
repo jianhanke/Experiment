@@ -12,6 +12,12 @@ class WebConfigModel extends Model{
 					->find()['value'];
 	}
 
+
+	public function editData($name,$value){
+		return $this->where(array('name'=>$name))
+					->save(array('value'=>$value));
+	}
+
 	public function ConfigUpdateToFile(){
 		$config =   $this->getField('name,value');
 		

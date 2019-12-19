@@ -5,10 +5,15 @@ namespace MyUtils\DockerUtils;
 class DockerSdk implements Docker{
 
 	private $basPath=null;
+	const NAME='DockerSdk';
 
 	public function __construct(){
 		$this->basPath=dirname(dirname(__FILE__)).'/ControllerDocker/';
 	}
+
+	public function getName(){
+        return self::NAME;
+    }
 
 	public function showAllImage(){}
 
