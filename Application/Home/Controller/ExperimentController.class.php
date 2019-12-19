@@ -13,7 +13,7 @@ class ExperimentController extends BaseHomeController{
 	public  $docker=NULL;
 
 	public function _initialize(){
-		$way=getDockerWay();
+		$way=C('Api_Or_Sdk');
 		$this->docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay($way);
 	}
 

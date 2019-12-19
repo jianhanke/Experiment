@@ -13,4 +13,5 @@ class StudentController extends BaseHomeController{
 		$this->assign('datas',$info);
 		$this->display('showStudentInfo');
 	}
+	
 }
