@@ -5,12 +5,6 @@ namespace MyUtils\DockerUtils;
 
 class NoVNC{
 	
-
-	public function getPort(){
-		echo  C('NOVNC_PORT');
-	}
-
-
 	public static function JumpUrlByIp($ip_num){
 
 		$hostName = \MyUtils\HostUtils\Host::getHostName();
@@ -27,9 +21,10 @@ class NoVNC{
 	public static function getWsUrlByIp($ip_num){
 		$hostName = \MyUtils\HostUtils\Host::getHostName();
 		$port=C('NOVNC_PORT');
-		return 'ws://'.$hostName.':$port/websockify?token=host'.$ip_num;
-
+		return "ws://$hostName:$port/websockify?token=host$ip_num";
 	}
+
+	
 
 	
 

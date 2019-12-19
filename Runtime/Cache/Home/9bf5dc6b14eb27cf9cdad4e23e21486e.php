@@ -44,7 +44,7 @@ a{
 
 <script type="module" crossorigin="anonymous" >
   
-  import RFB from '/Experiment/Public/noVNC/core/rfb.js';
+  import RFB from '/Experiment/Public/Home/plugin/noVNC/core/rfb.js';
   console.log("jianhanke!");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);

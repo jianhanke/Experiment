@@ -26,11 +26,12 @@ class NoVNCController extends BaseHomeController{
 		$videoPath=$chapterInfo['video'];
 		$docPath=$chapterInfo['doc'];
 		
-		$viewOnly=U("Home/NoVNC/showViewOnly/ip_num/$ip_num");
+		$viewOnly=U("Home/NoVNC/showOnlyView/ip_num/$ip_num");
 		$viewOnly=$hostName.$viewOnly;
+
 		$showShareOperate=U("Home/NoVNC/showShareOperate/ip_num/$ip_num");
 		$showShareOperate=$hostName.$showShareOperate;
-		dump($showShareOperate);
+		
 
 		$sshUrl=(new \MyUtils\DockerUtils\Ssh())->getSshUrl($ip);
 
@@ -56,29 +57,17 @@ class NoVNCController extends BaseHomeController{
 		D('DockerContainer')->save_Note($id,$myNote);
 	}
 
-	public function showViewOnly($ip_num){
+	public function showOnlyView($ip_num){
 		
-		$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
-
-		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
+		$url= \MyUtils\DockerUtils\NoVNC::getWsUrlByIp($ip_num);
 		$this->assign('url',$url);
 		$this->display();
 	}
 
 	public function showShareOperate($ip_num){
-		
-		$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
-		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
+		$url= \MyUtils\DockerUtils\NoVNC::getWsUrlByIp($ip_num);
 		$this->assign('url',$url);
-		$this->display();
-	}
-	public function ceshi(){
-		$url='http://localhost:8888/?hostname=172.19.0.100&username=root&password=123456';
-		// $this->
-		
-		$data=array('1','321','421');
-		$this->assign('datas',$data);
 		$this->display();
 	}
 
