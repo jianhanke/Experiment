@@ -13,14 +13,8 @@ class ExperimentController extends BaseHomeController{
 	public  $docker=NULL;
 
 	public function _initialize(){
-
-		// $SdkOrApi=new \MyUtils\DockerUtils\SdkOrApi();
-		// $manner=$SdkOrApi->getControllerManner();
-		// if($manner=='PythonSdk'){
-		// 	$this->docker=new \Home\Controller\Entity\DockerSdk();
-		// }else{
-			$this->docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay('Api');
-		// }
+		$way=getDockerWay();
+		$this->docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay($way);
 	}
 
 	public function showMyExperiment(){

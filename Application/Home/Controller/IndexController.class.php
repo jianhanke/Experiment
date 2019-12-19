@@ -12,6 +12,16 @@ class IndexController extends BaseHomeController{
 		$this->assign('user_name',$user_name);
 		$this->display();
 	}
-	
+
+	public function test01(){
+		$config =   M('WebConfig')->getField('name,value');
+		C($config);
+		dump($config);
+	}
+
+	public function test02(){
+		dump(C('Api_Or_Sdk'));
+	}
+
 
 }

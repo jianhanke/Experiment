@@ -10,3 +10,7 @@ function getNewIp(){
 		return array('ip'=>$ip,'ip_num'=>$ip_num);
 }
 
+function getDockerWay(){
+	return D('WebConfig')->getValueByName('Api_Or_Sdk');
+}
+
