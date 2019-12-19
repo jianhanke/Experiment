@@ -13,8 +13,7 @@ class ExperimentController extends BaseHomeController{
 	public  $docker=NULL;
 
 	public function _initialize(){
-		$way=C('Api_Or_Sdk');
-		$this->docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay($way);
+		$this->docker=getControllerDockerWay();
 	}
 
 	public function showMyExperiment(){
@@ -99,18 +98,18 @@ class ExperimentController extends BaseHomeController{
 			$arr_Url=array();
 
 			for($i=0;$i<count($datas);$i++){
-				$info=$this->runContainerById($datas[$i]['image_id'],$hostName=$datas[$i]['hostname'],$link_Container=$first_containerId);
+				$info=runContainerById($datas[$i]['image_id'],$hostName=$datas[$i]['hostname'],$link_Container=$first_containerId);
 				if($i==0){
-					$first_containerId=$info[0];
+					$first_containerId=$info['container_id'];
 				}
-				$data=array('Container_id'=>$info[0],
+				$data=array('Container_id'=>$info['container_id'],
 						'student_id'=>$user_id,
-						'ip'=>$info[1],
+						'ip'=>$info['ip'],
 						'Image_id'=>$datas[$i]['image_id'],
 						'to_experiment'=>$experimentId,
-						'ip_num'=>$info[2]);
+						'ip_num'=>$info['ip_num']);
 				D('DockerContainer')->addData($data);
-				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($info[2]);
+				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($info['ip_num']);
 			}
 			$this->assign('datas',$arr_Url);
 			$this->display('NoVNC/joinMoreExperiment');
@@ -140,45 +139,29 @@ class ExperimentController extends BaseHomeController{
 		}else{   //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id    
 		    
 			$image_id=D('ExperimentImage')->find_ImageId_By_experimentId($experimentId);
-			$info=$this->runContainerById($image_id);  //此处应该是上行的，改一部分
+			$info=runContainerById($image_id);  //此处应该是上行的，改一部分
 
 			D('StudentExperiment')->student_Join_Experiment($user_id,$experimentId);
 
-			$data=array('Container_id'=>$info[0],
+			$data=array('Container_id'=>$info['container_id'],
 						'student_id'=>$user_id,
-						'ip'=>$info[1],
+						'ip'=>$info['ip'],
 						'Image_id'=>$image_id,
 						'to_experiment'=>$experimentId,
-						'ip_num'=>$info[2]);
+						'ip_num'=>$info['ip_num']);
 
 			$status=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
 
 			$isDesktop=D('Experiment')->is_Desktop_ById($experimentId);
 			if($isDesktop){
-				 \MyUtils\DockerUtils\NoVNC::JumpUrlByIp($info[2]);
+				 \MyUtils\DockerUtils\NoVNC::JumpUrlByIp($info['ip_num']);
 			}
-			       \MyUtils\DockerUtils\Ssh::jumpSshUrlByIP($info[1]);
+			       \MyUtils\DockerUtils\Ssh::jumpSshUrlByIP($info['ip']);
 		}
 	}
 
 
 
-	/*
-		docker run -d 运行一个新容器，返回容器id,存入数据库
-	 */
-	public function runContainerById($image_id,$hostName=Null,$link_Container=Null){
-		
-		
-		$ips=getNewIp();
-		
-		$ip=$ips['ip'];
-		
-		$container_id=$this->docker->runContainerByIdIp($image_id,$ip,$hostName=$hostName,$link_Container=$link_Container);    //具体docker中 run -it 
-		$info[]=$container_id;
-		$info[]=$ip;
-		$info[]=$ips['ip_num'];
-		return $info;
-	}
 
 	public function serachKeyWord($keyword){
 

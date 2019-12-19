@@ -30,6 +30,7 @@ class NoVNCController extends BaseHomeController{
 		$viewOnly=$hostName.$viewOnly;
 		$showShareOperate=U("Home/NoVNC/showShareOperate/ip_num/$ip_num");
 		$showShareOperate=$hostName.$showShareOperate;
+		dump($showShareOperate);
 
 		$sshUrl=(new \MyUtils\DockerUtils\Ssh())->getSshUrl($ip);
 

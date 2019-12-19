@@ -56,58 +56,25 @@ class CourseController extends BaseHomeController{
 			exit();
 		}else{       //没有则加入此章节，并创建容器
 
-			$info=$this->runContainerById($image_id);
+			$info=runContainerById($image_id);
 
-			$data=array('Container_id'=>$info[0],
+			$data=array('Container_id'=>$info['container_id'],
 						'student_id'=>$user_id,
-						'ip'=>$info[1],
+						'ip'=>$info['ip'],
 						'Image_id'=>$image_id,
 						'to_chapter'=>$chapter_id,
-						'ip_num'=>$info[2]);
+						'ip_num'=>$info['ip_num']);
 
 
 			D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
-			$ip_num=$info[2];
 			
 			$NoVNC=A('NoVNC');
-			$NoVNC->showNoVNC($ip_num);
+			$NoVNC->showNoVNC($info['ip_num']);
 			exit();
 		}
 
 	}
 
-	public function runContainerById($image_id){
-		
-		
-		$docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay('Api');
-		$ips=getNewIp();
-		// dump($ips);
-		$ip=$ips['ip'];
-		
-		$container_id=$docker->runContainerByIdIp($image_id,$ip);    //具体docker中 run -it 
-
-		$info[]=$container_id;
-		$info[]=$ip;
-		$info[]=$ips['ip_num'];
-		return $info;
-	}
-	
-
-	/*  纯PHP上传文件
-	public function uploadFile(){
-		
-
-		$student_id=session('user_id');
-
-		$chapter_id=I('post.chapter_id');
-		$postfix=strrchr($_FILES['file']['name'], '.');
-		$uploadPath='E:/wamp/apache/library/Experiment/Public/Upload/';
-		$new_name=$student_id.'_'.$chapter_id.$postfix;
-		$newPath=$uploadPath.$new_name;
-		$ROOT = $_SERVER['DOCUMENT_ROOT'];
-		move_uploaded_file($_FILES['file']['tmp_name'],$newPath);
-	}
-		*/
 		public function uploadFile(){
 			$student_id=session('user_id');	
 			$chapter_id=I('post.chapter_id');
@@ -147,7 +114,7 @@ class CourseController extends BaseHomeController{
 
 		}
 
-		public function downloadMyReport($reportId){
+	public function downloadMyReport($reportId){
 
 			
 			$path=D('ChapterReport')->find_RepoartPath_ById($reportId);
@@ -171,14 +138,6 @@ class CourseController extends BaseHomeController{
 			 	// echo "<script>  javascript :history.back(-1); </script> ";
 		    		exit();
 			 }
-		}
-
-		public function ceshi(){
-			$path="MySql/MySql第一章节/1_.docx";
-			// $name=strrchr($path,'/');
-			// dump($name);
-			
-			dump(array_pop($arr) );
 		}
 
 

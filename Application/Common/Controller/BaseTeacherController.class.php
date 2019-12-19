@@ -1,10 +1,10 @@
 <?php 
 
 namespace Common\Controller;
-use Think\Controller;
 
 
-class BaseTeacherController extends Controller{
+
+class BaseTeacherController extends BaseController{
 
 
 	public function _initialize(){   //每次调用方法时候，都会调用此方法
