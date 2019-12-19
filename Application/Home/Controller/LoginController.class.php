@@ -10,10 +10,10 @@ class LoginController extends Controller{
     }
 
   	public function checkLogin(){
-        $model=D('Student');
+        
         $post=I('post.');
         $post['Spwd']=md5($post['Spwd']);
-        $info=$model->check_Login($post);      
+        $info=D('Student')->check_Login($post);      
        if(isset($info)){
             session('user_id',$info['sid']);
             session('user_name',$info['sname']);
@@ -27,7 +27,6 @@ class LoginController extends Controller{
         session('user_id',null);
         session('user_name',null);
         $this->success('退出成功',U('Login/login'));
-
     }
 
     

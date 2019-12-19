@@ -6,6 +6,28 @@ use \Common\Controller\BaseHomeController;
 class CourseController extends BaseHomeController{
 
 
+	public function showCourse(){
+		
+		$info=D('Course')->show_All_Course();
+		$this->assign('datas',$info);
+		$this->display();
+	}
+	
+	public function showMyCourse(){
+
+		$studentId=Session('user_id');
+		$classId=D('Student')->find_MyClass_ById($studentId);
+		if($classId){
+			$datas=D('CourseClass')->find_MyCourse_ById($classId);	
+		}else{
+			echo "<script> alert('当前为空');  </script>";
+		}
+		$this->assign('datas',$datas);
+		$this->display();
+	}
+
+
+
 	public  function showCourseById($id){
 
 		

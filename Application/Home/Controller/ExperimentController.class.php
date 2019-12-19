@@ -23,6 +23,38 @@ class ExperimentController extends BaseHomeController{
 		// }
 	}
 
+	public function showMyExperiment(){
+		$user_id=session('user_id');
+
+		$info=D('StudentExperiment')->show_My_Experiment($user_id);
+		// $info=D('ViewStuContainerExperiment','Logic')->show_My_Experiment($user_id);
+		// echo $model-> _sql();
+		$this->assign('datas',$info);
+		$this->display();
+	}
+
+	public function showExperiment(){
+		
+		$info=D('Experiment')->show_Experiment();
+		$user_id=session('user_id');
+		
+		$arr=array();
+		for($i=0;$i<count($info);$i++){
+			
+			$experiment_id=$info[$i]['eid'];
+			$is_Join=$this->isJoinExperimentById($user_id,$experiment_id);
+			$info[$i]['is_Join']=$is_Join;
+		}
+		$this->assign('datas',$info);
+		$this->display();
+	}
+
+	public function isJoinExperimentById($user_id,$experiment_id){
+		
+		return D('StudentExperiment')->if_Join_Experiment($user_id,$experiment_id);
+	       // return  D("StudentExperiment")->if_Join_Experiment($user_id,$experimentId);
+	}
+
 
 	public function judgeExperimentType($experimentId){
 
@@ -91,9 +123,6 @@ class ExperimentController extends BaseHomeController{
 		}
 	}
 
-
-
-	
 	public function joinExperiment($experimentId){
 		
 		$user_id=session('user_id');
@@ -155,6 +184,13 @@ class ExperimentController extends BaseHomeController{
 		$info[]=$ip;
 		$info[]=$ips['ip_num'];
 		return $info;
+	}
+
+	public function serachKeyWord($keyword){
+
+		$info=D('Experiment')->serach_Key_Wordl($keyword);
+		$this->assign('datas',$info);
+		$this->display('showExperiment');
 	}
 
 }
