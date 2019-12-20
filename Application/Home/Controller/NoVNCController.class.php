@@ -7,46 +7,29 @@ class NoVNCController extends BaseHomeController{
 
 
 	public function showNoVNC($ip_num){
-		// dump($ip_num);
-		
-		$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
 
-		$url='ws://'.$hostName.':6080/websockify?token=host'.$ip_num;
-		
 		$info=D('DockerContainer')->find_Container_By_Ip($ip_num);
-		$id=$info['id'];
-		$myNote=$info['note'];
-		$chapterId=$info['to_chapter'];
-		$ip=$info['ip'];
-		$myNote=htmlspecialchars_decode(html_entity_decode($myNote));  //将html 解码
+		$url=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($ip_num);
 		
-		$chapterInfo=D('Chapter')->find_ChapterInfo_ById($chapterId);
-
-
-		$videoPath=$chapterInfo['video'];
-		$docPath=$chapterInfo['doc'];
+		$info['note']=htmlspecialchars_decode(html_entity_decode($info['note']));  //将html 解码
 		
-		$viewOnly=U("Home/NoVNC/showOnlyView/ip_num/$ip_num");
-		$viewOnly=$hostName.$viewOnly;
+		$chapterInfo=D('Chapter')->find_ChapterInfo_ById($info['to_chapter']);
 
-		$showShareOperate=U("Home/NoVNC/showShareOperate/ip_num/$ip_num");
-		$showShareOperate=$hostName.$showShareOperate;
+		$onlyView=\MyUtils\DockerUtils\NoVNC::getOnlyViewUrl($ip_num);
+		$showShareOperate=\MyUtils\DockerUtils\NoVNC::getShareOperateUrl($ip_num);
 		
-
-		$sshUrl=(new \MyUtils\DockerUtils\Ssh())->getSshUrl($ip);
-
-		$ceshiUrl=(new \MyUtils\DockerUtils\NoVNC())->getUrlById($ip_num);
+		$sshUrl= \MyUtils\DockerUtils\Ssh::getSshUrl($info['ip']);
+		$ceshiUrl= \MyUtils\DockerUtils\NoVNC::getUrlById($ip_num);
 
 		$this->assign('ceshiUrl',$ceshiUrl);
 		$this->assign('sshUrl',$sshUrl);
-		$this->assign('viewOnly',$viewOnly);
+		$this->assign('onlyView',$onlyView);
 		$this->assign('shareOperate',$showShareOperate);
 		$this->assign('ip_num',$ip_num);
-		$this->assign('video',$videoPath);
-		$this->assign('doc',$docPath);
-		$this->assign('datas',$info);
-		$this->assign('id',$id);
-		$this->assign('myNote',$myNote);
+		$this->assign('video',$chapterInfo['video']);
+		$this->assign('doc',$chapterInfo['doc']);
+		$this->assign('id',$info['id']);
+		$this->assign('myNote',$info['note']);
 		$this->assign('url',$url);
 		$this->display('NoVNC/showNoVNC');
 	}

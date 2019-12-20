@@ -23,7 +23,19 @@ class NoVNC{
 		$port=C('NOVNC_PORT');
 		return "ws://$hostName:$port/websockify?token=host$ip_num";
 	}
+	
+	public static function getOnlyViewUrl($ip_num){
+		$hostName = \MyUtils\HostUtils\Host::getHostName();
+		$viewOnly=U("Home/NoVNC/showOnlyView/ip_num/$ip_num");
 
+		return $hostName.$viewOnly;
+	}
+
+	public static function getShareOperateUrl($ip_num){
+		$hostName = \MyUtils\HostUtils\Host::getHostName();
+		$showShareOperate=U("Home/NoVNC/showShareOperate/ip_num/$ip_num");
+		return $hostName.$showShareOperate;
+	}
 	
 
 	

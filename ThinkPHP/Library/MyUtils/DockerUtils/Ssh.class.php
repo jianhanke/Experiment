@@ -7,8 +7,8 @@ class Ssh{
 	public static  function getSshUrl($ip){
 		$hostName =  \MyUtils\HostUtils\Host::getHostName();
 		$port=C('WEB_SSH_PORT');
-		$url="http://$hostName:$port/?hostname=$ip&username=root&password=MTIzNDU2";
-		return $url;
+		return "http://$hostName:$port/?hostname=$ip&username=root&password=MTIzNDU2";
+		
 	}
 
 	public static function jumpSshUrlByIP($ip){

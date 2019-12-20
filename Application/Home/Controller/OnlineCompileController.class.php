@@ -7,11 +7,20 @@ class OnlineCompileController extends BaseHomeController{
 
 	public function showCompile(){
 
-		$hostName =  \MyUtils\HostUtils\Host::getHostName();
+		$serviceUrl=new \MyUtils\CompileUtils\ServiceCompileUrl();
+		
+		$serviceUrl->setDecoration(new \MyUtils\CompileUtils\OptionDecoration());
+		$serviceUrl->setCompile(new \MyUtils\CompileUtils\C());
+		$serviceUrl->setCompile(new \MyUtils\CompileUtils\Java());
+		$serviceUrl->setCompile(new \MyUtils\CompileUtils\Php());
+		$serviceUrl->setCompile(new \MyUtils\CompileUtils\Python());
+		$datas=$serviceUrl->getUrls();
 
-		$this->assign('hostName',$hostName);
+		$this->assign('datas',$datas);
 		$this->display();
 	}
+
+
 
 
 

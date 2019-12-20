@@ -225,11 +225,11 @@ $('#shareDesk').on('click', function(){
       type: 1,
       area: ['600px', '360px'],
       shadeClose: true, //点击遮罩关闭
-      content: '\<\/b>只读共享操作链接: <br>   \<\input id="viewOnly" type="text" style="width: 350px;" value="{$viewOnly}" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="videOnly()" ><br> <br> <br>  共享操作连接:<br> \<\input id="shareOperate" type="text" style="width: 350px;" value="{$shareOperate}" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="shareOperate()" >'
+      content: '\<\/b>只读共享操作链接: <br>   \<\input id="onlyView" type="text" style="width: 350px;" value="{$onlyView}" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="videOnly()" ><br> <br> <br>  共享操作连接:<br> \<\input id="shareOperate" type="text" style="width: 350px;" value="{$shareOperate}" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="shareOperate()" >'
     });
   });
  function videOnly(){
-      var copy=document.getElementById('viewOnly');
+      var copy=document.getElementById('onlyView');
         // copy = copy.value; // 修改文本框的内容
         copy.select(); // 选中文本
       document.execCommand("copy");
