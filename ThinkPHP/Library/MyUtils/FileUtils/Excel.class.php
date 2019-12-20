@@ -5,7 +5,39 @@ namespace MyUtils\FileUtils;
 
 class Excel{
 
-	public function outputExcel($modelName){
+
+    public static function outputformworkExcel($modelName){
+        vendor("PHPExcel.PHPExcel");
+        $model=M($modelName);
+        $fileName = $modelName.date('_Ymd_Hi');
+
+        $dataName=C('DB_NAME');
+        $sql="select column_name from information_schema.columns where table_name='$modelName' and table_schema = '$dataName' ";
+        $columnName=$model->query($sql);
+
+
+        $lowerColumnName=array();
+        for($i=0;$i<count($columnName);$i++){
+            $lowerColumnName[$i]=strtolower($columnName[$i]['column_name']);
+        }
+
+        $data=$model->select();
+
+        $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T');
+        $objPHPExcel = new \PHPExcel();
+        
+        for($i=0;$i<count($columnName);$i++){
+            $objPHPExcel->setActiveSheetIndex(0)->setCellValue($cellName[$i].'1', $columnName[$i]['column_name']);
+        }
+        header('pragma:public');
+        header('Content-type:application/vnd.ms-excel;charset=utf-8;');
+        header("Content-Disposition:attachment;filename=$fileName.xls");
+        $objWriter = \PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
+        $objWriter->save('php://output');
+        
+    }
+
+	public static function outputExcel($modelName){
         vendor("PHPExcel.PHPExcel");
         $model=M($modelName);
         $fileName = $modelName.date('_Ymd_Hi');
@@ -42,7 +74,7 @@ class Excel{
         $objWriter->save('php://output');
     }
 
-    public function inputExcel($modelName,$filePath,$ext){
+    public static function inputExcel($modelName,$filePath,$ext){
 
         vendor('PHPExcel.PHPExcel');
         
@@ -61,17 +93,25 @@ class Excel{
         $cellName = array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T');
         $model=M($modelName);
 
-        // $columnName=$model->show_ALL_Field();
-        $sql="select column_name from information_schema.columns where table_name='$modelName' and table_schema = 'experiment' ";
+        $dataName=C('DB_NAME');
+        $sql="select column_name from information_schema.columns where table_name='$modelName' and table_schema = '$dataName' ";
         $columnName=$model->query($sql);
-
-
-        $cellNum=count($columnName);
+        
         for($i=2;$i<=$allRow;$i++){
-            for($j=0;$j<$cellNum;$j++){
+            for($j=0;$j<count($columnName);$j++){
         $data[$columnName[$j]['column_name']]=$PHPExcel->getActiveSheet(0)->getCell($cellName[$j][0].$i )->getValue();
             }
-             $model->add($data);
+            $datas[]=$data;
+        }
+        try{
+            return $model->addAll($datas);
+        }catch(\Exception $e){
+            return false;
         }
     }
+
+
+
+
+
 }

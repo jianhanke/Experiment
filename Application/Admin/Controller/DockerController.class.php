@@ -178,30 +178,7 @@ class DockerController extends BaseAdminController{
 		$this->assign('count',$count);
 		$this->display('showImage');	
 	}
-
-	public function dockerController(){
-		// $currentWay=C('Api_Or_Sdk');
-		
-		if(IS_POST){
-			$value=I('post.value');
-			
-			// $sdkOrApi->setControllerManner($way);
-			D('WebConfig')->editData($name='Api_Or_Sdk',$value);
-			// A('Config')->ConfigUpdateToFile();
-			A('WebConfig')->updateConfigToFile();
-			echo "<script> alert('更新更改,自行刷新'); </script> ";
-			// $this->redirect('index/home');
-			// $url=U('Docker/dockerController');
-			// echo "<script> location.href='$url'</script>";
-		}else{
-			$currentWay=$this->docker->getName();
-			// dump($this->docker);
-			$this->assign('currentWay',$currentWay);
-			$this->display();
-		}
-				
-	}
-
+	
 	public function makeImage(){
 
 		$systemType=I('post.systemType');

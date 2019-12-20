@@ -19,12 +19,9 @@ class ClassController extends BaseAdminController{
 
 	public function showClassInfoById($id){
 		
-		$model=D('ViewClassDepartment','Logic');
-		$class=$model->show_ClassInfo_ById($classId);
-
-		$model=new \Admin\Model\View_classinfoModel();
-		$info=$model->show_ClassInfo_ById($id);
-
+		$class=D('ViewClassDepartment','Logic')->show_ClassInfo_ById($id);
+		$info=D('ViewCourseTeacherClass','Logic')->getClassToInfo($id);
+		
 		$this->assign('class',$class);
 		$this->assign('datas',$info);
 		$this->display();

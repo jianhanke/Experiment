@@ -11,6 +11,10 @@ class IndexController extends BaseAdminController{
 		$this->assign('admin_name',$admin_name);
 		$this->display();
 	}
+
+	public function home(){
+		$this->display();
+	}
 	public function test10(){
 
 		$docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay('Sd');

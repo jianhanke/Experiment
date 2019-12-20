@@ -46,7 +46,7 @@ namespace MyUtils\FileUtils;
 		$upload->replace=true;
 		$upload->autoSub  = false;    //禁止上传时候的时间目录
 		$status  =   $upload->uploadOne($_FILES['video']);
-
+		
 		$result=array('status'=>$status,'upload'=>$upload);
 		return $result;
 	}

@@ -14,7 +14,7 @@ class LoginController extends Controller{
 				session('admin_id',$info['aid']);
 	            session('admin_name',$info['aname']);
 				// $this->success('登录成功',U('Index/index'));
-					$this->redirect('Index/index');
+				$this->redirect('Index/index');
 			}else{
 				$this->error('密码错误');
 			}
@@ -24,7 +24,8 @@ class LoginController extends Controller{
 	}
 	public function logout(){
 
-		session(null);
+		session('admin_id',null);
+		session('admin_name',null);
 		$this->success('退出成功',U('Admin/login/login'));
 	
 

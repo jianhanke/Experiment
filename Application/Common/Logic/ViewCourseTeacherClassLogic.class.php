@@ -15,6 +15,12 @@ class ViewCourseTeacherClassLogic extends Model{
 	// 				->select();
 	// }
 
+	public function getClassToInfo($classId){
+		return	 $this->table('view_course_teacher_class as t1,course as t2,teacher as t3')
+					  ->where("t1.class_id=$classId and t1.course_id=t2.cid and t1.teacher_id=t3.Tid")
+					   ->select();
+	}
+
 	public function show_MyClass_Info($teacher_id){
 	
 		return $this->table('view_course_teacher_class as t1,view_classwithdepartment as t2,course as t3')

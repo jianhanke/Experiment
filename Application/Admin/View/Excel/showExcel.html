@@ -24,7 +24,8 @@
                     <tr>
                         <th>表</th>
                         <th>Excel导入</th>
-                        <th>导出Excel</th>
+                        <th> 模板下载</th>
+                        <th>数据导出</th>
                         
                         
                     </tr>
@@ -38,6 +39,7 @@
                                    <input type="file" name="excelData">
                                    <button type="submit">提交</button>
                                 </form> </td>
+                        <td> <a href="{:U('Admin/Excel/outputMouldExcel/modelName')}/{$data['table_name']}">下载</a>   </td>        
                         <td> <a href="{:U('Admin/Excel/outputExcel/modelName')}/{$data['table_name']}">导出</a>   </td>
                                            
                     </tr>
