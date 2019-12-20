@@ -118,25 +118,18 @@ class CourseController extends BaseHomeController{
 
 			
 			$path=D('ChapterReport')->find_RepoartPath_ById($reportId);
-
-			$arr=explode('/', $path);
-			$showname=array_pop($arr);
+			$showname=array_pop(explode('/', $path));
 
 			if(empty($path)){
 				$this->error('下载失误');
-				
 			}
-			 $filePath="./Source/Uploads/".$path;
-
+			 $filePath=C("SOURCE_UPLOAD_PATH")."$path";
 			 try{
 		      	\Org\Net\Http::download($filePath, $showname);	
 			 }catch(\Exception $e){
-			 	echo $filePath;
-			echo "<br />";
-			echo $showname;
-			 	// echo "<script> alert('下载出错');  </script>";
-			 	// echo "<script>  javascript :history.back(-1); </script> ";
-		    		exit();
+			 	echo "<script> alert('下载出错');  </script>";
+			 	echo "<script>  javascript :history.back(-1); </script> ";
+		    	exit();
 			 }
 		}
 

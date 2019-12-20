@@ -34,7 +34,9 @@ return array(
 		'COMPILE_JAVA_PORT'          => '{$config['COMPILE_JAVA_PORT']}' ,
 		'COMPILE_PYTHON_PORT'        => '{$config['COMPILE_PYTHON_PORT']}',
 		'COMPILE_PHP_PORT'           => '{$config['COMPILE_PHP_PORT']}',
-		'Test'                       => '{$config['Test01']}',
+		'SOURCE_UPLOAD_PATH'         => '{$config['SOURCE_UPLOAD_PATH']}',
+		'SOURCE_CHAPTER_PATH'        => '{$config['SOURCE_UPLOAD_PATH']}',
+		'SOURCE_COURSE_PATH'        =>  '{$config['SOURCE_COURSE_PATH']}',      
 );";
 		file_put_contents('./Application/Common/Conf/webconfig.php',$strConfig);
 

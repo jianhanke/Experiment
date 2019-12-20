@@ -7,7 +7,7 @@ namespace MyUtils\FileUtils;
 
  	public function uploadReport($savepath,$new_name){
 			$upload = new \Think\Upload();
-			$upload->rootPath = './Source/Uploads/';  // ./ 代表 项目的根目录
+			$upload->rootPath = C("SOURCE_UPLOAD_PATH");  // ./ 代表 项目的根目录
 			$upload->savePath  = $savepath;
 			$upload->exts      =     array('doc','docx');
 			$upload->saveName = $new_name;
@@ -22,7 +22,7 @@ namespace MyUtils\FileUtils;
  	public function addCoursePicture(){
 
  		$upload = new \Think\Upload();
-		$upload->rootPath = './Source/Course/';  // ./ 代表 项目的根目录
+		$upload->rootPath = C('SOURCE_COURSE_PATH');  // ./ 代表 项目的根目录
 		$upload->exts      =     array('png','jpeg','jpg');
 		$upload->maxSize= 10*1024*1024;
 		$upload->replace=true;
@@ -38,7 +38,7 @@ namespace MyUtils\FileUtils;
 
 	
 		$upload = new \Think\Upload();
-		$upload->rootPath = './Source/Chapter/';  // ./ 代表 项目的根目录
+		$upload->rootPath =C('SOURCE_CHAPTER_PATH')  ;  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
 		$upload->exts      =     array('avi','wmv','mpeg','mp4');
 		$upload->maxSize= 50*1024*1024;
@@ -54,7 +54,7 @@ namespace MyUtils\FileUtils;
 	public function uploadChapterWord($course_name,$chapter_name,$new_name){
 		
 		$upload = new \Think\Upload();
-		$upload->rootPath = './Source/Chapter/';  // ./ 代表 项目的根目录
+		$upload->rootPath = C('SOURCE_CHAPTER_PATH');  // ./ 代表 项目的根目录
 		$upload->savePath  = $course_name.'/'.$chapter_name."/";
 		$upload->exts      =     array('docx');
 		$upload->saveName = $new_name;
