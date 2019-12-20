@@ -56,7 +56,7 @@ return array(
 		'COMPILE_PYTHON_PORT'        => '{$config['COMPILE_PYTHON_PORT']}',
 		'COMPILE_PHP_PORT'           => '{$config['COMPILE_PHP_PORT']}',
 		'SOURCE_UPLOAD_PATH'         => '{$config['SOURCE_UPLOAD_PATH']}',
-		'SOURCE_CHAPTER_PATH'        => '{$config['SOURCE_UPLOAD_PATH']}',
+		'SOURCE_CHAPTER_PATH'        => '{$config['SOURCE_CHAPTER_PATH']}',
 		'SOURCE_COURSE_PATH'        =>  '{$config['SOURCE_COURSE_PATH']}',      
 );";
 		file_put_contents('./Application/Common/Conf/webconfig.php',$strConfig);

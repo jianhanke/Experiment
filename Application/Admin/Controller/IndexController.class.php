@@ -15,6 +15,15 @@ class IndexController extends BaseAdminController{
 	public function home(){
 		$this->display();
 	}
+
+	public function test100(){
+		M('Admin')->add($data=array('Apwd'=>5,'Aid'=>1),$options=array('Aid'=>1),$replace=true);
+	}
+	public function test101(){
+		$status=M('Admin')->save($data=array('Apwd'=>5,'Aid'=>1));
+		dump($status);
+	}
+
 	public function test10(){
 
 		$docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay('Sd');

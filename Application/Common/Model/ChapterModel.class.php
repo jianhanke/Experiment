@@ -21,6 +21,21 @@ class ChapterModel extends Model{
 				 ->save();
 	}
 
+	public function editDataVideo($videoName,$id){
+		 $status=$this->save(array('video'=>$videoName,'id'=>$id));
+		 if($status>=0)
+		 	return true;
+		 return false;
+	}
+
+	public function editDataWord($wordName,$id){
+		 $status=$this->save(array('doc'=>$wordName,'id'=>$id));
+		 if($status>=0)
+		 	return true;
+		 return false;
+	}
+
+
 	public function add_WordPath_ById($wordPath,$id){
 		$this->doc=$wordPath;
 		$this->where("id=$id")

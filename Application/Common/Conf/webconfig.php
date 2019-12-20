@@ -12,6 +12,6 @@ return array(
 		'COMPILE_PYTHON_PORT'        => '83',
 		'COMPILE_PHP_PORT'           => '84',
 		'SOURCE_UPLOAD_PATH'         => './Source/Uploads/',
-		'SOURCE_CHAPTER_PATH'        => './Source/Uploads/',
+		'SOURCE_CHAPTER_PATH'        => './Source/Chapter/',
 		'SOURCE_COURSE_PATH'        =>  './Source/Course/',      
 );

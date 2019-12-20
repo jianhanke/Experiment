@@ -5,7 +5,7 @@ namespace MyUtils\FileUtils;
  class  UploadFile {
 
 
- 	public function uploadReport($savepath,$new_name){
+ 	public static function uploadReport($savepath,$new_name){
 			$upload = new \Think\Upload();
 			$upload->rootPath = C("SOURCE_UPLOAD_PATH");  // ./ 代表 项目的根目录
 			$upload->savePath  = $savepath;
@@ -19,7 +19,7 @@ namespace MyUtils\FileUtils;
 
 
 
- 	public function addCoursePicture(){
+ 	public static  function addCoursePicture(){
 
  		$upload = new \Think\Upload();
 		$upload->rootPath = C('SOURCE_COURSE_PATH');  // ./ 代表 项目的根目录
@@ -34,28 +34,28 @@ namespace MyUtils\FileUtils;
  	}
 
 
- 	public function uploadChapterVideo($course_name,$chapter_name,$new_name){
+ 	public static function uploadChapterVideo($savePath,$new_name){
 
 	
 		$upload = new \Think\Upload();
 		$upload->rootPath =C('SOURCE_CHAPTER_PATH')  ;  // ./ 代表 项目的根目录
-		$upload->savePath  = $course_name.'/'.$chapter_name."/";
+		$upload->savePath  = $savePath ;
 		$upload->exts      =     array('avi','wmv','mpeg','mp4');
 		$upload->maxSize= 50*1024*1024;
 		$upload->saveName = $new_name;
 		$upload->replace=true;
 		$upload->autoSub  = false;    //禁止上传时候的时间目录
 		$status  =   $upload->uploadOne($_FILES['video']);
-		
+
 		$result=array('status'=>$status,'upload'=>$upload);
 		return $result;
 	}
 
-	public function uploadChapterWord($course_name,$chapter_name,$new_name){
+	public static function uploadChapterWord($savePath,$new_name){
 		
 		$upload = new \Think\Upload();
 		$upload->rootPath = C('SOURCE_CHAPTER_PATH');  // ./ 代表 项目的根目录
-		$upload->savePath  = $course_name.'/'.$chapter_name."/";
+		$upload->savePath  = $savePath;
 		$upload->exts      =     array('docx');
 		$upload->saveName = $new_name;
 		$upload->replace=true;
@@ -66,7 +66,7 @@ namespace MyUtils\FileUtils;
 		$res=array('status'=>$status,'upload'=>$upload);
 		return 	$res;
 	}
-	public function saveWordToHtm($wordPath,$htmPath){
+	public static function saveWordToHtm($wordPath,$htmPath){
 		
 		vendor('PHPOffice.autoload');
 

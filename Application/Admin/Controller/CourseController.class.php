@@ -94,39 +94,34 @@ class CourseController extends BaseAdminController{
 	}
 	public function uploadVideo($chapter_id){
 
-		
 		if(empty($chapter_id)){
 			$chapter_id=I('post.chapter_id');	
-		}	
-	
-		
-		
+		}		
 		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
-		$course_name=$info['cname'];
-		$chapter_name=$info['name'];
-		$new_name=$info['id'];
-
-		$uploadFile=new \MyUtils\FileUtils\UploadFile();
-		$res=$uploadFile->uploadChapterVideo($course_name,$chapter_name,$new_name);
-
-
+		$savePath=$info['cname'].'/'.$info['name']."/";
+		try{
+			$res=\MyUtils\FileUtils\UploadFile::uploadChapterVideo($savePath,$info['id']);
+		}catch(\Exception $e){
+			$this->error('上传失败,文件错误');
+		}
 		if(!$res['status']) {// 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 		}else{// 上传成功 获取上传文件信息
 		        
-		        D('Chapter')->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
-				$this->success('上传成功');
+		        $status=D('Chapter')->editDataVideo($res['status']['savepath'].$res['status']['savename'],$chapter_id);
+		        if($status){
+		        	$this->success('上传成功');	
+		        }else{
+		        	$this->error('上传失败');
+		        }
 		} 
 	}
 
 	public function uploadWord($chapter_id){
 		
-		
-
 		if(empty($chapter_id)){
 			$chapter_id=I('post.chapter_id');	
 		}
-		
 		
 		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
@@ -134,20 +129,28 @@ class CourseController extends BaseAdminController{
 		$new_name=$info['id'];
 
 		$uploadFile=new \MyUtils\FileUtils\UploadFile();
-		$res=$uploadFile->uploadChapterWord($course_name,$chapter_name,$new_name);
-
+		$savePath=$course_name.'/'.$chapter_name."/";
+		try{
+				$res=$uploadFile->uploadChapterWord($savePath,$new_name);
+		 }catch(\Exception $e){
+	         	$this->error('上传文件出现错误');
+	     }
 		if(!$res['status']) {// 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 		}else{// 上传成功 获取上传文件信息
-		         $host=new \MyUtils\HostUtils\Host();
-				 $courseRealPath=$host-> getRootRealPath().'/Source/Chapter/';
-
-		         $wordPath=$courseRealPath.$res['status']['savepath'].$res['status']['savename'];
-		         $htmPath=$courseRealPath.$res['status']['savepath'].$new_name.'.htm';
-		         $uploadFile->saveWordToHtm($wordPath,$htmPath);
-		         
-		         D('Chapter')->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
-				$this->success('上传成功');
+		         $wordPath=C('SOURCE_CHAPTER_PATH').$res['status']['savepath'].$res['status']['savename'];
+		         $htmPath=C('SOURCE_CHAPTER_PATH').$res['status']['savepath'].$new_name.'.htm';
+		         try{
+		         	$uploadFile->saveWordToHtm($wordPath,$htmPath);
+		         }catch(\Exception $e){
+		         	$this->error('转换格式出现错误');
+		         }
+		         $status=D('Chapter')->editDataWord($res['status']['savepath'].$new_name.'.htm',$chapter_id);
+		         if($status){
+					$this->success('上传成功');
+				}else{
+					$this->error('上传失败');
+				}
 		} 
 	}
 
