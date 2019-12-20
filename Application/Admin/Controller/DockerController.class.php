@@ -188,7 +188,7 @@ class DockerController extends BaseAdminController{
 			// $sdkOrApi->setControllerManner($way);
 			D('WebConfig')->editData($name='Api_Or_Sdk',$value);
 			// A('Config')->ConfigUpdateToFile();
-			A('Config')->updateConfigToFile();
+			A('WebConfig')->updateConfigToFile();
 			echo "<script> alert('更新更改,自行刷新'); </script> ";
 			// $this->redirect('index/home');
 			// $url=U('Docker/dockerController');

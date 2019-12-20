@@ -12,15 +12,36 @@ class WebConfigModel extends Model{
 					->find()['value'];
 	}
 
+	public function getCount(){
+		return $this->count();
+	}
 
-	public function editData($name,$value){
-		return $this->where(array('name'=>$name))
+
+	public function editData($id,$value){
+		return $this->where(array('id'=>$id))
 					->save(array('value'=>$value));
 	}
 
+	public function addData($name,$value){
+		return $this->add(array('name'=>$name,'value'=>$value));
+	}
+
+	public function getData($id){
+		return $this->find()[0];
+	}
+
+	public function getDataAll(){
+		return $this->select();
+	}
+
+	public function deleteData($id){
+		return $this->delete($id);
+	}
+
 	public function ConfigUpdateToFile(){
+
+	try{
 		$config =   $this->getField('name,value');
-		
 		$strConfig="<?php
 
 //直接修改数据库配置文件,无法正确运行,可以直接更改此配置信息(又出现脏数据),请在后台更改配置信息
@@ -39,6 +60,10 @@ return array(
 		'SOURCE_COURSE_PATH'        =>  '{$config['SOURCE_COURSE_PATH']}',      
 );";
 		file_put_contents('./Application/Common/Conf/webconfig.php',$strConfig);
+			return true;
+		}catch(\Exception $e){
+			return false;
+		}
 
 	}
 

@@ -33,6 +33,14 @@
         <div class="sidebar-content" id="myFold" >
             <ul class="sidebar-list">
                 <li>
+                    <li> <a href="#"><i class="iconfont">&#xe603;</i>网站设置</a> </li>
+                    <ul class="sub-menu">
+                        <li><a href="{:U('WebConfig/showAllConfig')}" target="iframe"  ><i class="iconfont">&#xe602;</i> 配置信息</a></li>
+                        <li><a href="{:U('WebConfig/updateConfigToFile')}" target="iframe"  ><i class="iconfont">&#xe602;</i>更新配置</a></li>
+                    </ul>
+                </li>
+
+                <li>
                     <li><a href="#"><i class="iconfont">&#xe641;</i>Docker管理</a> </li> 
                     <ul class="sub-menu">
                         <li><a href="{:U("Docker/handleContainer")}" target="iframe"  ><i class="iconfont">&#xe602;</i>容器管理</a></li>
@@ -43,7 +51,6 @@
 
                     </ul>
                 </li>
-
                 <li>
                    <li>  <a href="#"><i class="iconfont">&#xe603;</i>学生管理</a> </li>
                     <ul class="sub-menu">
