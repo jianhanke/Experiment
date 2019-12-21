@@ -17,8 +17,6 @@ namespace MyUtils\FileUtils;
 			return array('status'=>$info,'upload'=>$upload);
 	}
 
-
-
  	public static  function addCoursePicture(){
 
  		$upload = new \Think\Upload();
@@ -73,6 +71,10 @@ namespace MyUtils\FileUtils;
 		$phpWord = \PhpOffice\PhpWord\IOFactory::load($wordPath);
 		$xmlWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, "HTML");
 		$xmlWriter->save($htmPath);
+	}
+
+	public  function test01(){
+		$this->error('封装test01');
 	}
 
 

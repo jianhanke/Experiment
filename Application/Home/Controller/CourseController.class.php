@@ -75,7 +75,7 @@ class CourseController extends BaseHomeController{
 
 	}
 
-		public function uploadFile(){
+	public function uploadFile(){
 			$student_id=session('user_id');	
 			$chapter_id=I('post.chapter_id');
 			$new_name=$student_id.'_';

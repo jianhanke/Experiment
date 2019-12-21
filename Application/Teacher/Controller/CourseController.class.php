@@ -73,6 +73,9 @@ class CourseController extends BaseTeacherController{
 		} 
 	}
 
+
+	
+
 	public function uploadWord($chapter_id){
 
 		if(empty($chapter_id)){
@@ -237,8 +240,7 @@ class CourseController extends BaseTeacherController{
 				$this->error('填写不完整',U('Course/addCourse'),2);
 			}
 		try{
-			$uploadFile=new \Admin\Controller\Entity\UploadFile();
-			$res=$uploadFile->addCoursePicture();
+			$res=\MyUtils\FileUtils\UploadFile::addCoursePicture();
 			if(!$res['status']) {                // 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 			}
@@ -251,7 +253,6 @@ class CourseController extends BaseTeacherController{
 
 			$courseAndTeacher=array('course_id'=>$id,'teacher_id'=>Session('teacher_id'));
 
-			
 			$status=D('CourseTeacher')->add_Info($courseAndTeacher);
 
 			if($status){

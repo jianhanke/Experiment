@@ -16,6 +16,51 @@ class IndexController extends BaseAdminController{
 		$this->display();
 	}
 
+	public function test150(){
+
+		(new \MyUtils\FileUtils\UploadFile())->test01();
+	}
+
+	public function uploadVideo($chapter_id){
+
+		if(empty($chapter_id)){
+			$chapter_id=I('post.chapter_id');	
+		}		
+		try{
+			$status=uploadChapterToVideo($chapter_id);
+			if($status){
+				$this->success('上传成功');
+			}else{
+				$this->error('上传失败');
+			}	
+		}catch(\Exception $e){
+	         	$this->error('上传文件出现错误');
+	    } 
+	}
+
+	public function uploadWord($chapter_id){
+		
+		if(empty($chapter_id)){
+			$chapter_id=I('post.chapter_id');	
+		}
+		try{
+			$status=uploadChapterToWord($chapter_id);
+			if($status){
+				$this->success('上传成功');
+			}else{
+				$this->error('上传失败');
+			}	
+		}catch(\Exception $e){
+	         	$this->error('上传文件出现错误');
+	    }
+	}
+
+	public function test200(){
+		if(false)
+			return true;
+		echo "第二行";
+	}
+
 	public function test100(){
 		M('Admin')->add($data=array('Apwd'=>5,'Aid'=>1),$options=array('Aid'=>1),$replace=true);
 	}

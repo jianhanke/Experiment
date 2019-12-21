@@ -43,17 +43,21 @@ class ChapterController extends BaseTeacherController{
 			$chapter_id=D('Chapter')->add_Info($post);
 
 			$data=D('ExperimentImage')->getAllImageIdById($post['to_imageId']);
-			$chapterImageInfo=array();
+			
 			for($i=0;$i<count($data);$i++){
 				$chapterImageInfo[$i]['to_imageId']=$data[$i];
 				$chapterImageInfo[$i]['Cid']=$chapter_id;
 			}
 			$status=D('ChapterImage')->addData($chapterImageInfo);
 
-			A("Course")->uploadVideo($chapter_id);
-			A("Course")->uploadWord($chapter_id);
-			
-			$this->success('添加成功',U("Course/editCourseById",array('id'=>$to_course)));
+			$status1=uploadChapterToVideo($chapter_id);
+			$status2=uploadChapterToVideo($chapter_id);
+			if($status1 && $status2){
+				$this->success('添加成功',U("Course/editCourseById",array('id'=>$to_course)));
+			}else{
+				$this->error('添加失败');
+			}
+		
 		}else{
 			$to_course=I('get.to_course');
 			$courseName=D('Course')->find_Course_Name($to_course);

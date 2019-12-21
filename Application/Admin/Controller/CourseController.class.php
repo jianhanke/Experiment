@@ -1,11 +1,12 @@
 <?php 
 namespace Admin\Controller;
 use Common\Controller\BaseAdminController;
+use Common\Controller\UploadTrait;
 
 class CourseController extends BaseAdminController{
 
+	use UploadTrait;
 	public function showCourse(){
-		
 		$info=D('Course')->show_All_Course();
 		$this->assign('datas',$info);
 		$this->display();
@@ -18,8 +19,8 @@ class CourseController extends BaseAdminController{
 				$this->error('填写不完整',U('Course/addCourse'),2);
 			}
 		try{
-			$uploadFile=new \MyUtils\FileUtils\UploadFile();
-			$res=$uploadFile->addCoursePicture();
+			
+			$res=\MyUtils\FileUtils\UploadFile::addCoursePicture();
 			if(!$res['status']) {                // 上传错误提示错误信息
 		        $this->error($res['upload']->getError());
 			}
@@ -90,29 +91,22 @@ class CourseController extends BaseAdminController{
 			$this->display();	
 		}
 	}
+	
 	public function uploadVideo($chapter_id){
 
 		if(empty($chapter_id)){
 			$chapter_id=I('post.chapter_id');	
 		}		
-		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
-		$savePath=$info['cname'].'/'.$info['name']."/";
 		try{
-			$res=\MyUtils\FileUtils\UploadFile::uploadChapterVideo($savePath,$info['id']);
+			$status=uploadChapterToVideo($chapter_id);
+			if($status){
+				$this->success('上传成功');
+			}else{
+				$this->error('上传失败');
+			}	
 		}catch(\Exception $e){
-			$this->error('上传失败,文件错误');
-		}
-		if(!$res['status']) {// 上传错误提示错误信息
-		        $this->error($res['upload']->getError());
-		}else{// 上传成功 获取上传文件信息
-		        
-		        $status=D('Chapter')->editDataVideo($res['status']['savepath'].$res['status']['savename'],$chapter_id);
-		        if($status){
-		        	$this->success('上传成功');	
-		        }else{
-		        	$this->error('上传失败');
-		        }
-		} 
+	         	$this->error('上传文件出现错误');
+	    } 
 	}
 
 	public function uploadWord($chapter_id){
@@ -120,37 +114,18 @@ class CourseController extends BaseAdminController{
 		if(empty($chapter_id)){
 			$chapter_id=I('post.chapter_id');	
 		}
-		
-		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
-		$course_name=$info['cname'];
-		$chapter_name=$info['name'];
-		$new_name=$info['id'];
-
-		$uploadFile=new \MyUtils\FileUtils\UploadFile();
-		$savePath=$course_name.'/'.$chapter_name."/";
 		try{
-				$res=$uploadFile->uploadChapterWord($savePath,$new_name);
-		 }catch(\Exception $e){
+			$status=uploadChapterToWord($chapter_id);
+			if($status){
+				$this->success('上传成功');
+			}else{
+				$this->error('上传失败');
+			}	
+		}catch(\Exception $e){
 	         	$this->error('上传文件出现错误');
-	     }
-		if(!$res['status']) {// 上传错误提示错误信息
-		        $this->error($res['upload']->getError());
-		}else{// 上传成功 获取上传文件信息
-		         $wordPath=C('SOURCE_CHAPTER_PATH').$res['status']['savepath'].$res['status']['savename'];
-		         $htmPath=C('SOURCE_CHAPTER_PATH').$res['status']['savepath'].$new_name.'.htm';
-		         try{
-		         	$uploadFile->saveWordToHtm($wordPath,$htmPath);
-		         }catch(\Exception $e){
-		         	$this->error('转换格式出现错误');
-		         }
-		         $status=D('Chapter')->editDataWord($res['status']['savepath'].$new_name.'.htm',$chapter_id);
-		         if($status){
-					$this->success('上传成功');
-				}else{
-					$this->error('上传失败');
-				}
-		} 
+	    }
 	}
+
 
 	public function deleteChapterImageById($id){
 
