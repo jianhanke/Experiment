@@ -19,7 +19,7 @@ class CourseTeacherModel extends Model{
 
 	public function delete_Course_By_Id($courseId,$teacherId){
 
-		return $this->where("course_id=$courseId and teacher_id=$teacherId")
+		return $this->where(array('course_id'=>$courseId,'teacher_id'=>$teacherId))
 					->delete();
 	}
 

@@ -2,7 +2,6 @@
 
 namespace Teacher\Controller;
 use Common\Controller\BaseTeacherController;
-use \MyUtils\FileController\Person;
 
 class IndexController extends BaseTeacherController{
 
@@ -19,4 +18,9 @@ class IndexController extends BaseTeacherController{
 		$this->display();
 	}
 
+	public function test01(){
+		// $datas['_logic']='OR';
+		$status=$status=D('ClassTeacher')->where($datas)->delete();
+		dump($status);
+	}
 }

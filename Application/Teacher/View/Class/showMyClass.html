@@ -26,8 +26,8 @@
                     <tr>
                         <td>  {$data['grade']}  </td>
                         <td>   {$data['department_name']}  </td>
-                        <td> <font color="red"> {$data['class_name']} </font>    </td>
-                        <td> <font color="blue"> {$data['cname']} </font>    </td>
+                        <td> {$data['class_name']}     </td>
+                        <td>  <a href="{:U('Course/showCourseById')}/courseId/{$data['cid']}  "> <font color="blue"> {$data['cname']} </font> </a>     </td>
                         <td> <a class="link-update" href="{:U('Class/showClassToStudent')}/classId/{$data['id']}">查看 </a>   </td>
                     </tr>
                  </volist>  

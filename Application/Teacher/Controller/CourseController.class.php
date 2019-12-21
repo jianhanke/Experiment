@@ -37,7 +37,7 @@ class CourseController extends BaseTeacherController{
 		   $status2=D('CourseClass')->add_Info(array('course_id'=>$post['course_id'],'class_id'=>$post['class_id']));
 			
 			if($status && $status2){
-				$this->success('修改成功');
+				$this->success('修改成功',U('Teacher/showMyCourse'));
 				$Model->commit();
 			}else{
 				$Model->rollback();
@@ -115,14 +115,15 @@ class CourseController extends BaseTeacherController{
 
 	public function courseToClassProgress($courseId,$classId){
 
-
+		
 		// $model=D('Student');
 		// $stuDatas=$model->find_Student_WithReport($classId);
+		$chapterInfo=D('Chapter')->find_Chapter_Info($courseId);
 		
-		$chapterInfo=D('Chapter')->find_Chapter_Info();
 
 		$classInfo=D('ViewClassDepartment','Logic')->show_ClassInfo_ById($classId);
 		$courseInfo=D('Course')->find_Course_ById($courseId);
+		
 
 		$this->assign('chapterInfo',$chapterInfo);
 		$this->assign('courseInfo',$courseInfo);

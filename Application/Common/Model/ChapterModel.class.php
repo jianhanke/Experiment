@@ -53,10 +53,10 @@ class ChapterModel extends Model{
 		return $this->select();
 	}
 
-	public function find_Chapter_Info(){
+	public function find_Chapter_Info($courseId){
 	 return 	$this->field('t1.*,(select count(*) from chapter_report where chapter_id = t1.id ) as report_nums')
 					 ->table('chapter as t1')
-					 ->where("t1.to_course=1")
+					 ->where("t1.to_course=$courseId")
 					 ->select();
 	}
 

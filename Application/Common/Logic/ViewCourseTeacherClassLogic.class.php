@@ -44,10 +44,29 @@ class ViewCourseTeacherClassLogic extends Model{
 
 	}
 
-		public function delTeacherToCourse($teacherId,$courseId){
+	public function deleteTeacherToCourseClass($courseId,$teacherId){
+		 $datas=$this->field('class_id')
+					->where(array('course_id'=>$courseId,'teacher_id'=>$teacherId))
+					->select();
+		
+		
+
+		$status=M('CourseTeacher')->where(array('course_id'=>$courseId,'teacher_id'=>$teacherId))->delete();
+
+		if(empty($datas)){
+			return true;
+		}
+		foreach ($datas as $key => &$value) {
+			$value['teacher_id']=$teacherId;
+		}
+		$datas['_logic']='OR';
+		$status=D('ClassTeacher')->where($datas)->delete();
+		return true;
+	}
 
 
-		  
+
+	public function delTeacherToCourse($teacherId,$courseId){
 			$array=$this->where(array('course_id'=>$courseId,'teacher_id'=>$teacherId))
 			 		   ->select();
 			

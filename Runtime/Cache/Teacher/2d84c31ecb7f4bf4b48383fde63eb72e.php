@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -40,25 +40,22 @@
     <ul class="point">
         
         <br>
-            <volist name="datas" id="data">
-        <li>&#9733 <a href="#"> {$data['name']}  </a>  </li>
-            </volist>
+            <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><li>&#9733 <a href="#"> <?php echo ($data['name']); ?>  </a>  </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
 </div>   
         <div class="box" style="height: 70%;width: 40%; float: right; ">
-            <volist name="datas" id="data">
-            <div  class="con{$key}"  style="height: 70%;width: 100%;" >
+            <?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div  class="con<?php echo ($key); ?>"  style="height: 70%;width: 100%;" >
            <!--  <b> 进入</b> <br /> 
-        <a href="{:U('Course/joinChapterById')}/id/{$data['id']}" target="block">
-             &#9733{$data['name']}  -->
+        <a href="<?php echo U('Course/joinChapterById');?>/id/<?php echo ($data['id']); ?>" target="block">
+             &#9733<?php echo ($data['name']); ?>  -->
               </a>
               <font  color="red">视频</font>
-              <p> {$data['name']} </p>
+              <p> <?php echo ($data['name']); ?> </p>
               <br>
                 <br />
                  
 
-                <video src="__ROOT__/Source/Chapter/{$data['video']}"  style="width: 50%;"    controls="" ></video>
+                <video src="/Experiment/Source/Chapter/<?php echo ($data['video']); ?>"  style="width: 50%;"    controls="" ></video>
 
                 <br />
 
@@ -67,23 +64,20 @@
 
              <b>实验指导书  </b>
 
-                <if condition="($data['doc'] eq '')">
-              <font  color="red" size="20" >暂时为空 </font>
-              <else /> <iframe src="__ROOT__/Source/Chapter/{$data['doc']} " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe>
-            </if>
+                <?php if(($data['doc'] == '')): ?><font  color="red" size="20" >暂时为空 </font>
+              <?php else: ?> <iframe src="/Experiment/Source/Chapter/<?php echo ($data['doc']); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
             
                 
                 <br>
                 
 
-              </div>
-            </volist>
+              </div><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
     
     
 </body>
 </html>
-<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="/Experiment/Public/Home/js/jquery-1.12.0.min.js"></script>
 <script type="text/javascript">
         $(document).ready(function(){
             $(".point li a").click(function(){

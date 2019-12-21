@@ -80,7 +80,7 @@ class TeacherController extends BaseTeacherController{
 		$info=array('teacher_id'=>$teacherId,'course_id'=>$courseId);
 		$status=D('CourseTeacher')->relate_To_MyCourse($info);
 		if($status){
-			$this->success('关联成功',U('Course/showMyCourse'));
+			$this->success('关联成功',U('Teacher/showMyCourse'));
 		}else{
 			$this->error('关联失败');
 		}
@@ -89,9 +89,12 @@ class TeacherController extends BaseTeacherController{
 	public function relieveMyCourseById($id){
 
 		$teacherId=Session('teacher_id');
-		$status=D('ViewCourseTeacherClass','Logic')->delTeacherToCourse($teacherId,$id);
-		$this->redirect('Course/showMyCourse');
+		D('ViewCourseTeacherClass','Logic')->deleteTeacherToCourseClass($id,$teacherId);
+		// $status=D('CourseTeacher')->delete_Course_By_Id($id,$teacherId);
+		// $this->redirect('Teacher/showMyCourse');
 	}
+
+
 
 
 }

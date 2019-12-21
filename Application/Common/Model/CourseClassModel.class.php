@@ -13,7 +13,8 @@ class CourseClassModel extends Model{
 
 
 	public function add_Info($post){
-		return $this->add($post);
+		echo "jianlai";
+		return $this->add($data=$post,$options=$post,$replace=true);
 	}
 
 	

@@ -31,11 +31,12 @@
                 </form>
 
                             <td>  <a href="<?php echo U('Class/addClassToStudent');?>/classId/<?php echo ($classId); ?>"> <input type="button" value="手动添加学生" > </a>   </td>
-                            <td>  <a href="<?php echo U('Excel/outputExcel');?>/modelName/student"> <input type="button" value="下载模板" > </a>   </td>
+                            
                             <td> <form action="<?php echo U('Excel/uploadExcelAndInput');?>/modelName/Student" method="post" enctype="multipart/form-data">
                                    <input type="file" name="excelData">
                                    <button type="submit">批量导入</button>
                                 </form> </td>
+                            <td>  <a href="<?php echo U('Excel/outputMouldExcel');?>/modelName/student"> <input type="button" value="下载模板" > </a>   </td>
                         </tr>
 
                     </table>

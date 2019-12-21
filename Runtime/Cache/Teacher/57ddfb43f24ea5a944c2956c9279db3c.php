@@ -59,7 +59,7 @@
                                 <th></th>
                                 <td>
                                     <input class="btn btn-primary btn6 mr10" value="关联" type="submit">
-                                   <a href="<?php echo U('Course/showMyCourse/');?>"> <input class="btn btn6"  value="返回" type="button"> </a>   
+                                   <a href="<?php echo U('Teacher/showMyCourse/');?>"> <input class="btn btn6"  value="返回" type="button"> </a>   
                                 </td>
                             </tr>
                         </tbody></table>
