@@ -13,7 +13,6 @@ class LoginController extends Controller{
 			if(!empty($info)){
 				session('teacher_id',$info['tid']);
 	            session('teacher_name',$info['tname']);
-				
 				$this->redirect('Index/index');
 			}else{
 				$this->error('密码错误');

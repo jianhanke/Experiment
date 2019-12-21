@@ -12,7 +12,7 @@ class ViewClassDepartmentLogic extends Model{
 	public function show_MyClass_Info($teacher_id){
 		
 
-		return $this->table('view_classwithdepartment as t1')
+		return $this->table('view_class_department as t1')
 					->join("join  view_classinfo as t2  on t1.id=t2.id")
 					->where("t2.Tid = $teacher_id")
 					->select();
@@ -41,7 +41,7 @@ class ViewClassDepartmentLogic extends Model{
 		$teacher_id=$condition['teacher_id'];
 		$grade=$condition['grade'];
 		return $this->field('t1.*,t2.teacher_id')
-					->table("view_classwithdepartment AS t1")
+					->table("view_class_department AS t1")
 					->join("left join view_course_teacher_class as t2  on (t1.id = t2.class_id and t2.teacher_id =$teacher_id )")
 					->where("t1.department_id=$department_id and  t1.grade =$grade")
 					->select();

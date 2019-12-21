@@ -170,7 +170,7 @@ class CourseController extends BaseTeacherController{
 
 	public function getCurrentGrade($id){
 
-		$grades=D('ViewClasswithdepartment','Logic')->show_AllGrade_ById($id);
+		$grades=D('ViewClassDepartment','Logic')->show_AllGrade_ById($id);
 
 		$data=array('status'=>0,'city'=>$grades);
 		header("Content-type: application/json");
@@ -183,7 +183,7 @@ class CourseController extends BaseTeacherController{
 		$condition=array('department_id'=>$departmentId,'grade'=>$grade,'teacher_id'=>Session('teacher_id'));
 
 		
-		$class=D('ViewClasswithdepartment','Logic')->show_NoneSlect_class($condition);
+		$class=D('ViewClassDepartment','Logic')->show_NoneSlect_class($condition);
 		
 		$data=array('status'=>0,'district'=>$class);
 		header("Content-type: application/json");
@@ -195,7 +195,7 @@ class CourseController extends BaseTeacherController{
 		$condition=array('department_id'=>1,'grade'=>17,'teacher_id'=>Session('teacher_id'));
 
 		
-		$class=D('ViewClasswithdepartment','Logic')->show_NoneSlect_class($condition);
+		$class=D('ViewClassDepartment','Logic')->show_NoneSlect_class($condition);
 		echo $model->_sql();
 		dump($class);
 	}
@@ -267,27 +267,22 @@ class CourseController extends BaseTeacherController{
 		}
 	}
 
-	public function downloadMyReport($reportId){
+	public function downloadReportById($reportId){
 
 			$path=D('ChapterReport')->find_RepoartPath_ById($reportId);
-
-			$arr=explode('/', $path);
-			$showname=array_pop($arr);
+			$showname=array_pop(explode('/', $path));
 
 			if(empty($path)){
 				$this->error('下载失误');
-				
 			}
-			 $filePath="./Source/Uploads/".$path;
 
+			 $filePath=C("SOURCE_UPLOAD_PATH").$path;
 			 try{
-			 	$Http = new \Org\Net\Http();
-		      	$Http::download($filePath, $showname);	
+		      	\Org\Net\Http::download($filePath, $showname);	
 			 }catch(\Exception $e){
 			 	echo "<script> alert('下载出错');  </script>";
 			 	echo "<script>  javascript :history.back(-1); </script> ";
 		    	exit();
-		   	 
 			 }
 	}
 
@@ -300,7 +295,7 @@ class CourseController extends BaseTeacherController{
 		
 		$chapterInfo=D('Chapter')->find_Chapter_Info();
 
-		$classInfo=D('ViewClasswithdepartment','Logic')->show_ClassInfo_ById($classId);
+		$classInfo=D('ViewClassDepartment','Logic')->show_ClassInfo_ById($classId);
 		$courseInfo=D('Course')->find_Course_ById($courseId);
 
 		$this->assign('chapterInfo',$chapterInfo);

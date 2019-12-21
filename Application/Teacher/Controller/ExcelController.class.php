@@ -10,7 +10,7 @@ class ExcelController extends BaseTeacherController{
 
         
             $upload= new \Think\Upload();
-            $upload->rootPath = './Source/Excel/';  // ./ 代表 从.index开始算起
+            $upload->rootPath = C('SOURCE_EXCEL_PATH');  // ./ 代表 从.index开始算起
             $upload->exts=array('xlsx','xls');
             $info   =   $upload->uploadOne($_FILES['excelData']);
             if(!$info) {// 上传错误提示错误信息
@@ -29,8 +29,11 @@ class ExcelController extends BaseTeacherController{
 	}
     
     public function outputExcel($modelName){
-        $excel=new \Admin\Controller\Entity\Excel();
-        $excel->outputExcel($modelName);
+        \Admin\Controller\Entity\Excel::outputExcel($modelName);
+    }
+
+    public function outputMouldExcel($modelName){
+        \MyUtils\FileUtils\Excel::outputformworkExcel($modelName);   
     }
 
 

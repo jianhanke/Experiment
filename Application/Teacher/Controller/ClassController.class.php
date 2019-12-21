@@ -23,7 +23,7 @@ class ClassController extends BaseTeacherController{
 
 		$courseInfo=D('Course')->find_Course_ByChapterId($chapterId);
 		
-		$classInfo=D('ViewClasswithdepartment','Logic')->show_ClassInfo_ById($classId);
+		$classInfo=D('ViewClassDepartment','Logic')->show_ClassInfo_ById($classId);
 		// dump($classInfo);
 		
 		$this->assign('classInfo',$classInfo);
