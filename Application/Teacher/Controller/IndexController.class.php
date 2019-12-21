@@ -15,4 +15,8 @@ class IndexController extends BaseTeacherController{
 		$this->display();
 	}
 
+	public function home(){
+		$this->display();
+	}
+
 }

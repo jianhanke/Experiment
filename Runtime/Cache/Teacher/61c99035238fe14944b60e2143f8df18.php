@@ -72,7 +72,7 @@
 
                 <video src="/Experiment/Source/Chapter/<?php echo ($data['video']); ?>"  style="width: 50%;"    controls="" ></video>
 
-                    <form action="<?php echo U('Course/uploadVideo');?> " method="post" enctype="multipart/form-data" >
+                    <form action="<?php echo U('Chapter/uploadVideo');?> " method="post" enctype="multipart/form-data" >
                         <input type="file"  name="video" >
                         <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> ">
                         <!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->
@@ -84,7 +84,7 @@
 
 
              <b>上传实验指导书 <font color="red" >(只限.docx文件,.doc请另存为.docx后再上传)</font>  </b>
-             <form action="<?php echo U('Course/uploadWord');?> " method="post" enctype="multipart/form-data" >
+             <form action="<?php echo U('Chapter/uploadWord');?> " method="post" enctype="multipart/form-data" >
                         <input type="file"  name="word" >
                         <input type="hidden" name="chapter_id" value="<?php echo ($data['id']); ?> "  >
                         <!-- <input type="texhiddetn"  name="chapter_name"  value="<?php echo ($data['name']); ?> -->

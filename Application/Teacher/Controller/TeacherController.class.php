@@ -5,17 +5,33 @@ use Common\Controller\BaseTeacherController;
 
 class TeacherController extends BaseTeacherController{
 
-	public function showInfo($teacherId){
+	public function showMyCourse(){
 
 		
+		$info=D('CourseTeacher')->find_My_CourseId(Session('teacher_id'));
+		$datas=D('Course')->show_MyCourse_Info($info);
+
+		$teacherId=Session('teacher_id');
+		for($i=0;$i<count($datas);$i++){
+			$classIds=D('ViewCourseTeacherClass','Logic')->find_ClassId_ById($datas[$i]['cid'],$teacherId);
+			$datas[$i]['classIds']=$classIds;
+		}
+		if(empty($datas)){
+			// echo "<script>  javascript :history.back(-1); </script> ";
+			echo "<script> alert('课程为空'); </script>";
+		}
+		$this->assign('datas',$datas);
+		$this->display();
+	}
+
+	public function showInfo($teacherId){
+
 		$info=D('Teacher')->find_Info_ById($teacherId);
 		$this->assign('datas',$info);
 		$this->display();
 	}
 
 	public function modifyInfo($teacherId){
-
-
 		if(IS_POST){
 			$post=I('post.');
 			$info=D('Teacher')->modify_Info($post);
@@ -40,9 +56,8 @@ class TeacherController extends BaseTeacherController{
 
 			if($post['newPwd1']==$post['newPwd2']){
 				$info['Tid']=$teacherId;
-				$info['Tpwd']=$post['newPwd1'];
+				$info['Tpwd']=md5($post['newPwd1']);
 				$status=D('Teacher')->modify_Info($info);	
-
 				if($status !== false){
 					echo "<script> alert('修改成功');  </script>";
 				}else{
@@ -54,9 +69,28 @@ class TeacherController extends BaseTeacherController{
 			}
 
 		}
-			$this->display();	
-		
-		
+			$this->display();		
+	}
+
+
+	public function relateToMyCourse($courseId){
+
+		$teacherId=Session('teacher_id');
+		// $model=new \Teacher\Model\Course_teacherModel();
+		$info=array('teacher_id'=>$teacherId,'course_id'=>$courseId);
+		$status=D('CourseTeacher')->relate_To_MyCourse($info);
+		if($status){
+			$this->success('关联成功',U('Course/showMyCourse'));
+		}else{
+			$this->error('关联失败');
+		}
+	}
+
+	public function relieveMyCourseById($id){
+
+		$teacherId=Session('teacher_id');
+		$status=D('ViewCourseTeacherClass','Logic')->delTeacherToCourse($teacherId,$id);
+		$this->redirect('Course/showMyCourse');
 	}
 
 

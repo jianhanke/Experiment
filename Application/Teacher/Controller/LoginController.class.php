@@ -9,6 +9,7 @@ class LoginController extends Controller{
 		if(IS_POST){
 
 			$post=I('post.');
+			$post['Tpwd']=md5($post['Tpwd']);
 			$info=D('Teacher')->check_Login($post);
 			if(!empty($info)){
 				session('teacher_id',$info['tid']);

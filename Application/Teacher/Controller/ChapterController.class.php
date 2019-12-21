@@ -80,6 +80,79 @@ class ChapterController extends BaseTeacherController{
 		}
 	}
 
+		public function uploadVideo($chapter_id){
+
+		if(empty($chapter_id)){
+			$chapter_id=I('post.chapter_id');	
+		}	
+	
+		$model=new \Admin\Model\View_coursetochapterModel();
+		$info=$model->find_Chapter_Course($chapter_id);
+		$course_name=$info['cname'];
+		$chapter_name=$info['name'];
+		$new_name=$info['id'];
+
+		$uploadFile=new \Admin\Controller\Entity\UploadFile();
+		$res=$uploadFile->uploadChapterVideo($course_name,$chapter_name,$new_name);
+
+
+		if(!$res['status']) {// 上传错误提示错误信息
+		        $this->error($res['upload']->getError());
+		}else{   // 上传成功 获取上传文件信息
+		        D('Chapter')->add_Video_By_Id($res['status']['savepath'].$res['status']['savename'],$chapter_id);
+				$this->success('上传成功');
+		} 
+	}
+
+	public function uploadWord($chapter_id){
+
+		if(empty($chapter_id)){
+			$chapter_id=I('post.chapter_id');	
+		}
+		
+		$model=new \Admin\Model\View_coursetochapterModel();
+		$info=$model->find_Chapter_Course($chapter_id);
+		$course_name=$info['cname'];
+		$chapter_name=$info['name'];
+		$new_name=$info['id'];
+
+		$uploadFile=new \Admin\Controller\Entity\UploadFile();
+		$res=$uploadFile->uploadChapterWord($course_name,$chapter_name,$new_name);
+
+		if(!$res['status']) {// 上传错误提示错误信息
+		        $this->error($res['upload']->getError());
+		}else{// 上传成功 获取上传文件信息
+		         $host=new \Admin\Controller\Entity\Host();
+				 $courseRealPath=$host-> getRootRealPath().'/Source/Chapter/';
+
+		         $wordPath=$courseRealPath.$res['status']['savepath'].$res['status']['savename'];
+		         $htmPath=$courseRealPath.$res['status']['savepath'].$new_name.'.htm';
+		         $uploadFile->saveWordToHtm($wordPath,$htmPath);
+		         
+		         D('Chapter')->add_WordPath_ById($res['status']['savepath'].$new_name.'.htm',$chapter_id);
+				$this->success('上传成功');
+		} 
+	}
+
+	public function downloadReportById($reportId){
+
+			$path=D('ChapterReport')->find_RepoartPath_ById($reportId);
+			$showname=array_pop(explode('/', $path));
+
+			if(empty($path)){
+				$this->error('下载失误');
+			}
+
+			 $filePath=C("SOURCE_UPLOAD_PATH").$path;
+			 try{
+		      	\Org\Net\Http::download($filePath, $showname);	
+			 }catch(\Exception $e){
+			 	echo "<script> alert('下载出错');  </script>";
+			 	echo "<script>  javascript :history.back(-1); </script> ";
+		    	exit();
+			 }
+	}
+
 	
 
 

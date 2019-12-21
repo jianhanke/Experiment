@@ -41,8 +41,8 @@
              					
 							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
 							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
-                            
-                  
+                            <td>  <a href="{:U('Course/addCourse')}"> <input type="button" value="添加课程" > </a>   </td>
+                      	
                         </tr>
 
                     </table>
@@ -62,9 +62,21 @@
 			<p>  {$data['name']} </p>  
 			
 				
-		<a href="{:U('Course/showCourseById')}/courseId/{$data['cid']}  "> <input type="button" value="查看详细信息" >  </a>				
-	
-		<a href="{:U('Teacher/relateToMyCourse')}/courseId/{$data['cid']}  "> <input type="button" value="关联到我的课" >  </a>
+				<a href="{:U('Course/editCourseById')}/id/{$data['cid']}" > 
+				       <input type="button"  value="编辑 ">     </a> 
+				<a href="{:U('Teacher/relieveMyCourseById')}/id/{$data['cid']}"><input type="button" value="解除关联" > </a>
+
+				<a href="{:U('Course/courseRelateClass')}/courseId/{$data['cid']}"> <input type="button" value="关联班级" >  </a>
+
+				<!-- <a href="{:U('Student/courseProgress')}/courseId/{$data['cid']}">  -->
+					
+						<select onchange='location.href=this.options[this.selectedIndex].value'>
+                            <option  selected="true" disabled="true" >班级进展</option>
+                            	<volist name="data['classIds']" id="classInfo">
+                          	 <option   value="{:U('Course/courseToClassProgress')}/courseId/{$data['cid']}/classId/{$classInfo['id']}"> {$classInfo['class_name']} </option>
+                            	</volist>
+               			 </select>
+				  
 			
 		</div>
     </div>
@@ -75,4 +87,5 @@
 
 </body>
 </html>
+
 

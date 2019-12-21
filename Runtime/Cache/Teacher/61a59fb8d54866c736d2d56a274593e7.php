@@ -48,7 +48,7 @@
                         <td> <?php echo ($data['sid']); ?>  </td>
                         <td> <?php echo ($data['sname']); ?>  </td>
                         <td>  
-                        <?php if($data['id'] != NULL ): ?><a href="<?php echo U('Course/downloadReportById');?>/reportId/<?php echo ($data['id']); ?>"  type="doc" >
+                        <?php if($data['id'] != NULL ): ?><a href="<?php echo U('Chapter/downloadReportById');?>/reportId/<?php echo ($data['id']); ?>"  type="doc" >
                         <img src="/Experiment/Public/Teacher/images/icon_doc.gif">下载</a>
                            </td>
                         <?php else: ?>

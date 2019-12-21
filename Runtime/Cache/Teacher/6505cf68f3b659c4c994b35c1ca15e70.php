@@ -63,7 +63,7 @@
 				
 		<a href="<?php echo U('Course/showCourseById');?>/courseId/<?php echo ($data['cid']); ?>  "> <input type="button" value="查看详细信息" >  </a>				
 	
-		<a href="<?php echo U('Course/relateMyCourse');?>/courseId/<?php echo ($data['cid']); ?>  "> <input type="button" value="关联到我的课" >  </a>
+		<a href="<?php echo U('Teacher/relateToMyCourse');?>/courseId/<?php echo ($data['cid']); ?>  "> <input type="button" value="关联到我的课" >  </a>
 			
 		</div>
     </div><?php endforeach; endif; else: echo "" ;endif; ?>

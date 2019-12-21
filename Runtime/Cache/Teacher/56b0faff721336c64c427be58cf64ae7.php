@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html>
 <head>
  	
@@ -29,8 +29,8 @@
 	a{ text-decoration:none} 
 	</style>	
 </head>
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/common.css"/>
-<link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
 <body>
 
 <div class="search-wrap">
@@ -41,7 +41,7 @@
              					
 							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
 							<th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th><th> </th>
-                            <td>  <a href="{:U('Course/addCourse')}"> <input type="button" value="添加课程" > </a>   </td>
+                            <td>  <a href="<?php echo U('Course/addCourse');?>"> <input type="button" value="添加课程" > </a>   </td>
                       	
                         </tr>
 
@@ -50,42 +50,36 @@
             </div>
 </div>
 
-<volist name="datas" id="data">
-	<div class="myDiv" style="width: 80%;height: 30%; " >
+<?php if(is_array($datas)): $i = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="myDiv" style="width: 80%;height: 30%; " >
 
 		<div style="width: 25%;float: left;height: 100%;" >
-			<img src="__ROOT__/Source/Course/{$data['img']} " alt="" style="width:100%;height: 100%; ">
+			<img src="/Experiment/Source/Course/<?php echo ($data['img']); ?> " alt="" style="width:100%;height: 100%; ">
 		</div>
 		<div style="width: 75%;float:right;height: 100%;  ">
 				<br />
 				<br />
-			<p>  {$data['name']} </p>  
+			<p>  <?php echo ($data['name']); ?> </p>  
 			
 				
-				<a href="{:U('Course/editCourseById')}/id/{$data['cid']}" > 
+				<a href="<?php echo U('Course/editCourseById');?>/id/<?php echo ($data['cid']); ?>" > 
 				       <input type="button"  value="编辑 ">     </a> 
-				<a href="{:U('Course/cancelCourseById')}/id/{$data['cid']}"><input type="button" value="解除关联" > </a>
+				<a href="<?php echo U('Teacher/relieveMyCourseById');?>/id/<?php echo ($data['cid']); ?>"><input type="button" value="解除关联" > </a>
 
-				<a href="{:U('Course/courseRelateClass')}/courseId/{$data['cid']}"> <input type="button" value="关联班级" >  </a>
+				<a href="<?php echo U('Course/courseRelateClass');?>/courseId/<?php echo ($data['cid']); ?>"> <input type="button" value="关联班级" >  </a>
 
-				<!-- <a href="{:U('Student/courseProgress')}/courseId/{$data['cid']}">  -->
+				<!-- <a href="<?php echo U('Student/courseProgress');?>/courseId/<?php echo ($data['cid']); ?>">  -->
 					
 						<select onchange='location.href=this.options[this.selectedIndex].value'>
                             <option  selected="true" disabled="true" >班级进展</option>
-                            	<volist name="data['classIds']" id="classInfo">
-                          	 <option   value="{:U('Course/courseToClassProgress')}/courseId/{$data['cid']}/classId/{$classInfo['id']}"> {$classInfo['class_name']} </option>
-                            	</volist>
+                            	<?php if(is_array($data['classIds'])): $i = 0; $__LIST__ = $data['classIds'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$classInfo): $mod = ($i % 2 );++$i;?><option   value="<?php echo U('Course/courseToClassProgress');?>/courseId/<?php echo ($data['cid']); ?>/classId/<?php echo ($classInfo['id']); ?>"> <?php echo ($classInfo['class_name']); ?> </option><?php endforeach; endif; else: echo "" ;endif; ?>
                			 </select>
 				  
 			
 		</div>
-    </div>
-</volist>
+    </div><?php endforeach; endif; else: echo "" ;endif; ?>
 
 
 
 
 </body>
 </html>
-
-

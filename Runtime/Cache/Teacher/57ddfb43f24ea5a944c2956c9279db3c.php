@@ -1,9 +1,9 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Teacher/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
 </head>
 <body>
 <div>
@@ -12,28 +12,27 @@
 
 
 <div class="result-content">
-                <form action="{:U('Course/courseRelateClass')}" method="post" >
+                <form action="<?php echo U('Course/courseRelateClass');?>" method="post" >
                     <table class="insert-tab" width="100%">
                         <tbody>
                             <tr>
-                                <input type="hidden"  name="course_id"  value="{$datas['cid']}"   >
+                                <input type="hidden"  name="course_id"  value="<?php echo ($datas['cid']); ?>"   >
                                 <th><i class="require-red">*</i>课程名：</th>
                                 <td>
-                                    <p> {$datas['cname']}  </p>
+                                    <p> <?php echo ($datas['cname']); ?>  </p>
                                 </td>
                             </tr>
 							 <tr>
                                 <th>：</th>
-                                <td><img src="__ROOT__/Source/Course/{$datas['img']}" width="250"></td>
+                                <td><img src="/Experiment/Source/Course/<?php echo ($datas['img']); ?>" width="250"></td>
                             </tr>
                             <tr>
                                 <th width="120"><i class="require-red">*</i>学院  ：</th>
                             	<td>     
 								<select  name="" id="province_id" style="width:150px;">
 								<option  selected="true" disabled="true" >请选择</option>
-						        <volist name="departments" id="department">    <!-- 可能要改name值 -->
-						        	<option  value="{$department['id']}">{$department['department_name']}</option>
-						        </volist>                                                  
+						        <?php if(is_array($departments)): $i = 0; $__LIST__ = $departments;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$department): $mod = ($i % 2 );++$i;?><!-- 可能要改name值 -->
+						        	<option  value="<?php echo ($department['id']); ?>"><?php echo ($department['department_name']); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>                                                  
 						     </select>
                             	</td>  
                             </tr>
@@ -60,7 +59,7 @@
                                 <th></th>
                                 <td>
                                     <input class="btn btn-primary btn6 mr10" value="关联" type="submit">
-                                   <a href="{:U('Course/showMyCourse/')}"> <input class="btn btn6"  value="返回" type="button"> </a>   
+                                   <a href="<?php echo U('Course/showMyCourse/');?>"> <input class="btn btn6"  value="返回" type="button"> </a>   
                                 </td>
                             </tr>
                         </tbody></table>
@@ -68,14 +67,14 @@
             </div>
 
 </div>
-<script src="__PUBLIC__/Home/js/jquery-2.0.0.min.js"></script>
+<script src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
 
 
 <script>
 	$("#province_id").change(function(){
 	var province_id=$(this).val();
 	$.ajax({
-		url:"{:U('Class/getCurrentGrade')}" ,  //路径
+		url:"<?php echo U('Class/getCurrentGrade');?>" ,  //路径
 		Type:"POST",
 		data:"id="+province_id,             //参数
 		dataType:"json",                    
@@ -102,7 +101,7 @@ $("#city_id").change(function(){
 	var city_id=$(this).val();                   
 	var province_id=$("#province_id").val();     //全选取路径可能需要更改 
 	$.ajax({   
-		url:"{:U('Class/getCurrentClass')}" , //路径
+		url:"<?php echo U('Class/getCurrentClass');?>" , //路径
 		Type:"POST",
 		data:{"departmentId":province_id,"grade":city_id},  //参数
 		dataType:"json",
