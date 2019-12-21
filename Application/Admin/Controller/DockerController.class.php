@@ -7,11 +7,10 @@ class DockerController extends BaseAdminController{
 
 
 
-	public $docker=NULL;
-	public function __construct(){
-		parent::__construct();
-		$way=C('Api_Or_Sdk');
-		$this->docker=\MyUtils\DockerUtils\DockerFactory::createControllerWay($way);
+	public  $docker=NULL;
+
+	public function _initialize(){
+		$this->docker=getControllerDockerWay();
 	}
 
 	public function deleteContainerById(){  //在Docker中删除此容器，同时删除数据库中容器和课程记录
@@ -60,12 +59,8 @@ class DockerController extends BaseAdminController{
 	public function addImageAndId(){
 		
 		$post=I('post.');
-		
-
 		try{
-			// $model=new \Admin\Model\Chapter_imageModel();
-			$model=new \Admin\Model\Make_imageModel();
-			$status=$model->add_Image_AndId($post);
+			$status=D('MakeImage')->add_Image_AndId($post);
 			if($status)
 				$this->success('添加成功');
 			else
@@ -80,15 +75,11 @@ class DockerController extends BaseAdminController{
 	public function addImage(){
 		if(IS_POST){
 			$imageName=I('post.name');
-			
 		try{
 				$imageId=$this->docker->pullImageByName($imageName);
 
-				// $model=new \Admin\Model\Chapter_imageModel();
-				$model=new \Admin\Model\Make_imageModel();
-
 				$ImageInfo=array('image_id'=>$imageId,'name'=>$$imageName);
-				$status=$model->add_Image_AndId($ImageInfo);
+				$status=D('MakeImage')->add_Image_AndId($ImageInfo);
 			if($status){
 				$this->success('添加成功');
 			}
@@ -112,26 +103,22 @@ class DockerController extends BaseAdminController{
 	}
 
 
-	public function restartContainerById(){   //后台重启容器
-
-		$container_id=I('get.container_id');
+	public function restartContainerById($container_id){   //后台重启容器
 
 		$this->docker->restartContainerById($container_id);
 		$this->redirect('handleContainer');
 	}
 
-	public function startContainerById(){  //启动容器
-		$container_id=I('get.container_id');
+	public function startContainerById($container_id){  //启动容器
 		
 		 $this->docker->startContainerById($container_id);
 		$this->redirect('handleContainer');
 	}
 
-	public function shutdownContainerById(){   //关机
-		$container_id=I('get.container_id');	
+	public function stopContainerById($container_id){   //关机
 		
 		$this->docker->stopContainerById($container_id);
-		$this->redirect('Docker/handleContainer');
+		$this->redirect('handleContainer');
 	}	
 
 	/* 
@@ -182,40 +169,29 @@ class DockerController extends BaseAdminController{
 	public function makeImage(){
 
 		$systemType=I('post.systemType');
+
+		$ips=getNewIp()['ip'];
 		
-		$docker=new \MyUtils\DockerUtils\DockerApi();
+		$container_id=$this->docker->runContainerByIdIp($systemType,$ips['ip']);
 
-		$ips=$docker->getNewIp();
-		$ip=$ips['ip'];
-		
-		$container_id=$docker->runContainerByIdIp($systemType,$ip);
+		D('DockerContainer')->add_Container('110',$container_id,$systemType,$ip,$ips['ip_num']);
 
-		$model3=new \Home\Model\Docker_containerModel();
-		$model3->add_Container('110',$container_id,$systemType,$ip,$ips['ip_num']);
-
-		$noVNC=new \MyUtils\HostUtils\Host();
-		$hostName=$noVNC->getHostName();
-
-		$url='ws://'.$hostName.':6080/websockify?token=host'.$ips['ip_num'];
+		$url= \MyUtils\DockerUtils\NoVNC::getWsUrlByIp($ips['ip_num']);
 
 		$this->assign('containerId',$container_id);
 		$this->assign('url',$url);
 		$this->display();
-
-
-		}		
-		public function toMakeImage(){
+	}		
+	public function toMakeImage(){
 			$container_id=I('post.containerId');
 			$imageName=I('post.imageName');
 			$admin_name=session('admin_name');
 
-			$docker=new \MyUtils\DockerUtils\DockerApi();
-			$image_id=$docker->commitContainerById($container_id);
+			$image_id=$this->docker->commitContainerById($container_id);
 			$data=['image_id'=>$image_id,'name'=>$imageName,'from_admin'=>$admin_name];
 
-			$model=new \Home\Model\Make_imageModel();
-			$model->add($data);
-		}
+			D('MakeImage')->add($data);
+	}
 
 
 

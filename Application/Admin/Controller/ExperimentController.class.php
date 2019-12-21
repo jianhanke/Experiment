@@ -54,7 +54,7 @@ class ExperimentController extends BaseAdminController{
 			$post=I('post.');
 
 			$upload = new \Think\Upload();
-			$upload->rootPath = './Source/Experiment/';  // ./ 代表 项目的根目录
+			$upload->rootPath = C('SOURCE_EXPERIMENT_PATH') ;  // ./ 代表 项目的根目录
 			$upload->exts      =     array('png','jpeg','jpg');
 			$upload->maxSize= 10*1024*1024;
 			$upload->replace=true;

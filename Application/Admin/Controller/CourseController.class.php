@@ -31,8 +31,6 @@ class CourseController extends BaseAdminController{
 			$id=D('Course')->add_Info($post);
 
 			$courseInfo=array('course_id'=>$id,'teacher_id'=>$post['to_teacher_id']);
-				
-			
 			if($id){
 				$this->success('添加成功',U('Course/showCourse'));
 			}else{

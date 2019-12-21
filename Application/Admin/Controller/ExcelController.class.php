@@ -17,7 +17,7 @@ class ExcelController extends BaseAdminController{
 	public function uploadExcelAndInput($modelName){
 
             $upload= new \Think\Upload();
-            $upload->rootPath = './Source/Excel/';  // ./ 代表 从.index开始算起
+            $upload->rootPath =C('SOURCE_EXCEL_PATH');  // ./ 代表 从.index开始算起
             $upload->exts=array('xlsx','xls');
             $info   =   $upload->uploadOne($_FILES['excelData']);
             if(!$info) {// 上传错误提示错误信息
