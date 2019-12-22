@@ -56,44 +56,7 @@ class DockerController extends BaseAdminController{
 		$this->display();
 	}
 
-	public function addImageAndId(){
-		
-		$post=I('post.');
-		try{
-			$status=D('MakeImage')->add_Image_AndId($post);
-			if($status)
-				$this->success('添加成功');
-			else
-				$this->error('添加失败');
-				
-		}catch(\Exception $e){
-		 	$this->error('数据库添加失败');
-		}	
-	}
-
-
-	public function addImage(){
-		if(IS_POST){
-			$imageName=I('post.name');
-		try{
-				$imageId=$this->docker->pullImageByName($imageName);
-
-				$ImageInfo=array('image_id'=>$imageId,'name'=>$$imageName);
-				$status=D('MakeImage')->add_Image_AndId($ImageInfo);
-			if($status){
-				$this->success('添加成功');
-			}
-			else{
-				$this->error('添加失败');
-			}
-		}catch(\Exception $e){
-		 	$this->error('失败');
-		}
-		}else{
-			$this->display();
-		}
-		
-	}
+	
 
 	public function test01(){
 		$imageName="ubuntu:latest";
@@ -166,43 +129,5 @@ class DockerController extends BaseAdminController{
 		$this->display('showImage');	
 	}
 	
-	public function makeImage(){
-
-		$systemType=I('post.systemType');
-
-		$ips=getNewIp()['ip'];
-		
-		$container_id=$this->docker->runContainerByIdIp($systemType,$ips['ip']);
-
-		D('DockerContainer')->add_Container('110',$container_id,$systemType,$ip,$ips['ip_num']);
-
-		$url= \MyUtils\DockerUtils\NoVNC::getWsUrlByIp($ips['ip_num']);
-
-		$this->assign('containerId',$container_id);
-		$this->assign('url',$url);
-		$this->display();
-	}		
-	public function toMakeImage(){
-			$container_id=I('post.containerId');
-			$imageName=I('post.imageName');
-			$admin_name=session('admin_name');
-
-			$image_id=$this->docker->commitContainerById($container_id);
-			$data=['image_id'=>$image_id,'name'=>$imageName,'from_admin'=>$admin_name];
-
-			D('MakeImage')->add($data);
-	}
-
-
-
-	public function chooseMakeImage(){
-
-		$this->display();
-
-	}
-
-
-
 	
-
 }

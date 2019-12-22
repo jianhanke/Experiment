@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -31,7 +31,7 @@ a{
     
     
     
-      <input type="hidden"  id='hiddenUrl' value="{$url}">
+      <input type="hidden"  id='hiddenUrl' value="<?php echo ($url); ?>">
       <div id="screen"  style="height: 100%;width: 68%;float: right; " >
           
       </div>
@@ -44,7 +44,7 @@ a{
 
 <script type="module" crossorigin="anonymous" >
   
-  import RFB from '__PUBLIC__/Home/plugin/noVNC/core/rfb.js';
+  import RFB from '/Experiment/Public/Home/plugin/noVNC/core/rfb.js';
   console.log("jianhanke!");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);

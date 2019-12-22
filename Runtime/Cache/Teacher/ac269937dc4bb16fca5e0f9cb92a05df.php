@@ -55,6 +55,12 @@
                         <li><a href="<?php echo U('Class/showMyClass');?>" target="iframe"><i class="iconfont">&#xe678;</i>所带班级</a></li>
                     </ul>
                 </li>
+                <li>
+                    <li> <a href="#"><i class="iconfont">&#xe603;</i>实验镜像</a> </li>
+                    <ul class="sub-menu">
+                        <li><a href="<?php echo U("Docker/chooseMakeImage");?>" target="iframe"><i class="iconfont">&#xe602;</i>制作镜像</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

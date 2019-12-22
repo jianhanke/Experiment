@@ -1,0 +1,357 @@
+[ 2019-12-22T11:28:03+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000112s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+
+[ 2019-12-22T11:28:03+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000084s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001862s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001914s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000082s ]
+
+[ 2019-12-22T11:28:04+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000076s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `admin` WHERE `Aid` = 1 AND `Apwd` = '1' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2019-12-22T11:28:04+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000036s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000079s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005315s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005364s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000066s ]
+
+[ 2019-12-22T11:28:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001580s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000068s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000032s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000060s ]
+
+[ 2019-12-22T11:28:09+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/handleContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `docker_container` ORDER BY id desc  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `docker_container` LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003533s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000048s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+
+[ 2019-12-22T11:28:09+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/showAllContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007289s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007348s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2019-12-22T11:28:10+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/chooseMakeImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001642s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-12-22T11:30:44+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/chooseMakeImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-12-22T11:30:46+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/chooseMakeImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001554s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000068s ]
+
+[ 2019-12-22T11:30:46+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/chooseMakeImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001617s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-12-22T12:14:30+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/makeImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000105s ]
+ERR: 非法操作:makeImage
+
+[ 2019-12-22T12:15:16+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/makeImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+ERR: 非法操作:makeImage
+
+[ 2019-12-22T12:15:34+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/makeImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000104s ]
+ERR: 非法操作:makeImage
+

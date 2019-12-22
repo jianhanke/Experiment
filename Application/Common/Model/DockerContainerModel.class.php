@@ -11,6 +11,16 @@ class DockerContainerModel extends Model{
 		
 	}
 
+	public function addDataByOrder($Container_id,$student_id,$ip,$Image_id,$ip_num){
+	return	$this->add(array(
+				'Container_id'=>$Container_id,
+				'student_id'  =>$student_id,
+				'ip'          =>$ip,
+				'Image_id'    =>$Image_id,
+				'ip_num'      =>$ip_num,
+			));
+	}
+
 	public function count_Num(){
 		return $this->count();
 	}

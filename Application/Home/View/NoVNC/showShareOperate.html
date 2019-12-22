@@ -45,10 +45,11 @@ a{
 <script type="module" crossorigin="anonymous" >
   
   import RFB from '__PUBLIC__/Home/plugin/noVNC/core/rfb.js';
-  console.log("jianhanke!");
+  console.log("jingjing");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
    var rfb = new RFB(document.getElementById('screen'),url,{ credentials: { password: '123456' } }  );
+   rfb.clipViewport=true;
   rfb.connect();
   
   // console.log(rfb);

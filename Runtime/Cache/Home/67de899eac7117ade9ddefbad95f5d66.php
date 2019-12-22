@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -69,9 +69,9 @@ a{
 
 </style>
 <body>  
-    <input type="hidden"  id='hiddenUrl' value="{$url}">
-    <input type="hidden"  id='ceshiUrl' value="{$ceshiUrl}">
-    <input type="hidden"  id='sshUrl' value="{$sshUrl}">
+    <input type="hidden"  id='hiddenUrl' value="<?php echo ($url); ?>">
+    <input type="hidden"  id='ceshiUrl' value="<?php echo ($ceshiUrl); ?>">
+    <input type="hidden"  id='sshUrl' value="<?php echo ($sshUrl); ?>">
     <div class="leftDiv"  style="height: 100%;width: 32%; float: left; "  >
 
         <div style="height: 10%;width: 100%;" >
@@ -85,11 +85,11 @@ a{
         </div>
         <div class="box" style="height: 90%; width: 100%; " >
             <div class="con0" id="con0"  >                
-                 <img src="__PUBLIC__/Home/images/1.jpg" style="height: 60%;width: 60%;" > 
+                 <img src="/Experiment/Public/Home/images/1.jpg" style="height: 60%;width: 60%;" > 
                  <br>
                  
                  <ul class="point2">
-                  <p> <a href="{:U('Docker/resetContainer')}/id/{$id}">  <input type="button" value="重置虚拟机"> </a> </p> 
+                  <p> <a href="<?php echo U('Docker/resetContainer');?>/id/<?php echo ($id); ?>">  <input type="button" value="重置虚拟机"> </a> </p> 
                 <li> <input type="button"  id="shareDesk" name="shareDesk" value="共享桌面"/> </li>  
                 
                 <br>
@@ -100,23 +100,21 @@ a{
                  </ul>
               </div>
             <div class="con1">
-                <video src="__ROOT__/Source/Chapter/{$video}" style="width: 100%;"  controls="" ></video>
+                <video src="/Experiment/Source/Chapter/<?php echo ($video); ?>" style="width: 100%;"  controls="" ></video>
             </div>
 
             <div class="con2" style="height: 90%;" >
-                <form action="{:U('NoVNC/saveNote')} " id="myForm" method="post"  style="height: 80%;"  target="hidden_iframe"  >
+                <form action="<?php echo U('NoVNC/saveNote');?> " id="myForm" method="post"  style="height: 80%;"  target="hidden_iframe"  >
                   <script id="container"   name="myNote"  style="height: 100%;" scrolling="yes"> </script>
-                  <input type="hidden"  name="id" value="{$id}" >
+                  <input type="hidden"  name="id" value="<?php echo ($id); ?>" >
                   <button type="button" style="background-color:#1E90FF;height: 8%;width: 10%;" onclick="submitNote()"   >保存</button>
                 </form>
                 <iframe name="hidden_iframe" style="display:none;"></iframe>
             </div>
             <div class="con3" style="height: 100%;width: 100%;" >
 
-            <if condition="($doc eq '')">
-              <font  color="red" size="20" >暂时为空 </font>
-              <else /> <iframe src="__ROOT__/Source/Chapter/{$doc} " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe>
-            </if>
+            <?php if(($doc == '')): ?><font  color="red" size="20" >暂时为空 </font>
+              <?php else: ?> <iframe src="/Experiment/Source/Chapter/<?php echo ($doc); ?> " frameBorder=0  style="height: 100%;width: 100%; "   ></iframe><?php endif; ?>
                 
             </div>
             
@@ -128,7 +126,7 @@ a{
       </div>
 
          <div class="new1" style="height: 100%;width: 100%; hidden"  >
-        <iframe src="{$sshUrl}" id="ssh"  class="ssh" style="width: 100%;height: 100%;">
+        <iframe src="<?php echo ($sshUrl); ?>" id="ssh"  class="ssh" style="width: 100%;height: 100%;">
         </iframe>
 
     
@@ -142,12 +140,12 @@ a{
 
 </html>
 
-<script src="__PUBLIC__/Home/js/jquery-2.0.0.min.js"></script>
-<script src="__PUBLIC__/Home/plugin/layer/layer.js" ></script>
+<script src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
+<script src="/Experiment/Public/Home/plugin/layer/layer.js" ></script>
 
 <script type="module" crossorigin="anonymous" >
   
-  import RFB from '__PUBLIC__/Home/plugin/noVNC/core/rfb.js';
+  import RFB from '/Experiment/Public/Home/plugin/noVNC/core/rfb.js';
   console.log("jianhanke!");
   var url=document.getElementById("hiddenUrl").value;
   console.log(url);
@@ -180,9 +178,9 @@ a{
             });
         })
 </script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/Ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/Experiment/Public/Home/js/Ueditor/ueditor.config.js"></script>
                         <!-- 编辑器源码文件 -->
-            <script type="text/javascript" src="__PUBLIC__/Home/js/Ueditor/ueditor.all.js"></script>
+            <script type="text/javascript" src="/Experiment/Public/Home/js/Ueditor/ueditor.all.js"></script>
                         <!-- 实例化编辑器 -->
             <script type="text/javascript">
                  var ue = UE.getEditor('container',{toolbars: [
@@ -190,7 +188,7 @@ a{
                     ['bold', 'italic', 'underline',   'removeformat', 'formatmatch', 'autotypeset',   'forecolor','snapscreen','insertcode' ]
                           ] ,autoHeightEnabled:false } );
                         ue.ready(function(){
-                            ue.setContent('{$myNote}');                
+                            ue.setContent('<?php echo ($myNote); ?>');                
                         });
 </script>
 
@@ -209,7 +207,7 @@ $('#shareDesk').on('click', function(){
       type: 1,
       area: ['600px', '360px'],
       shadeClose: true, //点击遮罩关闭
-      content: '\<\/b>只读共享操作链接: <br>   \<\input id="onlyView" type="text" style="width: 350px;" value="{$onlyView}" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="videOnly()" ><br> <br> <br>  共享操作连接:<br> \<\input id="shareOperate" type="text" style="width: 350px;" value="{$shareOperate}" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="shareOperate()" >'
+      content: '\<\/b>只读共享操作链接: <br>   \<\input id="onlyView" type="text" style="width: 350px;" value="<?php echo ($onlyView); ?>" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="videOnly()" ><br> <br> <br>  共享操作连接:<br> \<\input id="shareOperate" type="text" style="width: 350px;" value="<?php echo ($shareOperate); ?>" size="20" readonly="readonly">&nbsp;&nbsp;\<\input type="button"  value="点击复制"   name="share" onclick="shareOperate()" >'
     });
   });
  function videOnly(){
