@@ -65,6 +65,7 @@
 
  <?php if(is_array($datas)): $k = 0; $__LIST__ = $datas;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($k % 2 );++$k;?><script type="module" crossorigin="anonymous" >
       import RFB from '/Experiment/Public/Home/plugin/noVNC/core/rfb.js';
-       var rfb = new RFB(document.getElementById("con<?php echo ($k-1); ?>"),"<?php echo ($data); ?>" ,{ credentials: { password: '123456' } }  );
+       var rfb = new RFB(document.getElementById("con<?php echo ($k-1); ?>"),"<?php echo ($data); ?>" ,{ credentials: { password: '123456' }});
+       
       rfb.connect(); 
     </script><?php endforeach; endif; else: echo "" ;endif; ?>

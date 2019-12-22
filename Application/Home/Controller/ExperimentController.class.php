@@ -20,8 +20,6 @@ class ExperimentController extends BaseHomeController{
 		$user_id=session('user_id');
 
 		$info=D('StudentExperiment')->show_My_Experiment($user_id);
-		// $info=D('ViewStuContainerExperiment','Logic')->show_My_Experiment($user_id);
-		// echo $model-> _sql();
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -68,21 +66,16 @@ class ExperimentController extends BaseHomeController{
 		$user_id=session('user_id');
 	    
 		$is_exist=D('StudentExperiment')->if_Join_Experiment($user_id,$experimentId); 
-		// $is_exist=D('StuContainerExperiment')->if_Join_Experiment($user_id,$experimentId);
+		
 		
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 							
-			$image_ids=D('ExperimentImage')->find_ImageId_By_experimentId($experimentId);
-
-			$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
-
-			$arr_Url=array();
-			for($i=0;$i<count($image_ids);$i++){
-				
-				$data=D('DockerContainer')->findDataById($user_id,$image_ids[$i]);
-				$this->docker->startContainerById($data['container_id']);
-				dump("ceshi");
-				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($data['ip_num']);
+			// $image_ids=D('ExperimentImage')->find_ImageId_By_experimentId($experimentId);
+			$containerInfo=M('ViewContainerStuExperiment')->where(array('Sid'=>$user_id,'Eid'=>$experimentId))
+										                  ->select();
+			for($i=0;$i<count($containerInfo);$i++){
+				$this->docker->startContainerById($containerInfo[$i]['container_id']);
+				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($containerInfo[$i]['ip_num']);
 			}
 			$this->assign('datas',$arr_Url);
 			$this->display('NoVNC/joinMoreExperiment');
@@ -90,28 +83,22 @@ class ExperimentController extends BaseHomeController{
 		}else{             //   找到实验的id,查出实验索要用的镜像id, 加入课程,  然后跟开启一个新的容器，并返回容器id
 
 			$datas=D('ExperimentImage')->getDataById($experimentId);
-
-			D('StudentExperiment')->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
-			$hostName=(new \MyUtils\HostUtils\Host())->getHostName();
-
+			$experiment_id=D('StudentExperiment')->student_Join_Experiment($user_id,$experimentId);    //学生加入课程，填写到experiment 
 			$first_containerId=Null;
-			$arr_Url=array();
-
 			for($i=0;$i<count($datas);$i++){
 				$info=runContainerById($datas[$i]['image_id'],$hostName=$datas[$i]['hostname'],$link_Container=$first_containerId);
 				if($i==0){
 					$first_containerId=$info['container_id'];
 				}
 				$data=array('Container_id'=>$info['container_id'],
-						'student_id'=>$user_id,
-						'ip'=>$info['ip'],
-						'Image_id'=>$datas[$i]['image_id'],
-						'to_experiment'=>$experimentId,
-						'ip_num'=>$info['ip_num']);
+							'ip'=>$info['ip'],
+							'Image_id'=>$datas[$i]['image_id'],
+							'ip_num'=>$info['ip_num']);
 				$container_id=D('DockerContainer')->addData($data);
-				M('StuExperimentContainer')->add(array('stu_id'=>$user_id,'experiment_id'=>$experimentId,'container_id'=>$container_id));		
+				$arr[]=array('stu_id'=>$user_id,'experiment_id'=>$experiment_id,'container_id'=>$container_id);
 				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($info['ip_num']);
 			}
+			M('StuExperimentContainer')->addAll($arr);		
 			$this->assign('datas',$arr_Url);
 			$this->display('NoVNC/joinMoreExperiment');
 		}
@@ -122,14 +109,12 @@ class ExperimentController extends BaseHomeController{
 		$user_id=session('user_id');
 		$is_exist=D('StudentExperiment')->if_Join_Experiment($user_id,$experimentId);  //判断是否已经加入课程
 		
-
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 			
-			$containerInfo=D('DockerContainer')->find_Container_Info(array('student_id'=>$user_id,'to_experiment'=>$experimentId));
-
-
+			// $containerInfo=D('DockerContainer')->find_Container_Info(array('student_id'=>$user_id,'to_experiment'=>$experimentId));
+			$containerInfo=M('ViewContainerStuExperiment')->where(array('Sid'=>$user_id,'Eid'=>$experimentId))
+														  ->find();
 			$this->docker->startContainerById($containerInfo['container_id']);
-			
 			$isDesktop=D('Experiment')->is_Desktop_ById($experimentId);
 			if($isDesktop){
 				 \MyUtils\DockerUtils\NoVNC::JumpUrlByIp($containerInfo['ip_num']);
@@ -145,10 +130,8 @@ class ExperimentController extends BaseHomeController{
 			$experiment_id=D('StudentExperiment')->student_Join_Experiment($user_id,$experimentId);
 			
 			$data=array('Container_id'=>$info['container_id'],
-						'student_id'=>$user_id,
 						'ip'=>$info['ip'],
 						'Image_id'=>$image_id,
-						'to_experiment'=>$experimentId,
 						'ip_num'=>$info['ip_num']);
 
 			$container_id=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
@@ -156,6 +139,7 @@ class ExperimentController extends BaseHomeController{
 			M('StuExperimentContainer')->add(array('stu_id'=>$user_id,'experiment_id'=>$experiment_id,'container_id'=>$container_id));
 
 			$isDesktop=D('Experiment')->is_Desktop_ById($experimentId);
+
 			if($isDesktop){
 				 \MyUtils\DockerUtils\NoVNC::JumpUrlByIp($info['ip_num']);
 			}
