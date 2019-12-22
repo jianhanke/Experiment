@@ -102,7 +102,7 @@ class CourseController extends BaseTeacherController{
 			$status=D('CourseTeacher')->add_Info($courseAndTeacher);
 
 			if($status){
-				$this->success('添加成功',U('Course/showMyCourse'));
+				$this->success('添加成功',U('Teacher/showMyCourse'));
 			}else{
 				$this->error('添加失败');
 			}

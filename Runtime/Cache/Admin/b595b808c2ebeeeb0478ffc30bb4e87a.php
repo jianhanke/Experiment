@@ -47,8 +47,6 @@
                         <li><a href="<?php echo U("Docker/showAllContainer");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>宿主机容器</a></li>
                         <li><a href="<?php echo U("Docker/addImage");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>拉取镜像</a></li>
                         <li><a href="<?php echo U("Docker/dockerController");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>Docker控制</a></li>
-                        <li><a href="<?php echo U("Docker/chooseMakeImage");?>" target="iframe"><i class="iconfont">&#xe602;</i>制作镜像</a></li>
-
                     </ul>
                 </li>
                 <li>

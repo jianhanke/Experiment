@@ -66,7 +66,6 @@ class DockerController extends BaseTeacherController{
 			$container_id=I('post.containerId');
 			$imageName=I('post.image_name');
 			$teacher_id=session('teacher_id');
-
 			$image_id=$this->docker->commitContainerById($container_id);
 			$data=['image_id'=>$image_id,'image_name'=>$imageName,'from_teacher'=>$teacher_id];
 			D('MakeImage')->add($data);
@@ -75,6 +74,6 @@ class DockerController extends BaseTeacherController{
 	public function chooseMakeImage(){
 
 		$this->display();
-
+		
 	}
 }
