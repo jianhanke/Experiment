@@ -88,7 +88,7 @@ class DockerController extends BaseAdminController{
 			视图查询
 			搜索查询，查询的是Container_student_experiment
 	 */
-
+//***********************************************
 	public function findContainerByLike(){   
 		$model=D('ViewContainerStuExperiment','Logic');
 
@@ -101,6 +101,7 @@ class DockerController extends BaseAdminController{
 		$this->assign('count',$count);
 		$this->display('showContainer');
 	}
+//***********************************************
 	/*
 		单表查询，容器搜索查询 
 	 */

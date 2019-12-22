@@ -32,8 +32,7 @@ class ExperimentController extends BaseAdminController{
 		$model=D('ViewContainerStuExperiment','Logic');
 
 		$info=$model->show_Info();
-		$count=$model->count_Num();
-		
+		$count=$model->count_Num();		
 		$this->assign('count',$count);
 		$this->assign('datas',$info);
 		$this->display();

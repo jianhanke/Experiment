@@ -26,7 +26,7 @@ class StudentExperimentModel extends Model{
 
 		$this->Sid=$Sid;
 		$this->Eid=$Eid;
-		$this->add();
+		return $this->add();
 
 	}
 

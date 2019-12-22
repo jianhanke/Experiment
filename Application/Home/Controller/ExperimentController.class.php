@@ -108,7 +108,8 @@ class ExperimentController extends BaseHomeController{
 						'Image_id'=>$datas[$i]['image_id'],
 						'to_experiment'=>$experimentId,
 						'ip_num'=>$info['ip_num']);
-				D('DockerContainer')->addData($data);
+				$container_id=D('DockerContainer')->addData($data);
+				M('StuExperimentContainer')->add(array('stu_id'=>$user_id,'experiment_id'=>$experimentId,'container_id'=>$container_id));		
 				$arr_Url[$i]=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($info['ip_num']);
 			}
 			$this->assign('datas',$arr_Url);
@@ -120,14 +121,14 @@ class ExperimentController extends BaseHomeController{
 		
 		$user_id=session('user_id');
 		$is_exist=D('StudentExperiment')->if_Join_Experiment($user_id,$experimentId);  //判断是否已经加入课程
-		// $is_exist=D('StuContainerExperiment')->if_Join_Experiment($user_id,$experimentId);
 		
 
 		if($is_exist){     //找到实验id,查出实验索要的镜像id,根据user_id和iamge_id 查出容器id,并开启
 			
 			$containerInfo=D('DockerContainer')->find_Container_Info(array('student_id'=>$user_id,'to_experiment'=>$experimentId));
+
+
 			$this->docker->startContainerById($containerInfo['container_id']);
-			dump($containerInfo);
 			
 			$isDesktop=D('Experiment')->is_Desktop_ById($experimentId);
 			if($isDesktop){
@@ -141,8 +142,8 @@ class ExperimentController extends BaseHomeController{
 			$image_id=D('ExperimentImage')->find_ImageId_By_experimentId($experimentId);
 			$info=runContainerById($image_id);  //此处应该是上行的，改一部分
 
-			D('StudentExperiment')->student_Join_Experiment($user_id,$experimentId);
-
+			$experiment_id=D('StudentExperiment')->student_Join_Experiment($user_id,$experimentId);
+			
 			$data=array('Container_id'=>$info['container_id'],
 						'student_id'=>$user_id,
 						'ip'=>$info['ip'],
@@ -150,7 +151,9 @@ class ExperimentController extends BaseHomeController{
 						'to_experiment'=>$experimentId,
 						'ip_num'=>$info['ip_num']);
 
-			$status=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
+			$container_id=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
+
+			M('StuExperimentContainer')->add(array('stu_id'=>$user_id,'experiment_id'=>$experiment_id,'container_id'=>$container_id));
 
 			$isDesktop=D('Experiment')->is_Desktop_ById($experimentId);
 			if($isDesktop){
