@@ -1,0 +1,1377 @@
+[ 2019-12-23T17:41:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000072s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000133s ]
+
+[ 2019-12-23T17:41:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000108s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002119s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000062s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000096s ]
+
+[ 2019-12-23T17:41:25+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Login/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000039s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `admin` WHERE `Aid` = 1 AND `Apwd` = '1' LIMIT 1   [ RunTime:0.0003s ]
+
+[ 2019-12-23T17:41:25+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000028s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003558s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000053s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000027s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000049s ]
+
+[ 2019-12-23T17:41:25+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001182s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001231s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000069s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000034s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000063s ]
+
+[ 2019-12-23T17:41:27+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/WebConfig/showAllConfig
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000102s ]
+SQL: SHOW COLUMNS FROM `web_config` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `web_config`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_config` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002210s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000031s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2019-12-23T17:41:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/WebConfig/updateConfigToFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000063s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `web_config` [ RunTime:0.0006s ]
+SQL: SELECT `name`,`value` FROM `web_config`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000080s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000071s ]
+
+[ 2019-12-23T17:41:29+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000090s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001494s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000078s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-12-23T17:41:30+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/handleContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000050s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `docker_container` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `docker_container` ORDER BY id desc  [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `docker_container` LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004451s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004511s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000054s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2019-12-23T17:41:31+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/showAllContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000107s ]
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 54 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 56 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined index: myNet /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 47 行.
+NOTIC: [8] Undefined index: container_id /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 60 行.
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/a2267acda43b486ba422b37a22173c70.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006578s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000059s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2019-12-23T17:41:31+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/addImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000088s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002259s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000389s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000069s ]
+
+[ 2019-12-23T17:41:32+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Docker/dockerController
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+NOTIC: [8] Undefined variable: currentWay /home/jianhanke/Experiment/Runtime/Cache/Admin/9013779b000fedcfc55a93ac691b07b4.php 第 8 行.
+NOTIC: [8] Undefined variable: currentWay /home/jianhanke/Experiment/Runtime/Cache/Admin/9013779b000fedcfc55a93ac691b07b4.php 第 14 行.
+NOTIC: [8] Undefined variable: currentWay /home/jianhanke/Experiment/Runtime/Cache/Admin/9013779b000fedcfc55a93ac691b07b4.php 第 15 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001865s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000081s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-12-23T17:41:34+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Student/showStudent
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000096s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `student`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `student` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2019-12-23T17:41:36+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Teacher/showTeacher
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `teacher` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `teacher`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `teacher` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000029s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000050s ]
+
+[ 2019-12-23T17:41:37+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0007s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:41:38+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0009s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:40+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002731s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002771s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000052s ]
+
+[ 2019-12-23T17:41:42+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:43+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:43+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:48+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000101s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:41:50+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:50+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:41:51+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000094s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:41:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:52+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:41:53+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0009s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:54+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000095s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:41:55+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:41:58+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:41:59+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:42:00+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:42:01+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:42:01+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0013s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:42:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006709s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006769s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000065s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000100s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2019-12-23T17:42:24+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Index/home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000083s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000088s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.001304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.001358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000075s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000035s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000067s ]
+
+[ 2019-12-23T17:42:26+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:42:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:42:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:42:29+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:42:30+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+ERR: Think\Model:show_Experiment方法不存在！
+
+[ 2019-12-23T17:42:30+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000088s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:43:58+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0010s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:43:59+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000082s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:43:59+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `experiment` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment` ORDER BY Eid desc  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000068s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004115s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000057s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000092s ]
+
+[ 2019-12-23T17:44:00+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000087s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0009s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:01+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000096s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004384s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004435s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000083s ]
+
+[ 2019-12-23T17:44:01+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000091s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002277s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000082s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000072s ]
+
+[ 2019-12-23T17:44:02+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0014s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:43+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000053s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000090s ]
+
+[ 2019-12-23T17:44:47+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000098s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000049s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000099s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003450s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003500s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000086s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000078s ]
+
+[ 2019-12-23T17:44:48+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000093s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000105s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000084s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-12-23T17:44:48+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentImage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000086s ]
+SQL: SHOW COLUMNS FROM `experiment_image` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `experiment_image`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/004c20a003d91a85fb484909fd313c78.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003513s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003563s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000036s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000070s ]
+
+[ 2019-12-23T17:44:50+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/addExperiment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002278s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000043s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000080s ]
+
+[ 2019-12-23T17:44:51+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000091s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000092s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000097s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000048s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000098s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000093s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000044s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000094s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0007s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:56+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:57+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000076s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000046s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000097s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:44:57+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000085s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0008s ]
+ERR: Think\Model:show_Info方法不存在！
+
+[ 2019-12-23T17:49:03+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+
+[ 2019-12-23T17:49:43+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `view_container_stu_experiment`  [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_container_stu_experiment` LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003575s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003606s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000038s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000061s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2019-12-23T17:54:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `view_container_stu_experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_container_stu_experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 63 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 68 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004110s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004146s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000076s ]
+
+[ 2019-12-23T17:56:23+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `view_container_stu_experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_container_stu_experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 54 行.
+NOTIC: [8] Undefined index: sname /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 55 行.
+NOTIC: [8] Undefined index: image_name /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 58 行.
+NOTIC: [8] Undefined index: sid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 59 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 64 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005247s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005293s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000092s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000097s ]
+
+[ 2019-12-23T17:57:13+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000113s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000130s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `view_container_stu_experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_container_stu_experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.002912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.002942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000062s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000039s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000064s ]
+
+[ 2019-12-23T17:58:28+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000103s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `view_container_stu_experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_container_stu_experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000072s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000128s ]
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: eid /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+NOTIC: [8] Undefined index: student_id /home/jianhanke/Experiment/Runtime/Cache/Admin/c7f505f86baba15363fd5a3b2c2f4bb3.php 第 62 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005346s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000065s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000108s ]
+
+[ 2019-12-23T17:59:05+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000127s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `view_container_stu_experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_container_stu_experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000097s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at /home/jianhanke/Experiment/ThinkPHP/Common/functions.php:850) /home/jianhanke/Experiment/ThinkPHP/Library/Think/View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000099s ]
+
+[ 2019-12-23T17:59:32+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Experiment/showExperimentContainer
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `view_container_stu_experiment` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `view_container_stu_experiment`  [ RunTime:0.0001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `view_container_stu_experiment` LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000066s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004671s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004733s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000099s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000095s ]
+
+[ 2019-12-23T18:02:27+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Excel/showExcel
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000109s ]
+SQL: select table_name from information_schema.tables where table_schema='experiment' [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: count /home/jianhanke/Experiment/Runtime/Cache/Admin/b735124b3311a9ae417963ff77e12148.php 第 99 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007072s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000056s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000094s ]
+
+[ 2019-12-23T18:02:38+08:00 ] 10.6.0.32 /Experiment/index.php/Admin/Excel/outputMouldExcel/modelName/chapter_image
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000111s ]
+SQL: SHOW COLUMNS FROM `chapter_image` [ RunTime:0.0007s ]
+SQL: select column_name from information_schema.columns where table_name='chapter_image' and table_schema = 'experiment'  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `chapter_image`  [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000042s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000081s ]
+

@@ -5,6 +5,15 @@ use Think\Model;
 
 class ExperimentModel extends Model{
 
+	public function getDataAboutMe($user_id){
+		
+		return $this->order("Eid desc")
+					->field('t1.*,t2.id')
+					->table('experiment as t1')
+			        ->join("left join student_experiment as t2 on t1.Eid=t2.experiment_id and t2.stu_id=$user_id")
+			 		->select();
+	}
+
 	public function getAllDataIdName(){
 		return $this->field('eid,ename')
 					->select();
@@ -15,7 +24,7 @@ class ExperimentModel extends Model{
 					->select();
 	}
 
-	public function show_Experiment(){
+	public function getData(){
 		return $this->order("Eid desc")
 					->select();
 	}

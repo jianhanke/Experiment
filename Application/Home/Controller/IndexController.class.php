@@ -13,9 +13,6 @@ class IndexController extends BaseHomeController{
 		$this->display();
 	}
 
-	public function test01(){
-		$info=M('DockerContainer')->add(array('id'=>1000));
-		dump($info);
-	}
+
 
 }

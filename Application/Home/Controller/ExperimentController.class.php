@@ -25,17 +25,9 @@ class ExperimentController extends BaseHomeController{
 	}
 
 	public function showExperiment(){
-		
-		$info=D('Experiment')->show_Experiment();
+
 		$user_id=session('user_id');
-		
-		$arr=array();
-		for($i=0;$i<count($info);$i++){
-			
-			$experiment_id=$info[$i]['experiment_id'];
-			$is_Join=$this->isJoinExperimentById($user_id,$experiment_id);
-			$info[$i]['is_Join']=$is_Join;
-		}
+		$info=D('Experiment')->getDataAboutMe($user_id);
 		$this->assign('datas',$info);
 		$this->display();
 	}

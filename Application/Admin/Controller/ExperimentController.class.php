@@ -7,7 +7,7 @@ class ExperimentController extends BaseAdminController{
 
 	public function showExperiment(){
 		$model=D('Experiment');
-		$info=$model->show_Experiment();
+		$info=$model->getData();
 		$count=$model->count_Num();
 		$this->assign('count',$count);
 		$this->assign('datas',$info);
@@ -30,9 +30,8 @@ class ExperimentController extends BaseAdminController{
 	public function showExperimentContainer(){
 			
 		$model=D('ViewContainerStuExperiment','Logic');
-
-		$info=$model->show_Info();
-		$count=$model->count_Num();		
+		$info=$model->getAllData();
+		$count=$model->countData();		
 		$this->assign('count',$count);
 		$this->assign('datas',$info);
 		$this->display();

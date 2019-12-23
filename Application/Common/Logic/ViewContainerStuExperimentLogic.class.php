@@ -15,5 +15,13 @@ class ViewContainerStuExperimentLogic extends Model{
 			return $data;
 	}
 
+	public function countData(){
+		return $this->count();
+	}
+
+	public function getAllData(){
+		return $this->select();
+	}
+
 
 }
