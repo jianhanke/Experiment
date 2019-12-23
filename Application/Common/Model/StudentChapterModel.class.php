@@ -28,6 +28,18 @@ class StudentChapterModel extends Model{
 		return $this->add($arr);
 	}
 
+	public function countDataByChapterId($chapter_id){
+		return $this->where(array('to_chapterid'=>$chapter_id))
+					->count();
+	}
+
+	public function getDataByChapterId($chapterId,$classId){
+		return $this->field('t2.sid,t2.sname,t2.sage,t2.ssex,t2.stele')
+					->table('student_chapter as t1')
+					->join("student as t2 on t1.stu_id=t2.Sid and t1.to_chapterid=$chapterId and t2.Class_id=$classId")
+					->select();
+	}
+
 
 	
 

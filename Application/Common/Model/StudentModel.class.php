@@ -21,6 +21,11 @@ class StudentModel extends Model{
 		return $this->add($post);
 	}
 
+	public function countDataByClassId($classId){
+		return $this->where(array('Class_id'=>$classId))
+					->count();
+	}
+
 
 
 	public function check_Login($post){

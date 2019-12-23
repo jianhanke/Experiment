@@ -16,6 +16,20 @@ class ClassController extends BaseTeacherController{
 		$this->display();
 	}
 
+	public function showChapterToClassStudent($chapterId,$classId){
+
+		
+		$datas=D('StudentChapter')->getDataByChapterId($chapterId,$classId);
+		$courseInfo=D('Course')->find_Course_ByChapterId($chapterId);
+		
+		$classInfo=D('ViewClassDepartment','Logic')->show_ClassInfo_ById($classId);
+		$this->assign('classInfo',$classInfo);
+		$this->assign('courseInfo',$courseInfo);
+		$this->assign('datas',$datas);
+		$this->display();
+
+	}
+
 	public function showChapterToClassReport($chapterId,$classId){
 
 		

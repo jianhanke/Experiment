@@ -116,19 +116,19 @@ class CourseController extends BaseTeacherController{
 	public function courseToClassProgress($courseId,$classId){
 
 		
-		// $model=D('Student');
-		// $stuDatas=$model->find_Student_WithReport($classId);
-		$chapterInfo=D('Chapter')->find_Chapter_Info($courseId);
-		
+		$stu_nums=D('Student')->countDataByClassId($classId);
+		$chapterInfo=D('Chapter')->getChapterRelateInfo($courseId);
+		foreach ($chapterInfo as $key => &$value) {
+			$value['report_rate']=(string)(round($value['report_nums']/$stu_nums,2)*100)."%";
+			$value['join_rate']=(string)(round($value['join_nums']/$stu_nums,2)*100)."%";
+		}
 
 		$classInfo=D('ViewClassDepartment','Logic')->show_ClassInfo_ById($classId);
 		$courseInfo=D('Course')->find_Course_ById($courseId);
 		
-
 		$this->assign('chapterInfo',$chapterInfo);
 		$this->assign('courseInfo',$courseInfo);
 		$this->assign('classInfo',$classInfo);
-		// $this->assign('datas',$stuDatas);
 		$this->display();
 	}
 

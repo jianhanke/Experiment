@@ -142,7 +142,6 @@ class ChapterController extends BaseTeacherController{
 			if(empty($path)){
 				$this->error('下载失误');
 			}
-
 			 $filePath=C("SOURCE_UPLOAD_PATH").$path;
 			 try{
 		      	\Org\Net\Http::download($filePath, $showname);	
