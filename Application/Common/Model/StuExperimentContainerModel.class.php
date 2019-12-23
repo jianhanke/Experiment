@@ -3,7 +3,7 @@
 namespace Common\Model;
 use Think\Model;
 
-class StuContainerExperimentModel extends Model{
+class StuExperimentContainerModel extends Model{
 
 	public function student_Join_Experiment($stuId,$container_id,$expId){
 
@@ -18,7 +18,14 @@ class StuContainerExperimentModel extends Model{
 		}else{
 			return false;
 		}
-			
+	}
+
+	public function addData($arr){
+		return $this->addAll($arr);
+	}
+	
+	public function addDataByOrder($user_id,$stu_experiment_key,$container_key){
+		return $this->add(array('stu_id'=>$user_id,'stu_experiment_key'=>$stu_experiment_key,'container_key'=>$container_key));
 	}
 
 }

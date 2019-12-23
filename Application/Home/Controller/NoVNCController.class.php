@@ -6,18 +6,18 @@ use \Common\Controller\BaseHomeController;
 class NoVNCController extends BaseHomeController{
 
 
-	public function showNoVNC($ip_num){
+	public function showNoVNC($ip_num,$chapterId,$myNote){
 
 		$info=D('DockerContainer')->find_Container_By_Ip($ip_num);
-		$url=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($ip_num);
 		
-		$info['note']=htmlspecialchars_decode(html_entity_decode($info['note']));  //将html 解码
+		
+		$myNote=htmlspecialchars_decode(html_entity_decode($myNote));  //将html 解码
 		
 		$chapterInfo=D('Chapter')->find_ChapterInfo_ById($info['to_chapter']);
 
+		$url=\MyUtils\DockerUtils\NoVNC::getWsUrlByIp($ip_num);
 		$onlyView=\MyUtils\DockerUtils\NoVNC::getOnlyViewUrl($ip_num);
 		$showShareOperate=\MyUtils\DockerUtils\NoVNC::getShareOperateUrl($ip_num);
-		
 		$sshUrl= \MyUtils\DockerUtils\Ssh::getSshUrl($info['ip']);
 		$ceshiUrl= \MyUtils\DockerUtils\NoVNC::getUrlById($ip_num);
 
@@ -28,17 +28,13 @@ class NoVNCController extends BaseHomeController{
 		$this->assign('ip_num',$ip_num);
 		$this->assign('video',$chapterInfo['video']);
 		$this->assign('doc',$chapterInfo['doc']);
-		$this->assign('id',$info['id']);
-		$this->assign('myNote',$info['note']);
+		$this->assign('chapterId',$chapterId);
+		$this->assign('myNote',$myNote);
 		$this->assign('url',$url);
 		$this->display('NoVNC/showNoVNC');
 	}
 	
-	public function saveNote(){
-		$myNote=I('post.myNote');
-		$id=I('post.id');
-		D('DockerContainer')->save_Note($id,$myNote);
-	}
+
 
 	public function showOnlyView($ip_num){
 		

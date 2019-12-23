@@ -42,36 +42,42 @@ class CourseController extends BaseHomeController{
 		
 		$image_id=D('ChapterImage')->find_Image_By_id($chapter_id);
 		
-		$info=D('DockerContainer')->if_Join_Chapter($user_id,$image_id,$chapter_id); //判断是否已经加入此章节
-
-		if($info){    //已经加入找到对应容器进入即可，
-			$container_id=D('DockerContainer')->find_ContainerId_By_ImageId($user_id,$image_id,$chapter_id);
+		$isJoinInfo=D('StudentChapter')->getData($user_id,$chapter_id); //判断是否已经加入此章节
+		if($isJoinInfo){              //已经加入找到对应容器进入即可，
+			$containerInfo=D('ViewContainerStuChapter','Logic')->getData($user_id,$chapter_id);
 			
-			getControllerDockerWay()->startContainerById($container_id);
-			$ip_num=D('DockerContainer')->find_Ip_By_Chapter($user_id,$image_id,$chapter_id);
-
-			A('NoVNC')->showNoVNC($ip_num);
-			
+			getControllerDockerWay()->startContainerById($containerInfo['container_id']);
+			A('NoVNC')->showNoVNC($containerInfo['ip_num'],$chapter_id,$isJoinInfo['note']);
 			exit();
-		}else{       //没有则加入此章节，并创建容器
-
+		}else{                                  //没有则加入此章节，并创建容器
 			$info=runContainerById($image_id);
-
 			$data=array('Container_id'=>$info['container_id'],
 						'ip'=>$info['ip'],
 						'Image_id'=>$image_id,
 						'ip_num'=>$info['ip_num']);
-			D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
-			M('StuChapterContainer')->add(array(''))
-			
-			A('NoVNC')->showNoVNC($info['ip_num']);
+			$dcPrimaryKey=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
+			$scPrimaryKey=D('StudentChapter')->addDataByOrder($user_id,$chapter_id);
+			$status=D('StuChapterContainer')->addDataByOrder($scPrimaryKey,$dcPrimaryKey);
+
+			A('NoVNC')->showNoVNC($info['ip_num'],$chapter_id);
 			exit();
 		}
 
 	}
 
+	public function saveNote(){
+		$student_id=session('user_id');	
+		$myNote=I('post.myNote');
+		$chapterId=I('post.chapterId');
+		dump(I('post.'));
+		dump($student_id);
+		$status=D('StudentChapter')->saveNoteById($student_id,$chapterId,$myNote);
+		echo D('StudentChapter')->_sql();
+		dump($status);
+		
+	}
+
 	public function uploadFile(){
-			$student_id=session('user_id');	
 			$chapter_id=I('post.chapter_id');
 			$new_name=$student_id.'_';
 			
