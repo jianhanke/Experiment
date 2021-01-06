@@ -1,67 +1,175 @@
-<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>数据实验平台</title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+  <meta name="generator" content="Jekyll v3.8.6">
+    <title></title>
 
-<style>
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
+    <!-- Bootstrap core CSS已改 -->
+<link href="/Experiment10/Public/bootstrap-4.3.1-dist/css/bootstrap.css" rel="stylesheet">
 
-li {
-    float: left;
-}
+<!--已改-->
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-html, body {
-            width:100%;
-            height:100%;
-            margin:0px;
-            padding:0px;
-}
+<link rel="manifest" href="/Experiment10/Public/bootstrap-4.3.1-dist/js/manifest.json">
+
+<!--网页小图标-->
+<!--  <link rel="icon" href="https://v4ing.bootcss.com/docs/4.3/assets/img/favicons/favicon.ico">
+ -->
+ <meta name="msapplication-config" content="https://v4ing.bootcss.com/docs/4.3/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+    <style>
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .dir_two{
+        display: block;
+      }
+      input.form-control:focus{
+        border-color: #ccc;
+        outline:none;
+        box-shadow:none;
+      }
+     .btn:hover,
+     .btn:active,
+     .btn:focus {
+     outline: none;
+     box-shadow: none;
+ }
 
 
-li a:hover {
-    background-color: #111;
-}
-div{
-  border: 0;
-}
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/Experiment10/Public/bootstrap-4.3.1-dist/css/album.css" rel="stylesheet">
+  </head>
+  <body>
 
-</style>
-<body>
-  <div style="height: 8%;  " >
-  <ul>
-    <li><a href="<?php echo U('Experiment/showExperiment');?>" target="iframe" >首页     </a></li>
-    <!-- <li><a class="active"  href="<?php echo U('showCourse');?>" target="iframe">课程 </a></li> -->
-    <!-- <li><a href="<?php echo U('Index/showExperiment');?>" target="iframe" >主机</a></li> -->
-    <li><a href="<?php echo U('Course/showCourse');?>" target="iframe" >课程</a></li>
-    <li><a href="<?php echo U('Course/showMyCourse');?> " target="iframe">我的课程</a></li>
-    <li><a href="<?php echo U('Experiment/showMyExperiment');?>" target="iframe">我的主机</a></li>
-    <li><a href="<?php echo U('OnlineCompile/showCompile');?> " target="iframe">在线编程</a></li>
 
-   <li><a href="<?php echo U('Student/showStudentInfoById');?> " target="iframe">个人中心</a></li>
-    <li><a href="#">用户:<?php echo ($user_name); ?> </a>  </li>
-    <li>   <a href="<?php echo U('Login/logout');?> ">注销</a>       </li>
+    <header>
+
+  <div class="navbar navbar-dark bg-dark shadow-sm" >
+    <div class="container d-flex justify-content-between">
+<!--第一行-->
+      <a href="<?php echo U('Experiment/showExperiment');?>" target="iframe" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+<!--         <img src="/Experiment10/Source/Experiment/sou.png">
+ -->        <strong>  虚拟实验平台</strong>
+      </a>
+<!--搜索框start-->
+<form class="navbar-form navbar-left" role="search">
+          <div class="input-group mb-6 " style="width:28rem">
+  <input type="text" class="form-control" placeholder="输入课程名称" id="demo" name="fullname">
+  <div class="input-group-append">
+   <input type="submit" class="btn btn-secondary" value="搜索">
+  </div>
+</div>
+</form>
+<!--搜索框end-->
+<!--三杠按钮-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </div>
+  <!--nav二号-->
+  <div class="container">
+  <div class="navbar">
+   <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" href="<?php echo U('Experiment/showExperiment');?>" target="iframe" >首页</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="<?php echo U('Course/showMyCourse');?>" target="iframe">我的课程</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="<?php echo U('Experiment/showMyExperiment');?>" target="iframe">我的主机</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="<?php echo U('OnlineCompile/showCompile');?>" target="iframe">在线编程</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="<?php echo U('Student/showStudentInfoById');?>" target="iframe">个人中心</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"  href="<?php echo U('Login/logout');?>" target="iframe">注销</a>
+    </li>
   </ul>
   </div>
-   <div id="myIframe"  style="height: 89% "  >
-        <iframe src="<?php echo U('Experiment/showExperiment');?> " name="iframe" scrolling="" width="100%" height="100%;" frameborder="0"></iframe>
-    </div>
-  
-  
+  </div>
 
-</body>
+  
+<!-- id="dir2" -->
+  <!--导航two-->
+  <!-- onload="bindMouseWhee(this)" -->
+
+  <!--two-->
+</header>
+<main >
+ <div style="height: 100%;">
+   <iframe src="<?php echo U('Experiment/showExperiment');?>" width="100%" height="100%"  name="iframe"  scrolling="" id="main" >
+   </iframe>
+ </div>
+</main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>制作者 &copy; jianhanke</p>
+    <p>开源：<a href="#" onclick="window.open('https://github.com/jianhanke/Experiment')">https://github.com/jianhanke/Experiment</a> 
+ </br> 新的建议：<a href="#">点击跳转</a>.</p>
+  </div>
+</footer>
 </html>
+
+<script type="text/javascript">
+
+ function calcPageHeight(doc) {
+      var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight)
+      var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight)
+      var height  = Math.max(cHeight, sHeight)
+      return height
+  }
+  //根据ID获取iframe对象
+  var ifr = document.getElementById('main')
+  ifr.onload = function() {
+      //解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
+      ifr.style.height='0px';
+      var iDoc = ifr.contentDocument || ifr.document
+      var height = calcPageHeight(iDoc)
+      if(height < 600){
+        height = 600;     //更改这一参数后，“我的主机”中盒子大小合适，原来的值是850，会将盒子高度扩大
+      }
+      ifr.style.height = height + 'px'
+  }
+
+  // var  firefox = navigator.userAgent.indexOf('Firefox') != -1;
+  //   function MouseWheel(e,doc) {
+  //       e.preventDefault && e.preventDefault(), e.returnValue = false;
+  //       var up = firefox && e.detail < 0 || e.wheelDelta > 0;
+
+  //       doc.body.scrollTop = doc.documentElement.scrollTop += up ? -50 : 50;//每次滚动50px
+  //   }
+  //   function bindMouseWhee(ifr) {
+  //       try {
+  //           var  doc = ifr.contentWindow.document;
+  //           firefox ? doc.addEventListener('DOMMouseScroll', function (e) { MouseWheel(e,doc)}, false) : (doc.onmousewheel = function (e) {MouseWheel(e||ifr.contentWindow.event,doc) });
+  //       }
+  //       catch (e) { alert('跨域无法获取iframe加载document'+e)}
+  //   }
+
+</script>

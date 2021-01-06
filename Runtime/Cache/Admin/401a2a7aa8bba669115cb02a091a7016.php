@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/main.css"/>
 </head>
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="/Experiment/index.php/Admin/Teacher/findTeacherByLike" method="post">
+                <form action="/Experiment10/index.php/Admin/Teacher/findTeacherByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
@@ -57,7 +57,7 @@
                         <td>  <?php echo ($data['ttele']); ?> </td>
                         <td>   <?php echo ($data['tpwd']); ?>  </td>
                         <td>
-                            <a class="link-update" href="/Experiment/index.php/Admin/Teacher/modifyTeacherById/teacher_id/<?php echo ($data['tid']); ?>">修改</a>
+                            <a class="link-update" href="/Experiment10/index.php/Admin/Teacher/modifyTeacherById/teacher_id/<?php echo ($data['tid']); ?>">修改</a>
                             &nbsp&nbsp&nbsp
                             <a href="<?php echo U('Admin/Teacher/deleteTeacher/teacher_id');?>/<?php echo ($data['tid']); ?>">删除</a>
                         </td>

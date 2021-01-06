@@ -99,6 +99,7 @@ class CourseController extends BaseAdminController{
 		}		
 		try{
 			$status=uploadChapterToVideo($chapter_id);
+			
 			if($status){
 				$this->success('上传成功');
 			}else{

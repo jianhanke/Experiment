@@ -20,7 +20,6 @@ class TeacherController extends BaseAdminController{
 
 		if(IS_POST){
 			$info=I('post.');
-			dump($info);
 			$is_success=D('Teacher')->modify_Teacher_By_Id($info);
 			if($info){
 				$this->success('修改成功',U('Teacher/showTeacher'));

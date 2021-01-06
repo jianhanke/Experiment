@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>后台管理</title>
-	<link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/admin_login.css"/>
+	<link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/admin_login.css"/>
 </head>
 <body>
 <div class="admin_login_wrap">
     <h1>后台管理</h1>
     <div class="adming_login_border">
         <div class="admin_input">
-            <form action="/Experiment/index.php/Admin/Login/login" method="post">
+            <form action="/Experiment10/index.php/Admin/Login/login" method="post">
                 <ul class="admin_items">
                     <li>
                         <label for="user">用户名：</label>

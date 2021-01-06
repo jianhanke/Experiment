@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/main.css"/>
 </head>
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="/Experiment/index.php/Admin/Student/findStudentByLike" method="post">
+                <form action="/Experiment10/index.php/Admin/Student/findStudentByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
@@ -61,10 +61,10 @@
                         <td>  <?php echo ($data['stele']); ?> </td>
                         <td>   <?php echo ($data['spwd']); ?>  </td>
                         <td>
-                            <a class="link-update" href="/Experiment/index.php/Admin/Student/modifyStudentById/user_id/<?php echo ($data['sid']); ?>">修改</a>
+                            <a class="link-update" href="/Experiment10/index.php/Admin/Student/modifyStudentById/user_id/<?php echo ($data['sid']); ?>">修改</a>
                             &nbsp&nbsp&nbsp
                             <a href="<?php echo U('Admin/Student/deleteStudent/student_id');?>/<?php echo ($data['sid']); ?>">删除</a>
-                        <a class="link-update" href="/Experiment/index.php/Admin/Student/findStudentWithContainer/student_id/<?php echo ($data['sid']); ?>">学生所用主机</a>
+                        <a class="link-update" href="/Experiment10/index.php/Admin/Student/findStudentWithContainer/student_id/<?php echo ($data['sid']); ?>">学生所用主机</a>
                             
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>  

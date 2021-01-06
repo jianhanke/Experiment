@@ -5,11 +5,11 @@
     <title>用户登录首页</title>
     <meta name="description" content="app, web app, responsive, admin dashboard, admin, flat, flat ui, ui kit, off screen nav" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <link rel="stylesheet" href="/Experiment/Public/Home/css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="/Experiment/Public/Home/css/simple-line-icons.css" type="text/css" />
-    <link rel="stylesheet" href="/Experiment/Public/Home/css/app.css" type="text/css" />
+    <link rel="stylesheet" href="/Experiment10/Public/Home/css/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="/Experiment10/Public/Home/css/simple-line-icons.css" type="text/css" />
+    <link rel="stylesheet" href="/Experiment10/Public/Home/css/app.css" type="text/css" />
 </head>
-<body background="/Experiment/Public/Home/images/bodybg.jpg">
+<body background="/Experiment10/Public/Home/images/bodybg.jpg">
 <section id="content" class="m-t-lg wrapper-md animated fadeInUp ">
     <div class="container aside-xl" style="margin-top: 48px;">
         <a class="navbar-brand block"><span class="h1 font-bold" style="">软件技术虚拟在线实验平台</span></a>
@@ -18,7 +18,7 @@
                 <strong class="text-sucess">欢迎登录</strong>
             </header>
             
-            <form action="/Experiment/index.php/Home/Login/checkLogin" method="post" >
+            <form action="/Experiment10/index.php/Home/Login/checkLogin" method="post" >
                 <div class="form-group">
                     <input type="username" name="Sid" placeholder="用户名" class="form-control  input-lg text-center no-border" style="width: 400px;margin-left:-10%">
                 </div>

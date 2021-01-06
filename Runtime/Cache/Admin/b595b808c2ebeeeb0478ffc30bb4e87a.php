@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>实验平台管理</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
-    <script type="text/javascript" src="/Experiment/Public/Home/js/jquery-2.0.0.min.js"></script>
-    <script type="text/javascript" src="/Experiment/Public/Home/js/myJs.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/main.css"/>
+    <script type="text/javascript" src="/Experiment10/Public/Home/js/jquery-2.0.0.min.js"></script>
+    <script type="text/javascript" src="/Experiment10/Public/Home/js/myJs.js"></script>
 </head>
 <body>
 <div class="topbar-wrap white">
@@ -32,13 +32,6 @@
         </div>
         <div class="sidebar-content" id="myFold" >
             <ul class="sidebar-list">
-                <li>
-                    <li> <a href="#"><i class="iconfont">&#xe603;</i>网站设置</a> </li>
-                    <ul class="sub-menu">
-                        <li><a href="<?php echo U('WebConfig/showAllConfig');?>" target="iframe"  ><i class="iconfont">&#xe602;</i> 配置信息</a></li>
-                        <li><a href="<?php echo U('WebConfig/updateConfigToFile');?>" target="iframe"  ><i class="iconfont">&#xe602;</i>更新配置</a></li>
-                    </ul>
-                </li>
 
                 <li>
                     <li><a href="#"><i class="iconfont">&#xe641;</i>Docker管理</a> </li> 
@@ -49,6 +42,16 @@
                         <li><a href="<?php echo U("Docker/dockerController");?>" target="iframe"  ><i class="iconfont">&#xe602;</i>Docker控制</a></li>
                     </ul>
                 </li>
+
+                <li>
+                    <li> <a href="#"><i class="iconfont">&#xe603;</i>网站设置</a> </li>
+                    <ul class="sub-menu">
+                        <li><a href="<?php echo U('WebConfig/showAllConfig');?>" target="iframe"  ><i class="iconfont">&#xe602;</i> 配置信息</a></li>
+                        <li><a href="<?php echo U('WebConfig/updateConfigToFile');?>" target="iframe"  ><i class="iconfont">&#xe602;</i>更新配置</a></li>
+                    </ul>
+                </li>
+
+                
                 <li>
                    <li>  <a href="#"><i class="iconfont">&#xe603;</i>学生管理</a> </li>
                     <ul class="sub-menu">
@@ -81,7 +84,7 @@
                 </li>
 
                 <li>
-				 <li>	<a href="#"><i class="iconfont">&#xe603;</i>主机管理</a> </li>
+                 <li>   <a href="#"><i class="iconfont">&#xe603;</i>主机管理</a> </li>
                     <ul class="sub-menu">
                         <li><a href="<?php echo U('Experiment/showExperiment');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>主机信息</a></li>
                         <li><a href="<?php echo U('Experiment/showExperimentContainer');?>" target="iframe" ><i class="iconfont">&#xe660;</i>主机容器</a></li>
@@ -91,7 +94,7 @@
                 </li>
 
                 <li>
-                    <li> <a href="#"><i class="iconfont">&#xe603;</i>Excel</a> </li>
+                    <li> <a href="#"><i class="iconfont">&#xe603;</i>数据库转换Excel</a> </li>
                     <ul class="sub-menu">
                         <li><a href="<?php echo U('Excel/showExcel');?>" target="iframe" ><i class="iconfont">&#xe61c;</i>Excel管理</a></li>
                     </ul>
@@ -111,10 +114,10 @@
     </div>
     <!--/sidebar-->
     <div class="main-wrap"  >
-	
-   	
-       <iframe src="/Experiment/index.php/Admin/Index/home" name="iframe" scrolling="" width="100%" height="650px;" frameborder="0"></iframe>
- 	
+    
+    
+       <iframe src="<?php echo U('WebConfig/showAllConfig');?>" name="iframe" scrolling="" width="100%" height="650px;" frameborder="0"></iframe>
+    
       
     </div>
     <!--/main-->

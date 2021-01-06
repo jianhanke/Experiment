@@ -8,8 +8,7 @@ return array(
     'DB_NAME'               =>  'experiment',          // 数据库名
     'DB_USER'               =>  'root',      // 用户名
     'DB_PWD'                =>  '123456',          // 密码
-    'DB_PORT'               =>  '3306',        // 端口
+    'DB_PORT'               =>  '3306',      // 端口
     'DB_CHARSET'            =>  'utf8', 
     //'DB_PREFIX'             =>  '',    // 数据库表前缀
-
 );

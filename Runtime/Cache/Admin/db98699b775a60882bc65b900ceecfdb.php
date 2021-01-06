@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/main.css"/>
 </head>
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="/Experiment/index.php/Admin/Experiment/findExperimentByLike" method="post">
+                <form action="/Experiment10/index.php/Admin/Experiment/findExperimentByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
@@ -51,8 +51,8 @@
                         <td>  <?php echo ($data['environment']); ?> </td>
                         <td>   <?php echo ($data['outcome_model']); ?>  </td>
                         <td>
-                        <a class="link-update" href="/Experiment/index.php/Admin/Experiment/modifyExperimentById/experiment_id/<?php echo ($data['eid']); ?>">修改</a>
-                     <a class="link-del" href="/Experiment/index.php/Admin/Experiment/deleteExperimentById/experiment_id/<?php echo ($data['eid']); ?> ">删除</a>
+                        <a class="link-update" href="/Experiment10/index.php/Admin/Experiment/modifyExperimentById/experiment_id/<?php echo ($data['eid']); ?>">修改</a>
+                     <a class="link-del" href="/Experiment10/index.php/Admin/Experiment/deleteExperimentById/experiment_id/<?php echo ($data['eid']); ?> ">删除</a>
                         </td>
                     </tr><?php endforeach; endif; else: echo "" ;endif; ?>  
 

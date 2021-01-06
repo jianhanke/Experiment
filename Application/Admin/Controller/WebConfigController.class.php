@@ -17,12 +17,15 @@ class WebConfigController extends BaseAdminController{
 	}
 
 	public function updateConfigToFile(){
-		$status=D('WebConfig')->ConfigUpdateToFile();
-		if($status){
-			$this->success('更新成功',U('Index/home'));
-		}else{
-			$this->error('更新失败');
-		}
+		$model =D('WebConfig');
+		$name=$model->getValueByName("Api_Or_Sdk");
+		
+
+		$this->assign('configName',$name);
+
+		
+		
+		$this->display();
 	}
 
 	public function editConfig(){

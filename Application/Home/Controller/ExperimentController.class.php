@@ -42,7 +42,7 @@ class ExperimentController extends BaseHomeController{
 	public function judgeExperimentType($experimentId){
 
 		$info=D('ExperimentImage')->is_Have_More_Image($experimentId);
-
+		dump($info);
 		if($info==0){
 			$this->error('该实验没有镜像');
 		}else if($info>1){
@@ -55,6 +55,7 @@ class ExperimentController extends BaseHomeController{
 
 	public function joinMoreExperiment($experimentId){
 
+		
 		$user_id=session('user_id');
 	    
 		$is_exist=D('StudentExperiment')->if_Join_Experiment($user_id,$experimentId); 

@@ -6,9 +6,12 @@ use \Common\Controller\BaseHomeController;
 class CourseController extends BaseHomeController{
 
 
-	public function showCourse(){
+	public function showSelectCourse(){
 		
 		$info=D('Course')->show_All_Course();
+		dump($info);
+		$studentId=Session('user_id');
+		$info=D('Course')->getDataNoneme($studentId);
 		$this->assign('datas',$info);
 		$this->display();
 	}
@@ -58,8 +61,9 @@ class CourseController extends BaseHomeController{
 			$dcPrimaryKey=D('DockerContainer')->addData($data); //学生容器id 加入 docker_container
 			$scPrimaryKey=D('StudentChapter')->addDataByOrder($user_id,$chapter_id);
 			$status=D('StuChapterContainer')->addDataByOrder($scPrimaryKey,$dcPrimaryKey);
-
-			A('NoVNC')->showNoVNC($info['ip_num'],$chapter_id);
+			
+			$isJoinInfo=D('StudentChapter')->getData($user_id,$chapter_id);
+			A('NoVNC')->showNoVNC($info['ip_num'],$chapter_id,$isJoinInfo['note']);
 			exit();
 		}
 

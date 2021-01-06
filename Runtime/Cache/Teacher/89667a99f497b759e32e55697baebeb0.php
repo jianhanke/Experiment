@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Teacher/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Teacher/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Teacher/css/main.css"/>
 </head>
 <body>
 

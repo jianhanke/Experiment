@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/main.css"/>
 </head>
 <body>
       <div class="search-wrap">
             <div class="search-content">
-                <form action="/Experiment/index.php/Admin/Docker/findOnlyContainerByLike" method="post">
+                <form action="/Experiment10/index.php/Admin/Docker/findOnlyContainerByLike" method="post">
                     <table class="search-tab">
                         <tr>
                             <th width="120">搜索范围:</th>
@@ -51,13 +51,13 @@
                    <!--      <td> <?php if(($data['State'] == 'running')): ?><font color="green" > 运行中 </font> 
                                 <td>
                            
-                            <a class="link-del" href="/Experiment/index.php/Admin/Docker/shutdownContainerById/container_id/<?php echo ($data['container_id']); ?>">关机</a>&nbsp;&nbsp;
+                            <a class="link-del" href="/Experiment10/index.php/Admin/Docker/shutdownContainerById/container_id/<?php echo ($data['container_id']); ?>">关机</a>&nbsp;&nbsp;
 
-                             <a class="link-del" href="/Experiment/index.php/Admin/Docker/restartContainerById/container_id/<?php echo ($data['container_id']); ?>">重启</a>
+                             <a class="link-del" href="/Experiment10/index.php/Admin/Docker/restartContainerById/container_id/<?php echo ($data['container_id']); ?>">重启</a>
                         </td>
                             <?php else: ?> <font color="red" >  关机 </font>
                             <td>
-                            <a class="link-del" href="/Experiment/index.php/Admin/Docker/startContainerById/container_id/<?php echo ($data['container_id']); ?>">开机</a>&nbsp;&nbsp;
+                            <a class="link-del" href="/Experiment10/index.php/Admin/Docker/startContainerById/container_id/<?php echo ($data['container_id']); ?>">开机</a>&nbsp;&nbsp;
                            
                             
                         </td><?php endif; ?> </td> -->

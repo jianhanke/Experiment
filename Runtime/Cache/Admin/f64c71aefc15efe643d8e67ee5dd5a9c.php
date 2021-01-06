@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/common.css"/>
-    <link rel="stylesheet" type="text/css" href="/Experiment/Public/Admin/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/common.css"/>
+    <link rel="stylesheet" type="text/css" href="/Experiment10/Public/Admin/css/main.css"/>
 </head>
 <body>
    
@@ -29,14 +29,14 @@
                         <td> <?php if(($data['status'] == 'running')): ?><font color="green" > 运行中 </font> 
                                 <td>
                            
-                            <a class="link-del" href="/Experiment/index.php/Admin/Docker/stopContainerById/container_id/<?php echo ($data['container_id']); ?>">关机</a>&nbsp;&nbsp;
+                            <a class="link-del" href="/Experiment10/index.php/Admin/Docker/stopContainerById/container_id/<?php echo ($data['container_id']); ?>">关机</a>&nbsp;&nbsp;
 
-                             <a class="link-del" href="/Experiment/index.php/Admin/Docker/restartContainerById/container_id/<?php echo ($data['container_id']); ?>">重启</a>
+                             <a class="link-del" href="/Experiment10/index.php/Admin/Docker/restartContainerById/container_id/<?php echo ($data['container_id']); ?>">重启</a>
                         </td>
                             <?php elseif(($data['status'] == '')): ?>不存在
                             <?php else: ?> <font color="red" >  关机 </font>
                             <td>
-                            <a class="link-del" href="/Experiment/index.php/Admin/Docker/startContainerById/container_id/<?php echo ($data['container_id']); ?>">开机</a>&nbsp;&nbsp;
+                            <a class="link-del" href="/Experiment10/index.php/Admin/Docker/startContainerById/container_id/<?php echo ($data['container_id']); ?>">开机</a>&nbsp;&nbsp;
                            
                             
                         </td><?php endif; ?> </td>

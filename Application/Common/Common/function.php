@@ -48,18 +48,17 @@ function uploadChapterToVideo($chapter_id){
 
 
 		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
-		$savePath=$info['cname'].'/'.$info['name']."/";
+		$savePath=$info['cname'].'/'.$info['id']."/";
+		
 		
 		$res=\MyUtils\FileUtils\UploadFile::uploadChapterVideo($savePath,$info['id']);
+		
 		if(!$res['status']) {                   // 上传错误提示错误信息
 		        // $thiss->error($res['upload']->getError());
 				// $thiss->error('上传失败,文件错误');
 			return false;
 		}else{                                 // 上传成功 获取上传文件信息
-		   $status=D('Chapter')->editDataVideo($res['status']['savepath'].$res['status']['savename'],$chapter_id);
-		      if($status)
-		        return true;
-		       return false;
+		  return D('Chapter')->editDataVideo($res['status']['savepath'].$res['status']['savename'],$chapter_id);
 		} 
 }
 /**
@@ -71,7 +70,7 @@ function uploadChapterToWord($chapter_id){
 		
 		$info=D('ViewCoursetochapter','Logic')->find_Chapter_Course($chapter_id);
 		$course_name=$info['cname'];
-		$chapter_name=$info['name'];
+		$chapter_name=$info['id'];
 		$new_name=$info['id'];
 
 		$uploadFile=new \MyUtils\FileUtils\UploadFile();
